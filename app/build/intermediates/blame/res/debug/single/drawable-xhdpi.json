@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_symbols_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_symbols_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_places_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_places_light_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_people_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_people_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_symbols_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_symbols_light_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\keyboard_background_holo.9.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\keyboard_background_holo.9.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_objects_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_objects_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_people_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_people_light_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_recent_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_recent_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_nature_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_nature_light_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_nature_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_nature_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_recent_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_recent_light_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_places_light_activated.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_places_light_activated.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sym_keyboard_delete_holo_dark.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\sym_keyboard_delete_holo_dark.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_emoji_objects_light_normal.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-xhdpi\\ic_emoji_objects_light_normal.png"
+    }
+]

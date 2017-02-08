@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_select"
+    >
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+    <TextView
+        android:id="@+id/txtbody"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="48dp"
+        android:layout_gravity="center_vertical"
+        android:text="TRANG CHU"
+        android:textSize="23dp"
+        />
+
+</RelativeLayout>

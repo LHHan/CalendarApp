@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_about.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_about.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_myfriend.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_myfriend.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_myevent.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_myevent.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_add_newevent.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_add_newevent.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_account.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_account.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_back.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_back.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_oldevent.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_oldevent.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_home.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_friendaccept.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_friendaccept.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_newevent.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_newevent.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_findfriend.xml",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\menu\\menu_findfriend.xml"
+    }
+]

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lehoanghan.appcalendar" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/calendar"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Singin"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.example.lehoanghan.choosemenu.Menu_Choose"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.lehoanghan.addevent.AddEvent"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.lehoanghan.myaccount.ChangeAccount"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.lehoanghan.list_oldevent.MemoryEvent"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.example.lehoanghan.list_oldevent.Comment"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity android:name="com.example.lehoanghan.list_oldevent.Picture"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.example.lehoanghan.list_newevent.Dialog_Alarm"
+            android:theme="@style/AppTheme"/>
+        <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver"/>
+        <service android:name="com.example.lehoanghan.list_newevent.RingtonePlayingService"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

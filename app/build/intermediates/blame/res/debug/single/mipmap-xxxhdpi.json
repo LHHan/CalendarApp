@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\calendar.png",
+        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\mipmap-xxxhdpi\\calendar.png"
+    }
+]

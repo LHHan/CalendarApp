@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightblue"
+    android:fontFamily="sans-serif-medium">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20px">
+        <ImageView
+            android:layout_width="450px"
+            android:layout_height="450px"
+            android:id="@+id/imgAvataHome" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/txtNameUser"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="80px"
+            android:text="LỊCH CỦA"
+            android:textSize="80px"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#00F" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblue">
+            <TextView android:id="@+id/txtTimeEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time Event"/>
+            <TableLayout android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6">
+                <TableRow>
+                    <TextView android:id="@+id/txtNameEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NameEvent"/>
+                    <TextView android:id="@+id/txtNameEventValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NameEvent"
+                        android:layout_marginLeft="30px"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2" >
+                <Button android:id="@+id/btnDetail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Detail"/>
+            </TableLayout>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/item_press">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

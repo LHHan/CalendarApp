@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d2bf2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightblue">#7fc5ff</color>
+
+    <color name="transparen">#00000000</color>
+    <color name="menu_item_head">#FFFFFF</color>
+    <color name="item_nomal">#303030</color>
+    <color name="item_press">#992416</color>
+
+    <color name="list_divider">#272727</color>
+    <color name="secondary_text_default_material_light">#8aac5555</color>
+    <color name="DateSelection">#fd74a3</color>
+</resources>
