@@ -44,29 +44,29 @@ public class Menu_Choose extends AppCompatActivity {
 
     private SearchView SvFindFriend;
 
-    private String []MenuTitle;
-    private int []MenuIcon={R.drawable.house,R.drawable.account,R.drawable.myfriend,R.drawable.addfriend,R.drawable.findfriend,
-            R.drawable.event,R.drawable.myevent,R.drawable.oldevent,R.drawable.about,R.drawable.exitout};
+    private String[] MenuTitle;
+    private int[] MenuIcon = {R.drawable.house, R.drawable.account, R.drawable.myfriend, R.drawable.addfriend, R.drawable.findfriend,
+            R.drawable.event, R.drawable.myevent, R.drawable.oldevent, R.drawable.about, R.drawable.exitout};
     private ArrayList<MenuItem> arrayList_menuItem;
     private MenuAdapter menuAdapter;
     private ActionBar actionBar;
 
-    private int Fragment_Home=0;
-    private int Fragment_Account=1;
-    private int Fragment_MyFriend=3;
-    private int Fragment_FindFriend=5;
-    private int Fragment_FriendAccept=4;
-    private int Fragment_NewEvent=7;
-    private int Fragment_MyEvent=8;
-    private int Fragment_OldEvent=9;
-    private int Fragment_About=10;
-    private int Fragment=Fragment_Home;
-    private int FragmentItem_addevent=11;
+    private int Fragment_Home = 0;
+    private int Fragment_Account = 1;
+    private int Fragment_MyFriend = 3;
+    private int Fragment_FindFriend = 5;
+    private int Fragment_FriendAccept = 4;
+    private int Fragment_NewEvent = 7;
+    private int Fragment_MyEvent = 8;
+    private int Fragment_OldEvent = 9;
+    private int Fragment_About = 10;
+    private int Fragment = Fragment_Home;
+    private int FragmentItem_addevent = 11;
 
 
-    private static Fragment fragment=null;
-    private  Bundle bundle,bundlesetNameforHome,bundlePassMailtoFind_Accept;
-    private  String setTitleItem=null;
+    private static Fragment fragment = null;
+    private Bundle bundle, bundlesetNameforHome, bundlePassMailtoFind_Accept;
+    private String setTitleItem = null;
     private MaterialCalendarView calendar;
     private String textDate;
     private Intent intentAddEvent;
@@ -77,7 +77,7 @@ public class Menu_Choose extends AppCompatActivity {
         setContentView(R.layout.activity_menu_choose);
         Init();
         SetNameUser();
-        if(savedInstanceState==null) {
+        if (savedInstanceState == null) {
             do_ItemListener(0);
         }
 
@@ -88,8 +88,7 @@ public class Menu_Choose extends AppCompatActivity {
         DrawerTitle = getTitle();
         Title = getTitle();
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout_menu);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.directed, R.string.directed)
-        {
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.directed, R.string.directed) {
 
             @Override
             public void onDrawerClosed(View view) {
@@ -108,14 +107,13 @@ public class Menu_Choose extends AppCompatActivity {
         };
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
         actionBar = getSupportActionBar();
-        if(actionBar!=null)
-        {
+        if (actionBar != null) {
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         lstMenu = (ListView) findViewById(R.id.lstmenu);
 
-        MenuTitle= getResources().getStringArray(R.array.my_data);
+        MenuTitle = getResources().getStringArray(R.array.my_data);
 
         arrayList_menuItem = new ArrayList<MenuItem>();
         CreateListMenu();
@@ -126,7 +124,6 @@ public class Menu_Choose extends AppCompatActivity {
         lstMenu.setOnItemClickListener(new ItemListener());
 
     }
-
 
 
     @Override
@@ -141,39 +138,38 @@ public class Menu_Choose extends AppCompatActivity {
     //Create options
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menuInflater=getMenuInflater();
-        this.menu=menu;
+        menuInflater = getMenuInflater();
+        this.menu = menu;
         menuInflater.inflate(R.menu.menu_main, this.menu);
-        if(menu!=null)
+        if (menu != null)
             menu.clear();
-        switch (Fragment)
-        {
+        switch (Fragment) {
             case 0:
-                menuInflater.inflate(R.menu.menu_home,menu);
+                menuInflater.inflate(R.menu.menu_home, menu);
                 break;
             case 1:
-                menuInflater.inflate(R.menu.menu_account,menu);
+                menuInflater.inflate(R.menu.menu_account, menu);
                 break;
             case 3:
-                menuInflater.inflate(R.menu.menu_myfriend,menu);
+                menuInflater.inflate(R.menu.menu_myfriend, menu);
                 break;
             case 4:
-                menuInflater.inflate(R.menu.menu_friendaccept,menu);
+                menuInflater.inflate(R.menu.menu_friendaccept, menu);
                 break;
             case 5:
-                menuInflater.inflate(R.menu.menu_findfriend,menu);
+                menuInflater.inflate(R.menu.menu_findfriend, menu);
                 break;
             case 7:
-                menuInflater.inflate(R.menu.menu_newevent,menu);
+                menuInflater.inflate(R.menu.menu_newevent, menu);
                 break;
             case 8:
-                menuInflater.inflate(R.menu.menu_myevent,menu);
+                menuInflater.inflate(R.menu.menu_myevent, menu);
                 break;
             case 9:
-                menuInflater.inflate(R.menu.menu_oldevent,menu);
+                menuInflater.inflate(R.menu.menu_oldevent, menu);
                 break;
             case 10:
-                menuInflater.inflate(R.menu.menu_about,menu);
+                menuInflater.inflate(R.menu.menu_about, menu);
                 break;
         }
         return true;
@@ -184,62 +180,56 @@ public class Menu_Choose extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
 
-       if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
+        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
-        int id=item.getItemId();
-        if(id==android.R.id.home)
-        {
-            if(drawerLayout.isDrawerOpen(lstMenu))
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            if (drawerLayout.isDrawerOpen(lstMenu))
                 drawerLayout.closeDrawer(lstMenu);
             else
                 drawerLayout.openDrawer(lstMenu);
         }
 
-        switch (id)
-        {
+        switch (id) {
             case R.id.back:
-              if(menu!=null)
-                  menu.clear();
+                if (menu != null)
+                    menu.clear();
                 SetNameUser();
-                fragment=new Home();
+                fragment = new Home();
                 fragment.setArguments(bundlesetNameforHome);
-                setTitleItem="Home";
+                setTitleItem = "Home";
                 actionBar.setDisplayShowHomeEnabled(true);
                 actionBar.setDisplayHomeAsUpEnabled(true);
-                Fragment=Fragment_Home;
+                Fragment = Fragment_Home;
                 break;
             case R.id.findfriend:
-                SvFindFriend=(SearchView) findViewById(R.id.svFindName);
-                if(SvFindFriend.getVisibility()==View.INVISIBLE)
+                SvFindFriend = (SearchView) findViewById(R.id.svFindName);
+                if (SvFindFriend.getVisibility() == View.INVISIBLE)
                     SvFindFriend.setVisibility(View.VISIBLE);
                 else
                     SvFindFriend.setVisibility(View.INVISIBLE);
                 break;
 
         }
-        if (fragment!=null)
-        {
-            FragmentManager fManager= getFragmentManager();
-            fManager.beginTransaction().replace(R.id.framelayout_menu,fragment).commit();
+        if (fragment != null) {
+            FragmentManager fManager = getFragmentManager();
+            fManager.beginTransaction().replace(R.id.framelayout_menu, fragment).commit();
             setTitle(setTitleItem);
-        }
-        else
-        {
+        } else {
             Log.e("Main", "error");
         }
 
-        switch (Fragment)
-        {
+        switch (Fragment) {
             case 0:
-                if(menu!=null)
+                if (menu != null)
                     menu.clear();
-                menuInflater.inflate(R.menu.menu_home,menu);
+                menuInflater.inflate(R.menu.menu_home, menu);
                 break;
             case 11:
-                if(menu!=null)
+                if (menu != null)
                     menu.clear();
-                menuInflater.inflate(R.menu.menu_add_newevent,menu);
+                menuInflater.inflate(R.menu.menu_add_newevent, menu);
                 break;
         }
 
@@ -258,76 +248,73 @@ public class Menu_Choose extends AppCompatActivity {
     }
 
 
-
-
     //Change among Fragments
     public void do_ItemListener(int position) {
-        if(menu!=null)
+        if (menu != null)
             menu.clear();
-        switch (position)
-        {
+        switch (position) {
             case 0:
-                Fragment=Fragment_Home;
-                if(menuInflater!=null){
-                    menuInflater.inflate(R.menu.menu_home,menu);
+                Fragment = Fragment_Home;
+                if (menuInflater != null) {
+                    menuInflater.inflate(R.menu.menu_home, menu);
                 }
                 SetNameUser();
-                fragment= new Home();
+                fragment = new Home();
                 fragment.setArguments(bundlesetNameforHome);
                 break;
             case 1:
-                Fragment=Fragment_Account;
+                Fragment = Fragment_Account;
                 PassDatatoFind_Accept_Friend();
-               // menuInflater.inflate(R.menu.menu_account,menu);
-                fragment= new Account();
+                // menuInflater.inflate(R.menu.menu_account,menu);
+                fragment = new Account();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 3:
-                Fragment=Fragment_MyFriend;
-               // menuInflater.inflate(R.menu.menu_myfriend,menu);
+                Fragment = Fragment_MyFriend;
+                // menuInflater.inflate(R.menu.menu_myfriend,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment= new MyFriend();
+                fragment = new MyFriend();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 4:
-                Fragment=Fragment_FriendAccept;
-               // menuInflater.inflate(R.menu.menu_friendaccept,menu);
+                Fragment = Fragment_FriendAccept;
+                // menuInflater.inflate(R.menu.menu_friendaccept,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment= new FriendAccept();
+                fragment = new FriendAccept();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 5:
-                Fragment=Fragment_FindFriend;
-               // menuInflater.inflate(R.menu.menu_findfriend,menu);
+                Fragment = Fragment_FindFriend;
+                // menuInflater.inflate(R.menu.menu_findfriend,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment= new FindFriend();
+                fragment = new FindFriend();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 7:
-                Fragment=Fragment_NewEvent;
+                Fragment = Fragment_NewEvent;
                 PassDatatoFind_Accept_Friend();
                 //menuInflater.inflate(R.menu.menu_newevent,menu);
-                fragment= new NewEvent();
+                fragment = new NewEvent();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 8:
-                Fragment=Fragment_MyEvent;
+                Fragment = Fragment_MyEvent;
                 PassDatatoFind_Accept_Friend();
-               // menuInflater.inflate(R.menu.menu_oldevent,menu);
-                fragment= new MyEvent();
+                // menuInflater.inflate(R.menu.menu_oldevent,menu);
+                fragment = new MyEvent();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 9:
-                Fragment=Fragment_OldEvent;
+                Fragment = Fragment_OldEvent;
                 PassDatatoFind_Accept_Friend();
                 // menuInflater.inflate(R.menu.menu_oldevent,menu);
-                fragment= new OldEvent();
+                fragment = new OldEvent();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 10:
-                Fragment=Fragment_About;
-              //  menuInflater.inflate(R.menu.menu_about,menu);
-                fragment= new About();
+                Fragment = Fragment_About;
+                //  menuInflater.inflate(R.menu.menu_about,menu);
+                fragment = new About();
                 break;
             case 11:
                 Thoat();
@@ -336,46 +323,41 @@ public class Menu_Choose extends AppCompatActivity {
                 break;
         }
 
-        if (fragment!=null)
-        {
-            FragmentManager fManager= getFragmentManager();
-            fManager.beginTransaction().replace(R.id.framelayout_menu,fragment).commit();
+        if (fragment != null) {
+            FragmentManager fManager = getFragmentManager();
+            fManager.beginTransaction().replace(R.id.framelayout_menu, fragment).commit();
             lstMenu.setItemChecked(position, true);
             lstMenu.setSelection(position);
 
             setTitle(MenuTitle[position]);
-            Title=getTitle();
+            Title = getTitle();
             drawerLayout.closeDrawer(lstMenu);
 
-        }
-        else
-        {
+        } else {
             Log.e("Main", "error");
         }
     }
 
 
-
-    public void CreateListMenu(){
-        arrayList_menuItem.add(new MenuItem(MenuTitle[0],MenuIcon[0]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[1],MenuIcon[1]));
+    public void CreateListMenu() {
+        arrayList_menuItem.add(new MenuItem(MenuTitle[0], MenuIcon[0]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[1], MenuIcon[1]));
         arrayList_menuItem.add(new MenuItem(MenuTitle[2]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[3],MenuIcon[2]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[4],MenuIcon[3]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[5],MenuIcon[4]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[3], MenuIcon[2]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[4], MenuIcon[3]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[5], MenuIcon[4]));
         arrayList_menuItem.add(new MenuItem(MenuTitle[6]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[7],MenuIcon[5]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[8],MenuIcon[6]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[9],MenuIcon[7]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[10],MenuIcon[8]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[11],MenuIcon[9]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[7], MenuIcon[5]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[8], MenuIcon[6]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[9], MenuIcon[7]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[10], MenuIcon[8]));
+        arrayList_menuItem.add(new MenuItem(MenuTitle[11], MenuIcon[9]));
 
     }
 
 
-
     public void Thoat() {
-        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
         builder.setMessage("You want to exit?");
         builder.setIcon(R.drawable.warning);
@@ -441,7 +423,7 @@ public class Menu_Choose extends AppCompatActivity {
     }
 
 
-   // private static StringBuilder txt;
+    // private static StringBuilder txt;
 
     //pass date from menu_choose to Home
     /*public void DosetDateFrom() {
@@ -461,36 +443,34 @@ public class Menu_Choose extends AppCompatActivity {
     }*/
 
     //pass Name user to Home
-    public  void SetNameUser() {
-        Bundle bundle=getIntent().getExtras();
-        String NameUser="",MailUser="";
-        String NameUserfromAddEvent= getIntent().getStringExtra("NameUserfromAddEvent");
-        if(bundle!=null)
-        {
-            NameUser=bundle.getString("NameUser").toLowerCase();
-            MailUser=bundle.getString("MailUser").toLowerCase();
+    public void SetNameUser() {
+        Bundle bundle = getIntent().getExtras();
+        String NameUser = "", MailUser = "";
+        String NameUserfromAddEvent = getIntent().getStringExtra("NameUserfromAddEvent");
+        if (bundle != null) {
+            NameUser = bundle.getString("NameUser").toLowerCase();
+            MailUser = bundle.getString("MailUser").toLowerCase();
         }
-        bundlesetNameforHome=new Bundle();
-        bundlesetNameforHome.putString("MailforHome",MailUser);
-        if(NameUser!=null)
-            bundlesetNameforHome.putString("NameforHome",NameUser);
+        bundlesetNameforHome = new Bundle();
+        bundlesetNameforHome.putString("MailforHome", MailUser);
+        if (NameUser != null)
+            bundlesetNameforHome.putString("NameforHome", NameUser);
         else
-            bundlesetNameforHome.putString("NameforHome",NameUserfromAddEvent);
+            bundlesetNameforHome.putString("NameforHome", NameUserfromAddEvent);
 
     }
 
     //pass MailUSER to FindName for don't give my Mail into list
-    public void PassDatatoFind_Accept_Friend(){
-        Bundle bundle=getIntent().getExtras();
-        String Mailuser="";
-        String Nameuser="";
-        if(bundle!=null)
-        {
-            Mailuser=bundle.getString("MailUser");
-            Nameuser=bundle.getString("NameUser");
+    public void PassDatatoFind_Accept_Friend() {
+        Bundle bundle = getIntent().getExtras();
+        String Mailuser = "";
+        String Nameuser = "";
+        if (bundle != null) {
+            Mailuser = bundle.getString("MailUser");
+            Nameuser = bundle.getString("NameUser");
         }
-        bundlePassMailtoFind_Accept=new Bundle();
-        bundlePassMailtoFind_Accept.putString("MailforFindFriend",Mailuser);
+        bundlePassMailtoFind_Accept = new Bundle();
+        bundlePassMailtoFind_Accept.putString("MailforFindFriend", Mailuser);
         bundlePassMailtoFind_Accept.putString("NameforFindFriend", Nameuser);
     }
 

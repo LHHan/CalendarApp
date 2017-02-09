@@ -39,72 +39,72 @@ import java.io.OutputStream;
 /**
  * Created by lehoanghan on 5/15/2016.
  */
-public class ChangeAccount extends AppCompatActivity {
+public class ChangeAccountActivity extends AppCompatActivity {
 
-    private ImageView ImgAvata;
-    private EditText EdtName,EdtPassChange,EdtComPassChange,EdtOldPass;
-    private TextView TxtMail;
-    private Button BtnChangeAvata, BtnSave, BtnClear;
-    private String NameUser, MailUser;
+    private ImageView ivAvatar;
+    private EditText etName, etPassChange, etComPassChange, etOldPass;
+    private TextView tvMail;
+    private Button btnChangeAvatar, btnSave, btnClear;
+    private String nameUser, mailUser;
     private Firebase firebase;
     private Bitmap bitmap, bitmapFirebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.change_account);
+        setContentView(R.layout.activity_change_account);
         Firebase.setAndroidContext(this);
-        firebase =new Firebase("https://appcalendar.firebaseio.com/");
-        GivedataUser();
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
+        giveDataUser();
         Init();
-        SetImage();
-       BtnChangeAvata.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-
-               SelectImage();
-           }
-       });
-
-        BtnSave.setOnClickListener(new View.OnClickListener() {
+        setImage();
+        btnChangeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CheckData();
+
+                selectImage();
             }
         });
 
-        BtnClear.setOnClickListener(new View.OnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EdtName.setText("");
-                EdtOldPass.setText("");
-                EdtPassChange.setText("");
-                EdtComPassChange.setText("");
+                checkData();
+            }
+        });
+
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etName.setText("");
+                etOldPass.setText("");
+                etPassChange.setText("");
+                etComPassChange.setText("");
             }
         });
     }
 
-    public void Init(){
-        ImgAvata=(ImageView) findViewById(R.id.imgAvataChange);
-        EdtName=(EditText) findViewById(R.id.edtNameChange);
-        EdtName.setText(NameUser);
-        TxtMail=(TextView) findViewById(R.id.txtMailChange);
-        TxtMail.setText(MailUser.toString().replace("&","."));
-        EdtPassChange=(EditText) findViewById(R.id.edtPassChange);
-        EdtComPassChange=(EditText) findViewById(R.id.edtComPassChange);
-        EdtOldPass=(EditText) findViewById(R.id.edtOldPass);
-        BtnChangeAvata=(Button) findViewById(R.id.btnChangePic);
-        BtnSave=(Button) findViewById(R.id.btnSave);
-        BtnClear=(Button) findViewById(R.id.btnClear);
+    public void Init() {
+        ivAvatar = (ImageView) findViewById(R.id.activity_change_account_iv_avatar);
+        etName = (EditText) findViewById(R.id.activity_change_account_et_name);
+        etName.setText(nameUser);
+        tvMail = (TextView) findViewById(R.id.activity_change_account_tv_mail);
+        tvMail.setText(mailUser.toString().replace("&", "."));
+        etPassChange = (EditText) findViewById(R.id.activity_change_account_et_password);
+        etComPassChange = (EditText) findViewById(R.id.activity_change_account_et_confirm_password);
+        etOldPass = (EditText) findViewById(R.id.activity_change_account_et_old_password);
+        btnChangeAvatar = (Button) findViewById(R.id.activity_change_account_btn_change_avatar);
+        btnSave = (Button) findViewById(R.id.activity_change_account_btn_save);
+        btnClear = (Button) findViewById(R.id.activity_change_account_btn_clear);
     }
 
-    public void SetImage(){
-        firebase.child("Avata").child(MailUser).addValueEventListener(new ValueEventListener() {
+    public void setImage() {
+        firebase.child("Avatar").child(mailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] image = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
                 bitmapFirebase = BitmapFactory.decodeByteArray(image, 0, image.length);
-                ImgAvata.setImageBitmap(bitmapFirebase);
+                ivAvatar.setImageBitmap(bitmapFirebase);
             }
 
             @Override
@@ -115,10 +115,10 @@ public class ChangeAccount extends AppCompatActivity {
     }
 
 
-    public void SelectImage(){
-        final CharSequence[] options={"Take photo","Choose from Gallery","Cancel"};
+    public void selectImage() {
+        final CharSequence[] options = {"Take photo", "Choose from Gallery", "Cancel"};
 
-        final AlertDialog.Builder buider=new AlertDialog.Builder(ChangeAccount.this);
+        final AlertDialog.Builder buider = new AlertDialog.Builder(ChangeAccountActivity.this);
         buider.setTitle("Add Photo");
         buider.setItems(options, new DialogInterface.OnClickListener() {
             @Override
@@ -154,8 +154,8 @@ public class ChangeAccount extends AppCompatActivity {
                 }
                 try {
                     BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
-                    bitmap = BitmapFactory.decodeFile(f.getAbsolutePath(),bitmapOptions);
-                    ImgAvata.setImageBitmap(bitmap);
+                    bitmap = BitmapFactory.decodeFile(f.getAbsolutePath(), bitmapOptions);
+                    ivAvatar.setImageBitmap(bitmap);
                     String path = android.os.Environment.getExternalStorageDirectory() + File.separator + "Phoenix" + File.separator + "default";
                     f.delete();
                     OutputStream outFile = null;
@@ -177,14 +177,14 @@ public class ChangeAccount extends AppCompatActivity {
                 }
             } else if (requestCode == 2) {
                 Uri selectedImage = data.getData();
-                String[] filePath = { MediaStore.Images.Media.DATA };
+                String[] filePath = {MediaStore.Images.Media.DATA};
                 Cursor c = getContentResolver().query(selectedImage, filePath, null, null, null);
                 c.moveToFirst();
                 int columnIndex = c.getColumnIndex(filePath[0]);
                 String picturePath = c.getString(columnIndex);
                 c.close();
                 bitmap = (BitmapFactory.decodeFile(picturePath));
-                ImgAvata.setImageBitmap(bitmap);
+                ivAvatar.setImageBitmap(bitmap);
             }
 
         }
@@ -194,51 +194,48 @@ public class ChangeAccount extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater=getMenuInflater();
-        menuInflater.inflate(R.menu.menu_back,menu);
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_back, menu);
         setTitle("Change Account");
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.backfromChangeAccount:
-                Intent intent=new Intent(this, Menu_Choose.class);
-                intent.putExtra("NameUser",NameUser);
-                intent.putExtra("MailUser",MailUser);
+                Intent intent = new Intent(this, Menu_Choose.class);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
 
 
-    public String CovertBitmaptoString(){
-        ByteArrayOutputStream outputStream=new ByteArrayOutputStream();
-        if(bitmap!=null)
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+    public String covertBitmaptoString() {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        if (bitmap != null)
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
         else
-        bitmapFirebase.compress(Bitmap.CompressFormat.PNG,100,outputStream);
-        byte[]array=outputStream.toByteArray();
-        String PicFirebase= Base64.encodeToString(array,Base64.DEFAULT);
+            bitmapFirebase.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+        byte[] array = outputStream.toByteArray();
+        String PicFirebase = Base64.encodeToString(array, Base64.DEFAULT);
         return PicFirebase;
     }
 
 
-    public void CheckData(){
-        if(EdtName.getText().toString().compareTo("")==0||EdtOldPass.getText().toString().compareTo("")==0||
-                EdtPassChange.getText().toString().compareTo("")==0||EdtComPassChange.getText().toString().compareTo("")==0)
-            Toast.makeText(getApplicationContext(),"Entry Data, You need to fill out full data",Toast.LENGTH_LONG);
-        else
-        {
-            if(EdtPassChange.getText().toString().compareTo(EdtComPassChange.getText().toString())!=0) {
+    public void checkData() {
+        if (etName.getText().toString().compareTo("") == 0 || etOldPass.getText().toString().compareTo("") == 0 ||
+                etPassChange.getText().toString().compareTo("") == 0 || etComPassChange.getText().toString().compareTo("") == 0)
+            Toast.makeText(getApplicationContext(), "Entry Data, You need to fill out full data", Toast.LENGTH_LONG);
+        else {
+            if (etPassChange.getText().toString().compareTo(etComPassChange.getText().toString()) != 0) {
                 Toast.makeText(getApplicationContext(), "Error Comfirm Pass", Toast.LENGTH_LONG);
-                EdtPassChange.setText("");
-                EdtComPassChange.setText("");
-            }
-            else
-            {
-                firebase.changePassword(MailUser.replace("&","."), EdtOldPass.getText().toString(), EdtPassChange.getText().toString(), new Firebase.ResultHandler() {
+                etPassChange.setText("");
+                etComPassChange.setText("");
+            } else {
+                firebase.changePassword(mailUser.replace("&", "."), etOldPass.getText().toString(), etPassChange.getText().toString(), new Firebase.ResultHandler() {
                     @Override
                     public void onSuccess() {
                         Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_LONG).show();
@@ -250,14 +247,14 @@ public class ChangeAccount extends AppCompatActivity {
                     }
                 });
 
-                firebase.child("User").child(MailUser).setValue(EdtName.getText().toString());
-                firebase.child("Avata").child(MailUser).setValue(CovertBitmaptoString());
+                firebase.child("User").child(mailUser).setValue(etName.getText().toString());
+                firebase.child("Avata").child(mailUser).setValue(covertBitmaptoString());
             }
         }
     }
 
-    public void GivedataUser(){
-        MailUser=getIntent().getStringExtra("MailUser");
-        NameUser=getIntent().getStringExtra("NameUser");
+    public void giveDataUser() {
+        mailUser = getIntent().getStringExtra("MailUser");
+        nameUser = getIntent().getStringExtra("NameUser");
     }
 }

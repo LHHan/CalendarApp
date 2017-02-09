@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue">
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="100px">
+
+        <ImageView
+            android:id="@+id/activity_change_account_iv_avatar"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:gravity="center_horizontal" />
+    </TableRow>
+
+    <TableRow android:layout_marginLeft="5px">
+
+        <Button
+            android:id="@+id/activity_change_account_btn_change_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_avatar" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_name"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/activity_change_account_et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_mail"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/gmail" />
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_mail_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="70px" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_old_password"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:fontFamily="sans-serif-medium">
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_old_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/old_password" />
+
+        <EditText
+            android:id="@+id/activity_change_account_et_old_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_password"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/activity_change_account_et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="numberPassword" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_confirm_password"
+
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:fontFamily="sans-serif-medium">
+
+        <TextView
+            android:id="@+id/activity_change_account_tv_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/confirm_password" />
+
+        <EditText
+            android:id="@+id/activity_change_account_et_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="numberPassword" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/activity_change_account_tr_action"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px">
+
+        <Button
+            android:id="@+id/activity_change_account_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/activity_change_account_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/clear" />
+    </TableRow>
+
+</TableLayout>

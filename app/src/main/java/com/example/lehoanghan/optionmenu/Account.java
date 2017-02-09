@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.myaccount.ChangeAccount;
+import com.example.lehoanghan.myaccount.ChangeAccountActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -106,7 +106,7 @@ public class Account extends Fragment {
 
     public void PassDatatoChangeAccount()
     {
-        intentPassdata=new Intent(getActivity(), ChangeAccount.class);
+        intentPassdata=new Intent(getActivity(), ChangeAccountActivity.class);
         intentPassdata.putExtra("MailUser",GetMail);
         intentPassdata.putExtra("NameUser",GetName);
     }

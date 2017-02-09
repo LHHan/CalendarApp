@@ -4697,7 +4697,7 @@ containing a value of this type.
         public static final int cardview_recycler_newevent=0x7f040026;
         public static final int cardview_recycler_oldevent=0x7f040027;
         public static final int cardview_recycler_title=0x7f040028;
-        public static final int change_account=0x7f040029;
+        public static final int activity_change_account =0x7f040029;
         public static final int custom_gallery_friendinvite=0x7f04002a;
         public static final int design_bottom_sheet_dialog=0x7f04002b;
         public static final int design_layout_snackbar=0x7f04002c;

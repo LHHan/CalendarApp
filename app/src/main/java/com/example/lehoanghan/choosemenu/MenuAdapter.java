@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 public class MenuAdapter extends BaseAdapter {
 
-    private final int Item_Title=0;
-    private final int Item_Body=1;
+    private final int Item_Title = 0;
+    private final int Item_Body = 1;
     private Context context;
     private ArrayList<MenuItem> array_menuitem;
 
@@ -44,27 +44,22 @@ public class MenuAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        int type=array_menuitem.get(position).getItem_Type();
+        int type = array_menuitem.get(position).getItem_Type();
 
-        if(type==Item_Title)
-        {
-            if(convertView==null)
-            {
-                LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView= inflater.inflate(R.layout.menu_head,null);
-                TextView txtTile=(TextView) convertView.findViewById(R.id.txtTitle);
+        if (type == Item_Title) {
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.menu_head, null);
+                TextView txtTile = (TextView) convertView.findViewById(R.id.txtTitle);
                 txtTile.setText(array_menuitem.get(position).getTitle());
             }
-        }
-        else if(type==Item_Body)
-        {
-            if(convertView==null)
-            {
-                LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView= inflater.inflate(R.layout.menu_body,null);
-                TextView txtTile=(TextView) convertView.findViewById(R.id.txtbody);
+        } else if (type == Item_Body) {
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.menu_body, null);
+                TextView txtTile = (TextView) convertView.findViewById(R.id.txtbody);
                 txtTile.setText(array_menuitem.get(position).getTitle());
-                ImageView imgBody=(ImageView) convertView.findViewById(R.id.img_icon);
+                ImageView imgBody = (ImageView) convertView.findViewById(R.id.img_icon);
                 imgBody.setImageResource(array_menuitem.get(position).getIcon());
             }
         }
