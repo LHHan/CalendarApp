@@ -3,201 +3,201 @@
 
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9aaaea3a89040f8176f810c85e288fc74d5d1f12">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-alpha1_d00b7f6941c2848e71e4717378fa9eecca062c6d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="58aded43e8dafed0f946c039c37bc8df573c70d8">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_cf843de3e68eee0acd864018497bbb0094cf9b0a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.rockerhieu.emojicon\library\1.3.3\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="bcca57571c432c186f738fccb93e4ca5bc02aada">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rockerhieu.emojicon-library-1.3.3_33306ad050fa375598167d947427860f6a08663e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ed88e1f0c8fbf66e1da918545f0a6790f893bceb">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0-alpha1_e1ff6f2e2d3e557a07bc594044849b5e38371de7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1f1c7067e22acf05bddbca9f94422050cd848a86">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_9497e336451f47740c563a31bc7aa443abf11ad7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.3.1_8f0b252df5b4e0f94f0d04fae7f09028f36c61a2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\Android\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha1\support-annotations-24.0.0-alpha1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="b8062546971a3d196343232a19a3c0016272ba47">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha1_9d726daee05772579927111f2333765f39cf6580\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="b4b363de16b49409f51f2525ac97daf99eefb148">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_312bf393cdb310076711fd00c4faf03445c84899\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a6af5beedc2e8c946abc3771525e2fed77439309">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0-alpha1_a346af69e301290f8e47af97602c405e2885481c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cd688796dadc28f7f95db229cbfdaf91ebbb0d61">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_6456210d87c784750e3bf4efc1602b827d6b6eec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_a9d426b8373adc83059969154e730f7d1c75922e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.11_aaea0fa41c005140075f050007097830f82f9e96\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_e58540a54f51d387bb783739a7d613abaa9fc5d6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e57fba0a2d57d3501d8f4ff44c23092978804845">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha1_8a94cbdcf4f5d26b3284e60e883719f953da9a49\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.3.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5f34a8aeb0eaaa2d69752d56102a8c808117058e">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-0.3.1_b5925266907e50a19e9880df755627dfb2072977\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_d8c9636cbe11e50ba2069dafb1bf32ad613e2c64\classes.dex" />
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_39deb4c7784f5a98432f1981292db2a8590a1a8e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\jars\classes.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="602a30946642f5847eb66dec199e6783b10e7384">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.2.0_bfc53ca46a3fc1644bdfc78e2add006187f5801f\classes.dex" />
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.2.0_bbba5bb0eb44963cd60a35ac3b3cdc276fc74f4b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\LeHoangHan\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.3.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_8060d5135aa9599072ea4e9b99538b4c3f1c3143\classes.dex" />
+        sha1="5f34a8aeb0eaaa2d69752d56102a8c808117058e">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.firebaseui-firebase-ui-0.3.1_bdece534ab3d86163deae069d4f8a46801ea0626\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="9684c95278dc45a142d7de3db9e7e39aa520e1e0">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-alpha1_b9fbb878b5fe8a2a7ac5c83d1a0c56897a50d6ee\classes.dex" />
+        sha1="cd688796dadc28f7f95db229cbfdaf91ebbb0d61">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_edad5ca1b1c17947931d0816bafd8c552d779bf3\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="ba75da866b3d975ca7a9fbdbcd61de67932e0052">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha1_179a7cc8d1a24efe4852f3ad57f28a2e13ec589c\classes.dex" />
+        sha1="9aaaea3a89040f8176f810c85e288fc74d5d1f12">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-alpha1_712339bb87540dd517a2f46570cb359e574fb691\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.0.0\jars\classes.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1f1c7067e22acf05bddbca9f94422050cd848a86">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_95f8af0c849cfda27c937ec882764b0a2e3eddea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ed88e1f0c8fbf66e1da918545f0a6790f893bceb">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0-alpha1_0b9067de36dd74b327753138cc7fad96e18deb3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.11_3fd6dc3cb295148c490c613c0485607aaac264ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="11842de6a309c447b3a3d60d73ad637a87c58994">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-22.0.0_caa838ed26a26b904fa2274418eb9e539629df6c\classes.dex" />
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-22.0.0_79fe3906d611ef287b7b2575ed66d5e5d0f41417\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\AndroidProject\APPCALENDAR\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.0.0-alpha1\jars\classes.jar"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9684c95278dc45a142d7de3db9e7e39aa520e1e0">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-alpha1_40b7ab93eaf7d15e7778a9a611f02bd403568630\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a6af5beedc2e8c946abc3771525e2fed77439309">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0-alpha1_8404420d582fccb02b6f06ccb064a3294a66551a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.rockerhieu.emojicon\library\1.3.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bcca57571c432c186f738fccb93e4ca5bc02aada">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rockerhieu.emojicon-library-1.3.3_88d7c00f952e49f795301dc565cd27f3e289773a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="42c2da459397d9105661407c4db2be3d20a66d60">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_121c85ecd17eff4b6c0dbb48bac5daf14bdfd2f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.0.0-alpha1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="c449a8b23f9b989a814220af893445b382a0b50d">
-        <dex dex="E:\AndroidProject\APPCALENDAR\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-24.0.0-alpha1_b59a76c4cd3767132f36d8e79f6c5c71b9ed3449\classes.dex" />
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-24.0.0-alpha1_56d39f3b4e6721568c0d750744d7c9603c3ac399\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha1\support-annotations-24.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b8062546971a3d196343232a19a3c0016272ba47">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha1_d22479b0afe7bba051eaee68f8d1c2e02835c7ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="121dac6de6b114250d3a5dbac69083130004f295">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f72c97a32702c2f3834d30d401543a3633862d62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_aaef349fb7fe03a2afb788f37e944b76833561bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_d6f443909436598824c7131b02ace3648a281ab2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v13\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba75da866b3d975ca7a9fbdbcd61de67932e0052">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha1_dc1b2b849968075b7735210f90877427fdade099\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.3.1_eaf13c7ef882a4f3e3c23ad0e04e5a496af72aba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha1\jars\libs\internal_impl-24.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e57fba0a2d57d3501d8f4ff44c23092978804845">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha1_379de87ccc79a2c62494846b651e866fab6e4e68\classes.dex" />
     </item>
 
 </items>

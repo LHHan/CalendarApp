@@ -7,13 +7,14 @@ import com.firebase.client.Firebase;
  */
 public final class LibraryClass {
 
-    public LibraryClass(){}
+    public LibraryClass() {
+    }
+
     private static Firebase firebase;
-    public static Firebase getFirebase()
-    {
-        if(firebase==null)
-        {
-            firebase=new Firebase("https://appcalendar.firebaseio.com/");
+
+    public static Firebase getFirebase() {
+        if (firebase == null) {
+            firebase = new Firebase("https://appcalendar.firebaseio.com/");
         }
         return (firebase);
     }

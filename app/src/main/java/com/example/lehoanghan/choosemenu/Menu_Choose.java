@@ -19,7 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
 
-import com.example.lehoanghan.appcalendar.Login;
+import com.example.lehoanghan.appcalendar.LoginActivity;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.About;
 import com.example.lehoanghan.optionmenu.Account;
@@ -388,7 +388,7 @@ public class Menu_Choose extends AppCompatActivity {
 //                finish();
 //                  System.exit(0);
 //                moveTaskToBack(true);
-                Intent intent = new Intent(Menu_Choose.this, Login.class);
+                Intent intent = new Intent(Menu_Choose.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

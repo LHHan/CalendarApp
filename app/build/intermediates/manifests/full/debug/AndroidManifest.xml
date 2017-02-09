@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.lehoanghan.appcalendar.Login"
+            android:name="com.example.lehoanghan.appcalendar.LoginActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" >
             <intent-filter>
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.lehoanghan.appcalendar.Singin"
+            android:name="com.example.lehoanghan.appcalendar.RegisterActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity

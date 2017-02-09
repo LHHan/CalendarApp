@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\calendar.png",
-        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\mipmap-hdpi\\calendar.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\calendar.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\mipmap-hdpi\\calendar.png"
     },
     {
-        "merged": "E:\\AndroidProject\\APPCALENDAR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "E:\\AndroidProject\\APPCALENDAR\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

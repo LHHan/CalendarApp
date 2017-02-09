@@ -44,10 +44,9 @@ public class User {
         return jID;
     }
 
-    public void setValueChild()
-    {
-        Firebase firebase=LibraryClass.getFirebase();
-        firebase=firebase.child("User").child(getjMail());
+    public void setValueChild() {
+        Firebase firebase = LibraryClass.getFirebase();
+        firebase = firebase.child("User").child(getjMail());
         setjPass(null);
         setjID(null);
         firebase.setValue(this);
