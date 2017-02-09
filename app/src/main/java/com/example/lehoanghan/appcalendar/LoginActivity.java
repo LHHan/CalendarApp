@@ -21,13 +21,13 @@ import com.firebase.client.ValueEventListener;
 
 public class LoginActivity extends Activity {
 
-    private EditText etGmail, etPass;
+    private EditText etMail, etPass;
     private Button btnLogin, btnRegister;
     private Firebase firebase;
     private String strName;
     private Intent intent;
     private int check = 0;
-    private String contentGmail = "", contentPass = "";
+    private String contentMail = "", contentPass = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +40,15 @@ public class LoginActivity extends Activity {
     }
 
     private void displayKeyboard() {
-        if (etGmail.requestFocus()) {
+        if (etMail.requestFocus()) {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.showSoftInput(etGmail, InputMethodManager.SHOW_IMPLICIT);
+            imm.showSoftInput(etMail, InputMethodManager.SHOW_IMPLICIT);
         }
     }
 
     public void Init() {
-        etGmail = (EditText) findViewById(R.id.activity_login_et_gmail);
-        etGmail.setOnClickListener(new View.OnClickListener() {
+        etMail = (EditText) findViewById(R.id.activity_login_et_gmail);
+        etMail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 displayKeyboard();
@@ -57,10 +57,10 @@ public class LoginActivity extends Activity {
         etPass = (EditText) findViewById(R.id.activity_login_et_password);
         btnLogin = (Button) findViewById(R.id.activity_login_btn_login);
         btnRegister = (Button) findViewById(R.id.activity_login_btn_register);
-        Log.e("Gmail", contentGmail);
+        Log.e("Gmail", contentMail);
         Log.e("Pass", contentPass);
-        if (contentGmail.compareTo("") != 0 && contentPass.compareTo("") != 0) {
-            etGmail.setText(contentGmail);
+        if (contentMail.compareTo("") != 0 && contentPass.compareTo("") != 0) {
+            etMail.setText(contentMail);
             etPass.setText(contentPass);
         }
         btnLogin.setOnClickListener(new MyEvent());
@@ -85,7 +85,7 @@ public class LoginActivity extends Activity {
     }
 
     public void doLogin() {
-        firebase.authWithPassword(etGmail.getText().toString(), etPass.getText().toString(), new Firebase.AuthResultHandler() {
+        firebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(), new Firebase.AuthResultHandler() {
             @Override
             public void onAuthenticated(AuthData authData) {
                 //String message = authData.getUid();
@@ -178,7 +178,7 @@ public class LoginActivity extends Activity {
 
 
     public void getNameUser() {
-        final String str = etGmail.getText().toString().replace(".", "&");
+        final String str = etMail.getText().toString().replace(".", "&");
         firebase.child("User").child(str).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -200,10 +200,10 @@ public class LoginActivity extends Activity {
 
     public void giveData() {
         if (getIntent().getExtras() != null) {
-            contentGmail = getIntent().getStringExtra("MailUser");
+            contentMail = getIntent().getStringExtra("MailUser");
             contentPass = getIntent().getStringExtra("Password");
         } else {
-            contentGmail = "";
+            contentMail = "";
             contentPass = "";
         }
     }

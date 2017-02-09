@@ -56,12 +56,12 @@ public class FriendAccept extends Fragment {
         linearLayoutManager=new LinearLayoutManager(jview.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         RvListFriendAccept.setLayoutManager(linearLayoutManager);
-        //GetDatafromFireBase();
+        //getDatafromFireBase();
          resetData();
         return jview;
     }
 
-//   /* public void GetDatafromFireBase() {
+//   /* public void getDatafromFireBase() {
 //       firebase.child("Add_friend").child(GetMail).addValueEventListener(new ValueEventListener() {
 //           @Override
 //           public void onDataChange(DataSnapshot dataSnapshot) {

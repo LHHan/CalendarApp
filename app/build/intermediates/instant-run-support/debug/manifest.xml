@@ -47,7 +47,7 @@
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="com.example.lehoanghan.myaccount.ChangeAccount"
+            android:name="com.example.lehoanghan.myaccount.ChangeAccountActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity

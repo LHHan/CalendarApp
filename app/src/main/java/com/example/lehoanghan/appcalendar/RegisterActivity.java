@@ -28,7 +28,7 @@ import java.util.Map;
  */
 public class RegisterActivity extends Activity {
 
-    private EditText etName, etPass, etGmail, etConfPass;
+    private EditText etName, etPass, etMail, etConfPass;
     private Button btnCreate, btnClear;
     private Firebase firebase;
     private User user;
@@ -52,7 +52,7 @@ public class RegisterActivity extends Activity {
             @Override
             public void onClick(View v) {
                 etName.setText("");
-                etGmail.setText("");
+                etMail.setText("");
                 etPass.setText("");
                 etConfPass.setText("");
             }
@@ -62,7 +62,7 @@ public class RegisterActivity extends Activity {
 
     public void Init() {
         etName = (EditText) findViewById(R.id.activity_register_et_username);
-        etGmail = (EditText) findViewById(R.id.activity_register_et_gmail);
+        etMail = (EditText) findViewById(R.id.activity_register_et_gmail);
         etPass = (EditText) findViewById(R.id.activity_register_et_password);
         etConfPass = (EditText) findViewById(R.id.activity_register_et_confirmpassword);
         btnCreate = (Button) findViewById(R.id.activity_register_btn_create);
@@ -80,7 +80,7 @@ public class RegisterActivity extends Activity {
     }
 
     public void CheckInform() {
-        if ((etName.getText().toString() == "") || (etGmail.getText().toString() == "") || (etPass.getText().toString() == "") || (etConfPass.getText().toString() == "")) {
+        if ((etName.getText().toString() == "") || (etMail.getText().toString() == "") || (etPass.getText().toString() == "") || (etConfPass.getText().toString() == "")) {
             Toast.makeText(getApplicationContext(), "You need fill out all inform", Toast.LENGTH_SHORT).show();
         } else {
             CheckPass();
@@ -90,7 +90,7 @@ public class RegisterActivity extends Activity {
     public void SaveUser() {
         user = new User();
         user.setjName(etName.getText().toString());
-        user.setjMail(etGmail.getText().toString());
+        user.setjMail(etMail.getText().toString());
         user.setjPass(etPass.getText().toString());
     }
 
@@ -110,11 +110,11 @@ public class RegisterActivity extends Activity {
 
     public void SaveDb() {
 
-        firebase.createUser(etGmail.getText().toString(), etPass.getText().toString(), new Firebase.ValueResultHandler<Map<String, Object>>() {
+        firebase.createUser(etMail.getText().toString(), etPass.getText().toString(), new Firebase.ValueResultHandler<Map<String, Object>>() {
             @Override
             public void onSuccess(Map<String, Object> stringObjectMap) {
                 //user.setjID(stringObjectMap.get("uid").toString());
-                String mail = etGmail.getText().toString().replace(".", "&");
+                String mail = etMail.getText().toString().replace(".", "&");
                 firebase.child("User").child(mail).setValue(etName.getText().toString());
                 firebase.child("Avata").child(mail).setValue(CovertArraytoString());
                 alert = new AlertDialog.Builder(RegisterActivity.this);
@@ -123,8 +123,8 @@ public class RegisterActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                        intent.putExtra("MailUser", etGmail.getText().toString());
-                        Log.e("EditGmail", etGmail.getText().toString());
+                        intent.putExtra("MailUser", etMail.getText().toString());
+                        Log.e("EditGmail", etMail.getText().toString());
                         intent.putExtra("Password", etPass.getText().toString());
                         startActivity(intent);
                     }

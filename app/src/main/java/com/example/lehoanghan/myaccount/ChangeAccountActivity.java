@@ -88,7 +88,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
         ivAvatar = (ImageView) findViewById(R.id.activity_change_account_iv_avatar);
         etName = (EditText) findViewById(R.id.activity_change_account_et_name);
         etName.setText(nameUser);
-        tvMail = (TextView) findViewById(R.id.activity_change_account_tv_mail);
+        tvMail = (TextView) findViewById(R.id.activity_change_account_tv_mail_value);
         tvMail.setText(mailUser.toString().replace("&", "."));
         etPassChange = (EditText) findViewById(R.id.activity_change_account_et_password);
         etComPassChange = (EditText) findViewById(R.id.activity_change_account_et_confirm_password);
@@ -196,7 +196,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_back, menu);
-        setTitle("Change Account");
+        setTitle("Change AccountActivity");
         return super.onCreateOptionsMenu(menu);
     }
 

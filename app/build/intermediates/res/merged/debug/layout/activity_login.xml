@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/gmail"
+            android:text="@string/mail"
             android:textSize="50px"
             android:textStyle="bold" />
 

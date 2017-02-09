@@ -21,11 +21,11 @@ import android.widget.SearchView;
 
 import com.example.lehoanghan.appcalendar.LoginActivity;
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.optionmenu.About;
-import com.example.lehoanghan.optionmenu.Account;
-import com.example.lehoanghan.optionmenu.FindFriend;
+import com.example.lehoanghan.optionmenu.AboutActivity;
+import com.example.lehoanghan.optionmenu.AccountActivity;
+import com.example.lehoanghan.optionmenu.FindFriendActivity;
 import com.example.lehoanghan.optionmenu.FriendAccept;
-import com.example.lehoanghan.optionmenu.Home;
+import com.example.lehoanghan.optionmenu.HomeActivity;
 import com.example.lehoanghan.optionmenu.MyEvent;
 import com.example.lehoanghan.optionmenu.MyFriend;
 import com.example.lehoanghan.optionmenu.NewEvent;
@@ -42,7 +42,7 @@ public class Menu_Choose extends AppCompatActivity {
     private CharSequence DrawerTitle;
     private CharSequence Title;
 
-    private SearchView SvFindFriend;
+    private SearchView srvFindFriend;
 
     private String[] MenuTitle;
     private int[] MenuIcon = {R.drawable.house, R.drawable.account, R.drawable.myfriend, R.drawable.addfriend, R.drawable.findfriend,
@@ -88,7 +88,7 @@ public class Menu_Choose extends AppCompatActivity {
         DrawerTitle = getTitle();
         Title = getTitle();
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout_menu);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.directed, R.string.directed) {
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.hello, R.string.hello) {
 
             @Override
             public void onDrawerClosed(View view) {
@@ -196,19 +196,19 @@ public class Menu_Choose extends AppCompatActivity {
                 if (menu != null)
                     menu.clear();
                 SetNameUser();
-                fragment = new Home();
+                fragment = new HomeActivity();
                 fragment.setArguments(bundlesetNameforHome);
-                setTitleItem = "Home";
+                setTitleItem = "HomeActivity";
                 actionBar.setDisplayShowHomeEnabled(true);
                 actionBar.setDisplayHomeAsUpEnabled(true);
                 Fragment = Fragment_Home;
                 break;
             case R.id.findfriend:
-                SvFindFriend = (SearchView) findViewById(R.id.svFindName);
-                if (SvFindFriend.getVisibility() == View.INVISIBLE)
-                    SvFindFriend.setVisibility(View.VISIBLE);
+                srvFindFriend = (SearchView) findViewById(R.id.activity_find_friend_srv_search);
+                if (srvFindFriend.getVisibility() == View.INVISIBLE)
+                    srvFindFriend.setVisibility(View.VISIBLE);
                 else
-                    SvFindFriend.setVisibility(View.INVISIBLE);
+                    srvFindFriend.setVisibility(View.INVISIBLE);
                 break;
 
         }
@@ -259,14 +259,14 @@ public class Menu_Choose extends AppCompatActivity {
                     menuInflater.inflate(R.menu.menu_home, menu);
                 }
                 SetNameUser();
-                fragment = new Home();
+                fragment = new HomeActivity();
                 fragment.setArguments(bundlesetNameforHome);
                 break;
             case 1:
                 Fragment = Fragment_Account;
                 PassDatatoFind_Accept_Friend();
                 // menuInflater.inflate(R.menu.menu_account,menu);
-                fragment = new Account();
+                fragment = new AccountActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 3:
@@ -287,7 +287,7 @@ public class Menu_Choose extends AppCompatActivity {
                 Fragment = Fragment_FindFriend;
                 // menuInflater.inflate(R.menu.menu_findfriend,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment = new FindFriend();
+                fragment = new FindFriendActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 7:
@@ -314,7 +314,7 @@ public class Menu_Choose extends AppCompatActivity {
             case 10:
                 Fragment = Fragment_About;
                 //  menuInflater.inflate(R.menu.menu_about,menu);
-                fragment = new About();
+                fragment = new AboutActivity();
                 break;
             case 11:
                 Thoat();
@@ -425,7 +425,7 @@ public class Menu_Choose extends AppCompatActivity {
 
     // private static StringBuilder txt;
 
-    //pass date from menu_choose to Home
+    //pass date from menu_choose to HomeActivity
     /*public void DosetDateFrom() {
         calendar =(MaterialCalendarView)findViewById(R.id.calendarView);
         Calendar c= Calendar.getInstance();
@@ -442,7 +442,7 @@ public class Menu_Choose extends AppCompatActivity {
             intentAddEvent.putExtra("txtsetdateTo", txt.toString());
     }*/
 
-    //pass Name user to Home
+    //pass Name user to HomeActivity
     public void SetNameUser() {
         Bundle bundle = getIntent().getExtras();
         String NameUser = "", MailUser = "";

@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/gmail" />
+            android:text="@string/mail" />
 
         <EditText
             android:id="@+id/activity_register_et_gmail"
