@@ -24,22 +24,22 @@ import java.util.List;
 /**
  * Created by lehoanghan on 3/30/2016.
  */
-public class FriendAccept extends Fragment {
+public class FriendAcceptActivity extends Fragment {
 
     Activity root;
-    private View jview;
+    private View contentView;
     private Bundle bundleGiveMailfromMenu;
-    private static String GetName;
-    private static String GetMail;
+    private static String getName;
+    private static String getMail;
     private Firebase firebase;
-    private RecyclerView RvListFriendAccept;
+    private RecyclerView rcvListFriendAccept;
     private List<String> listMail, listName, listMailPre, listNamePre;
     private List<UserFriend> ListUserAccept;
     private UserAcceptFriendRecyclerAdapter userAcceptFriendRecyclerAdapter;
     private LinearLayoutManager linearLayoutManager;
 
 
-    public FriendAccept(){}
+    public FriendAcceptActivity(){}
 
 
     @Nullable
@@ -47,22 +47,22 @@ public class FriendAccept extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         GiveUserfromChoose();
         root=getActivity();
-        jview =inflater.inflate(R.layout.screen_friendaccept, container, false);
+        contentView =inflater.inflate(R.layout.screen_friendaccept, container, false);
         Firebase.setAndroidContext(root);
         firebase=new Firebase("https://appcalendar.firebaseio.com/");
         Init();
 
-        RvListFriendAccept.setHasFixedSize(true);
-        linearLayoutManager=new LinearLayoutManager(jview.getContext());
+        rcvListFriendAccept.setHasFixedSize(true);
+        linearLayoutManager=new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        RvListFriendAccept.setLayoutManager(linearLayoutManager);
+        rcvListFriendAccept.setLayoutManager(linearLayoutManager);
         //getDatafromFireBase();
          resetData();
-        return jview;
+        return contentView;
     }
 
 //   /* public void getDatafromFireBase() {
-//       firebase.child("Add_friend").child(GetMail).addValueEventListener(new ValueEventListener() {
+//       firebase.child("Add_friend").child(getMail).addValueEventListener(new ValueEventListener() {
 //           @Override
 //           public void onDataChange(DataSnapshot dataSnapshot) {
 //               for (DataSnapshot Snapshot : dataSnapshot.getChildren()) {
@@ -73,9 +73,9 @@ public class FriendAccept extends Fragment {
 //               for (int i = 0; i < listName.size(); i++) {
 //                   ListUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
 //               }
-//               userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, GetMail, GetName);
+//               userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, getMail, getName);
 //               userAcceptFriendRecyclerAdapter.notifyDataSetChanged();
-//               RvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
+//               rcvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
 //           }
 //
 //           @Override
@@ -89,7 +89,7 @@ public class FriendAccept extends Fragment {
         //final List<String> listMailPre, listNamePre;
         //listMailPre=new ArrayList<>();
         //listNamePre=new ArrayList<>();
-        firebase.child("My_friend").child(GetMail).addValueEventListener(new ValueEventListener() {
+        firebase.child("My_friend").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot Snapshot : dataSnapshot.getChildren()) {
@@ -104,7 +104,7 @@ public class FriendAccept extends Fragment {
 
             }
         });
-        firebase.child("Add_friend").child(GetMail).addValueEventListener(new ValueEventListener() {
+        firebase.child("Add_friend").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot Snapshot : dataSnapshot.getChildren()) {
@@ -124,9 +124,9 @@ public class FriendAccept extends Fragment {
                     ListUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
                 }
 
-                userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, GetMail, GetName);
+                userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, getMail, getName);
                 userAcceptFriendRecyclerAdapter.notifyDataSetChanged();
-                RvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
+                rcvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
             }
 
             @Override
@@ -137,7 +137,7 @@ public class FriendAccept extends Fragment {
     }
 
     public void Init(){
-        RvListFriendAccept=(RecyclerView) jview.findViewById(R.id.rvListUserFriendAccept);
+        rcvListFriendAccept =(RecyclerView) contentView.findViewById(R.id.rvListUserFriendAccept);
         ListUserAccept= new ArrayList<UserFriend>();
         listName=new ArrayList<String>();
         listMail=new ArrayList<String>();
@@ -148,10 +148,10 @@ public class FriendAccept extends Fragment {
     public void GiveUserfromChoose(){
         bundleGiveMailfromMenu=this.getArguments();
         if(bundleGiveMailfromMenu!=null) {
-            GetMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
-            //GetMail=GetMail.replace("&", ".");
-            GetName=bundleGiveMailfromMenu.getString("NameforFindFriend");
-            GetName=GetName.toLowerCase();
+            getMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
+            //getMail=getMail.replace("&", ".");
+            getName =bundleGiveMailfromMenu.getString("NameforFindFriend");
+            getName = getName.toLowerCase();
         }
     }
 

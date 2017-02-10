@@ -25,7 +25,7 @@ import java.util.HashMap;
 /**
  * Created by lehoanghan on 3/30/2016.
  */
-public class OldEvent extends Fragment {
+public class OldEventActivity extends Fragment {
     Activity root;
     View jview;
 
@@ -41,13 +41,13 @@ public class OldEvent extends Fragment {
     private ArrayList<Integer> datatype1;
     private ArrayList<String> Listdatefrom;
 
-    public OldEvent(){}
+    public OldEventActivity(){}
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         root=getActivity();
-        jview=inflater.inflate(R.layout.screen_oldevent,container,false);
+        jview=inflater.inflate(R.layout.activity_old_event,container,false);
         PassDataFromChoose();
         Firebase.setAndroidContext(root);
         firebase=new Firebase("https://appcalendar.firebaseio.com/");

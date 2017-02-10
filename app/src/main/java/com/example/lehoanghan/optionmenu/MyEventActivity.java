@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * Created by lehoanghan on 5/13/2016.
  */
-public class MyEvent extends Fragment {
+public class MyEventActivity extends Fragment {
     Activity root;
     View jview;
 
@@ -47,7 +47,7 @@ public class MyEvent extends Fragment {
     private ArrayList<Integer> datatype1;
     private ArrayList<String> Listdatefrom;
 
-    public MyEvent(){}
+    public MyEventActivity(){}
 
     @Nullable
     @Override

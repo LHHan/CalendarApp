@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * Created by lehoanghan on 3/30/2016.
  */
-public class MyFriend extends Fragment {
+public class MyFriendActivity extends Fragment {
 
     private Activity root;
     private View jview;
@@ -37,13 +37,13 @@ public class MyFriend extends Fragment {
     private Bundle bundleGiveMailfromMenu;
     private String GetMail ,GetName;
 
-    public MyFriend(){}
+    public MyFriendActivity(){}
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         root=getActivity();
-        jview=inflater.inflate(R.layout.screen_myfriend, container, false);
+        jview=inflater.inflate(R.layout.activity_my_friend, container, false);
         GiveUserfromChoose();
         Firebase.setAndroidContext(jview.getContext());
         firebase=new Firebase("https://appcalendar.firebaseio.com/");
