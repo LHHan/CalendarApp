@@ -44,7 +44,7 @@ import java.util.ArrayList;
 /**
  * Created by lehoanghan on 5/22/2016.
  */
-public class MemoryEvent extends AppCompatActivity  {
+public class MemoryEventActivity extends AppCompatActivity  {
 
     private Firebase firebase;
     private String NameUser, MailUser;
@@ -146,7 +146,7 @@ public class MemoryEvent extends AppCompatActivity  {
         BtnComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent intent=new Intent(MemoryEvent.this,Comment.class);
+                Intent intent=new Intent(MemoryEventActivity.this,CommentActivity.class);
                 intent.putExtra("KeyaddComment",PassValue.getNameEvent().replace(" ", "&") + "*" + PassValue.getDateFrom() + "*" + PassValue.getTimeFrom());
                 intent.putExtra("EventValue",PassValue);
                 intent.putExtra("NameUser",NameUser);
@@ -157,7 +157,7 @@ public class MemoryEvent extends AppCompatActivity  {
 //                LayoutInflater inflater = (LayoutInflater) v.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //                final View view = inflater.inflate(R.layout.activity_comment, null);
 //                ListComment = new ArrayList<String>();
-//                firebase.child("Comment").addListenerForSingleValueEvent(new ValueEventListener() {
+//                firebase.child("CommentActivity").addListenerForSingleValueEvent(new ValueEventListener() {
 //                    @Override
 //                    public void onDataChange(DataSnapshot dataSnapshot) {
 //                        for (DataSnapshot data : dataSnapshot.getChildren()) {
@@ -167,7 +167,7 @@ public class MemoryEvent extends AppCompatActivity  {
 //                                    ListComment.add(value.getValue().toString());
 //                                }
 //                                if (ListComment.size() == 0)
-//                                    ListComment.add("No Comment");
+//                                    ListComment.add("No CommentActivity");
 //                            }
 //                        }
 //                        ListView LvComment = (ListView) view.findViewById(R.id.lvComment);
@@ -200,9 +200,9 @@ public class MemoryEvent extends AppCompatActivity  {
 //                BtnSendComment.setOnClickListener(new View.OnClickListener() {
 //                    @Override
 //                    public void onClick(final View v) {
-//                        firebase.child("Comment").child(PassValue.getNameEvent().replace(" ", "&") + "*" + PassValue.getDateFrom() + "*" +
+//                        firebase.child("CommentActivity").child(PassValue.getNameEvent().replace(" ", "&") + "*" + PassValue.getDateFrom() + "*" +
 //                                PassValue.getTimeFrom()).push().setValue(NameUser + ": " + EdtMyComment.getText().toString());
-//                        firebase.child("Comment").addListenerForSingleValueEvent(new ValueEventListener() {
+//                        firebase.child("CommentActivity").addListenerForSingleValueEvent(new ValueEventListener() {
 //                            @Override
 //                            public void onDataChange(DataSnapshot dataSnapshot) {
 //                                for (DataSnapshot data : dataSnapshot.getChildren()) {
@@ -236,7 +236,7 @@ public class MemoryEvent extends AppCompatActivity  {
 //                    }
 //                });
 //                Dialog dialog = builder.create();
-//                dialog.setTitle("Comment");
+//                dialog.setTitle("CommentActivity");
 //                dialog.show();
             }
         });
@@ -273,7 +273,7 @@ public class MemoryEvent extends AppCompatActivity  {
     public void AddPic(final View v){
         final CharSequence[] options={"Pic's Event","Add Pic","Cancel"};
 
-        final AlertDialog.Builder buider=new AlertDialog.Builder(MemoryEvent.this);
+        final AlertDialog.Builder buider=new AlertDialog.Builder(MemoryEventActivity.this);
         buider.setTitle("Photo");
         buider.setItems(options, new DialogInterface.OnClickListener() {
             @Override
