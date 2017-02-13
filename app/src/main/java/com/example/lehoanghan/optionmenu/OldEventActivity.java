@@ -27,120 +27,120 @@ import java.util.HashMap;
  */
 public class OldEventActivity extends Fragment {
     Activity root;
-    View jview;
+    View contentView;
 
-    public static final int TiTle = 0;
-    public static final int Data = 1;
-    private RecyclerView mRecyclerView;
-    private EventRecyclerAdapter mAdapter;
+    public static final int title = 0;
+    public static final int data = 1;
+    private RecyclerView recyclerView;
+    private EventRecyclerAdapter eventRecyclerAdapter;
     private LinearLayoutManager linearLayoutManager;
     private Firebase firebase;
-    private String NameUser, MailUser;
+    private String nameUser, mailUser;
     private Bundle bundleGiveMailfromMenu;
-    private ArrayList<EventValue > listnewevent1;
-    private ArrayList<Integer> datatype1;
-    private ArrayList<String> Listdatefrom;
+    private ArrayList<EventValue> listNewEvent1;
+    private ArrayList<Integer> dataType1;
+    private ArrayList<String> listDateFrom;
 
-    public OldEventActivity(){}
+    public OldEventActivity() {
+    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root=getActivity();
-        jview=inflater.inflate(R.layout.activity_old_event,container,false);
-        PassDataFromChoose();
+        root = getActivity();
+        contentView = inflater.inflate(R.layout.activity_old_event, container, false);
+        passDataFromChoose();
         Firebase.setAndroidContext(root);
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         Init();
-        linearLayoutManager = new LinearLayoutManager(jview.getContext());
+        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(linearLayoutManager);
-        GetNewEventFormFirebase();
-
-        return jview;
+        recyclerView.setLayoutManager(linearLayoutManager);
+        getNewEventFormFirebase();
+        return contentView;
     }
 
-    public void Init()
-    {
-        listnewevent1=new ArrayList<EventValue>();
-        datatype1=new ArrayList<Integer>();
-        Listdatefrom=new ArrayList<String>();
-        mRecyclerView = (RecyclerView) jview.findViewById(R.id.RVOldEvent);
+    public void Init() {
+        listNewEvent1 = new ArrayList<EventValue>();
+        dataType1 = new ArrayList<Integer>();
+        listDateFrom = new ArrayList<String>();
+        recyclerView = (RecyclerView) contentView.findViewById(R.id.activity_old_event_rcv_list_old_event);
     }
 
-    public void GetNewEventFormFirebase() {
-        final ArrayList<EventValue> Listnewevent = new ArrayList<>();
-        firebase.child("Event").child(MailUser).child("Old_Event").addValueEventListener(new ValueEventListener() {
+    public void getNewEventFormFirebase() {
+        final ArrayList<EventValue> listNewEvent = new ArrayList<>();
+        firebase.child("Event").child(mailUser).child("Old_Event").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Object tem = snapshot.getValue();
                     HashMap event = (HashMap) tem;
-                    Listnewevent.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
+                    listNewEvent.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
                             event.get("TimeFrom").toString(), event.get("DateTo").toString(), event.get("TimeTo").toString(),
                             event.get("Description").toString(), event.get("Place").toString(), event.get("FriendInvite").toString(),
                             event.get("Alarm").toString(), event.get("Repeat").toString()));
                 }
 
-                for (int i = 0; i < Listnewevent.size(); i++) {
-                    Listdatefrom.add(Listnewevent.get(i).getDateFrom());
+                for (int i = 0; i < listNewEvent.size(); i++) {
+                    listDateFrom.add(listNewEvent.get(i).getDateFrom());
                 }
-                for (int i = 0; i < Listdatefrom.size(); i++) {
+                for (int i = 0; i < listDateFrom.size(); i++) {
                     int h = 1;
-                    for (int j = i + 1; j < Listdatefrom.size(); j++) {
-                        if (Listdatefrom.get(j).compareTo(Listdatefrom.get(i)) == 0) {
+                    for (int j = i + 1; j < listDateFrom.size(); j++) {
+                        if (listDateFrom.get(j).compareTo(listDateFrom.get(i)) == 0) {
                             h++;
-                            Listdatefrom.remove(j);
+                            listDateFrom.remove(j);
                             j--;
                         }
                     }
                 }
 
-                Collections.sort(Listdatefrom);
+                Collections.sort(listDateFrom);
 
                 int count = 0;
 
-                for (int i = 0; i < Listdatefrom.size(); i++) {
+                for (int i = 0; i < listDateFrom.size(); i++) {
                     int h = 0;
-                    for (int j = 0; j < Listnewevent.size(); j++) {
-                        if (Listnewevent.get(j).getDateFrom().compareTo(Listdatefrom.get(i)) == 0) {
+                    for (int j = 0; j < listNewEvent.size(); j++) {
+                        if (listNewEvent.get(j).getDateFrom().compareTo(listDateFrom.get(i)) == 0) {
                             if (h == 0) {
 
-                                listnewevent1.add(new EventValue(Listnewevent.get(j).getNameEvent(), Listnewevent.get(j).getDateFrom(),
-                                        Listnewevent.get(j).getTimeFrom(), Listnewevent.get(j).getDateTo(), Listnewevent.get(j).getTimeTo(),
-                                        Listnewevent.get(j).getDescription(), Listnewevent.get(j).getPlace(), Listnewevent.get(j).getFriendInvite(),
-                                        Listnewevent.get(j).getAlarm(), Listnewevent.get(j).getRepeat(), 0));
-                                datatype1.add(TiTle);
+                                listNewEvent1.add(new EventValue(listNewEvent.get(j).getNameEvent(), listNewEvent.get(j).getDateFrom(),
+                                        listNewEvent.get(j).getTimeFrom(), listNewEvent.get(j).getDateTo(), listNewEvent.get(j).getTimeTo(),
+                                        listNewEvent.get(j).getDescription(), listNewEvent.get(j).getPlace(), listNewEvent.get(j).getFriendInvite(),
+                                        listNewEvent.get(j).getAlarm(), listNewEvent.get(j).getRepeat(), 0));
+                                dataType1.add(title);
                                 count++;
                                 h++;
                             }
-                            listnewevent1.add(new EventValue(Listnewevent.get(j).getNameEvent(), Listnewevent.get(j).getDateFrom(),
-                                    Listnewevent.get(j).getTimeFrom(), Listnewevent.get(j).getDateTo(), Listnewevent.get(j).getTimeTo(),
-                                    Listnewevent.get(j).getDescription(), Listnewevent.get(j).getPlace(), Listnewevent.get(j).getFriendInvite(),
-                                    Listnewevent.get(j).getAlarm(), Listnewevent.get(j).getRepeat(), 1));
+                            listNewEvent1.add(new EventValue(listNewEvent.get(j).getNameEvent(), listNewEvent.get(j).getDateFrom(),
+                                    listNewEvent.get(j).getTimeFrom(), listNewEvent.get(j).getDateTo(), listNewEvent.get(j).getTimeTo(),
+                                    listNewEvent.get(j).getDescription(), listNewEvent.get(j).getPlace(), listNewEvent.get(j).getFriendInvite(),
+                                    listNewEvent.get(j).getAlarm(), listNewEvent.get(j).getRepeat(), 1));
                             count++;
-                            datatype1.add(Data);
+                            dataType1.add(data);
                         }
                     }
                 }
 
-                mAdapter = new EventRecyclerAdapter(listnewevent1, datatype1, MailUser,NameUser,3);
-                mAdapter.notifyDataSetChanged();
-                mRecyclerView.setAdapter(mAdapter);
+                eventRecyclerAdapter = new EventRecyclerAdapter(listNewEvent1, dataType1, mailUser, nameUser, 3);
+                eventRecyclerAdapter.notifyDataSetChanged();
+                recyclerView.setAdapter(eventRecyclerAdapter);
             }
 
             @Override
-            public void onCancelled (FirebaseError firebaseError){
+            public void onCancelled(FirebaseError firebaseError) {
 
             }
         });
     }
-    public void PassDataFromChoose(){
-        bundleGiveMailfromMenu=this.getArguments();
-        if(bundleGiveMailfromMenu!=null) {
-            MailUser = bundleGiveMailfromMenu.getString("MailforFindFriend");
-            NameUser=bundleGiveMailfromMenu.getString("NameforFindFriend");
-            NameUser=NameUser.toLowerCase();
+
+    public void passDataFromChoose() {
+        bundleGiveMailfromMenu = this.getArguments();
+        if (bundleGiveMailfromMenu != null) {
+            mailUser = bundleGiveMailfromMenu.getString("MailforFindFriend");
+            nameUser = bundleGiveMailfromMenu.getString("NameforFindFriend");
+            nameUser = nameUser.toLowerCase();
         }
     }
 

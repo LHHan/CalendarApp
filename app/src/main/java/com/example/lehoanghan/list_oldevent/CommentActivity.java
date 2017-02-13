@@ -139,7 +139,7 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.backfromChangeAccount:
-                Intent intent = new Intent(CommentActivity.this, MemoryEvent.class);
+                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);
                 intent.putExtra("EventValue", passValue);
                 intent.putExtra("nameUser", nameUser);
                 intent.putExtra("mailUser", mailUser);

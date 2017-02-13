@@ -61,7 +61,6 @@ public class ChangeAccountActivity extends AppCompatActivity {
         btnChangeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 selectImage();
             }
         });
@@ -228,7 +227,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     public void checkData() {
         if (etName.getText().toString().compareTo("") == 0 || etOldPass.getText().toString().compareTo("") == 0 ||
                 etPassChange.getText().toString().compareTo("") == 0 || etComPassChange.getText().toString().compareTo("") == 0)
-            Toast.makeText(getApplicationContext(), "Entry Data, You need to fill out full data", Toast.LENGTH_LONG);
+            Toast.makeText(getApplicationContext(), "Entry data, You need to fill out full data", Toast.LENGTH_LONG);
         else {
             if (etPassChange.getText().toString().compareTo(etComPassChange.getText().toString()) != 0) {
                 Toast.makeText(getApplicationContext(), "Error Comfirm Pass", Toast.LENGTH_LONG);
@@ -248,7 +247,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 });
 
                 firebase.child("User").child(mailUser).setValue(etName.getText().toString());
-                firebase.child("Avata").child(mailUser).setValue(covertBitmaptoString());
+                firebase.child("Avatar").child(mailUser).setValue(covertBitmaptoString());
             }
         }
     }

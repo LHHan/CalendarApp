@@ -21,38 +21,30 @@ import java.util.ArrayList;
 public class GalleryAdapter extends BaseAdapter {
 
 
-    private int mGalleryItem;
-    private Context mContext;
-    EventValue mPassValue;
+    private int galleryItem;
+    private Context context;
+    EventValue eventValue;
     String mNameUser, mMailUser;
 
 
-    private ArrayList<Bitmap> ImageArray = new ArrayList<>();
+    private ArrayList<Bitmap> imageArray = new ArrayList<>();
 
     public GalleryAdapter(Context C, ArrayList<Bitmap> imageArray, EventValue eventValue, String Mail, String Name) {
-        mContext = C;
-        mPassValue=eventValue;
-//        Log.i("NameEvent",mValue.getNameEvent());
-//        Log.i("NameEvent",mValue.getDateFrom());
-//        Log.i("NameEvent",mValue.getTimeFrom());
-//        Log.i("NameEvent",mValue.getDateTo());
-//        Log.i("NameEvent",mValue.getTimeTo());
-//        Log.i("NameEvent",mValue.getDescription());
-//        Log.i("NameEvent",mValue.getPlace());
-//        Log.i("NameEvent",mValue.getFriendInvite());
-        mNameUser=Name;
-        mMailUser=Mail;
+        context = C;
+        this.eventValue = eventValue;
+        mNameUser = Name;
+        mMailUser = Mail;
         for (Bitmap b : imageArray) {
-            ImageArray.add(b);
+            this.imageArray.add(b);
         }
-        TypedArray attr = mContext.obtainStyledAttributes(R.styleable.GalleryActivity);
-        mGalleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
+        TypedArray attr = context.obtainStyledAttributes(R.styleable.GalleryActivity);
+        galleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
         attr.recycle();
     }
 
     @Override
     public int getCount() {
-        return ImageArray.size();
+        return imageArray.size();
     }
 
     @Override
@@ -71,25 +63,24 @@ public class GalleryAdapter extends BaseAdapter {
 
         // If convertView is not recycled set it up now
         if (null == imageView) {
-            imageView = new ImageView(mContext);
+            imageView = new ImageView(context);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             imageView.setLayoutParams(new Gallery.LayoutParams(450, 450));
-            imageView.setBackgroundResource(mGalleryItem);
-
+            imageView.setBackgroundResource(galleryItem);
         }
 
         // Set the image for the imageView
-        imageView.setImageBitmap(ImageArray.get(position));
+        imageView.setImageBitmap(imageArray.get(position));
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(mContext,Picture.class);
-                intent.putExtra("bitmapofposition",ImageArray.get(position));
-                intent.putExtra("position", position+"");
-                intent.putExtra("EventValue",mPassValue);
-                intent.putExtra("NameUser",mNameUser);
-                intent.putExtra("MailUser",mMailUser);
-                mContext.startActivity(intent);
+                Intent intent = new Intent(context, PictureActivity.class);
+                intent.putExtra("bitmapofposition", imageArray.get(position));
+                intent.putExtra("position", position + "");
+                intent.putExtra("EventValue", eventValue);
+                intent.putExtra("NameUser", mNameUser);
+                intent.putExtra("MailUser", mMailUser);
+                context.startActivity(intent);
             }
         });
 

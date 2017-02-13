@@ -24,12 +24,12 @@ import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.AboutActivity;
 import com.example.lehoanghan.optionmenu.AccountActivity;
 import com.example.lehoanghan.optionmenu.FindFriendActivity;
-import com.example.lehoanghan.optionmenu.FriendAccept;
+import com.example.lehoanghan.optionmenu.FriendAcceptActivity;
 import com.example.lehoanghan.optionmenu.HomeActivity;
-import com.example.lehoanghan.optionmenu.MyEvent;
-import com.example.lehoanghan.optionmenu.MyFriend;
-import com.example.lehoanghan.optionmenu.NewEvent;
-import com.example.lehoanghan.optionmenu.OldEvent;
+import com.example.lehoanghan.optionmenu.MyEventActivity;
+import com.example.lehoanghan.optionmenu.MyFriendActivity;
+import com.example.lehoanghan.optionmenu.NewEventActivity;
+import com.example.lehoanghan.optionmenu.OldEventActivity;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 import java.util.ArrayList;
@@ -229,7 +229,7 @@ public class Menu_Choose extends AppCompatActivity {
             case 11:
                 if (menu != null)
                     menu.clear();
-                menuInflater.inflate(R.menu.menu_add_newevent, menu);
+                menuInflater.inflate(R.menu.menu_add_event, menu);
                 break;
         }
 
@@ -273,14 +273,14 @@ public class Menu_Choose extends AppCompatActivity {
                 Fragment = Fragment_MyFriend;
                 // menuInflater.inflate(R.menu.menu_myfriend,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment = new MyFriend();
+                fragment = new MyFriendActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 4:
                 Fragment = Fragment_FriendAccept;
                 // menuInflater.inflate(R.menu.menu_friendaccept,menu);
                 PassDatatoFind_Accept_Friend();
-                fragment = new FriendAccept();
+                fragment = new FriendAcceptActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 5:
@@ -294,21 +294,21 @@ public class Menu_Choose extends AppCompatActivity {
                 Fragment = Fragment_NewEvent;
                 PassDatatoFind_Accept_Friend();
                 //menuInflater.inflate(R.menu.menu_newevent,menu);
-                fragment = new NewEvent();
+                fragment = new NewEventActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 8:
                 Fragment = Fragment_MyEvent;
                 PassDatatoFind_Accept_Friend();
                 // menuInflater.inflate(R.menu.menu_oldevent,menu);
-                fragment = new MyEvent();
+                fragment = new MyEventActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 9:
                 Fragment = Fragment_OldEvent;
                 PassDatatoFind_Accept_Friend();
                 // menuInflater.inflate(R.menu.menu_oldevent,menu);
-                fragment = new OldEvent();
+                fragment = new OldEventActivity();
                 fragment.setArguments(bundlePassMailtoFind_Accept);
                 break;
             case 10:
@@ -434,7 +434,7 @@ public class Menu_Choose extends AppCompatActivity {
         final int cyear=c.get(Calendar.YEAR);
         txt=new StringBuilder().append(cday).append("-").append(cmonth).append("-").append(cyear);
         textDate=getIntent().getStringExtra("ChangeDate");
-        intentAddEvent=new Intent (Menu_Choose.this, AddEvent.class);
+        intentAddEvent=new Intent (Menu_Choose.this, AddEventActivity.class);
         if(textDate!=null) {
             intentAddEvent.putExtra("txtsetdateTo", textDate.toString());
         }

@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.lehoanghan.addevent.AddEvent;
+import com.example.lehoanghan.addevent.AddEventActivity;
 import com.example.lehoanghan.appcalendar.R;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -49,7 +49,7 @@ public class HomeActivity extends Fragment {
     private Intent intentSetDate;
     private MaterialCalendarView calendar;
     private View contentView;
-    private StringBuilder textDate, toDay;
+    private StringBuilder txtDate, toDay;
     private static String strMailUser, strNameUser;
     private Firebase firebase;
 
@@ -68,20 +68,20 @@ public class HomeActivity extends Fragment {
         imgAvatarHome = (ImageView) contentView.findViewById(R.id.activity_home_iv_avatar);
         tvNameUser.setText(tvNameUser.getText().toString() + " " + strNameUser);
         tvNameUser.setTextColor(Color.parseColor("#FFFF50A4"));
-        SetImage();
+        setImage();
 
         calendar = (MaterialCalendarView) contentView.findViewById(R.id.activity_home_calendar);
         calendar.setSelectedDate(Calendar.getInstance());
 
         Calendar cal = Calendar.getInstance();
-        toDay = textDate = ParseDate(Calendar.getInstance().getTime().getDate(), calendar.getCurrentDate().getMonth(), calendar.getCurrentDate().getYear());
+        toDay = txtDate = ParseDate(Calendar.getInstance().getTime().getDate(), calendar.getCurrentDate().getMonth(), calendar.getCurrentDate().getYear());
 
         calendar.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(MaterialCalendarView widget, CalendarDay date, boolean selected) {
                 calendar.setSelectionColor(R.color.DateSelection);
                 if (calendar.getCurrentDate() != calendar.getSelectedDate()) {
-                    textDate = ParseDate(calendar.getSelectedDate().getDay(), calendar.getSelectedDate().getMonth(), calendar.getSelectedDate().getYear());
+                    txtDate = ParseDate(calendar.getSelectedDate().getDay(), calendar.getSelectedDate().getMonth(), calendar.getSelectedDate().getYear());
                 }
             }
         });
@@ -127,7 +127,7 @@ public class HomeActivity extends Fragment {
     }
 
 
-    public void SetImage() {
+    public void setImage() {
         firebase.child("Avata").child(strMailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -144,8 +144,8 @@ public class HomeActivity extends Fragment {
     }
 
     public void passDataDatetoAddEvent() {
-        intentSetDate = new Intent(getActivity(), AddEvent.class);
-        intentSetDate.putExtra("ChangeDate", textDate.toString());
+        intentSetDate = new Intent(getActivity(), AddEventActivity.class);
+        intentSetDate.putExtra("ChangeDate", txtDate.toString());
         intentSetDate.putExtra("ToDay", toDay.toString());
         intentSetDate.putExtra("strMailUser", strMailUser);
         intentSetDate.putExtra("strNameUser", strNameUser);

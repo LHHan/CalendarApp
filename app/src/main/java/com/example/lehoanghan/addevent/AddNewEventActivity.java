@@ -44,14 +44,14 @@ public class AddNewEventActivity extends Fragment {
 
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                DialogFragment newFragment = new selectDateFragment(tvSetDayFrom);
+                DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
                 newFragment.show(getFragmentManager(), "DatePicker");
             }
         });
 
         btnSetDayTo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                DialogFragment newFragment = new selectDateFragment(tvSetDayTo);
+                DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
                 newFragment.show(getFragmentManager(), "DatePicker");
                /* Bundle bundle=getActivity().getIntent().getExtras();
                 if(bundle!=null)
@@ -64,7 +64,7 @@ public class AddNewEventActivity extends Fragment {
         btnSetTimeFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment newFragment = new selectTimeFragment(tvSetTimeFrom);
+                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeFrom);
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
@@ -72,7 +72,7 @@ public class AddNewEventActivity extends Fragment {
         btnSetTimeTo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment newFragment = new selectTimeFragment(tvSetTimeTo);
+                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeTo);
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });

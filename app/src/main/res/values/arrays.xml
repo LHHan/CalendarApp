@@ -16,41 +16,39 @@
     </string-array>
 
 
-
-    <string-array name="QuanTPHCM">
-        <item>district 1</item>
-        <item>district 2</item>
-        <item>district 3</item>
-        <item>district 4</item>
-        <item>district 5</item>
-        <item>district 6</item>
-        <item>district 7</item>
-        <item>district 8</item>
-        <item>district 9</item>
-        <item>district 10</item>
-        <item>district 11</item>
-        <item>district 12</item>
-        <item>district Go Vap</item>
-        <item>district Binh Thanh</item>
-        <item>district Tan Binh</item>
-        <item>district Tan Phu</item>
-        <item>district Phu Nhuan</item>
-        <item>district Thu Duc</item>
-        <item>district Binh Tan</item>
-        <item>district Cu Chi</item>
-        <item>district Hoc Mon</item>
-        <item>district Binh Chanh</item>
-        <item>district Nha Be</item>
-        <item>district Can Gio</item>
-
+    <string-array name="District">
+        <item>DISTRICT 1</item>
+        <item>DISTRICT 2</item>
+        <item>DISTRICT 3</item>
+        <item>DISTRICT 4</item>
+        <item>DISTRICT 5</item>
+        <item>DISTRICT 6</item>
+        <item>DISTRICT 7</item>
+        <item>DISTRICT 8</item>
+        <item>DISTRICT 9</item>
+        <item>DISTRICT 10</item>
+        <item>DISTRICT 11</item>
+        <item>DISTRICT 12</item>
+        <item>DISTRICT GO VAP</item>
+        <item>DISTRICT BINH THANH</item>
+        <item>DISTRICT TAN BINH</item>
+        <item>DISTRICT TAN PHU</item>
+        <item>DISTRICT PHU NHUAN</item>
+        <item>DISTRICT THU DUC</item>
+        <item>DISTRICT BINH TAN</item>
+        <item>DISTRICT CU CHI</item>
+        <item>DISTRICT HOC MON</item>
+        <item>DISTRICT BINH CHANH</item>
+        <item>DISTRICT NHA BE</item>
+        <item>DISTRICT CAN GIO</item>
     </string-array>
 
     <string-array name="Repeat">
-        <item>Never</item>
-        <item>Every Day</item>
-        <item>Every Week</item>
-        <item>Every Month</item>
-        <item>Every Year</item>
+        <item>NEVER</item>
+        <item>EVERY DAY</item>
+        <item>EVERY WEEK</item>
+        <item>EVERY MONTH</item>
+        <item>EVERY YEAR</item>
     </string-array>
 
 </resources>

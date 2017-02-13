@@ -1,216 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
-    android:background="@color/lightblue">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="12px"
         android:paddingRight="10px"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin">
-        <LinearLayout android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtNameEvent"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="Name's Event"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtNameEventValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="NameEvent"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
 
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtDateStart"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="DateStart"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtDateStartValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DateStart"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtTimeStart"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="TimeStart"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtTimeStartValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TimeStart"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtDateEnd"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="DateEnd"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtDateEndValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DateEnd"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtTimeEnd"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="TimeEnd"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtTimeEndValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TimeEnd"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtDecription"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="Decription"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtDecriptionValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decription"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtPlace"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="Place"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtPlaceValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Place"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-        </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtFriendInvite"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="FriendInvite"
-                android:fontFamily="sans-serif-medium"/>
             <TextView
+                android:id="@+id/activity_memory_event_tv_name_event"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Name's Event" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_name_event_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="NameEvent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_date_start"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="DateStart" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_date_start_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="DateStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_time_start"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="TimeStart" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_time_start_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="TimeStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_date_end"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="DateEnd" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_date_end_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="DateEnd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_time_end"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="TimeEnd" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_time_end_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="TimeEnd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_decription"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Decription" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_decription_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Decription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_place"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Place" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_place_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Place" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_friend_invite"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="FriendInvite" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_friend_invite_value"
                 android:layout_width="500px"
                 android:layout_height="fill_parent"
-                android:id="@+id/txtFriendInviteValue"
                 android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
-            <Button android:layout_width="150px"
+                android:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:id="@+id/activity_memory_event_btn_gallery"
+                android:layout_width="150px"
                 android:layout_height="wrap_content"
-                android:text=":::"
-                android:id="@+id/btngallery"
-                android:layout_marginLeft="70dp"/>
+                android:layout_marginLeft="70dp"
+                android:text=":::" />
         </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtAlarm"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_alarm"
                 android:layout_width="300px"
                 android:layout_height="wrap_content"
-                android:text="Alarm"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtAlarmValue"
+                android:fontFamily="sans-serif-medium"
+                android:text="Alarm" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_alarm_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alarm"
                 android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
+                android:fontFamily="sans-serif-medium"
+                android:text="Alarm" />
         </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtRepeat"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_repeat"
                 android:layout_width="300px"
                 android:layout_height="wrap_content"
-                android:text="Repeat"
-                android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/txtRepeatValue"
+                android:fontFamily="sans-serif-medium"
+                android:text="Repeat" />
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_repeat_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Repeat"
                 android:layout_marginLeft="50dp"
-                android:fontFamily="sans-serif-medium"/>
+                android:fontFamily="sans-serif-medium"
+                android:text="Repeat" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtComment"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="Comment"
-                android:fontFamily="sans-serif-medium"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnComment"
-                android:text="Comment"
-                android:layout_marginLeft="50dp"/>
-        </LinearLayout>
-        <LinearLayout  android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <TextView android:id="@+id/txtPic"
-                android:layout_width="300px"
-                android:layout_height="wrap_content"
-                android:text="Picture"
-                android:fontFamily="sans-serif-medium"/>
 
-            <Button android:id="@+id/btnPic"
+            <TextView
+                android:id="@+id/activity_memory_event_tv_comment"
+                android:layout_width="300px"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Comment" />
+
+            <Button
+                android:id="@+id/activity_memory_event_btn_commnet"
                 android:layout_width="wrap_content"
-                android:text="Picture"
-                android:layout_marginLeft="50dp"/>
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Comment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_memory_event_tv_picture"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Picture" />
+
+            <Button
+                android:id="@+id/activity_memory_event_btn_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Picture" />
         </LinearLayout>
     </LinearLayout>
 

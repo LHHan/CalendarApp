@@ -42,7 +42,7 @@
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="com.example.lehoanghan.addevent.AddEvent"
+            android:name="com.example.lehoanghan.addevent.AddEventActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
@@ -50,15 +50,15 @@
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.MemoryEvent"
+            android:name="com.example.lehoanghan.list_oldevent.MemoryEventActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.Comment"
+            android:name="com.example.lehoanghan.list_oldevent.CommentActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.Picture"
+            android:name="com.example.lehoanghan.list_oldevent.PictureActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.list_newevent.Dialog_Alarm"

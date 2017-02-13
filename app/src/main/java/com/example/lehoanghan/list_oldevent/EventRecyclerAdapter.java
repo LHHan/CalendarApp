@@ -40,29 +40,30 @@ import java.util.Map;
  */
 public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdapter.ViewHolder> {
 
-    private ArrayList<EventValue> mDataSet;
-    private ArrayList<Integer> mDataSetTypes;
-    private String MailUser, NameUser;
+    private ArrayList<EventValue> dataSet;
+    private ArrayList<Integer> dataSetTypes;
+    private String mailUser, nameUser;
 
-    public static final int TiTle = 0;
-    public static final int Data = 1;
-    private int Type;
+    public static final int title = 0;
+    public static final int data = 1;
+    private int type;
     private Context context;
 
     private Firebase firebase;
 
-    public EventRecyclerAdapter(ArrayList<EventValue> DataSet, ArrayList<Integer> DataSetType, String Mail,int type) {
-        mDataSet = DataSet;
-        mDataSetTypes = DataSetType;
-        MailUser = Mail;
-        Type=type;
+    public EventRecyclerAdapter(ArrayList<EventValue> DataSet, ArrayList<Integer> DataSetType, String Mail, int type) {
+        dataSet = DataSet;
+        dataSetTypes = DataSetType;
+        mailUser = Mail;
+        this.type = type;
     }
-    public EventRecyclerAdapter(ArrayList<EventValue> DataSet, ArrayList<Integer> DataSetType, String Mail,String Name,int type) {
-        mDataSet = DataSet;
-        mDataSetTypes = DataSetType;
-        MailUser = Mail;
-        NameUser=Name;
-        Type=type;
+
+    public EventRecyclerAdapter(ArrayList<EventValue> DataSet, ArrayList<Integer> DataSetType, String Mail, String Name, int type) {
+        dataSet = DataSet;
+        dataSetTypes = DataSetType;
+        mailUser = Mail;
+        nameUser = Name;
+        this.type = type;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -74,25 +75,25 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     public class TitleAboutDate extends ViewHolder {
 
-        TextView TxtTitle;
+        TextView tvTitle;
 
         public TitleAboutDate(View itemView) {
 
             super(itemView);
-            TxtTitle = (TextView) itemView.findViewById(R.id.txtTitleEvent);
+            tvTitle = (TextView) itemView.findViewById(R.id.txtTitleEvent);
         }
     }
 
     public class EventData extends ViewHolder {
         TextView TxtTimeEvent, TxtNameEventValue, TxtDateStartValue, TxtTimeStartValue, TxtDateEndValue, TxtTimeEndValue,
                 TxtDecriptionValue, TxtPlaceValue, TxtFriendEventValue, TxtAlarmValue, TxtRepeatValue;
-        Button BtnAgree, BtnRefuse, BtnGallery,BtnDetail;
+        Button BtnAgree, BtnRefuse, BtnGallery, BtnDetail;
 
         public EventData(View itemView) {
             super(itemView);
             TxtTimeEvent = (TextView) itemView.findViewById(R.id.txtTimeEvent);
             TxtNameEventValue = (TextView) itemView.findViewById(R.id.txtNameEventValue);
-            if(Type!=3) {
+            if (type != 3) {
                 TxtDateStartValue = (TextView) itemView.findViewById(R.id.txtDateStartValue);
                 TxtTimeStartValue = (TextView) itemView.findViewById(R.id.txtTimeStartValue);
                 TxtDateEndValue = (TextView) itemView.findViewById(R.id.txtDateEndValue);
@@ -103,14 +104,12 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                 BtnGallery = (Button) itemView.findViewById(R.id.btngallery);
                 TxtAlarmValue = (TextView) itemView.findViewById(R.id.txtAlarmValue);
                 TxtRepeatValue = (TextView) itemView.findViewById(R.id.txtRepeatValue);
-                if (Type == 1) {
+                if (type == 1) {
                     BtnAgree = (Button) itemView.findViewById(R.id.btnAgree);
                     BtnRefuse = (Button) itemView.findViewById(R.id.btnRefuse);
                 }
-            }
-            else
-            if(Type==3){
-                BtnDetail=(Button) itemView.findViewById(R.id.btnDetail);
+            } else if (type == 3) {
+                BtnDetail = (Button) itemView.findViewById(R.id.btnDetail);
             }
         }
     }
@@ -118,18 +117,18 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v;
-        context=parent.getContext();
-        if (viewType == TiTle) {
+        context = parent.getContext();
+        if (viewType == title) {
             v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_title, parent, false);
             Firebase.setAndroidContext(v.getContext());
             firebase = new Firebase("https://appcalendar.firebaseio.com/");
             return new TitleAboutDate(v);
         } else
-        //if(viewType==Data)
+        //if(viewType==data)
         {
-            if(Type==1)
+            if (type == 1)
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_newevent, parent, false);
-            else if(Type==2)
+            else if (type == 2)
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_myevent, parent, false);
             else
                 v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_oldevent, parent, false);
@@ -142,36 +141,35 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        if (holder.getItemViewType() == TiTle) {
+        if (holder.getItemViewType() == title) {
             TitleAboutDate viewholder = (TitleAboutDate) holder;
-            viewholder.TxtTitle.setText(mDataSet.get(position).getDateFrom());
+            viewholder.tvTitle.setText(dataSet.get(position).getDateFrom());
         } else {
             final EventData viewholder = (EventData) holder;
-            viewholder.TxtTimeEvent.setText(mDataSet.get(position).getTimeFrom());
-            viewholder.TxtNameEventValue.setText(mDataSet.get(position).getNameEvent());
-            if(Type!=3) {
-                viewholder.TxtDateStartValue.setText(mDataSet.get(position).getDateFrom());
-                viewholder.TxtTimeStartValue.setText(mDataSet.get(position).getTimeFrom());
-                viewholder.TxtDateEndValue.setText(mDataSet.get(position).getDateTo());
-                viewholder.TxtTimeEndValue.setText(mDataSet.get(position).getTimeTo());
-                viewholder.TxtDecriptionValue.setText(mDataSet.get(position).getDescription());
-                viewholder.TxtPlaceValue.setText(mDataSet.get(position).getPlace());
-                viewholder.TxtFriendEventValue.setText(mDataSet.get(position).getFriendInvite().replace("&", "."));
-                viewholder.TxtAlarmValue.setText(mDataSet.get(position).getAlarm());
-                viewholder.TxtRepeatValue.setText(mDataSet.get(position).getRepeat());
-                final ArrayList <Bitmap> ImageArray=new ArrayList<>();
-                final String []Friend=mDataSet.get(position).getFriendInvite().toString().split(",");
+            viewholder.TxtTimeEvent.setText(dataSet.get(position).getTimeFrom());
+            viewholder.TxtNameEventValue.setText(dataSet.get(position).getNameEvent());
+            if (type != 3) {
+                viewholder.TxtDateStartValue.setText(dataSet.get(position).getDateFrom());
+                viewholder.TxtTimeStartValue.setText(dataSet.get(position).getTimeFrom());
+                viewholder.TxtDateEndValue.setText(dataSet.get(position).getDateTo());
+                viewholder.TxtTimeEndValue.setText(dataSet.get(position).getTimeTo());
+                viewholder.TxtDecriptionValue.setText(dataSet.get(position).getDescription());
+                viewholder.TxtPlaceValue.setText(dataSet.get(position).getPlace());
+                viewholder.TxtFriendEventValue.setText(dataSet.get(position).getFriendInvite().replace("&", "."));
+                viewholder.TxtAlarmValue.setText(dataSet.get(position).getAlarm());
+                viewholder.TxtRepeatValue.setText(dataSet.get(position).getRepeat());
+                final ArrayList<Bitmap> ImageArray = new ArrayList<>();
+                final String[] Friend = dataSet.get(position).getFriendInvite().toString().split(",");
 
                 viewholder.BtnGallery.setVisibility(View.INVISIBLE);
-                for (int i = 0; i <Friend.length; i++) {
+                for (int i = 0; i < Friend.length; i++) {
                     firebase.child("Avata").child(Friend[i]).addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             byte[] getimage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
                             Bitmap bitmap = BitmapFactory.decodeByteArray(getimage, 0, getimage.length);
                             ImageArray.add(bitmap);
-                            if(ImageArray.size()==Friend.length)
-                            {
+                            if (ImageArray.size() == Friend.length) {
                                 //viewholder.TxtFriendEventValue.setVisibility(View.INVISIBLE);
                                 viewholder.BtnGallery.setVisibility(View.VISIBLE);
                             }
@@ -180,7 +178,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         @Override
                         public void onCancelled(FirebaseError firebaseError) {
                         }
-                    });}
+                    });
+                }
                 viewholder.BtnGallery.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -188,9 +187,9 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         AlertDialog.Builder builder;
                         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //                    AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-                        View view = inflater.inflate(R.layout.gallery_friendinvite, (ViewGroup) v.findViewById(R.id.LLGallery));
-                        Gallery gallery = (Gallery) view.findViewById(R.id.glrFriendInvite);
-                        gallery.setAdapter(new ImageAdapter(v.getContext(), mDataSet.get(position).getFriendInvite().toString(), ImageArray));
+                        View view = inflater.inflate(R.layout.activity_gallery_friend_invite, (ViewGroup) v.findViewById(R.id.activity_gallery_friend_invite_ll_main));
+                        Gallery gallery = (Gallery) view.findViewById(R.id.activity_gallery_friend_invite);
+                        gallery.setAdapter(new ImageAdapter(v.getContext(), dataSet.get(position).getFriendInvite().toString(), ImageArray));
                         builder = new AlertDialog.Builder(v.getContext());
                         builder.setView(view);
                         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -204,7 +203,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         dialog.show();
                     }
                 });
-                if (Type == 1) {
+                if (type == 1) {
                     viewholder.BtnAgree.setVisibility(View.VISIBLE);
                     viewholder.BtnRefuse.setVisibility(View.VISIBLE);
 
@@ -216,28 +215,28 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             PendingIntent mNotificationReceiverPendingIntent;
                             mAlarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
                             mNotificationReceiverIntent = new Intent(context.getApplicationContext(), AlarmNotificationReceiver.class);
-                            mNotificationReceiverIntent.putExtra("Name",mDataSet.get(position).getNameEvent());
-                            mNotificationReceiverIntent.putExtra("Date",mDataSet.get(position).getDateFrom());
-                            mNotificationReceiverIntent.putExtra("Time",mDataSet.get(position).getTimeFrom());
-                            mNotificationReceiverIntent.putExtra("Place",mDataSet.get(position).getPlace());
-                            mNotificationReceiverIntent.putExtra("NameUser",NameUser);
-                            mNotificationReceiverIntent.putExtra("MailUser",MailUser);
+                            mNotificationReceiverIntent.putExtra("Name", dataSet.get(position).getNameEvent());
+                            mNotificationReceiverIntent.putExtra("Date", dataSet.get(position).getDateFrom());
+                            mNotificationReceiverIntent.putExtra("Time", dataSet.get(position).getTimeFrom());
+                            mNotificationReceiverIntent.putExtra("Place", dataSet.get(position).getPlace());
+                            mNotificationReceiverIntent.putExtra("nameUser", nameUser);
+                            mNotificationReceiverIntent.putExtra("mailUser", mailUser);
                             mNotificationReceiverPendingIntent = PendingIntent.getBroadcast(
                                     context.getApplicationContext(), 0, mNotificationReceiverIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                             float timeAlarm = 0;
                             SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy HH:m");
                             try {
-                                Date date = format.parse(mDataSet.get(position).getDateFrom() + " " + mDataSet.get(position).getTimeFrom());
+                                Date date = format.parse(dataSet.get(position).getDateFrom() + " " + dataSet.get(position).getTimeFrom());
                                 Calendar cal = Calendar.getInstance();
                                 cal.setTime(date);
-                                timeAlarm = date.getTime()-(Integer.parseInt(mDataSet.get(position).getAlarm())*60*1000);
+                                timeAlarm = date.getTime() - (Integer.parseInt(dataSet.get(position).getAlarm()) * 60 * 1000);
 
                             } catch (ParseException e) {
                                 e.printStackTrace();
                             }
-                            if(timeAlarm!=0){
-                                mAlarmManager.set(AlarmManager.RTC_WAKEUP, (long) timeAlarm,mNotificationReceiverPendingIntent);
+                            if (timeAlarm != 0) {
+                                mAlarmManager.set(AlarmManager.RTC_WAKEUP, (long) timeAlarm, mNotificationReceiverPendingIntent);
                             }
 
 //                            mLoggerReceiverIntent = new Intent(context.getApplicationContext(),
@@ -248,20 +247,20 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
 
                             Map<String, String> eventValue = new Hashtable<String, String>();
-                            eventValue.put("NameEvent", mDataSet.get(position).getNameEvent());
-                            eventValue.put("DateFrom", mDataSet.get(position).getDateFrom());
-                            eventValue.put("TimeFrom", mDataSet.get(position).getTimeFrom());
-                            eventValue.put("DateTo", mDataSet.get(position).getDateTo());
-                            eventValue.put("TimeTo", mDataSet.get(position).getTimeTo());
-                            eventValue.put("Description", mDataSet.get(position).getDescription());
-                            eventValue.put("Place", mDataSet.get(position).getPlace());
-                            eventValue.put("FriendInvite", mDataSet.get(position).getFriendInvite());
-                            eventValue.put("Alarm", mDataSet.get(position).getAlarm());
-                            eventValue.put("Repeat", mDataSet.get(position).getRepeat());
-                            firebase.child("Event").child(MailUser).child("Accept_Event").push().setValue(eventValue);
-                            mDataSet.remove(position);
+                            eventValue.put("NameEvent", dataSet.get(position).getNameEvent());
+                            eventValue.put("DateFrom", dataSet.get(position).getDateFrom());
+                            eventValue.put("TimeFrom", dataSet.get(position).getTimeFrom());
+                            eventValue.put("DateTo", dataSet.get(position).getDateTo());
+                            eventValue.put("TimeTo", dataSet.get(position).getTimeTo());
+                            eventValue.put("Description", dataSet.get(position).getDescription());
+                            eventValue.put("Place", dataSet.get(position).getPlace());
+                            eventValue.put("FriendInvite", dataSet.get(position).getFriendInvite());
+                            eventValue.put("Alarm", dataSet.get(position).getAlarm());
+                            eventValue.put("Repeat", dataSet.get(position).getRepeat());
+                            firebase.child("Event").child(mailUser).child("Accept_Event").push().setValue(eventValue);
+                            dataSet.remove(position);
                             notifyDataSetChanged();
-                            notifyItemRangeChanged(position, mDataSet.size());
+                            notifyItemRangeChanged(position, dataSet.size());
                             viewholder.BtnRefuse.setVisibility(View.INVISIBLE);
                             viewholder.BtnAgree.setVisibility(View.INVISIBLE);
                         }
@@ -270,13 +269,13 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         @Override
                         public void onClick(View v) {
                             String FriendInvite = "";
-                            String[] friend = mDataSet.get(position).getFriendInvite().split(",");
+                            String[] friend = dataSet.get(position).getFriendInvite().split(",");
                             ArrayList<String> friend1 = new ArrayList<String>();
                             for (int i = 0; i < friend.length; i++) {
                                 friend1.add(new String(friend[i]));
                             }
                             for (int i = 0; i < friend1.size(); i++) {
-                                if (friend1.get(i).trim().replace(".", "&").compareTo(MailUser) == 0)
+                                if (friend1.get(i).trim().replace(".", "&").compareTo(mailUser) == 0)
                                     friend1.remove(i);
                             }
                             for (int i = 0; i < friend1.size(); i++) {
@@ -286,38 +285,36 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                                     FriendInvite += friend1.get(i) + ", ";
                             }
                             Map<String, String> eventValue = new Hashtable<String, String>();
-                            eventValue.put("NameEvent", mDataSet.get(position).getNameEvent());
-                            eventValue.put("DateFrom", mDataSet.get(position).getDateFrom());
-                            eventValue.put("TimeFrom", mDataSet.get(position).getTimeFrom());
-                            eventValue.put("DateTo", mDataSet.get(position).getDateTo());
-                            eventValue.put("TimeTo", mDataSet.get(position).getTimeTo());
-                            eventValue.put("Description", mDataSet.get(position).getDescription());
-                            eventValue.put("Place", mDataSet.get(position).getPlace());
+                            eventValue.put("NameEvent", dataSet.get(position).getNameEvent());
+                            eventValue.put("DateFrom", dataSet.get(position).getDateFrom());
+                            eventValue.put("TimeFrom", dataSet.get(position).getTimeFrom());
+                            eventValue.put("DateTo", dataSet.get(position).getDateTo());
+                            eventValue.put("TimeTo", dataSet.get(position).getTimeTo());
+                            eventValue.put("Description", dataSet.get(position).getDescription());
+                            eventValue.put("Place", dataSet.get(position).getPlace());
                             eventValue.put("FriendInvite", FriendInvite);
-                            eventValue.put("Alarm", mDataSet.get(position).getAlarm());
-                            eventValue.put("Repeat", mDataSet.get(position).getRepeat());
-                            firebase.child("Event").child(MailUser).child("Refuse_Event").push().setValue(eventValue);
-                            mDataSet.remove(position);
+                            eventValue.put("Alarm", dataSet.get(position).getAlarm());
+                            eventValue.put("Repeat", dataSet.get(position).getRepeat());
+                            firebase.child("Event").child(mailUser).child("Refuse_Event").push().setValue(eventValue);
+                            dataSet.remove(position);
                             notifyDataSetChanged();
-                            notifyItemRangeChanged(position, mDataSet.size());
+                            notifyItemRangeChanged(position, dataSet.size());
                             viewholder.BtnRefuse.setVisibility(View.INVISIBLE);
                             viewholder.BtnAgree.setVisibility(View.INVISIBLE);
                         }
                     });
                 }
-            }
-            else
-            if(Type==3){
-                        viewholder.BtnDetail.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent=new Intent(v.getContext(),MemoryEvent.class);
-                                intent.putExtra("EventValue",mDataSet.get(position));
-                                intent.putExtra("NameUser",NameUser);
-                                intent.putExtra("MailUser",MailUser);
-                                v.getContext().startActivity(intent);
-                            }
-                        });
+            } else if (type == 3) {
+                viewholder.BtnDetail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), MemoryEventActivity.class);
+                        intent.putExtra("EventValue", dataSet.get(position));
+                        intent.putExtra("nameUser", nameUser);
+                        intent.putExtra("mailUser", mailUser);
+                        v.getContext().startActivity(intent);
+                    }
+                });
             }
         }
 
@@ -326,14 +323,13 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     @Override
     public int getItemCount() {
-        return mDataSet.size();
+        return dataSet.size();
     }
 
     @Override
     public int getItemViewType(int position) {
-        return mDataSet.get(position).getCheck();
+        return dataSet.get(position).getCheck();
     }
-
 
 
 }

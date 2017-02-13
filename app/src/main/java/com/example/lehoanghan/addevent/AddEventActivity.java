@@ -57,14 +57,14 @@ public class AddEventActivity extends AppCompatActivity {
 
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                DialogFragment newFragment = new selectDateFragment(tvSetDayFrom);
+                DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
                 newFragment.show(getFragmentManager(), "DatePicker");
             }
         });
 
         btnSetDayTo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                DialogFragment newFragment = new selectDateFragment(tvSetDayTo);
+                DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
                 newFragment.show(getFragmentManager(), "DatePicker");
                /* Bundle bundle=getActivity().getIntent().getExtras();
                 if(bundle!=null)
@@ -77,7 +77,7 @@ public class AddEventActivity extends AppCompatActivity {
         btnSetTimeFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment newFragment = new selectTimeFragment(tvSetTimeFrom);
+                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeFrom);
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
@@ -85,7 +85,7 @@ public class AddEventActivity extends AppCompatActivity {
         btnSetTimeTo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment newFragment = new selectTimeFragment(tvSetTimeTo);
+                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeTo);
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
@@ -193,10 +193,10 @@ public class AddEventActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final Dialog dialog = new Dialog(AddEventActivity.this);
-                dialog.setContentView(R.layout.dialog_addfriend);
+                dialog.setContentView(R.layout.dialog_add_friend);
                 dialog.setTitle("My friend");
                 dialog.setCancelable(true);
-                final ListView listMyFriendDialog = (ListView) dialog.findViewById(R.id.lstButtonAdd);
+                final ListView listMyFriendDialog = (ListView) dialog.findViewById(R.id.dialog_add_friend_lv_main);
                 final List<String> listFriend = new ArrayList<String>();
                 firebasefriend.child("My_friend").child(mailUser).addValueEventListener(new ValueEventListener() {
                     @Override

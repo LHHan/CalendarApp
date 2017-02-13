@@ -33,64 +33,63 @@ import java.util.Map;
  */
 public class MyEventActivity extends Fragment {
     Activity root;
-    View jview;
+    View contentView;
 
-    public static final int TiTle = 0;
-    public static final int Data = 1;
-    private RecyclerView mRecyclerView;
-    private EventRecyclerAdapter mAdapter;
+    public static final int title = 0;
+    public static final int data = 1;
+    private RecyclerView recyclerView;
+    private EventRecyclerAdapter eventRecycleAdapter;
     private LinearLayoutManager linearLayoutManager;
     private Firebase firebase;
-    private String NameUser, MailUser;
+    private String nameUser, mailUser;
     private Bundle bundleGiveMailfromMenu;
-    private ArrayList<EventValue > listnewevent1;
-    private ArrayList<Integer> datatype1;
-    private ArrayList<String> Listdatefrom;
+    private ArrayList<EventValue> listnewevent1;
+    private ArrayList<Integer> dataType1;
+    private ArrayList<String> listDateFrom;
 
-    public MyEventActivity(){}
+    public MyEventActivity() {
+    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root=getActivity();
-        jview=inflater.inflate(R.layout.screen_myevent,container,false);
+        root = getActivity();
+        contentView = inflater.inflate(R.layout.activity_my_event, container, false);
         PassDataFromChoose();
         Firebase.setAndroidContext(root);
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         Init();
-        linearLayoutManager = new LinearLayoutManager(jview.getContext());
+        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager);
         GetNewEventFormFirebase();
 
-        return jview;
+        return contentView;
     }
 
 
-    public void Init()
-    {
-        listnewevent1=new ArrayList<EventValue>();
-        datatype1=new ArrayList<Integer>();
-        Listdatefrom=new ArrayList<String>();
-        mRecyclerView = (RecyclerView) jview.findViewById(R.id.RVMyEvent);
+    public void Init() {
+        listnewevent1 = new ArrayList<EventValue>();
+        dataType1 = new ArrayList<Integer>();
+        listDateFrom = new ArrayList<String>();
+        recyclerView = (RecyclerView) contentView.findViewById(R.id.activity_my_envent_rcv_list_my_event);
     }
 
-    public void GetNewEventFormFirebase(){
+    public void GetNewEventFormFirebase() {
 
-        final ArrayList<EventValue> Old_Event=new ArrayList<EventValue>();
+        final ArrayList<EventValue> Old_Event = new ArrayList<EventValue>();
 
-        final ArrayList<EventValue > Listnewevent=new ArrayList<EventValue>();
-        final ArrayList<Integer> DataType=new ArrayList<Integer>();
-        firebase.child("Event").child(MailUser).child("Old_Event").addValueEventListener(new ValueEventListener() {
+        final ArrayList<EventValue> listNewEvent = new ArrayList<EventValue>();
+        final ArrayList<Integer> dataType = new ArrayList<Integer>();
+        firebase.child("Event").child(mailUser).child("Old_Event").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot:dataSnapshot.getChildren())
-                {
-                    Object tem= snapshot.getValue();
-                    HashMap event=(HashMap)tem;
-                    Old_Event.add(new EventValue(event.get("NameEvent").toString(),event.get("DateFrom").toString(),
-                            event.get("TimeFrom").toString(),event.get("DateTo").toString(),event.get("TimeTo").toString(),
-                            event.get("Description").toString(),event.get("Place").toString(),event.get("FriendInvite").toString(),
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Object tem = snapshot.getValue();
+                    HashMap event = (HashMap) tem;
+                    Old_Event.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
+                            event.get("TimeFrom").toString(), event.get("DateTo").toString(), event.get("TimeTo").toString(),
+                            event.get("Description").toString(), event.get("Place").toString(), event.get("FriendInvite").toString(),
                             event.get("Alarm").toString(), event.get("Repeat").toString()));
                 }
             }
@@ -100,7 +99,7 @@ public class MyEventActivity extends Fragment {
 
             }
         });
-//        firebase.child("Event").child(MailUser).child("Accept_Event").addValueEventListener(new ValueEventListener() {
+//        firebase.child("Event").child(mailUser).child("Accept_Event").addValueEventListener(new ValueEventListener() {
 //            @Override
 //            public void onDataChange(DataSnapshot dataSnapshot) {
 //                for(DataSnapshot snapshot:dataSnapshot.getChildren())
@@ -119,123 +118,112 @@ public class MyEventActivity extends Fragment {
 //
 //            }
 //        });
-        firebase.child("Event").child(MailUser).child("Accept_Event").addValueEventListener(new ValueEventListener() {
+        firebase.child("Event").child(mailUser).child("Accept_Event").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                for (DataSnapshot snapshot: dataSnapshot.getChildren())
-                {
-                    int Check=0;
-                    Object tem= snapshot.getValue();
-                    HashMap event=(HashMap)tem;
-                    if(Check==0)
-                    {
-                        for(EventValue eventValue:Old_Event)
-                        {
-                            if(eventValue.getNameEvent().compareTo(event.get("NameEvent").toString())==0&&
-                                    eventValue.getDateFrom().compareTo(event.get("DateFrom").toString())==0&&
-                                    eventValue.getTimeFrom().compareTo(event.get("TimeFrom").toString())==0)
-                            {
-                                Check=1;
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    int Check = 0;
+                    Object tem = snapshot.getValue();
+                    HashMap event = (HashMap) tem;
+                    if (Check == 0) {
+                        for (EventValue eventValue : Old_Event) {
+                            if (eventValue.getNameEvent().compareTo(event.get("NameEvent").toString()) == 0 &&
+                                    eventValue.getDateFrom().compareTo(event.get("DateFrom").toString()) == 0 &&
+                                    eventValue.getTimeFrom().compareTo(event.get("TimeFrom").toString()) == 0) {
+                                Check = 1;
                                 break;
                             }
                         }
                     }
-                    if(Check==0) {
-                        Calendar cal=Calendar.getInstance();
-                        String toDay=ParseDate(Calendar.getInstance().getTime().getDate(), Calendar.getInstance().getTime().getMonth(), cal.get(Calendar.YEAR));
+                    if (Check == 0) {
+                        Calendar cal = Calendar.getInstance();
+                        String toDay = ParseDate(Calendar.getInstance().getTime().getDate(), Calendar.getInstance().getTime().getMonth(), cal.get(Calendar.YEAR));
                         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-                        Date date1,date2;
-                        date1=date2=cal.getTime();
+                        Date date1, date2;
+                        date1 = date2 = cal.getTime();
                         try {
-                             date1= sdf.parse(event.get("DateFrom").toString());
-                             date2 = sdf.parse(toDay);
+                            date1 = sdf.parse(event.get("DateFrom").toString());
+                            date2 = sdf.parse(toDay);
                         } catch (ParseException e) {
                             e.printStackTrace();
                         }
 
 //                            Object tem= snapshot.getValue();
 //                            HashMap event=(HashMap)tem;
-                            if(date1.compareTo(date2)<=0)
-                            {
-                                Check=-1;
-                                Map<String, String> eventValue = new Hashtable<String, String>();
-                                eventValue.put("NameEvent", event.get("NameEvent").toString());
-                                eventValue.put("DateFrom", event.get("DateFrom").toString());
-                                eventValue.put("TimeFrom", event.get("TimeFrom").toString());
-                                eventValue.put("DateTo", event.get("DateTo").toString());
-                                eventValue.put("TimeTo", event.get("TimeTo").toString());
-                                eventValue.put("Description",event.get("Description").toString());
-                                eventValue.put("Place", event.get("Place").toString());
-                                eventValue.put("FriendInvite", event.get("FriendInvite").toString());
-                                eventValue.put("Alarm",event.get("Alarm").toString());
-                                eventValue.put("Repeat", event.get("Repeat").toString());
-                                firebase.child("Event").child(MailUser).child("Old_Event").push().setValue(eventValue);
-                                break;
-                            }
+                        if (date1.compareTo(date2) <= 0) {
+                            Check = -1;
+                            Map<String, String> eventValue = new Hashtable<String, String>();
+                            eventValue.put("NameEvent", event.get("NameEvent").toString());
+                            eventValue.put("DateFrom", event.get("DateFrom").toString());
+                            eventValue.put("TimeFrom", event.get("TimeFrom").toString());
+                            eventValue.put("DateTo", event.get("DateTo").toString());
+                            eventValue.put("TimeTo", event.get("TimeTo").toString());
+                            eventValue.put("Description", event.get("Description").toString());
+                            eventValue.put("Place", event.get("Place").toString());
+                            eventValue.put("FriendInvite", event.get("FriendInvite").toString());
+                            eventValue.put("Alarm", event.get("Alarm").toString());
+                            eventValue.put("Repeat", event.get("Repeat").toString());
+                            firebase.child("Event").child(mailUser).child("Old_Event").push().setValue(eventValue);
+                            break;
+                        }
                     }
-                    if(Check==0) {
+                    if (Check == 0) {
 //                        Object tem= snapshot.getValue();
 //                        HashMap event=(HashMap)tem;
-                        Listnewevent.add(new EventValue(event.get("NameEvent").toString(),event.get("DateFrom").toString(),
-                                event.get("TimeFrom").toString(),event.get("DateTo").toString(),event.get("TimeTo").toString(),
-                                event.get("Description").toString(),event.get("Place").toString(),event.get("FriendInvite").toString(),
+                        listNewEvent.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
+                                event.get("TimeFrom").toString(), event.get("DateTo").toString(), event.get("TimeTo").toString(),
+                                event.get("Description").toString(), event.get("Place").toString(), event.get("FriendInvite").toString(),
                                 event.get("Alarm").toString(), event.get("Repeat").toString()));
                     }
 
                 }
-                for(int i=0;i<Listnewevent.size();i++)
-                {
-                    Listdatefrom.add(Listnewevent.get(i).getDateFrom());
+                for (int i = 0; i < listNewEvent.size(); i++) {
+                    listDateFrom.add(listNewEvent.get(i).getDateFrom());
                 }
-                for(int i=0;i<Listdatefrom.size();i++)
-                {
-                    int h=1;
-                    for(int j=i+1;j<Listdatefrom.size();j++)
-                    {
-                        if(Listdatefrom.get(j).compareTo(Listdatefrom.get(i))==0) {
+                for (int i = 0; i < listDateFrom.size(); i++) {
+                    int h = 1;
+                    for (int j = i + 1; j < listDateFrom.size(); j++) {
+                        if (listDateFrom.get(j).compareTo(listDateFrom.get(i)) == 0) {
                             h++;
-                            Listdatefrom.remove(j);
+                            listDateFrom.remove(j);
                             j--;
                         }
                     }
-                    DataType.add(h);
+                    dataType.add(h);
                 }
 
-                Collections.sort(Listdatefrom);
+                Collections.sort(listDateFrom);
 
-                int count=0;
+                int count = 0;
 
-                for(int i=0;i<Listdatefrom.size();i++)
-                {
-                    int h=0;
-                    for(int j=0;j<Listnewevent.size();j++)
-                    {
-                        if(Listnewevent.get(j).getDateFrom().compareTo(Listdatefrom.get(i))==0)
-                        {
-                            if(h==0) {
+                for (int i = 0; i < listDateFrom.size(); i++) {
+                    int h = 0;
+                    for (int j = 0; j < listNewEvent.size(); j++) {
+                        if (listNewEvent.get(j).getDateFrom().compareTo(listDateFrom.get(i)) == 0) {
+                            if (h == 0) {
 
-                                listnewevent1.add(new EventValue(Listnewevent.get(j).getNameEvent(),Listnewevent.get(j).getDateFrom(),
-                                        Listnewevent.get(j).getTimeFrom(),Listnewevent.get(j).getDateTo(),Listnewevent.get(j).getTimeTo(),
-                                        Listnewevent.get(j).getDescription(),Listnewevent.get(j).getPlace(),Listnewevent.get(j).getFriendInvite(),
-                                        Listnewevent.get(j).getAlarm(),Listnewevent.get(j).getRepeat(),0));
-                                datatype1.add(TiTle);
+                                listnewevent1.add(new EventValue(listNewEvent.get(j).getNameEvent(), listNewEvent.get(j).getDateFrom(),
+                                        listNewEvent.get(j).getTimeFrom(), listNewEvent.get(j).getDateTo(), listNewEvent.get(j).getTimeTo(),
+                                        listNewEvent.get(j).getDescription(), listNewEvent.get(j).getPlace(), listNewEvent.get(j).getFriendInvite(),
+                                        listNewEvent.get(j).getAlarm(), listNewEvent.get(j).getRepeat(), 0));
+                                dataType1.add(title);
                                 count++;
                                 h++;
                             }
-                            listnewevent1.add(new EventValue(Listnewevent.get(j).getNameEvent(),Listnewevent.get(j).getDateFrom(),
-                                    Listnewevent.get(j).getTimeFrom(),Listnewevent.get(j).getDateTo(),Listnewevent.get(j).getTimeTo(),
-                                    Listnewevent.get(j).getDescription(),Listnewevent.get(j).getPlace(),Listnewevent.get(j).getFriendInvite(),
-                                    Listnewevent.get(j).getAlarm(),Listnewevent.get(j).getRepeat(),1));
+                            listnewevent1.add(new EventValue(listNewEvent.get(j).getNameEvent(), listNewEvent.get(j).getDateFrom(),
+                                    listNewEvent.get(j).getTimeFrom(), listNewEvent.get(j).getDateTo(), listNewEvent.get(j).getTimeTo(),
+                                    listNewEvent.get(j).getDescription(), listNewEvent.get(j).getPlace(), listNewEvent.get(j).getFriendInvite(),
+                                    listNewEvent.get(j).getAlarm(), listNewEvent.get(j).getRepeat(), 1));
                             count++;
-                            datatype1.add(Data);
+                            dataType1.add(data);
                         }
                     }
                 }
 
-                mAdapter = new EventRecyclerAdapter(listnewevent1,datatype1,MailUser,2);
-                mAdapter.notifyDataSetChanged();
-                mRecyclerView.setAdapter(mAdapter);
+                eventRecycleAdapter = new EventRecyclerAdapter(listnewevent1, dataType1, mailUser, 2);
+                eventRecycleAdapter.notifyDataSetChanged();
+                recyclerView.setAdapter(eventRecycleAdapter);
 
             }
 
@@ -246,25 +234,26 @@ public class MyEventActivity extends Fragment {
         });
 
     }
-    public void PassDataFromChoose(){
-        bundleGiveMailfromMenu=this.getArguments();
-        if(bundleGiveMailfromMenu!=null) {
-            MailUser = bundleGiveMailfromMenu.getString("MailforFindFriend");
-            NameUser=bundleGiveMailfromMenu.getString("NameforFindFriend");
-            NameUser=NameUser.toLowerCase();
+
+    public void PassDataFromChoose() {
+        bundleGiveMailfromMenu = this.getArguments();
+        if (bundleGiveMailfromMenu != null) {
+            mailUser = bundleGiveMailfromMenu.getString("MailforFindFriend");
+            nameUser = bundleGiveMailfromMenu.getString("NameforFindFriend");
+            nameUser = nameUser.toLowerCase();
         }
     }
 
     public String ParseDate(int day, int month, int year) {
         StringBuilder textdate;
-        if((day<10)&&(month+1<10))
-            textdate=new StringBuilder().append("0"+(day)).append("-").append("0" + (month + 1)).append("-").append(year);
-        else if((day<10)&&(month+1>=10))
-            textdate=new StringBuilder().append("0"+(day)).append("-"). append(month + 1).append("-").append(year);
-        else if((day>=10)&&(month+1<10))
-            textdate=new StringBuilder().append(day).append("-").append("0" + (month + 1)).append("-").append(year);
+        if ((day < 10) && (month + 1 < 10))
+            textdate = new StringBuilder().append("0" + (day)).append("-").append("0" + (month + 1)).append("-").append(year);
+        else if ((day < 10) && (month + 1 >= 10))
+            textdate = new StringBuilder().append("0" + (day)).append("-").append(month + 1).append("-").append(year);
+        else if ((day >= 10) && (month + 1 < 10))
+            textdate = new StringBuilder().append(day).append("-").append("0" + (month + 1)).append("-").append(year);
         else
-            textdate=new StringBuilder().append(day).append("-").append(month + 1).append("-").append(year);
+            textdate = new StringBuilder().append(day).append("-").append(month + 1).append("-").append(year);
         return textdate.toString();
     }
 

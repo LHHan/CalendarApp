@@ -34,30 +34,29 @@ public class FriendAcceptActivity extends Fragment {
     private Firebase firebase;
     private RecyclerView rcvListFriendAccept;
     private List<String> listMail, listName, listMailPre, listNamePre;
-    private List<UserFriend> ListUserAccept;
+    private List<UserFriend> listUserAccept;
     private UserAcceptFriendRecyclerAdapter userAcceptFriendRecyclerAdapter;
     private LinearLayoutManager linearLayoutManager;
 
-
-    public FriendAcceptActivity(){}
-
+    public FriendAcceptActivity() {
+    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         GiveUserfromChoose();
-        root=getActivity();
-        contentView =inflater.inflate(R.layout.screen_friendaccept, container, false);
+        root = getActivity();
+        contentView = inflater.inflate(R.layout.activity_friend_accept, container, false);
         Firebase.setAndroidContext(root);
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         Init();
 
         rcvListFriendAccept.setHasFixedSize(true);
-        linearLayoutManager=new LinearLayoutManager(contentView.getContext());
+        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         rcvListFriendAccept.setLayoutManager(linearLayoutManager);
         //getDatafromFireBase();
-         resetData();
+        resetData();
         return contentView;
     }
 
@@ -71,9 +70,9 @@ public class FriendAcceptActivity extends Fragment {
 //                   listName.add(Snapshot.getValue().toString());
 //               }
 //               for (int i = 0; i < listName.size(); i++) {
-//                   ListUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
+//                   listUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
 //               }
-//               userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, getMail, getName);
+//               userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(listUserAccept, getMail, getName);
 //               userAcceptFriendRecyclerAdapter.notifyDataSetChanged();
 //               rcvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
 //           }
@@ -85,7 +84,7 @@ public class FriendAcceptActivity extends Fragment {
 //       });
 //    }*/
 
-    public void resetData(){
+    public void resetData() {
         //final List<String> listMailPre, listNamePre;
         //listMailPre=new ArrayList<>();
         //listNamePre=new ArrayList<>();
@@ -108,23 +107,23 @@ public class FriendAcceptActivity extends Fragment {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot Snapshot : dataSnapshot.getChildren()) {
-                    int Check=0;
-                        for (String mail : listMailPre) {
-                            if (Snapshot.getKey().compareTo(mail) == 0) {
-                                Check = 1;
-                                break;
-                            }
+                    int check = 0;
+                    for (String mail : listMailPre) {
+                        if (Snapshot.getKey().compareTo(mail) == 0) {
+                            check = 1;
+                            break;
                         }
-                        if (Check == 0) {
-                            listMail.add(Snapshot.getKey().toString().replace("&", "."));
-                            listName.add(Snapshot.getValue().toString());
-                        }
+                    }
+                    if (check == 0) {
+                        listMail.add(Snapshot.getKey().toString().replace("&", "."));
+                        listName.add(Snapshot.getValue().toString());
+                    }
                 }
                 for (int i = 0; i < listName.size(); i++) {
-                    ListUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
+                    listUserAccept.add(new UserFriend(listName.get(i), listMail.get(i)));
                 }
 
-                userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(ListUserAccept, getMail, getName);
+                userAcceptFriendRecyclerAdapter = new UserAcceptFriendRecyclerAdapter(listUserAccept, getMail, getName);
                 userAcceptFriendRecyclerAdapter.notifyDataSetChanged();
                 rcvListFriendAccept.setAdapter(userAcceptFriendRecyclerAdapter);
             }
@@ -136,21 +135,21 @@ public class FriendAcceptActivity extends Fragment {
         });
     }
 
-    public void Init(){
-        rcvListFriendAccept =(RecyclerView) contentView.findViewById(R.id.rvListUserFriendAccept);
-        ListUserAccept= new ArrayList<UserFriend>();
-        listName=new ArrayList<String>();
-        listMail=new ArrayList<String>();
-        listNamePre=new ArrayList<String>();
-        listMailPre=new ArrayList<String>();
+    public void Init() {
+        rcvListFriendAccept = (RecyclerView) contentView.findViewById(R.id.activity_friend_accept_rcv_listUserFriendAccept);
+        listUserAccept = new ArrayList<UserFriend>();
+        listName = new ArrayList<String>();
+        listMail = new ArrayList<String>();
+        listNamePre = new ArrayList<String>();
+        listMailPre = new ArrayList<String>();
     }
 
-    public void GiveUserfromChoose(){
-        bundleGiveMailfromMenu=this.getArguments();
-        if(bundleGiveMailfromMenu!=null) {
+    public void GiveUserfromChoose() {
+        bundleGiveMailfromMenu = this.getArguments();
+        if (bundleGiveMailfromMenu != null) {
             getMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
             //getMail=getMail.replace("&", ".");
-            getName =bundleGiveMailfromMenu.getString("NameforFindFriend");
+            getName = bundleGiveMailfromMenu.getString("NameforFindFriend");
             getName = getName.toLowerCase();
         }
     }

@@ -12,44 +12,24 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_myevent.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\screen_oldevent.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\screen_oldevent.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_addfriend.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\dialog_addfriend.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\screen_myevent.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\screen_myevent.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emojicon_item.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\layout\\emojicon_item.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_friendinvite.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\gallery_friendinvite.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\screen_friendaccept.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\screen_friendaccept.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -58,6 +38,10 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_friend.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_my_friend.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -116,16 +100,20 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\menu_body.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_add_event.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cardview_recycler_title.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_title.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\screen_newevent.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\screen_newevent.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_place.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\adapter_place.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cardview_recycler_newevent.xml",
@@ -172,6 +160,10 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_new_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_new_event.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_firebase_login.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\layout\\fragment_firebase_login.xml"
     },
@@ -186,6 +178,10 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_friend_accept.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_friend_accept.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -210,6 +206,10 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_my_event.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
@@ -240,10 +240,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_memory_event.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\screen_myfriend.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\screen_myfriend.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_action_mode_bar.xml"
     },
@@ -256,12 +252,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_add_friend.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\dialog_add_friend.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_event.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\add_event.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
@@ -272,8 +268,16 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gallery_friend_invite.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_gallery_friend_invite.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_old_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_old_event.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_menu_choose.xml",
@@ -338,10 +342,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_address.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\list_item_address.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",

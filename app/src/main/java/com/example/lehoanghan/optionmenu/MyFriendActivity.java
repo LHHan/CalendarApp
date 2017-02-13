@@ -27,56 +27,50 @@ import java.util.List;
 public class MyFriendActivity extends Fragment {
 
     private Activity root;
-    private View jview;
+    private View contentView;
     private Firebase firebase;
-    private List<UserFriend> ListMyFriend;
-    private List<String> listMail,listName;
-    private RecyclerView RvListMyFriend;
+    private List<UserFriend> listMyFriend;
+    private List<String> listMail, listName;
+    private RecyclerView rcvListMyFriend;
     private UserMyFriendRecyclerAdapter userMyFriendRecyclerAdapter;
     private LinearLayoutManager linearLayoutManager;
     private Bundle bundleGiveMailfromMenu;
-    private String GetMail ,GetName;
+    private String getMail, getName;
 
-    public MyFriendActivity(){}
+    public MyFriendActivity() {
+    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root=getActivity();
-        jview=inflater.inflate(R.layout.activity_my_friend, container, false);
-        GiveUserfromChoose();
-        Firebase.setAndroidContext(jview.getContext());
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
-
+        root = getActivity();
+        contentView = inflater.inflate(R.layout.activity_my_friend, container, false);
+        giveUserfromChoose();
+        Firebase.setAndroidContext(contentView.getContext());
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         Init();
-
-        RvListMyFriend.setHasFixedSize(true);
-        linearLayoutManager=new LinearLayoutManager(jview.getContext());
+        rcvListMyFriend.setHasFixedSize(true);
+        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        RvListMyFriend.setLayoutManager(linearLayoutManager);
+        rcvListMyFriend.setLayoutManager(linearLayoutManager);
         getDatafromFirebase();
-
-        return jview;
+        return contentView;
     }
 
-    public void getDatafromFirebase(){
-        firebase.child("My_friend").child(GetMail).addValueEventListener(new ValueEventListener() {
+    public void getDatafromFirebase() {
+        firebase.child("My_friend").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot Snapshort: dataSnapshot.getChildren())
-                {
-                    listMail.add(Snapshort.getKey().toString().replace("&","."));
+                for (DataSnapshot Snapshort : dataSnapshot.getChildren()) {
+                    listMail.add(Snapshort.getKey().toString().replace("&", "."));
                     listName.add(Snapshort.getValue().toString());
                 }
-
-                for(int i=0;i<listName.size();i++)
-                {
-                    ListMyFriend.add(new UserFriend(listName.get(i),listMail.get(i)));
+                for (int i = 0; i < listName.size(); i++) {
+                    listMyFriend.add(new UserFriend(listName.get(i), listMail.get(i)));
                 }
-
-                userMyFriendRecyclerAdapter=new UserMyFriendRecyclerAdapter(ListMyFriend,GetMail,GetName);
+                userMyFriendRecyclerAdapter = new UserMyFriendRecyclerAdapter(listMyFriend, getMail, getName);
                 userMyFriendRecyclerAdapter.notifyDataSetChanged();
-                RvListMyFriend.setAdapter(userMyFriendRecyclerAdapter);
+                rcvListMyFriend.setAdapter(userMyFriendRecyclerAdapter);
             }
 
             @Override
@@ -86,21 +80,20 @@ public class MyFriendActivity extends Fragment {
         });
     }
 
-    public void Init(){
-        ListMyFriend=new ArrayList<UserFriend>();
-        listMail=new ArrayList<String>();
-        listName=new ArrayList<String>();
-        RvListMyFriend=(RecyclerView) jview.findViewById(R.id.rvListUserMyFriend);
-
+    public void Init() {
+        listMyFriend = new ArrayList<UserFriend>();
+        listMail = new ArrayList<String>();
+        listName = new ArrayList<String>();
+        rcvListMyFriend = (RecyclerView) contentView.findViewById(R.id.activity_my_friend_rcv_list_my_friend);
     }
 
-    public void GiveUserfromChoose(){
-        bundleGiveMailfromMenu=this.getArguments();
-        if(bundleGiveMailfromMenu!=null) {
-            GetMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
-            //GetMail=GetMail.replace("&", ".");
-            GetName=bundleGiveMailfromMenu.getString("NameforFindFriend");
-            GetName=GetName.toLowerCase();
+    public void giveUserfromChoose() {
+        bundleGiveMailfromMenu = this.getArguments();
+        if (bundleGiveMailfromMenu != null) {
+            getMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
+            //getMail=getMail.replace("&", ".");
+            getName = bundleGiveMailfromMenu.getString("NameforFindFriend");
+            getName = getName.toLowerCase();
         }
     }
 

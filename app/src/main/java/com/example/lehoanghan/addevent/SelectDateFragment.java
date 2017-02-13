@@ -13,11 +13,13 @@ import java.util.Calendar;
 public class SelectDateFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
     private TextView txt;
-    public SelectDateFragment(TextView a) { txt=a;}
-    public SelectDateFragment()
-    {
+
+    public SelectDateFragment(TextView a) {
+        txt = a;
     }
 
+    public SelectDateFragment() {
+    }
 
 
     @Override
@@ -38,11 +40,10 @@ public class SelectDateFragment extends DialogFragment implements DatePickerDial
         String Date = sdf.format(c.getTime());
         //TextView TxtSetDayTo=(TextView)getActivity().findViewById(link);
         txt.setText(Date);
-        /*Intent intent = new Intent(getActivity().getBaseContext(), add_newEvent.class);
+        /*Intent intent = new Intent(getActivity().getBaseContext(), AddNewEventActivity.class);
         intent.putExtra("Date", Date);
         startActivity(intent);*/
     }
-
 
 
 }
