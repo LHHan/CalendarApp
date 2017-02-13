@@ -9,13 +9,12 @@ import com.example.lehoanghan.appcalendar.R;
 
 public class UserMyFriendViewHolder extends RecyclerView.ViewHolder {
 
-    protected TextView TxtCardViewNameMyFriend, TxtCardViewMailMyFriend;
+    protected TextView tvCardViewNameMyFriend, tvCardViewMailMyFriend;
 
     public UserMyFriendViewHolder(View itemView) {
         super(itemView);
-        TxtCardViewNameMyFriend=(TextView) itemView.findViewById(R.id.txtCarViewNameFriend);
-        TxtCardViewMailMyFriend=(TextView) itemView.findViewById(R.id.txtCarViewMailFriend);
+        tvCardViewNameMyFriend = (TextView) itemView.findViewById(R.id.cardview_recycler_my_friend_tv_name);
+        tvCardViewMailMyFriend = (TextView) itemView.findViewById(R.id.cardview_recycler_my_friend_tv_mail);
     }
-
 
 }

@@ -17,46 +17,45 @@ public class UserFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFind
 
     View view;
 
-    private List<UserFriend> ListUser;
+    private List<UserFriend> listUser;
     private Firebase firebase;
-    private String GetMail,GetName;
+    private String getMail, getName;
 
 
-    public UserFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name)
-    {
-        ListUser=listUser;
-        GetMail=mail;
-        GetName=name;
+    public UserFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
+        this.listUser = listUser;
+        getMail = mail;
+        getName = name;
     }
 
 
     @Override
     public UserFindFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_findfriend, parent, false);
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_find_friend, parent, false);
         Firebase.setAndroidContext(view.getContext());
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         return new UserFindFriendViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(final UserFindFriendViewHolder holder, int position) {
-        final UserFriend userFriend =ListUser.get(position);
-        holder.TxtName.setText(userFriend.getName());
-        holder.TxtMail.setText(userFriend.getMail());
-        holder.BtnAdd.setOnClickListener(new View.OnClickListener() {
+        final UserFriend userFriend = listUser.get(position);
+        holder.tvName.setText(userFriend.getName());
+        holder.tvMail.setText(userFriend.getMail());
+        holder.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String changeMail= userFriend.getMail().replace(".","&");
-                GetMail=GetMail.replace(".","&");
-                firebase.child("Add_friend").child(changeMail).child(GetMail).setValue(GetName);
-                holder.BtnAdd.setText("Wait for Accept");
+                String changeMail = userFriend.getMail().replace(".", "&");
+                getMail = getMail.replace(".", "&");
+                firebase.child("Add_friend").child(changeMail).child(getMail).setValue(getName);
+                holder.btnAdd.setText("Wait for Accept");
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return ListUser.size();
+        return listUser.size();
     }
 
 }

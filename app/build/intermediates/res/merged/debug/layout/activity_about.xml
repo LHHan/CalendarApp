@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/calendar" />
+            android:src="@drawable/ic_calendar" />
 
         <LinearLayout
             android:id="@+id/activity_about_ll_nameapp"

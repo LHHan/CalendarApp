@@ -48,21 +48,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_39deb4c7784f5a98432f1981292db2a8590a1a8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="602a30946642f5847eb66dec199e6783b10e7384">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.2.0_bbba5bb0eb44963cd60a35ac3b3cdc276fc74f4b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9684c95278dc45a142d7de3db9e7e39aa520e1e0">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-alpha1_40b7ab93eaf7d15e7778a9a611f02bd403568630\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="82976e0f875f4ef0cbc74724579635065ff49ed2">
+        sha1="92a9d8ce1d9ff1d651da71e28c54d6fd241caac8">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_121c85ecd17eff4b6c0dbb48bac5daf14bdfd2f8\classes.dex" />
     </item>
     <item
@@ -115,17 +115,8 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="a686f4ad651a3024f5d985ce2c3691f7e2659b35">
+        sha1="0ee4aa0f6e96469d765fc11bfeedbce2c7103a9d">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f72c97a32702c2f3834d30d401543a3633862d62\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex" />
     </item>
 
 </items>

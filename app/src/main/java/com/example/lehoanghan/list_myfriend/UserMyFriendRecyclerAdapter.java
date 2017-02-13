@@ -15,20 +15,19 @@ public class UserMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFrie
 
     private View view;
     private List<UserFriend> listMyFriend;
-    private String GetMail,GetName;
-   // private Firebase firebase;
+    private String GetMail, GetName;
+    // private Firebase firebase;
 
     public UserMyFriendRecyclerAdapter(List<UserFriend> listFriend, String Mail, String Name) {
-        listMyFriend=listFriend;
-        GetMail=Mail;
-        GetName=Name;
+        listMyFriend = listFriend;
+        GetMail = Mail;
+        GetName = Name;
     }
-
 
 
     @Override
     public UserMyFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_myfriend, parent, false);
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_my_friend, parent, false);
         //Firebase.setAndroidContext(view.getContext());
         //firebase=new Firebase("https://appcalendar.firebaseio.com/");
         return new UserMyFriendViewHolder(view);
@@ -36,9 +35,9 @@ public class UserMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFrie
 
     @Override
     public void onBindViewHolder(UserMyFriendViewHolder holder, int position) {
-        UserFriend userMyFriend =listMyFriend.get(position);
-        holder.TxtCardViewNameMyFriend.setText(userMyFriend.getName());
-        holder.TxtCardViewMailMyFriend.setText(userMyFriend.getMail());
+        UserFriend userMyFriend = listMyFriend.get(position);
+        holder.tvCardViewNameMyFriend.setText(userMyFriend.getName());
+        holder.tvCardViewMailMyFriend.setText(userMyFriend.getMail());
     }
 
     @Override

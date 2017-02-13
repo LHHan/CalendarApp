@@ -14,6 +14,7 @@ import com.example.lehoanghan.appcalendar.R;
 public class RingtonePlayingService extends Service {
 
     MediaPlayer mediaPlayer;
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -22,19 +23,16 @@ public class RingtonePlayingService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
-        String typefromAlarm=intent.getStringExtra("type");
-        if(typefromAlarm!=null) {
+        String typefromAlarm = intent.getStringExtra("type");
+        if (typefromAlarm != null) {
             if (typefromAlarm.compareTo("OK") == 0) {
                 mediaPlayer.stop();
                 mediaPlayer.reset();
-            }
-            else{
-                mediaPlayer=MediaPlayer.create(this, R.raw.de);
+            } else {
+                mediaPlayer = MediaPlayer.create(this, R.raw.de);
                 mediaPlayer.start();
             }
         }
-
         return START_NOT_STICKY;
     }
 

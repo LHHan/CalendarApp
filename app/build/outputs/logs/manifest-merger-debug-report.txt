@@ -111,12 +111,12 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:49:9-50:46
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:50:13-44
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:49:19-86
-activity#com.example.lehoanghan.list_newevent.Dialog_Alarm
+activity#com.example.lehoanghan.list_newevent.AlarmDialog
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:9-52:46
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:52:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:19-83
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:19-82
 receiver#com.example.lehoanghan.list_newevent.AlarmNotificationReceiver
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:53:9-98
 	android:name

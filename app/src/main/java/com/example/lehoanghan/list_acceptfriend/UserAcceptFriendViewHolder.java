@@ -9,14 +9,14 @@ import com.example.lehoanghan.appcalendar.R;
 
 
 public class UserAcceptFriendViewHolder extends RecyclerView.ViewHolder {
-    protected TextView TxtUserNameAcceptFriend, TxtUserMailAcceptFriend;
-    protected Button BtnUserAcceptFriend;
+    protected TextView tvUserNameAcceptFriend, tvUserMailAcceptFriend;
+    protected Button btnUserAcceptFriend;
 
 
     public UserAcceptFriendViewHolder(View itemView) {
         super(itemView);
-        TxtUserNameAcceptFriend=(TextView) itemView.findViewById(R.id.txtCarViewNameAccept);
-        TxtUserMailAcceptFriend=(TextView) itemView.findViewById(R.id.txtCarViewMailAccept);
-        BtnUserAcceptFriend=(Button) itemView.findViewById(R.id.btnCarViewAccept);
+        tvUserNameAcceptFriend =(TextView) itemView.findViewById(R.id.cardview_recycler_accept_friend_tv_name);
+        tvUserMailAcceptFriend =(TextView) itemView.findViewById(R.id.cardview_recycler_accept_friend_tv_mail);
+        btnUserAcceptFriend =(Button) itemView.findViewById(R.id.cardview_recycler_accept_friend_btn_accept);
     }
 }

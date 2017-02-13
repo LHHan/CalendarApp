@@ -5,7 +5,7 @@
     android:title="Add Event"
     android:id="@+id/add_event"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/addevent64"></item>
+        android:icon="@drawable/ab_add_event"></item>
     <item
         android:title="Rate"
         android:id="@+id/rate"

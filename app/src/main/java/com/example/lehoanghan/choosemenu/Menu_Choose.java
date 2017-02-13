@@ -37,17 +37,17 @@ import java.util.ArrayList;
 public class Menu_Choose extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
-    private ListView lstMenu;
+    private ListView lvMenu;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-    private CharSequence DrawerTitle;
-    private CharSequence Title;
+    private CharSequence drawerTitle;
+    private CharSequence title;
 
     private SearchView srvFindFriend;
 
     private String[] MenuTitle;
-    private int[] MenuIcon = {R.drawable.house, R.drawable.account, R.drawable.myfriend, R.drawable.addfriend, R.drawable.findfriend,
-            R.drawable.event, R.drawable.myevent, R.drawable.oldevent, R.drawable.about, R.drawable.exitout};
-    private ArrayList<MenuItem> arrayList_menuItem;
+    private int[] MenuIcon = {R.drawable.ic_house, R.drawable.ic_account, R.drawable.ic_my_friend, R.drawable.ic_add_friend, R.drawable.ic_find_friend,
+            R.drawable.ic_new_event, R.drawable.ic_my_event, R.drawable.ic_old_event, R.drawable.ic_about, R.drawable.ic_exit};
+    private ArrayList<MenuItem> arrListMenuItem;
     private MenuAdapter menuAdapter;
     private ActionBar actionBar;
 
@@ -65,7 +65,7 @@ public class Menu_Choose extends AppCompatActivity {
 
 
     private static Fragment fragment = null;
-    private Bundle bundle, bundlesetNameforHome, bundlePassMailtoFind_Accept;
+    private Bundle bundle, bundlesetNameforHome, bundlePassMailtoFindAccept;
     private String setTitleItem = null;
     private MaterialCalendarView calendar;
     private String textDate;
@@ -76,24 +76,24 @@ public class Menu_Choose extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_choose);
         Init();
-        SetNameUser();
+        setNameUser();
         if (savedInstanceState == null) {
-            do_ItemListener(0);
+            doItemListener(0);
         }
 
     }
 
 
     private void Init() {
-        DrawerTitle = getTitle();
-        Title = getTitle();
+        drawerTitle = getTitle();
+        title = getTitle();
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout_menu);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.hello, R.string.hello) {
 
             @Override
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
-                actionBar.setTitle(Title);
+                actionBar.setTitle(title);
                 invalidateOptionsMenu();
             }
 
@@ -101,7 +101,7 @@ public class Menu_Choose extends AppCompatActivity {
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                actionBar.setTitle(DrawerTitle);
+                actionBar.setTitle(drawerTitle);
                 invalidateOptionsMenu();
             }
         };
@@ -111,17 +111,17 @@ public class Menu_Choose extends AppCompatActivity {
             actionBar.setDisplayShowHomeEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        lstMenu = (ListView) findViewById(R.id.lstmenu);
+        lvMenu = (ListView) findViewById(R.id.lstmenu);
 
         MenuTitle = getResources().getStringArray(R.array.my_data);
 
-        arrayList_menuItem = new ArrayList<MenuItem>();
+        arrListMenuItem = new ArrayList<MenuItem>();
         CreateListMenu();
 
-        menuAdapter = new MenuAdapter(arrayList_menuItem, getApplicationContext());
-        lstMenu.setAdapter(menuAdapter);
+        menuAdapter = new MenuAdapter(arrListMenuItem, getApplicationContext());
+        lvMenu.setAdapter(menuAdapter);
 
-        lstMenu.setOnItemClickListener(new ItemListener());
+        lvMenu.setOnItemClickListener(new ItemListener());
 
     }
 
@@ -151,22 +151,22 @@ public class Menu_Choose extends AppCompatActivity {
                 menuInflater.inflate(R.menu.menu_account, menu);
                 break;
             case 3:
-                menuInflater.inflate(R.menu.menu_myfriend, menu);
+                menuInflater.inflate(R.menu.menu_my_friend, menu);
                 break;
             case 4:
-                menuInflater.inflate(R.menu.menu_friendaccept, menu);
+                menuInflater.inflate(R.menu.menu_friend_accept, menu);
                 break;
             case 5:
-                menuInflater.inflate(R.menu.menu_findfriend, menu);
+                menuInflater.inflate(R.menu.menu_find_friend, menu);
                 break;
             case 7:
-                menuInflater.inflate(R.menu.menu_newevent, menu);
+                menuInflater.inflate(R.menu.menu_new_event, menu);
                 break;
             case 8:
-                menuInflater.inflate(R.menu.menu_myevent, menu);
+                menuInflater.inflate(R.menu.menu_my_event, menu);
                 break;
             case 9:
-                menuInflater.inflate(R.menu.menu_oldevent, menu);
+                menuInflater.inflate(R.menu.menu_old_event, menu);
                 break;
             case 10:
                 menuInflater.inflate(R.menu.menu_about, menu);
@@ -185,17 +185,17 @@ public class Menu_Choose extends AppCompatActivity {
         }
         int id = item.getItemId();
         if (id == android.R.id.home) {
-            if (drawerLayout.isDrawerOpen(lstMenu))
-                drawerLayout.closeDrawer(lstMenu);
+            if (drawerLayout.isDrawerOpen(lvMenu))
+                drawerLayout.closeDrawer(lvMenu);
             else
-                drawerLayout.openDrawer(lstMenu);
+                drawerLayout.openDrawer(lvMenu);
         }
 
         switch (id) {
-            case R.id.back:
+            case (R.id.menu_about_back R.id.menu_account_ab_back:
                 if (menu != null)
                     menu.clear();
-                SetNameUser();
+                setNameUser();
                 fragment = new HomeActivity();
                 fragment.setArguments(bundlesetNameforHome);
                 setTitleItem = "HomeActivity";
@@ -203,7 +203,7 @@ public class Menu_Choose extends AppCompatActivity {
                 actionBar.setDisplayHomeAsUpEnabled(true);
                 Fragment = Fragment_Home;
                 break;
-            case R.id.findfriend:
+            case R.id.menu_find_friend_ab_search:
                 srvFindFriend = (SearchView) findViewById(R.id.activity_find_friend_srv_search);
                 if (srvFindFriend.getVisibility() == View.INVISIBLE)
                     srvFindFriend.setVisibility(View.VISIBLE);
@@ -214,7 +214,7 @@ public class Menu_Choose extends AppCompatActivity {
         }
         if (fragment != null) {
             FragmentManager fManager = getFragmentManager();
-            fManager.beginTransaction().replace(R.id.framelayout_menu, fragment).commit();
+            fManager.beginTransaction().replace(R.id.activity_menu_choose_fl_navigation, fragment).commit();
             setTitle(setTitleItem);
         } else {
             Log.e("Main", "error");
@@ -238,18 +238,18 @@ public class Menu_Choose extends AppCompatActivity {
     }
 
 
-    //Listen event Button
+    //Listen ic_new_event Button
     private class ItemListener implements ListView.OnItemClickListener {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            do_ItemListener(position);
+            doItemListener(position);
         }
     }
 
 
     //Change among Fragments
-    public void do_ItemListener(int position) {
+    public void doItemListener(int position) {
         if (menu != null)
             menu.clear();
         switch (position) {
@@ -258,7 +258,7 @@ public class Menu_Choose extends AppCompatActivity {
                 if (menuInflater != null) {
                     menuInflater.inflate(R.menu.menu_home, menu);
                 }
-                SetNameUser();
+                setNameUser();
                 fragment = new HomeActivity();
                 fragment.setArguments(bundlesetNameforHome);
                 break;
@@ -267,49 +267,49 @@ public class Menu_Choose extends AppCompatActivity {
                 PassDatatoFind_Accept_Friend();
                 // menuInflater.inflate(R.menu.menu_account,menu);
                 fragment = new AccountActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 3:
                 Fragment = Fragment_MyFriend;
-                // menuInflater.inflate(R.menu.menu_myfriend,menu);
+                // menuInflater.inflate(R.menu.menu_my_friend,menu);
                 PassDatatoFind_Accept_Friend();
                 fragment = new MyFriendActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 4:
                 Fragment = Fragment_FriendAccept;
-                // menuInflater.inflate(R.menu.menu_friendaccept,menu);
+                // menuInflater.inflate(R.menu.menu_friend_accept,menu);
                 PassDatatoFind_Accept_Friend();
                 fragment = new FriendAcceptActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 5:
                 Fragment = Fragment_FindFriend;
-                // menuInflater.inflate(R.menu.menu_findfriend,menu);
+                // menuInflater.inflate(R.menu.menu_find_friend,menu);
                 PassDatatoFind_Accept_Friend();
                 fragment = new FindFriendActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 7:
                 Fragment = Fragment_NewEvent;
                 PassDatatoFind_Accept_Friend();
-                //menuInflater.inflate(R.menu.menu_newevent,menu);
+                //menuInflater.inflate(R.menu.menu_new_event,menu);
                 fragment = new NewEventActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 8:
                 Fragment = Fragment_MyEvent;
                 PassDatatoFind_Accept_Friend();
-                // menuInflater.inflate(R.menu.menu_oldevent,menu);
+                // menuInflater.inflate(R.menu.menu_old_event,menu);
                 fragment = new MyEventActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 9:
                 Fragment = Fragment_OldEvent;
                 PassDatatoFind_Accept_Friend();
-                // menuInflater.inflate(R.menu.menu_oldevent,menu);
+                // menuInflater.inflate(R.menu.menu_old_event,menu);
                 fragment = new OldEventActivity();
-                fragment.setArguments(bundlePassMailtoFind_Accept);
+                fragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 10:
                 Fragment = Fragment_About;
@@ -325,13 +325,13 @@ public class Menu_Choose extends AppCompatActivity {
 
         if (fragment != null) {
             FragmentManager fManager = getFragmentManager();
-            fManager.beginTransaction().replace(R.id.framelayout_menu, fragment).commit();
-            lstMenu.setItemChecked(position, true);
-            lstMenu.setSelection(position);
+            fManager.beginTransaction().replace(R.id.activity_menu_choose_fl_navigation, fragment).commit();
+            lvMenu.setItemChecked(position, true);
+            lvMenu.setSelection(position);
 
             setTitle(MenuTitle[position]);
-            Title = getTitle();
-            drawerLayout.closeDrawer(lstMenu);
+            title = getTitle();
+            drawerLayout.closeDrawer(lvMenu);
 
         } else {
             Log.e("Main", "error");
@@ -340,18 +340,18 @@ public class Menu_Choose extends AppCompatActivity {
 
 
     public void CreateListMenu() {
-        arrayList_menuItem.add(new MenuItem(MenuTitle[0], MenuIcon[0]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[1], MenuIcon[1]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[2]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[3], MenuIcon[2]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[4], MenuIcon[3]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[5], MenuIcon[4]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[6]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[7], MenuIcon[5]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[8], MenuIcon[6]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[9], MenuIcon[7]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[10], MenuIcon[8]));
-        arrayList_menuItem.add(new MenuItem(MenuTitle[11], MenuIcon[9]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[0], MenuIcon[0]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[1], MenuIcon[1]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[2]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[3], MenuIcon[2]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[4], MenuIcon[3]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[5], MenuIcon[4]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[6]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[7], MenuIcon[5]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[8], MenuIcon[6]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[9], MenuIcon[7]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[10], MenuIcon[8]));
+        arrListMenuItem.add(new MenuItem(MenuTitle[11], MenuIcon[9]));
 
     }
 
@@ -360,7 +360,7 @@ public class Menu_Choose extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
         builder.setMessage("You want to exit?");
-        builder.setIcon(R.drawable.warning);
+        builder.setIcon(R.drawable.ic_warning);
 
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
@@ -392,58 +392,37 @@ public class Menu_Choose extends AppCompatActivity {
                 Thoat();
                 break;
             case 1:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 2:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 3:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 4:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 5:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 6:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 7:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 8:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
             case 9:
-                do_ItemListener(0);
+                doItemListener(0);
                 break;
 
         }
     }
 
-
-    // private static StringBuilder txt;
-
-    //pass date from menu_choose to HomeActivity
-    /*public void DosetDateFrom() {
-        calendar =(MaterialCalendarView)findViewById(R.id.calendarView);
-        Calendar c= Calendar.getInstance();
-        final int cday=c.get(Calendar.DAY_OF_MONTH);
-        final int cmonth=c.get(Calendar.MONTH)+1;
-        final int cyear=c.get(Calendar.YEAR);
-        txt=new StringBuilder().append(cday).append("-").append(cmonth).append("-").append(cyear);
-        textDate=getIntent().getStringExtra("ChangeDate");
-        intentAddEvent=new Intent (Menu_Choose.this, AddEventActivity.class);
-        if(textDate!=null) {
-            intentAddEvent.putExtra("txtsetdateTo", textDate.toString());
-        }
-        else
-            intentAddEvent.putExtra("txtsetdateTo", txt.toString());
-    }*/
-
-    //pass Name user to HomeActivity
-    public void SetNameUser() {
+    public void setNameUser() {
         Bundle bundle = getIntent().getExtras();
         String NameUser = "", MailUser = "";
         String NameUserfromAddEvent = getIntent().getStringExtra("NameUserfromAddEvent");
@@ -469,9 +448,9 @@ public class Menu_Choose extends AppCompatActivity {
             Mailuser = bundle.getString("MailUser");
             Nameuser = bundle.getString("NameUser");
         }
-        bundlePassMailtoFind_Accept = new Bundle();
-        bundlePassMailtoFind_Accept.putString("MailforFindFriend", Mailuser);
-        bundlePassMailtoFind_Accept.putString("NameforFindFriend", Nameuser);
+        bundlePassMailtoFindAccept = new Bundle();
+        bundlePassMailtoFindAccept.putString("MailforFindFriend", Mailuser);
+        bundlePassMailtoFindAccept.putString("NameforFindFriend", Nameuser);
     }
 
 

@@ -5,11 +5,11 @@
     android:background="@drawable/list_item_select"
     >
     <ImageView
-        android:id="@+id/img_icon"
+        android:id="@+id/menu_body_iv_icon"
         android:layout_width="38dp"
         android:layout_height="38dp" />
     <TextView
-        android:id="@+id/txtbody"
+        android:id="@+id/menu_body_tv_body"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginLeft="48dp"

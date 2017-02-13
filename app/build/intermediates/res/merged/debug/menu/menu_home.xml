@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/add_event"
-    android:icon="@drawable/addevent64"
-    android:title="AddEvent"
-    app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/menu_home_ab_add_event"
+        android:icon="@drawable/ab_add_event"
+        android:title="AddEvent"
+        app:showAsAction="ifRoom"></item>
 </menu>

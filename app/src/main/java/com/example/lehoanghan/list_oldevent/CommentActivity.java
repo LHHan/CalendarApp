@@ -69,7 +69,7 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
                     }
                 }
                 ListView LvComment = (ListView) findViewById(R.id.activity_comment_lv_list_comment);
-                Custom_Adapter_Comment arrayAdapter = new Custom_Adapter_Comment(getApplication().getBaseContext(), listComment);
+                CustomCommentAdapter arrayAdapter = new CustomCommentAdapter(getApplication().getBaseContext(), listComment);
                 LvComment.setAdapter(arrayAdapter);
             }
 
@@ -113,7 +113,7 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
                         }
                         ListView LvComment = (ListView) findViewById(R.id.activity_comment_lv_list_comment);
                         //ArrayAdapter arrayAdapter = new ArrayAdapter(v.getContext(), android.R.layout.simple_expandable_list_item_1, listComment);
-                        Custom_Adapter_Comment arrayAdapter = new Custom_Adapter_Comment(v.getContext(), listComment);
+                        CustomCommentAdapter arrayAdapter = new CustomCommentAdapter(v.getContext(), listComment);
                         LvComment.setAdapter(arrayAdapter);
                     }
 

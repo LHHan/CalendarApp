@@ -39,8 +39,8 @@ public class FindFriendActivity extends Fragment {
     private LinearLayoutManager linearLayoutManager;
     private UserFindFriendRecyclerAdapter userFindFriendRecyclerAdapter;
     private List<UserFriend> listUserFriend;
-    private List<String> listNameUser, listNameUserFriend;//search friend base on name.
-    private List<String> listMailUser, listMailUserFriend;//search friend base on mail.
+    private List<String> listNameUser, listNameUserFriend;//ab_search friend base on name.
+    private List<String> listMailUser, listMailUserFriend;//ab_search friend base on mail.
     private String getName;
     private String getMail;
     private Bundle bundleGiveMailFromMenu;

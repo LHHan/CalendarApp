@@ -5,7 +5,7 @@
     android:background="@drawable/list_item_select"
     >
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/menu_head_tv_title"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_alignParentLeft="true"

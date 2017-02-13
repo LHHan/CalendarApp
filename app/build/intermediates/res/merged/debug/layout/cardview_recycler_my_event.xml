@@ -15,7 +15,7 @@
             android:background="@color/lightblue">
 
             <TextView
-                android:id="@+id/cardview_recycler_my_event_tv_time_event"
+                android:id="@+id/cardview_recycler_my_event_tv_time_event_value"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -95,13 +95,13 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/txtTimeEnd"
+                        android:id="@+id/cardview_recycler_my_event_tv_time_end"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TimeEnd" />
 
                     <TextView
-                        android:id="@+id/txtTimeEndValue"
+                        android:id="@+id/cardview_recycler_my_event_tv_time_end_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"
@@ -111,13 +111,13 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/txtDecription"
+                        android:id="@+id/cardview_recycler_my_event_tv_decription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Decription" />
 
                     <TextView
-                        android:id="@+id/txtDecriptionValue"
+                        android:id="@+id/cardview_recycler_my_event_tv_decription_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"
@@ -127,13 +127,13 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/txtPlace"
+                        android:id="@+id/cardview_recycler_my_event_tv_place"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Place" />
 
                     <TextView
-                        android:id="@+id/txtPlaceValue"
+                        android:id="@+id/cardview_recycler_my_event_tv_place_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"
@@ -178,13 +178,13 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/txtAlarm"
+                        android:id="@+id/cardview_recycler_my_event_tv_alarm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Alarm" />
 
                     <TextView
-                        android:id="@+id/txtAlarmValue"
+                        android:id="@+id/cardview_recycler_my_event_tv_alarm_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"
@@ -194,13 +194,13 @@
                 <TableRow>
 
                     <TextView
-                        android:id="@+id/txtRepeat"
+                        android:id="@+id/cardview_recycler_my_event_tv_repeat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Repeat" />
 
                     <TextView
-                        android:id="@+id/txtRepeatValue"
+                        android:id="@+id/cardview_recycler_new_event_tv_repeat_value"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30px"

@@ -10,16 +10,16 @@ import com.example.lehoanghan.appcalendar.R;
 
 public class UserFindFriendViewHolder extends RecyclerView.ViewHolder {
 
-    protected TextView TxtName;
-    protected TextView TxtMail;
-    protected Button BtnAdd;
+    protected TextView tvName;
+    protected TextView tvMail;
+    protected Button btnAdd;
 
     public UserFindFriendViewHolder(final View itemView) {
         super(itemView);
-        TxtName=(TextView) itemView.findViewById(R.id.txtCarViewName);
-        TxtMail=(TextView) itemView.findViewById(R.id.txtCarViewMail);
-        BtnAdd=(Button) itemView.findViewById(R.id.btnCarViewAdd);
-       /* BtnAdd.setOnClickListener(new View.OnClickListener() {
+        tvName =(TextView) itemView.findViewById(R.id.cardview_recycler_find_friend_tv_name);
+        tvMail =(TextView) itemView.findViewById(R.id.cardview_recycler_find_friend_tv_mail);
+        btnAdd =(Button) itemView.findViewById(R.id.cardview_recycler_find_friend_btn_add);
+       /* btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(itemView.getContext(),"hello baby",Toast.LENGTH_LONG);

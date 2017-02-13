@@ -15,25 +15,25 @@ import java.util.ArrayList;
 
 public class MenuAdapter extends BaseAdapter {
 
-    private final int Item_Title = 0;
-    private final int Item_Body = 1;
+    private final int itemTitle = 0;
+    private final int itemBody = 1;
     private Context context;
-    private ArrayList<MenuItem> array_menuitem;
+    private ArrayList<MenuItem> arrayMenuItem;
 
 
     public MenuAdapter(ArrayList<MenuItem> array_menuitem, Context context) {
-        this.array_menuitem = array_menuitem;
+        this.arrayMenuItem = array_menuitem;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return array_menuitem.size();
+        return arrayMenuItem.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return array_menuitem.get(position);
+        return arrayMenuItem.get(position);
     }
 
     @Override
@@ -44,23 +44,23 @@ public class MenuAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        int type = array_menuitem.get(position).getItem_Type();
+        int type = arrayMenuItem.get(position).getItemType();
 
-        if (type == Item_Title) {
+        if (type == itemTitle) {
             if (convertView == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.menu_head, null);
-                TextView txtTile = (TextView) convertView.findViewById(R.id.txtTitle);
-                txtTile.setText(array_menuitem.get(position).getTitle());
+                TextView txtTile = (TextView) convertView.findViewById(R.id.menu_head_tv_title);
+                txtTile.setText(arrayMenuItem.get(position).getTitle());
             }
-        } else if (type == Item_Body) {
+        } else if (type == itemBody) {
             if (convertView == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.menu_body, null);
-                TextView txtTile = (TextView) convertView.findViewById(R.id.txtbody);
-                txtTile.setText(array_menuitem.get(position).getTitle());
-                ImageView imgBody = (ImageView) convertView.findViewById(R.id.img_icon);
-                imgBody.setImageResource(array_menuitem.get(position).getIcon());
+                TextView tvTile = (TextView) convertView.findViewById(R.id.menu_body_tv_body);
+                tvTile.setText(arrayMenuItem.get(position).getTitle());
+                ImageView ivBody = (ImageView) convertView.findViewById(R.id.menu_body_iv_icon);
+                ivBody.setImageResource(arrayMenuItem.get(position).getIcon());
             }
         }
         return convertView;

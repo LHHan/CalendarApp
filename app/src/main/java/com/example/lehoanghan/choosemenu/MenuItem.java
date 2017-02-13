@@ -3,44 +3,44 @@ package com.example.lehoanghan.choosemenu;
 
 public class MenuItem {
 
-    private final int Item_Title = 0;
-    private final int Item_Body = 1;
+    private final int itemTitle = 0;
+    private final int itemBody = 1;
 
-    private int Item_Type = Item_Title;
-    private String Title;
-    private int Icon;
+    private int itemType = itemTitle;
+    private String title;
+    private int icon;
 
     public MenuItem(String Title) {
-        this.Title = Title;
-        Item_Type = Item_Title;
+        this.title = Title;
+        itemType = itemTitle;
     }
 
     public MenuItem(String Title, int Icon) {
-        this.Title = Title;
-        this.Icon = Icon;
-        Item_Type = Item_Body;
+        this.title = Title;
+        this.icon = Icon;
+        itemType = itemBody;
     }
 
 
-    public int getItem_Type() {
-        return Item_Type;
+    public int getItemType() {
+        return itemType;
     }
 
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public int getIcon() {
-        return Icon;
+        return icon;
     }
 
     public void setIcon(int icon) {
-        Icon = icon;
+        this.icon = icon;
     }
 }
 

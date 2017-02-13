@@ -6,12 +6,12 @@
     android:orientation="vertical">
 
     <FrameLayout
-        android:id="@+id/framelayout_menu"
+        android:id="@+id/activity_menu_choose_fl_navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></FrameLayout>
 
     <ListView
-        android:id="@+id/lstmenu"
+        android:id="@+id/activity_menu_choose_lv_navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"

@@ -61,7 +61,7 @@
             android:name="com.example.lehoanghan.list_oldevent.PictureActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.list_newevent.Dialog_Alarm"
+            android:name="com.example.lehoanghan.list_newevent.AlarmDialog"
             android:theme="@style/AppTheme" />
 
         <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver" />

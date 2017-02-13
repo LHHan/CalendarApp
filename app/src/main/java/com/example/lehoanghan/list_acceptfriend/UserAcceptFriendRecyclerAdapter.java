@@ -19,43 +19,41 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
 
     View view;
 
-    private List<UserFriend> ListUserAccept;
+    private List<UserFriend> listUserAccept;
     private Firebase firebase;
-    private String GetMail;
-    private String GetName;
-    private int Test=0;
+    private String getMail;
+    private String getName;
+    private int Test = 0;
 
-    public UserAcceptFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name)
-    {
-        ListUserAccept=listUser;
-        GetMail=mail;
-        GetName=name;
+    public UserAcceptFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
+        listUserAccept = listUser;
+        getMail = mail;
+        getName = name;
     }
-
 
     @Override
     public UserAcceptFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view= LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_acceptfriend, parent, false);
+        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_accept_friend, parent, false);
         Firebase.setAndroidContext(view.getContext());
-        firebase=new Firebase("https://appcalendar.firebaseio.com/");
+        firebase = new Firebase("https://appcalendar.firebaseio.com/");
         return new UserAcceptFriendViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(final UserAcceptFriendViewHolder holder, final int position) {
-        final UserFriend userFindFriend =ListUserAccept.get(position);
-        holder.TxtUserNameAcceptFriend.setText(userFindFriend.getName());
-        holder.TxtUserMailAcceptFriend.setText(userFindFriend.getMail());
-        holder.BtnUserAcceptFriend.setOnClickListener(new View.OnClickListener() {
+        final UserFriend userFindFriend = listUserAccept.get(position);
+        holder.tvUserNameAcceptFriend.setText(userFindFriend.getName());
+        holder.tvUserMailAcceptFriend.setText(userFindFriend.getMail());
+        holder.btnUserAcceptFriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               final  String change=userFindFriend.getMail().replace(".","&");
+                final String change = userFindFriend.getMail().replace(".", "&");
                 firebase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        firebase.child("My_friend").child(GetMail).child(change).setValue(userFindFriend.getName());
-                        firebase.child("My_friend").child(change).child(GetMail).setValue(GetName);
-                       // firebase.child("Add_friend").child(GetMail).child(change).setValue(null);
+                        firebase.child("My_friend").child(getMail).child(change).setValue(userFindFriend.getName());
+                        firebase.child("My_friend").child(change).child(getMail).setValue(getName);
+                        // firebase.child("Add_friend").child(getMail).child(change).setValue(null);
                     }
 
                     @Override
@@ -67,9 +65,9 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
                    @Override
                    public void onDataChange(DataSnapshot dataSnapshot) {
 
-                        firebase.child("My_friend").child(GetMail).child(change).setValue(userFindFriend.getName());
-                        firebase.child("My_friend").child(change).child(GetMail).setValue(GetName);
-                        //firebase.child("Add_friend").child(GetMail).child(change).setValue(null);
+                        firebase.child("My_friend").child(getMail).child(change).setValue(userFindFriend.getName());
+                        firebase.child("My_friend").child(change).child(getMail).setValue(getName);
+                        //firebase.child("Add_friend").child(getMail).child(change).setValue(null);
                     }
 
                    @Override
@@ -77,12 +75,12 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
 
                    }
                 });*/
-                ListUserAccept.remove(position);
+                listUserAccept.remove(position);
                 notifyItemRemoved(position);
-                notifyItemRangeChanged(position, ListUserAccept.size());
+                notifyItemRangeChanged(position, listUserAccept.size());
                 //notifyItemChanged(position);
-               // if(holder.BtnUserAcceptFriend.getVisibility()==view.VISIBLE)
-                holder.BtnUserAcceptFriend.setVisibility(view.INVISIBLE);
+                // if(holder.btnUserAcceptFriend.getVisibility()==view.VISIBLE)
+                holder.btnUserAcceptFriend.setVisibility(view.INVISIBLE);
 
             }
         });
@@ -92,7 +90,7 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
 
     @Override
     public int getItemCount() {
-        return ListUserAccept.size();
+        return listUserAccept.size();
     }
 
 }

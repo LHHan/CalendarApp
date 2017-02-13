@@ -173,11 +173,11 @@ public class AddEventActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.done:
+            case R.id.menu_add_event_done:
                 //saveEventinFirebase();
                 checkEntry();
                 break;
-            case R.id.backfromEvent:
+            case R.id.menu_add_event_back:
                 Intent intent = new Intent(AddEventActivity.this, Menu_Choose.class);
                 intent.putExtra("NameUserfromAddEvent", nameUser);
                 intent.putExtra("nameUser", nameUser);
@@ -285,12 +285,12 @@ public class AddEventActivity extends AppCompatActivity {
                     saveEventinFirebase();
                     Entry();
                 } else
-                    error = "error about time to ";
+                    error = "error ic_about time to ";
             } else
-                error = "error about date to";
+                error = "error ic_about date to";
 
         } else {
-            error = "error about date from";
+            error = "error ic_about date from";
         }
         if (error != null)
             Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();

@@ -105,11 +105,11 @@ public class MyEventActivity extends Fragment {
 //                for(DataSnapshot snapshot:dataSnapshot.getChildren())
 //                {
 //                    Object tem= snapshot.getValue();
-//                    HashMap event=(HashMap)tem;
-//                    TemAgree.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
-//                            event.get("TimeFrom").toString(), event.get("DateTo").toString(), event.get("TimeTo").toString(),
-//                            event.get("Description").toString(), event.get("Place").toString(), event.get("FriendInvite").toString(),
-//                            event.get("Alarm").toString(), event.get("Repeat").toString()));
+//                    HashMap ic_new_event=(HashMap)tem;
+//                    TemAgree.add(new EventValue(ic_new_event.get("NameEvent").toString(), ic_new_event.get("DateFrom").toString(),
+//                            ic_new_event.get("TimeFrom").toString(), ic_new_event.get("DateTo").toString(), ic_new_event.get("TimeTo").toString(),
+//                            ic_new_event.get("Description").toString(), ic_new_event.get("Place").toString(), ic_new_event.get("FriendInvite").toString(),
+//                            ic_new_event.get("Alarm").toString(), ic_new_event.get("Repeat").toString()));
 //                }
 //            }
 //
@@ -150,7 +150,7 @@ public class MyEventActivity extends Fragment {
                         }
 
 //                            Object tem= snapshot.getValue();
-//                            HashMap event=(HashMap)tem;
+//                            HashMap ic_new_event=(HashMap)tem;
                         if (date1.compareTo(date2) <= 0) {
                             Check = -1;
                             Map<String, String> eventValue = new Hashtable<String, String>();
@@ -170,7 +170,7 @@ public class MyEventActivity extends Fragment {
                     }
                     if (Check == 0) {
 //                        Object tem= snapshot.getValue();
-//                        HashMap event=(HashMap)tem;
+//                        HashMap ic_new_event=(HashMap)tem;
                         listNewEvent.add(new EventValue(event.get("NameEvent").toString(), event.get("DateFrom").toString(),
                                 event.get("TimeFrom").toString(), event.get("DateTo").toString(), event.get("TimeTo").toString(),
                                 event.get("Description").toString(), event.get("Place").toString(), event.get("FriendInvite").toString(),

@@ -96,7 +96,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onAuthenticationError(FirebaseError firebaseError) {
                 final AlertDialog.Builder alert = new AlertDialog.Builder(LoginActivity.this);
-                alert.setIcon(R.drawable.warning);
+                alert.setIcon(R.drawable.ic_warning);
                 if (firebaseError.getMessage().toString().compareTo("The specified password is incorrect.") == 0) {
                     alert.setMessage(firebaseError.getMessage().toString());
                     alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -107,7 +107,7 @@ public class LoginActivity extends Activity {
                     }).show();
                 } else if ((firebaseError.getMessage().toString().compareTo("Due to another authentication attempt, this authentication attempt was aborted before it could complete.") == 0) ||
                         (firebaseError.getMessage().toString().compareTo("There was an exception while connecting to the authentication server: No peer certificate")) == 0) {
-                    alert.setMessage(firebaseError.getMessage().toString() + "You need check about network");
+                    alert.setMessage(firebaseError.getMessage().toString() + "You need check ic_about network");
                     alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -122,7 +122,7 @@ public class LoginActivity extends Activity {
                     }).show();
                 } else //The specified email address is invalid
                 {
-                    alert.setMessage(firebaseError.getMessage().toString() + " You need create an account?");
+                    alert.setMessage(firebaseError.getMessage().toString() + " You need create an ic_account?");
                     alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -155,7 +155,7 @@ public class LoginActivity extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
         builder.setMessage("Do you want to exit?");
-        builder.setIcon(R.drawable.warning);
+        builder.setIcon(R.drawable.ic_warning);
 
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
