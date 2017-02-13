@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/cardview_recycler_old_event_tl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblue">
+
+            <TextView
+                android:id="@+id/cardview_recycler_old_event_tv_time_event_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time Event" />
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/cardview_recycler_old_event_tv_name_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NameEvent" />
+
+                    <TextView
+                        android:id="@+id/cardview_recycler_old_event_tv_name_event_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:text="NameEvent" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/cardview_recycler_old_event_btn_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail" />
+            </TableLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_press">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

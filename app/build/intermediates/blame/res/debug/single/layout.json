@@ -40,6 +40,10 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cardview_recycler_new_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_new_event.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_friend.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_my_friend.xml"
     },
@@ -240,6 +244,10 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_memory_event.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cardview_recycler_my_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_my_event.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_action_mode_bar.xml"
     },
@@ -270,6 +278,10 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gallery_friend_invite.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_gallery_friend_invite.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cardview_recycler_old_event.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_old_event.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",

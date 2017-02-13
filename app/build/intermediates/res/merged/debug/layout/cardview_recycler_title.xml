@@ -6,6 +6,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtTitleEvent"/>
+        android:id="@+id/cardview_recycler_title_tv_title_event"/>
 
 </RelativeLayout>

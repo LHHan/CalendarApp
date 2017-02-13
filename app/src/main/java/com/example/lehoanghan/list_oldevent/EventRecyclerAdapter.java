@@ -80,36 +80,36 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         public TitleAboutDate(View itemView) {
 
             super(itemView);
-            tvTitle = (TextView) itemView.findViewById(R.id.txtTitleEvent);
+            tvTitle = (TextView) itemView.findViewById(R.id.cardview_recycler_title_tv_title_event);
         }
     }
 
-    public class EventData extends ViewHolder {
-        TextView TxtTimeEvent, TxtNameEventValue, TxtDateStartValue, TxtTimeStartValue, TxtDateEndValue, TxtTimeEndValue,
-                TxtDecriptionValue, TxtPlaceValue, TxtFriendEventValue, TxtAlarmValue, TxtRepeatValue;
-        Button BtnAgree, BtnRefuse, BtnGallery, BtnDetail;
+    public class eventData extends ViewHolder {
+        TextView tvTimeEvent, tvNameEventValue, tvDateStartValue, tvTimeStartValue, tvDateEndValue, tvTimeEndValue,
+                tvDecriptionValue, tvPlaceValue, tvFriendEventValue, tvAlarmValue, tvRepeatValue;
+        Button btnAgree, btnRefuse, btnGallery, btnDetail;
 
-        public EventData(View itemView) {
+        public eventData(View itemView) {
             super(itemView);
-            TxtTimeEvent = (TextView) itemView.findViewById(R.id.txtTimeEvent);
-            TxtNameEventValue = (TextView) itemView.findViewById(R.id.txtNameEventValue);
+            tvTimeEvent = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_time_event);
+            tvNameEventValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_name_event_value);
             if (type != 3) {
-                TxtDateStartValue = (TextView) itemView.findViewById(R.id.txtDateStartValue);
-                TxtTimeStartValue = (TextView) itemView.findViewById(R.id.txtTimeStartValue);
-                TxtDateEndValue = (TextView) itemView.findViewById(R.id.txtDateEndValue);
-                TxtTimeEndValue = (TextView) itemView.findViewById(R.id.txtTimeEndValue);
-                TxtDecriptionValue = (TextView) itemView.findViewById(R.id.txtDecriptionValue);
-                TxtPlaceValue = (TextView) itemView.findViewById(R.id.txtPlaceValue);
-                TxtFriendEventValue = (TextView) itemView.findViewById(R.id.txtFriendInviteValue);
-                BtnGallery = (Button) itemView.findViewById(R.id.btngallery);
-                TxtAlarmValue = (TextView) itemView.findViewById(R.id.txtAlarmValue);
-                TxtRepeatValue = (TextView) itemView.findViewById(R.id.txtRepeatValue);
+                tvDateStartValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_date_start_value);
+                tvTimeStartValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_time_start_value);
+                tvDateEndValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_date_end_value);
+                tvTimeEndValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_time_end_value);
+                tvDecriptionValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_decription_value);
+                tvPlaceValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_place_value);
+                tvFriendEventValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_friend_invite_value);
+                btnGallery = (Button) itemView.findViewById(R.id.cardview_recycler_new_event_btn_gallery);
+                tvAlarmValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_alarm_value);
+                tvRepeatValue = (TextView) itemView.findViewById(R.id.cardview_recycler_new_event_tv_repeat_value);
                 if (type == 1) {
-                    BtnAgree = (Button) itemView.findViewById(R.id.btnAgree);
-                    BtnRefuse = (Button) itemView.findViewById(R.id.btnRefuse);
+                    btnAgree = (Button) itemView.findViewById(R.id.cardview_recycler_new_event_btn_agree);
+                    btnRefuse = (Button) itemView.findViewById(R.id.cardview_recycler_new_event_btn_refuse);
                 }
             } else if (type == 3) {
-                BtnDetail = (Button) itemView.findViewById(R.id.btnDetail);
+                btnDetail = (Button) itemView.findViewById(R.id.cardview_recycler_old_event_btn_detail);
             }
         }
     }
@@ -123,18 +123,17 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             Firebase.setAndroidContext(v.getContext());
             firebase = new Firebase("https://appcalendar.firebaseio.com/");
             return new TitleAboutDate(v);
-        } else
-        //if(viewType==data)
+        } else //if(viewType == data)
         {
             if (type == 1)
-                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_newevent, parent, false);
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_new_event, parent, false);
             else if (type == 2)
-                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_myevent, parent, false);
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_my_event, parent, false);
             else
-                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_oldevent, parent, false);
+                v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_old_event, parent, false);
             Firebase.setAndroidContext(v.getContext());
             firebase = new Firebase("https://appcalendar.firebaseio.com/");
-            return new EventData(v);
+            return new eventData(v);
         }
     }
 
@@ -145,33 +144,32 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             TitleAboutDate viewholder = (TitleAboutDate) holder;
             viewholder.tvTitle.setText(dataSet.get(position).getDateFrom());
         } else {
-            final EventData viewholder = (EventData) holder;
-            viewholder.TxtTimeEvent.setText(dataSet.get(position).getTimeFrom());
-            viewholder.TxtNameEventValue.setText(dataSet.get(position).getNameEvent());
+            final eventData viewholder = (eventData) holder;
+            viewholder.tvTimeEvent.setText(dataSet.get(position).getTimeFrom());
+            viewholder.tvNameEventValue.setText(dataSet.get(position).getNameEvent());
             if (type != 3) {
-                viewholder.TxtDateStartValue.setText(dataSet.get(position).getDateFrom());
-                viewholder.TxtTimeStartValue.setText(dataSet.get(position).getTimeFrom());
-                viewholder.TxtDateEndValue.setText(dataSet.get(position).getDateTo());
-                viewholder.TxtTimeEndValue.setText(dataSet.get(position).getTimeTo());
-                viewholder.TxtDecriptionValue.setText(dataSet.get(position).getDescription());
-                viewholder.TxtPlaceValue.setText(dataSet.get(position).getPlace());
-                viewholder.TxtFriendEventValue.setText(dataSet.get(position).getFriendInvite().replace("&", "."));
-                viewholder.TxtAlarmValue.setText(dataSet.get(position).getAlarm());
-                viewholder.TxtRepeatValue.setText(dataSet.get(position).getRepeat());
-                final ArrayList<Bitmap> ImageArray = new ArrayList<>();
+                viewholder.tvDateStartValue.setText(dataSet.get(position).getDateFrom());
+                viewholder.tvTimeStartValue.setText(dataSet.get(position).getTimeFrom());
+                viewholder.tvDateEndValue.setText(dataSet.get(position).getDateTo());
+                viewholder.tvTimeEndValue.setText(dataSet.get(position).getTimeTo());
+                viewholder.tvDecriptionValue.setText(dataSet.get(position).getDescription());
+                viewholder.tvPlaceValue.setText(dataSet.get(position).getPlace());
+                viewholder.tvFriendEventValue.setText(dataSet.get(position).getFriendInvite().replace("&", "."));
+                viewholder.tvAlarmValue.setText(dataSet.get(position).getAlarm());
+                viewholder.tvRepeatValue.setText(dataSet.get(position).getRepeat());
+                final ArrayList<Bitmap> imageArray = new ArrayList<>();
                 final String[] Friend = dataSet.get(position).getFriendInvite().toString().split(",");
 
-                viewholder.BtnGallery.setVisibility(View.INVISIBLE);
+                viewholder.btnGallery.setVisibility(View.INVISIBLE);
                 for (int i = 0; i < Friend.length; i++) {
                     firebase.child("Avata").child(Friend[i]).addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             byte[] getimage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
                             Bitmap bitmap = BitmapFactory.decodeByteArray(getimage, 0, getimage.length);
-                            ImageArray.add(bitmap);
-                            if (ImageArray.size() == Friend.length) {
-                                //viewholder.TxtFriendEventValue.setVisibility(View.INVISIBLE);
-                                viewholder.BtnGallery.setVisibility(View.VISIBLE);
+                            imageArray.add(bitmap);
+                            if (imageArray.size() == Friend.length) {
+                                viewholder.btnGallery.setVisibility(View.VISIBLE);
                             }
                         }
 
@@ -180,16 +178,15 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         }
                     });
                 }
-                viewholder.BtnGallery.setOnClickListener(new View.OnClickListener() {
+                viewholder.btnGallery.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Context mContext = v.getContext();
                         AlertDialog.Builder builder;
                         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                         View view = inflater.inflate(R.layout.activity_gallery_friend_invite, (ViewGroup) v.findViewById(R.id.activity_gallery_friend_invite_ll_main));
                         Gallery gallery = (Gallery) view.findViewById(R.id.activity_gallery_friend_invite);
-                        gallery.setAdapter(new ImageAdapter(v.getContext(), dataSet.get(position).getFriendInvite().toString(), ImageArray));
+                        gallery.setAdapter(new ImageAdapter(v.getContext(), dataSet.get(position).getFriendInvite().toString(), imageArray));
                         builder = new AlertDialog.Builder(v.getContext());
                         builder.setView(view);
                         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -204,10 +201,10 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                     }
                 });
                 if (type == 1) {
-                    viewholder.BtnAgree.setVisibility(View.VISIBLE);
-                    viewholder.BtnRefuse.setVisibility(View.VISIBLE);
+                    viewholder.btnAgree.setVisibility(View.VISIBLE);
+                    viewholder.btnRefuse.setVisibility(View.VISIBLE);
 
-                    viewholder.BtnAgree.setOnClickListener(new View.OnClickListener() {
+                    viewholder.btnAgree.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             AlarmManager mAlarmManager;
@@ -261,11 +258,11 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             dataSet.remove(position);
                             notifyDataSetChanged();
                             notifyItemRangeChanged(position, dataSet.size());
-                            viewholder.BtnRefuse.setVisibility(View.INVISIBLE);
-                            viewholder.BtnAgree.setVisibility(View.INVISIBLE);
+                            viewholder.btnRefuse.setVisibility(View.INVISIBLE);
+                            viewholder.btnAgree.setVisibility(View.INVISIBLE);
                         }
                     });
-                    viewholder.BtnRefuse.setOnClickListener(new View.OnClickListener() {
+                    viewholder.btnRefuse.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             String FriendInvite = "";
@@ -299,13 +296,13 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             dataSet.remove(position);
                             notifyDataSetChanged();
                             notifyItemRangeChanged(position, dataSet.size());
-                            viewholder.BtnRefuse.setVisibility(View.INVISIBLE);
-                            viewholder.BtnAgree.setVisibility(View.INVISIBLE);
+                            viewholder.btnRefuse.setVisibility(View.INVISIBLE);
+                            viewholder.btnAgree.setVisibility(View.INVISIBLE);
                         }
                     });
                 }
             } else if (type == 3) {
-                viewholder.BtnDetail.setOnClickListener(new View.OnClickListener() {
+                viewholder.btnDetail.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), MemoryEventActivity.class);
