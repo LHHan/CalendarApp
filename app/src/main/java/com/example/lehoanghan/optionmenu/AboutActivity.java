@@ -18,7 +18,6 @@ public class AboutActivity extends Fragment {
 
     Activity root;
     public AboutActivity(){}
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -22,26 +22,26 @@ import java.util.ArrayList;
  */
 public class ImageAdapter extends BaseAdapter {
 
-    private int mGalleryItem;
-    private Context mContext;
+    private int galleryItem;
+    private Context context;
     private String listFriendInvite;
     private LayoutInflater inflater = null;
     private String[] friend;
 
 
-    private ArrayList<Bitmap> ImageArray = new ArrayList<>();
+    private ArrayList<Bitmap> imageArray = new ArrayList<>();
 
     public ImageAdapter(Context C, String Friend, ArrayList<Bitmap> imageArray) {
         //inflater=LayoutInflater.from(C);
-        mContext = C;
-        inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        context = C;
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         listFriendInvite = Friend;
         friend = listFriendInvite.split(",");
         for (Bitmap b : imageArray) {
-            ImageArray.add(b);
+            this.imageArray.add(b);
         }
-        TypedArray attr = mContext.obtainStyledAttributes(R.styleable.GalleryActivity);
-        mGalleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
+        TypedArray attr = context.obtainStyledAttributes(R.styleable.GalleryActivity);
+        galleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
         attr.recycle();
     }
 
@@ -62,8 +62,8 @@ public class ImageAdapter extends BaseAdapter {
 
 
     public class ViewHolder {
-        public TextView TxtGallery;
-        public ImageView ImgGallery;
+        public TextView tvGallery;
+        public ImageView ivGallery;
     }
 
 
@@ -79,17 +79,17 @@ public class ImageAdapter extends BaseAdapter {
             vi = inflater.inflate(R.layout.custom_gallery_friendinvite, parent, false);
             vi.setLayoutParams(new Gallery.LayoutParams(500, 700));
             holder = new ViewHolder();
-            holder.ImgGallery = (ImageView) vi.findViewById(R.id.imgGallery);
-            holder.TxtGallery = (TextView) vi.findViewById(R.id.txtGallery);
+            holder.ivGallery = (ImageView) vi.findViewById(R.id.imgGallery);
+            holder.tvGallery = (TextView) vi.findViewById(R.id.txtGallery);
             vi.setTag(holder);
         } else
             holder = (ViewHolder) vi.getTag();
-        holder.ImgGallery.setImageBitmap(ImageArray.get(position));
-        holder.ImgGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
-        holder.ImgGallery.setBackgroundResource(mGalleryItem);
-        holder.TxtGallery.setText(friend[position].trim().replace("&", "."));
-        holder.TxtGallery.setTag(friend[position].trim().replace("&", "."));
-        holder.TxtGallery.setGravity(Gravity.CENTER);
+        holder.ivGallery.setImageBitmap(imageArray.get(position));
+        holder.ivGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
+        holder.ivGallery.setBackgroundResource(galleryItem);
+        holder.tvGallery.setText(friend[position].trim().replace("&", "."));
+        holder.tvGallery.setTag(friend[position].trim().replace("&", "."));
+        holder.tvGallery.setGravity(Gravity.CENTER);
         return vi;
     }
 }

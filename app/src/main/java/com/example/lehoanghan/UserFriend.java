@@ -1,22 +1,22 @@
 package com.example.lehoanghan;
 
 public class UserFriend {
-    protected String Name;
-    protected String Mail;
+    protected String name;
+    protected String mail;
 
     public UserFriend() {}
     public UserFriend(String _Name, String _Mail)
     {
-        Name=_Name;
-        Mail=_Mail;
+        name =_Name;
+        mail =_Mail;
     }
 
     public String getName(){
-        return Name;
+        return name;
     }
 
     public String getMail(){
-        return Mail;
+        return mail;
     }
 
 }

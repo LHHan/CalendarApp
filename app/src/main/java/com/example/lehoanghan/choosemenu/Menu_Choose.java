@@ -438,7 +438,7 @@ public class Menu_Choose extends AppCompatActivity {
 
     }
 
-    //pass MailUSER to FindName for don't give my Mail into list
+    //pass MailUSER to FindName for don't give my mail into list
     public void PassDatatoFind_Accept_Friend() {
         Bundle bundle = getIntent().getExtras();
         String Mailuser = "";

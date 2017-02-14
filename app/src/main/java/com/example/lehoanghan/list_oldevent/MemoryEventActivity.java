@@ -176,8 +176,8 @@ public class MemoryEventActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.backfromChangeAccount:
                 Intent intent = new Intent(this, Menu_Choose.class);
-                intent.putExtra("nameUser", nameUser);
-                intent.putExtra("mailUser", mailUser);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
@@ -303,8 +303,8 @@ public class MemoryEventActivity extends AppCompatActivity {
     }
 
     public void giveDataUser() {
-        mailUser = getIntent().getStringExtra("mailUser");
-        nameUser = getIntent().getStringExtra("nameUser");
+        mailUser = getIntent().getStringExtra("MailUser");
+        nameUser = getIntent().getStringExtra("NameUser");
         passValue = (EventValue) getIntent().getSerializableExtra("EventValue");
     }
 

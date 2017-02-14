@@ -23,7 +23,7 @@ public class AlarmDialog extends Activity {
         final Intent intentService = new Intent(getBaseContext(), RingtonePlayingService.class);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Event");
-        builder.setMessage("Ban co 1 ic_new_event: \r\nName's Event: " + getIntent().getStringExtra("Name") +
+        builder.setMessage("Ban co 1 ic_new_event: \r\nname's Event: " + getIntent().getStringExtra("name") +
                 ".\r\nDate: " + getIntent().getStringExtra("Date") + ".\r\nTime: " + getIntent().getStringExtra("Time") +
                 ".\r\nPlace: " + getIntent().getStringExtra("Place") + ".");
         builder.setIcon(R.drawable.ic_alarm);
@@ -36,9 +36,9 @@ public class AlarmDialog extends Activity {
                 getBaseContext().startService(intentService);
                 Intent intent = new Intent(AlarmDialog.this, Menu_Choose.class);
                 intent.putExtra("NameUser", getIntent().getStringExtra("NameUser").toString());
-                Log.e("Name", getIntent().getStringExtra("NameUser"));
+                Log.e("name", getIntent().getStringExtra("NameUser"));
                 intent.putExtra("MailUser", getIntent().getStringExtra("MailUser").toString());
-                Log.e("Mail", getIntent().getStringExtra("MailUser"));
+                Log.e("mail", getIntent().getStringExtra("MailUser"));
                 startActivity(intent);
             }
         });

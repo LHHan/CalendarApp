@@ -170,8 +170,8 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
     }
 
     public void giveDataUser() {
-        mailUser = getIntent().getStringExtra("mailUser");
-        nameUser = getIntent().getStringExtra("nameUser");
+        mailUser = getIntent().getStringExtra("MailUser");
+        nameUser = getIntent().getStringExtra("NameUser");
         passValue = (EventValue) getIntent().getSerializableExtra("EventValue");
         keyComment = getIntent().getStringExtra("KeyaddComment");
 

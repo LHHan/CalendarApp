@@ -43,7 +43,6 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     private ArrayList<EventValue> dataSet;
     private ArrayList<Integer> dataSetTypes;
     private String mailUser, nameUser;
-
     public static final int title = 0;
     public static final int data = 1;
     private int type;
@@ -216,8 +215,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             mNotificationReceiverIntent.putExtra("Date", dataSet.get(position).getDateFrom());
                             mNotificationReceiverIntent.putExtra("Time", dataSet.get(position).getTimeFrom());
                             mNotificationReceiverIntent.putExtra("Place", dataSet.get(position).getPlace());
-                            mNotificationReceiverIntent.putExtra("nameUser", nameUser);
-                            mNotificationReceiverIntent.putExtra("mailUser", mailUser);
+                            mNotificationReceiverIntent.putExtra("NameUser", nameUser);
+                            mNotificationReceiverIntent.putExtra("MailUser", mailUser);
                             mNotificationReceiverPendingIntent = PendingIntent.getBroadcast(
                                     context.getApplicationContext(), 0, mNotificationReceiverIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -307,8 +306,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), MemoryEventActivity.class);
                         intent.putExtra("EventValue", dataSet.get(position));
-                        intent.putExtra("nameUser", nameUser);
-                        intent.putExtra("mailUser", mailUser);
+                        intent.putExtra("NameUser", nameUser);
+                        intent.putExtra("MailUser", mailUser);
                         v.getContext().startActivity(intent);
                     }
                 });

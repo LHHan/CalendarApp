@@ -24,7 +24,7 @@ public class GalleryAdapter extends BaseAdapter {
     private int galleryItem;
     private Context context;
     EventValue eventValue;
-    String mNameUser, mMailUser;
+    private String nameUser, mailUser;
 
 
     private ArrayList<Bitmap> imageArray = new ArrayList<>();
@@ -32,8 +32,8 @@ public class GalleryAdapter extends BaseAdapter {
     public GalleryAdapter(Context C, ArrayList<Bitmap> imageArray, EventValue eventValue, String Mail, String Name) {
         context = C;
         this.eventValue = eventValue;
-        mNameUser = Name;
-        mMailUser = Mail;
+        nameUser = Name;
+        mailUser = Mail;
         for (Bitmap b : imageArray) {
             this.imageArray.add(b);
         }
@@ -78,8 +78,8 @@ public class GalleryAdapter extends BaseAdapter {
                 intent.putExtra("bitmapofposition", imageArray.get(position));
                 intent.putExtra("position", position + "");
                 intent.putExtra("EventValue", eventValue);
-                intent.putExtra("NameUser", mNameUser);
-                intent.putExtra("MailUser", mMailUser);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
                 context.startActivity(intent);
             }
         });
