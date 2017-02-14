@@ -98,7 +98,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     }
 
     public void setImage() {
-        firebase.child("Avatar").child(mailUser).addValueEventListener(new ValueEventListener() {
+        firebase.child("Avata").child(mailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] image = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
@@ -201,13 +201,13 @@ public class ChangeAccountActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.backfromChangeAccount:
-//                Intent intent = new Intent(this, Menu_Choose.class);
-//                intent.putExtra("NameUser", nameUser);
-//                intent.putExtra("MailUser", mailUser);
-//                startActivity(intent);
-//        }
+        switch (item.getItemId()) {
+            case R.id.backfromChangeAccount:
+                Intent intent = new Intent(this, Menu_Choose.class);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
+                startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -247,7 +247,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 });
 
                 firebase.child("User").child(mailUser).setValue(etName.getText().toString());
-                firebase.child("Avatar").child(mailUser).setValue(covertBitmaptoString());
+                firebase.child("Avata").child(mailUser).setValue(covertBitmaptoString());
             }
         }
     }

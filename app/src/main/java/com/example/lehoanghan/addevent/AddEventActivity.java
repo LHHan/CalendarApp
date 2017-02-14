@@ -138,7 +138,6 @@ public class AddEventActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-
             }
         });
 
@@ -153,9 +152,9 @@ public class AddEventActivity extends AppCompatActivity {
 
     public void getDateSelectFromHome() {
         dateSeclect = getIntent().getStringExtra("ChangeDate");
-        mailUser = getIntent().getStringExtra("mailUser");
-        nameUser = getIntent().getStringExtra("nameUser");
-        toDay = getIntent().getStringExtra("toDay");
+        mailUser = getIntent().getStringExtra("MailUser");
+        nameUser = getIntent().getStringExtra("NameUser");
+        toDay = getIntent().getStringExtra("ToDay");
     }
 
     private MenuInflater menuInflater;
@@ -180,8 +179,8 @@ public class AddEventActivity extends AppCompatActivity {
             case R.id.menu_add_event_back:
                 Intent intent = new Intent(AddEventActivity.this, Menu_Choose.class);
                 intent.putExtra("NameUserfromAddEvent", nameUser);
-                intent.putExtra("nameUser", nameUser);
-                intent.putExtra("mailUser", mailUser);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

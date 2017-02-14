@@ -79,7 +79,7 @@ public class HomeActivity extends Fragment {
         calendar.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(MaterialCalendarView widget, CalendarDay date, boolean selected) {
-                calendar.setSelectionColor(R.color.DateSelection);
+                calendar.setSelectionColor(R.color.dateSelection);
                 if (calendar.getCurrentDate() != calendar.getSelectedDate()) {
                     txtDate = ParseDate(calendar.getSelectedDate().getDay(), calendar.getSelectedDate().getMonth(), calendar.getSelectedDate().getYear());
                 }
@@ -128,7 +128,7 @@ public class HomeActivity extends Fragment {
 
 
     public void setImage() {
-        firebase.child("Avatar").child(strMailUser).addValueEventListener(new ValueEventListener() {
+        firebase.child("Avata").child(strMailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);

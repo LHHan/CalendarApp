@@ -12,5 +12,5 @@
 
     <color name="list_divider">#272727</color>
     <color name="secondary_text_default_material_light">#8aac5555</color>
-    <color name="DateSelection">#fd74a3</color>
+    <color name="dateSelection">#fd74a3</color>
 </resources>
