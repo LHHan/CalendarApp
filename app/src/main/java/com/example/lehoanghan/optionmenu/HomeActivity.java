@@ -118,7 +118,7 @@ public class HomeActivity extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.add_event:
+            case R.id.menu_home_ab_add_event:
                 passDataDatetoAddEvent();
                 startActivity(intentSetDate);
                 break;
@@ -128,7 +128,7 @@ public class HomeActivity extends Fragment {
 
 
     public void setImage() {
-        firebase.child("Avata").child(strMailUser).addValueEventListener(new ValueEventListener() {
+        firebase.child("Avatar").child(strMailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);

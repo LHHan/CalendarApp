@@ -1,9 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('keystore/debug.keystore')
+            storePassword 'android'
+        }
+        release {
+            keyAlias 'androidreleasekey'
+            keyPassword 'com.example.lehoanghan.appcalendar'
+            storeFile file('keystore/release.keystore.jks')
+            storePassword 'com.example.lehoanghan.appcalendar'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion '23.0.1'
-
     defaultConfig {
         applicationId "com.example.lehoanghan.appcalendar"
         minSdkVersion 17
@@ -15,23 +28,34 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
-
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
     }
-
+    productFlavors {
+        dev {
+            minSdkVersion 21
+            signingConfig signingConfigs.debug
+        }
+        product {
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
     compile 'com.android.support:design:24.0.0-alpha1'
-    compile 'com.android.support:support-v13:24.0.0-alpha1'
+    compile 'com.android.support:support-v4:23.4.0'
     compile 'com.firebase:firebase-client-android:2.3.1'
     compile 'com.firebaseui:firebase-ui:0.3.1'
     compile 'com.android.support:recyclerview-v7:22.0.0'

@@ -201,13 +201,13 @@ public class ChangeAccountActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.backfromChangeAccount:
-                Intent intent = new Intent(this, Menu_Choose.class);
-                intent.putExtra("NameUser", nameUser);
-                intent.putExtra("MailUser", mailUser);
-                startActivity(intent);
-        }
+//        switch (item.getItemId()) {
+//            case R.id.backfromChangeAccount:
+//                Intent intent = new Intent(this, Menu_Choose.class);
+//                intent.putExtra("NameUser", nameUser);
+//                intent.putExtra("MailUser", mailUser);
+//                startActivity(intent);
+//        }
         return super.onOptionsItemSelected(item);
     }
 

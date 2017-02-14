@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.example.lehoanghan.EventValue;
+import com.example.lehoanghan.appcalendar.BuildConfig;
 import com.example.lehoanghan.appcalendar.R;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -44,12 +45,10 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
         giveDataUser();
         Firebase.setAndroidContext(this);
         firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        //Init();
         setComment();
     }
 
     public void Init() {
-
     }
 
     public void setComment() {
@@ -112,7 +111,6 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
                             }
                         }
                         ListView LvComment = (ListView) findViewById(R.id.activity_comment_lv_list_comment);
-                        //ArrayAdapter arrayAdapter = new ArrayAdapter(v.getContext(), android.R.layout.simple_expandable_list_item_1, listComment);
                         CustomCommentAdapter arrayAdapter = new CustomCommentAdapter(v.getContext(), listComment);
                         LvComment.setAdapter(arrayAdapter);
                     }
@@ -136,20 +134,20 @@ public class CommentActivity extends AppCompatActivity implements EmojiconGridFr
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.backfromChangeAccount:
-                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);
-                intent.putExtra("EventValue", passValue);
-                intent.putExtra("nameUser", nameUser);
-                intent.putExtra("mailUser", mailUser);
-                startActivity(intent);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.backfromChangeAccount:
+//                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);
+//                intent.putExtra("EventValue", passValue);
+//                intent.putExtra("nameUser", nameUser);
+//                intent.putExtra("mailUser", mailUser);
+//                startActivity(intent);
+//                break;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
-    @Override
+    // @Override
     public void onEmojiconBackspaceClicked(View v) {
         EmojiconsFragment.backspace(emojIconComment);
     }

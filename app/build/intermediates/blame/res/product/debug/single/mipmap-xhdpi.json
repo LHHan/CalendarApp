@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\mipmap-xhdpi\\house.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\house.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\mipmap-xhdpi\\calendar.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\calendar.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    }
+]
