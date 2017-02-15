@@ -93,7 +93,7 @@ public class FindFriendActivity extends Fragment {
     }
 
     public void getDatafromFireBase() {
-        //give data from My_friend table
+        //give DATA from My_friend table
         fireBase.child("My_friend").child(getMail.replace(".", "&"))
                 .addValueEventListener(new ValueEventListener() {
                     @Override

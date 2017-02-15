@@ -20,12 +20,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_13_light.png",
@@ -44,16 +44,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_white_36.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable-xxhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\powered_by_google_light.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\10.0.1\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_02_dark.png",
@@ -88,24 +84,24 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_light.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_light.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_17_light.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_17_light.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_light.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_light.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_cast_white.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_cast_white.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_10_light.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_10_light.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_white_24.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_white_24.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_10_light.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_10_light.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_cast_grey.png",
@@ -128,12 +124,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_light.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_21_light.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_21_light.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_14_light.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_14_light.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_21_light.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_21_light.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_11_light.png",
@@ -228,10 +224,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable-xxhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
@@ -240,12 +232,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_05_light.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_cast_dark.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_cast_dark.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_cast_dark.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_cast_dark.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_18_dark.png",
@@ -288,10 +280,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_24.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_24.png"
     },
@@ -300,12 +288,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_15_light.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_dark.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_04_dark.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_facebook.png",
@@ -356,12 +344,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_17_light.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_google.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-xxhdpi-v4\\ic_google.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_connecting_11_dark.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_google.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-xxhdpi-v4\\ic_google.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_12_dark.png",
@@ -504,12 +492,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_21_dark.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_30_grey600_36.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\10.0.1\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_16_light.png",
@@ -740,12 +728,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\ic_media_route_on_15_light.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi-v4\\ic_media_route_connecting_05_dark.png",

@@ -241,7 +241,8 @@ public class Menu_Choose extends AppCompatActivity {
         }
         if (sFragment != null) {
             FragmentManager fManager = getFragmentManager();
-            fManager.beginTransaction().replace(R.id.activity_menu_choose_fl_navigation, sFragment).commit();
+            fManager.beginTransaction().replace(
+                    R.id.activity_menu_choose_fl_navigation, sFragment).commit();
             setTitle(setTitleItem);
         } else {
             Log.e("Main", "error");
@@ -279,8 +280,9 @@ public class Menu_Choose extends AppCompatActivity {
 
     //Change among Fragments
     public void doItemListener(int position) {
-        if (sMenu != null)
+        if (sMenu != null) {
             sMenu.clear();
+        }
         switch (position) {
             case 0:
                 intFragment = fragmentHome;
@@ -447,7 +449,7 @@ public class Menu_Choose extends AppCompatActivity {
     public void setNameUser() {
         Bundle bundle = getIntent().getExtras();
         String nameUser = "", mailUser = "";
-        String NameUserfromAddEvent = getIntent().getStringExtra("NameUserfromAddEvent");
+        String nameUserfromAddEvent = getIntent().getStringExtra("NameUserfromAddEvent");
         if (bundle != null) {
             nameUser = bundle.getString("NameUser").toLowerCase();
             mailUser = bundle.getString("MailUser").toLowerCase();
@@ -457,12 +459,13 @@ public class Menu_Choose extends AppCompatActivity {
         if (nameUser != null) {
             bundlesetNameforHome.putString("NameforHome", nameUser);
         } else {
-            bundlesetNameforHome.putString("NameforHome", NameUserfromAddEvent);
+            bundlesetNameforHome.putString("NameforHome", nameUserfromAddEvent);
         }
+
     }
 
-    //pass MailUSER to FindName for don't give my mail into list
     public void passDatatoFindAcceptFriend() {
+        //pass MailUSER to FindName for don't give my mail into list
         Bundle bundle = getIntent().getExtras();
         String mailUser = "";
         String nameUser = "";
@@ -474,7 +477,6 @@ public class Menu_Choose extends AppCompatActivity {
         bundlePassMailtoFindAccept.putString("MailforFindFriend", mailUser);
         bundlePassMailtoFindAccept.putString("NameforFindFriend", nameUser);
     }
-
 }
 
 

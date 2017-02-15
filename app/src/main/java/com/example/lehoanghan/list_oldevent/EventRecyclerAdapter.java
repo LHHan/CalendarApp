@@ -176,7 +176,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             Firebase.setAndroidContext(v.getContext());
             fireBase = new Firebase("https://appcalendar.firebaseio.com/");
             return new TitleAboutDate(v);
-        } else { //if(viewType == data)
+        } else { //if(viewType == DATA)
             if (intType == 1) {
                 v = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.cardview_recycler_new_event, parent, false);

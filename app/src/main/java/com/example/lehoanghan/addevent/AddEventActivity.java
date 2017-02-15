@@ -332,7 +332,7 @@ public class AddEventActivity extends AppCompatActivity {
                 (actvPlace.getText().toString().compareTo("") == 0) ||
                 (etAlarm.getText().toString().compareTo("") == 0) ||
                 (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
-            error = "error entryActivity data";
+            error = "error entryActivity DATA";
         } else {
             checkNgay();
         }

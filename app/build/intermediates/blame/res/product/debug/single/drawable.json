@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_stop.xml"
     },
@@ -12,8 +8,8 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_on_dark.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\smile.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\smile.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\facebook_button.xml",
@@ -24,12 +20,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_warning.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\smile.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\smile.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_menu_selectall_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_selectall_material.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\list_item_press.xml",
@@ -48,16 +44,16 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_emoji_people_light.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable\\ic_emoji_people_light.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_calendar.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_calendar.png"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
@@ -84,16 +80,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_pause_light.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_menu_cut_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_cut_material.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_go_search_api_material.xml",
@@ -148,10 +140,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ab_update.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_menu_paste_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_paste_material.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\mr_ic_cast_light.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_cast_light.xml"
     },
@@ -162,10 +150,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_radio_off_mtrl.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_off_mtrl.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
@@ -224,12 +208,16 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.0.1\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_my_friend.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_my_friend.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\10.0.1\\res\\drawable\\cast_ic_notification_connecting.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -240,10 +228,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_mini_controller_progress_drawable.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
     },
@@ -252,12 +236,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_notification_rewind10.xml",
@@ -280,10 +264,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_notification_pause.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_menu_share_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_share_material.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_pause_large.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
     },
@@ -302,10 +282,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_checkbox_checked_mtrl.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_checked_mtrl.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -336,10 +312,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_menu_copy_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_copy_material.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
     },
@@ -348,12 +320,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_notification_rewind.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\emoji_love.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\emoji_love.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\emoji_love.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\emoji_love.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
@@ -386,10 +358,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -440,12 +408,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\mr_ic_close_dark.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_dark.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_new_event.png",
@@ -456,12 +424,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ab_search.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ab_search.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ab_search.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ab_search.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_colored_material.xml",
@@ -496,12 +464,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_close_light.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_house.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_house.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_add_friend.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_add_friend.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_house.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_house.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
@@ -534,10 +502,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\mr_ic_media_route_connecting_light.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\24.0.0\\res\\drawable\\mr_ic_media_route_connecting_light.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_radio_on_mtrl.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_on_mtrl.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\design_fab_background.xml",
@@ -588,16 +552,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\custom_text_about.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\mr_ic_cast_dark.xml",
