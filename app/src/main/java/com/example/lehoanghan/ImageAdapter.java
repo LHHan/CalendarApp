@@ -23,31 +23,36 @@ import java.util.ArrayList;
 public class ImageAdapter extends BaseAdapter {
 
     private int galleryItem;
-    private Context context;
-    private String listFriendInvite;
-    private LayoutInflater inflater = null;
-    private String[] friend;
 
+    private Context adapterContext;
+
+    private String listFriendInvite;
+
+    private LayoutInflater layoutInflater = null;
+
+    private String[] strFriend;
 
     private ArrayList<Bitmap> imageArray = new ArrayList<>();
 
     public ImageAdapter(Context C, String Friend, ArrayList<Bitmap> imageArray) {
-        //inflater=LayoutInflater.from(C);
-        context = C;
-        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        //layoutInflater=LayoutInflater.from(C);
+        adapterContext = C;
+        layoutInflater = (LayoutInflater) adapterContext.getSystemService(
+                Context.LAYOUT_INFLATER_SERVICE);
         listFriendInvite = Friend;
-        friend = listFriendInvite.split(",");
+        strFriend = listFriendInvite.split(",");
         for (Bitmap b : imageArray) {
             this.imageArray.add(b);
         }
-        TypedArray attr = context.obtainStyledAttributes(R.styleable.GalleryActivity);
-        galleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
+        TypedArray attr = adapterContext.obtainStyledAttributes(R.styleable.GalleryActivity);
+        galleryItem = attr.getResourceId(
+                R.styleable.GalleryActivity_android_galleryItemBackground, 0);
         attr.recycle();
     }
 
     @Override
     public int getCount() {
-        return friend.length;
+        return strFriend.length;
     }
 
     @Override
@@ -60,36 +65,36 @@ public class ImageAdapter extends BaseAdapter {
         return position;
     }
 
-
     public class ViewHolder {
-        public TextView tvGallery;
-        public ImageView ivGallery;
-    }
+        private TextView tvGallery;
 
+        private ImageView ivGallery;
+    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        final ViewHolder holder;
+        final ViewHolder HOLDER;
         View vi = convertView;
 //            if (parent != null)
 //                parent.removeView(convertView);
 
         if (vi == null) {
-            vi = inflater.inflate(R.layout.custom_gallery_friendinvite, parent, false);
+            vi = layoutInflater.inflate(R.layout.custom_gallery_friendinvite, parent, false);
             vi.setLayoutParams(new Gallery.LayoutParams(500, 700));
-            holder = new ViewHolder();
-            holder.ivGallery = (ImageView) vi.findViewById(R.id.imgGallery);
-            holder.tvGallery = (TextView) vi.findViewById(R.id.txtGallery);
-            vi.setTag(holder);
-        } else
-            holder = (ViewHolder) vi.getTag();
-        holder.ivGallery.setImageBitmap(imageArray.get(position));
-        holder.ivGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
-        holder.ivGallery.setBackgroundResource(galleryItem);
-        holder.tvGallery.setText(friend[position].trim().replace("&", "."));
-        holder.tvGallery.setTag(friend[position].trim().replace("&", "."));
-        holder.tvGallery.setGravity(Gravity.CENTER);
+            HOLDER = new ViewHolder();
+            HOLDER.ivGallery = (ImageView) vi.findViewById(R.id.imgGallery);
+            HOLDER.tvGallery = (TextView) vi.findViewById(R.id.txtGallery);
+            vi.setTag(HOLDER);
+        } else {
+            HOLDER = (ViewHolder) vi.getTag();
+        }
+        HOLDER.ivGallery.setImageBitmap(imageArray.get(position));
+        HOLDER.ivGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
+        HOLDER.ivGallery.setBackgroundResource(galleryItem);
+        HOLDER.tvGallery.setText(strFriend[position].trim().replace("&", "."));
+        HOLDER.tvGallery.setTag(strFriend[position].trim().replace("&", "."));
+        HOLDER.tvGallery.setGravity(Gravity.CENTER);
         return vi;
     }
 }

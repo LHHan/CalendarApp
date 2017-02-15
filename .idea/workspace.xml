@@ -15,369 +15,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="454eb250-8182-4f8b-9b87-68c8361d5d0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/ImageAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/ImageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/MapsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/MapsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$interpolator.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$interpolator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/RegisterActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/appcalendar/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/choosemenu/MenuAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/choosemenu/MenuAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/choosemenu/Menu_Choose.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/choosemenu/Menu_Choose.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AboutActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/AccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/FindFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/FindFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/HomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/MyEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/MyEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/MyFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/MyFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/NewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/NewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/OldEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/example/lehoanghan/optionmenu/OldEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/firebase/ui/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/firebase/ui/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/rockerhieu/emojicon/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/product/debug/com/rockerhieu/emojicon/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/product/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/product/debug/instant-run-bootstrap.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/product/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/product/debug/instant-run.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/ImageAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/ImageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/addevent/AddNewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/MapsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/MapsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$interpolator.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$interpolator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/RegisterActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/appcalendar/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/choosemenu/MenuAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/choosemenu/MenuAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/choosemenu/Menu_Choose.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/choosemenu/Menu_Choose.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CommentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/list_oldevent/PictureActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AboutActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/AccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/FindFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/FindFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/HomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/MyEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/MyEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/MyFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/MyFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/NewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/NewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/OldEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/example/lehoanghan/optionmenu/OldEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/firebase/ui/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/firebase/ui/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/rockerhieu/emojicon/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/product/debug/com/rockerhieu/emojicon/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/zip-cache/G5eS2NUWItC1uPwWpDer3jIqr08=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/zip-cache/G5eS2NUWItC1uPwWpDer3jIqr08=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/zip-cache/G5eS2NUWItC1uPwWpDer3jIqr08=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/zip-cache/G5eS2NUWItC1uPwWpDer3jIqr08=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-product/debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-product/debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/product/debug/instant-run.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/product/debug/instant-run.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-product-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-product-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_0/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_1/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_1/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_2/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_3/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_4/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_5/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_5/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_6/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_6/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_8/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/product/debug/folders/1000/5/slice_8/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/ImageAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/ImageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/addevent/AddNewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/MapsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/MapsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$interpolator.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$interpolator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/RegisterActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/appcalendar/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/choosemenu/MenuAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/choosemenu/MenuAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/choosemenu/Menu_Choose.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/choosemenu/Menu_Choose.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CommentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/list_oldevent/PictureActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AboutActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/AccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/FindFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/FindFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/HomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/MyEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/MyEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/MyFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/MyFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/NewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/NewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/OldEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/example/lehoanghan/optionmenu/OldEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/firebase/ui/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/firebase/ui/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/rockerhieu/emojicon/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/product/debug/folders/1/5/main/com/rockerhieu/emojicon/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CommentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$TitleAboutDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter$eventData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/MemoryEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/MemoryEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_0/com/example/lehoanghan/list_oldevent/PictureActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/LoginActivity$MyEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/MapsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/MapsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$interpolator.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$interpolator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/RegisterActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/appcalendar/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_acceptfriend/UserAcceptFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_1/com/example/lehoanghan/list_newevent/AlarmNotificationReceiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/choosemenu/MenuAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/choosemenu/MenuAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/choosemenu/Menu_Choose.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/choosemenu/Menu_Choose.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_2/com/example/lehoanghan/list_findfriend/UserFindFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_3/com/example/lehoanghan/addevent/AddNewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/list_myfriend/UserMyFriendViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_5/com/example/lehoanghan/myaccount/ChangeAccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AboutActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AboutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/AccountActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/FindFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/FindFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/FriendAcceptActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/HomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/MyEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/MyEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/MyFriendActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/MyFriendActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/NewEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/NewEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/OldEventActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/example/lehoanghan/optionmenu/OldEventActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/firebase/ui/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/firebase/ui/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/rockerhieu/emojicon/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_6/com/rockerhieu/emojicon/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_8/com/example/lehoanghan/ImageAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/product/debug/folders/1/5/slice_8/com/example/lehoanghan/ImageAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-product-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-product-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/product/debug/com/example/lehoanghan/appcalendar/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/product/debug/com/example/lehoanghan/appcalendar/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesProductDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageProductDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/product/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/product/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/EventValue.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/EventValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddEventActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddNewEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddNewEventActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/myaccount/ChangeAccountActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/myaccount/ChangeAccountActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/AccountActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/AccountActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" />
     </list>
     <ignored path="CalendarApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -410,56 +57,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/AccountActivity.java">
+      <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddEventActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddEventActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+            <state relative-caret-position="1551">
+              <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
               <folding>
-                <element signature="e#8169#10539#0" expanded="true" />
-                <element signature="e#9665#10302#0" expanded="true" />
-                <element signature="e#10301#10302#0" expanded="true" />
-                <element signature="e#10538#10539#0" expanded="true" />
+                <element signature="e#3126#3740#0" expanded="true" />
+                <element signature="e#3739#3740#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddNewEventActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/addevent/AddNewEventActivity.java">
+      <file leaf-file-name="ImageAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state relative-caret-position="302">
+              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeAccountActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/myaccount/ChangeAccountActivity.java">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+              <folding>
+                <element signature="e#3962#4252#0" expanded="true" />
+                <element signature="e#4251#4252#0" expanded="true" />
+                <element signature="e#6436#6878#0" expanded="true" />
+                <element signature="e#6877#6878#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoryEventActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="260" column="58" selection-start-line="260" selection-start-column="58" selection-end-line="260" selection-end-column="58" />
+              <caret line="333" column="96" selection-start-line="333" selection-start-column="96" selection-end-line="333" selection-end-column="96" />
+              <folding>
+                <element signature="e#5967#7335#0" expanded="true" />
+                <element signature="e#7334#7335#0" expanded="true" />
+                <element signature="e#7376#7980#0" expanded="true" />
+                <element signature="e#7979#7980#0" expanded="true" />
+                <element signature="e#15202#15402#0" expanded="true" />
+                <element signature="e#15401#15402#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomCommentAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/CustomCommentAdapter.java">
+      <file leaf-file-name="MenuItem.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -482,26 +159,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventValue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/EventValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FindFriendActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FriendAcceptActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -512,11 +169,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GalleryAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -3649,9 +3306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/menu_head.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_choose.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_myfriend.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_friendaccept.xml" />
@@ -3674,11 +3328,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_old_event.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/OldEventActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/UserFriend.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/menu_body.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/MapsActivity.java" />
@@ -3700,6 +3351,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" />
       </list>
     </option>
   </component>
@@ -4175,7 +3832,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487144661189</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Third commit on Feb 15: CheckStyle with Rules: BSS_Style (2)">
+      <created>1487146808128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1487146808128</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -4189,7 +3853,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5188889" sideWeight="0.5181406" order="0" side_tool="true" content_ui="tabs" />
@@ -4208,7 +3872,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -4275,7 +3939,8 @@
     <MESSAGE value="Second Commit on Feb 14: Fix code in ChangeAccountActivity.java file and HomeActivity.java file" />
     <MESSAGE value="Third Commit on Feb 14: Fix code in some file such as:&#10;- CommentActivity&#10;- EventRecyclerAdapter&#10;- GalleryAdapter&#10;- MemoryEventActivity&#10;- EventValue&#10;- ImageAdapter&#10;- UserFriend" />
     <MESSAGE value="Second commit on Feb 15: CheckStyle with Rules: BSS_Style (1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit on Feb 15: CheckStyle with Rules: BSS_Style (1)" />
+    <MESSAGE value="Third commit on Feb 15: CheckStyle with Rules: BSS_Style (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit on Feb 15: CheckStyle with Rules: BSS_Style (2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4284,38 +3949,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/custom_text_account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4366,13 +3999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="304" column="32" selection-start-line="304" selection-start-column="32" selection-end-line="304" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -4506,21 +4132,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding>
-            <element signature="e#1498#1499#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1591#1592#0" expanded="false" />
-            <element signature="e#1622#1623#0" expanded="false" />
-            <element signature="e#1679#1680#0" expanded="false" />
-            <element signature="e#1710#1711#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/MapsActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -4534,22 +4145,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/MapsActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/MapsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4673,6 +4268,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Users/Administrator/Android/sdk/platforms/android-23/android.jar!/android/content/Context.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1551">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding>
+            <element signature="e#3126#3740#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding>
+            <element signature="e#3962#4252#0" expanded="true" />
+            <element signature="e#4251#4252#0" expanded="true" />
+            <element signature="e#6436#6878#0" expanded="true" />
+            <element signature="e#6877#6878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/EventValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <folding>
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/EventRecyclerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -4688,34 +4366,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FindFriendActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="225">
+          <caret line="333" column="96" selection-start-line="333" selection-start-column="96" selection-end-line="333" selection-end-column="96" />
+          <folding>
+            <element signature="e#5967#7335#0" expanded="true" />
+            <element signature="e#7334#7335#0" expanded="true" />
+            <element signature="e#7376#7980#0" expanded="true" />
+            <element signature="e#7979#7980#0" expanded="true" />
+            <element signature="e#15202#15402#0" expanded="true" />
+            <element signature="e#15401#15402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/EventValue.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

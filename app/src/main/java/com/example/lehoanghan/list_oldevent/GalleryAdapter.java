@@ -19,8 +19,6 @@ import java.util.ArrayList;
  * Created by lehoanghan on 6/7/2016.
  */
 public class GalleryAdapter extends BaseAdapter {
-
-
     private int galleryItem;
 
     private Context adapterContext;
@@ -89,7 +87,6 @@ public class GalleryAdapter extends BaseAdapter {
                 adapterContext.startActivity(intent);
             }
         });
-
         return imageView;
     }
 }

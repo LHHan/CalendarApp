@@ -46,17 +46,54 @@ import java.util.ArrayList;
  */
 public class MemoryEventActivity extends AppCompatActivity {
 
-    private Firebase firebase;
-    private String nameUser, mailUser;
+    private Firebase aFirebase;
+
+    private String nameUser;
+
+    private String mailUser;
+
     private EventValue passValue;
-    private TextView tvNameEventValue, tvDateStartValue, tvTimeStartValue, tvDateEndValue, tvTimeEndValue,
-            tvDecriptionValue, tvPlaceValue, tvFriendEventValue, tvAlarmValue, tvRepeatValue;
-    private Button btnGallery, btnComment, btnAddPic;
+
+    private TextView tvNameEventValue;
+
+    private TextView tvDateStartValue;
+
+    private TextView tvTimeStartValue;
+
+    private TextView tvDateEndValue;
+
+    private TextView tvTimeEndValue;
+
+    private TextView tvDecriptionValue;
+
+    private TextView tvPlaceValue;
+
+    private TextView tvFriendEventValue;
+
+    private TextView tvAlarmValue;
+
+    private TextView tvRepeatValue;
+
+    private Button btnGallery;
+
+    private Button btnComment;
+
+    private Button btnAddPic;
+
     private ArrayList<String> listComment;
+
     private ArrayList<Bitmap> listPic;
-    private int tem, temfinish, visible;
+
+    private int intTem;
+
+    private int intTemFinish;
+
+    private int intVisible;
+
     private Dialog dialogLoad;
+
     private EmojiconEditText emojiconMyComment;
+
     private FrameLayout frameLayout;
 
     @Override
@@ -65,13 +102,12 @@ public class MemoryEventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_memory_event);
         giveDataUser();
         Firebase.setAndroidContext(this);
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        Init();
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        aInit();
         setValue();
     }
 
-
-    public void Init() {
+    public void aInit() {
         tvNameEventValue = (TextView) findViewById(R.id.activity_memory_event_tv_name_event_value);
         tvDateStartValue = (TextView) findViewById(R.id.activity_memory_event_tv_date_start_value);
         tvTimeStartValue = (TextView) findViewById(R.id.activity_memory_event_tv_time_start_value);
@@ -79,14 +115,14 @@ public class MemoryEventActivity extends AppCompatActivity {
         tvTimeEndValue = (TextView) findViewById(R.id.activity_memory_event_tv_time_end_value);
         tvDecriptionValue = (TextView) findViewById(R.id.activity_memory_event_tv_decription_value);
         tvPlaceValue = (TextView) findViewById(R.id.activity_memory_event_tv_place_value);
-        tvFriendEventValue = (TextView) findViewById(R.id.activity_memory_event_tv_friend_invite_value);
+        tvFriendEventValue =
+                (TextView) findViewById(R.id.activity_memory_event_tv_friend_invite_value);
         btnGallery = (Button) findViewById(R.id.activity_memory_event_btn_gallery);
         tvAlarmValue = (TextView) findViewById(R.id.activity_memory_event_tv_alarm_value);
         tvRepeatValue = (TextView) findViewById(R.id.activity_memory_event_tv_repeat_value);
         btnComment = (Button) findViewById(R.id.activity_memory_event_btn_commnet);
         btnAddPic = (Button) findViewById(R.id.activity_memory_event_btn_picture);
     }
-
 
     public void setValue() {
         tvNameEventValue.setText(passValue.getNameEvent());
@@ -100,35 +136,43 @@ public class MemoryEventActivity extends AppCompatActivity {
         tvFriendEventValue.setText(passValue.getFriendInvite().replace("&", "."));
         tvAlarmValue.setText(passValue.getAlarm());
         tvRepeatValue.setText(passValue.getRepeat());
-        final ArrayList<Bitmap> imageArray = new ArrayList<>();
-        final String[] Friend = passValue.getFriendInvite().toString().split(",");
+        final ArrayList<Bitmap> IMAGEARRAY = new ArrayList<>();
+        final String[] FRIEND = passValue.getFriendInvite().toString().split(",");
         btnGallery.setVisibility(View.INVISIBLE);
-        for (int i = 0; i < Friend.length; i++) {
-            firebase.child("Avata").child(Friend[i]).addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    byte[] getimage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
-                    Bitmap bitmap = BitmapFactory.decodeByteArray(getimage, 0, getimage.length);
-                    imageArray.add(bitmap);
-                    if (imageArray.size() == Friend.length) {
-                        btnGallery.setVisibility(View.VISIBLE);
-                    }
-                }
+        for (int i = 0; i < FRIEND.length; i++) {
+            aFirebase.child("Avata").child(FRIEND[i])
+                    .addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            byte[] getimage = Base64.decode(dataSnapshot.getValue().toString(),
+                                    Base64.DEFAULT);
+                            Bitmap aBitmap =
+                                    BitmapFactory.decodeByteArray(getimage, 0, getimage.length);
+                            IMAGEARRAY.add(aBitmap);
+                            if (IMAGEARRAY.size() == FRIEND.length) {
+                                btnGallery.setVisibility(View.VISIBLE);
+                            }
+                        }
 
-                @Override
-                public void onCancelled(FirebaseError firebaseError) {
-                }
-            });
+                        @Override
+                        public void onCancelled(FirebaseError firebaseError) {
+                        }
+                    });
         }
         btnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Context mContext = v.getContext();
                 AlertDialog.Builder builder;
-                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                View view = inflater.inflate(R.layout.activity_gallery_friend_invite, (ViewGroup) v.findViewById(R.id.activity_gallery_friend_invite_ll_main));
-                Gallery gallery = (Gallery) view.findViewById(R.id.activity_gallery_friend_invite);
-                gallery.setAdapter(new ImageAdapter(v.getContext(), passValue.getFriendInvite().toString(), imageArray));
+                LayoutInflater layoutInflater =
+                        (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View view = layoutInflater.inflate(
+                        R.layout.activity_gallery_friend_invite,
+                        (ViewGroup) v.findViewById(R.id.activity_gallery_friend_invite_ll_main));
+                Gallery gallery = (Gallery) view.findViewById(
+                        R.id.activity_gallery_friend_invite);
+                gallery.setAdapter(new ImageAdapter(v.getContext(),
+                        passValue.getFriendInvite().toString(), IMAGEARRAY));
                 builder = new AlertDialog.Builder(v.getContext());
                 builder.setView(view);
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -147,7 +191,8 @@ public class MemoryEventActivity extends AppCompatActivity {
             @Override
             public void onClick(final View v) {
                 Intent intent = new Intent(MemoryEventActivity.this, CommentActivity.class);
-                intent.putExtra("KeyaddComment", passValue.getNameEvent().replace(" ", "&") + "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom());
+                intent.putExtra("KeyaddComment", passValue.getNameEvent().replace(" ", "&") +
+                        "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom());
                 intent.putExtra("EventValue", passValue);
                 intent.putExtra("nameUser", nameUser);
                 intent.putExtra("mailUser", mailUser);
@@ -157,11 +202,10 @@ public class MemoryEventActivity extends AppCompatActivity {
         btnAddPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddPic(v);
+                addPic(v);
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -183,28 +227,30 @@ public class MemoryEventActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void AddPic(final View v) {
-        final CharSequence[] options = {"Pic's Event", "Add Pic", "Cancel"};
+    public void addPic(final View v) {
+        final CharSequence[] OPTIONS = {"Pic's Event", "Add Pic", "Cancel"};
 
-        final AlertDialog.Builder buider = new AlertDialog.Builder(MemoryEventActivity.this);
-        buider.setTitle("Photo");
-        buider.setItems(options, new DialogInterface.OnClickListener() {
+        final AlertDialog.Builder BUILDER = new AlertDialog.Builder(MemoryEventActivity.this);
+        BUILDER.setTitle("Photo");
+        BUILDER.setItems(OPTIONS, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (options[which].equals("Pic's Event")) {
+                if (OPTIONS[which].equals("Pic's Event")) {
                     listPic = new ArrayList<Bitmap>();
                     dialogLoad(v);
 
-                } else if (options[which].equals("Add Pic")) {
-                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                } else if (OPTIONS[which].equals("Add Pic")) {
+                    Intent intent = new Intent(Intent.ACTION_PICK,
+                            android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     intent.setType("image/*");
                     startActivityForResult(intent, 2);
-                } else if (options[which].equals("Cancel"))
+                } else if (OPTIONS[which].equals("Cancel")) {
                     dialog.dismiss();
+                }
 
             }
         });
-        buider.show();
+        BUILDER.show();
     }
 
     @Override
@@ -224,25 +270,32 @@ public class MemoryEventActivity extends AppCompatActivity {
                 if (bitmap != null) {
                     bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
                     byte[] array = outputStream.toByteArray();
-                    String PicFirebase = Base64.encodeToString(array, Base64.DEFAULT);
-                    firebase.child("Memory").child(passValue.getNameEvent().replace(" ", "&") + "*" + passValue.getDateFrom() + "*" +
-                            passValue.getTimeFrom()).push().setValue(PicFirebase);
+                    String picFirebase = Base64.encodeToString(array, Base64.DEFAULT);
+                    aFirebase.child("Memory").child(passValue.getNameEvent().replace(" ", "&") +
+                            "*" + passValue.getDateFrom() + "*" +
+                            passValue.getTimeFrom()).push().setValue(picFirebase);
                     Toast.makeText(getBaseContext(), "Success", Toast.LENGTH_LONG).show();
-                } else
-                    Toast.makeText(getBaseContext(), "Fail, You don't choose any pic", Toast.LENGTH_LONG).show();
-
+                } else {
+                    Toast.makeText(getBaseContext(),
+                            "Fail, You don't choose any pic", Toast.LENGTH_LONG).show();
+                }
 
             }
 
         }
     }
 
-    public void SeenPic(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        LayoutInflater inflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.activity_gallery_friend_invite, null);
-        Gallery gallery = (Gallery) view.findViewById(R.id.activity_gallery_friend_invite);
-        gallery.setAdapter(new GalleryAdapter(view.getContext(), listPic, passValue, mailUser, nameUser));
+    public void seenPic(View v) {
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(v.getContext());
+        LayoutInflater layoutInflater =
+                (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = layoutInflater.inflate(
+                R.layout.activity_gallery_friend_invite, null);
+        Gallery gallery = (Gallery) view.findViewById(
+                R.id.activity_gallery_friend_invite);
+        gallery.setAdapter(new GalleryAdapter(view.getContext(),
+                listPic, passValue, mailUser, nameUser));
         builder.setView(view);
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -257,31 +310,37 @@ public class MemoryEventActivity extends AppCompatActivity {
     }
 
     public void dialogLoad(final View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        LayoutInflater inflater = (LayoutInflater) v.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final View view = inflater.inflate(R.layout.dialog_progress, null);
-        final ProgressBar progress = (ProgressBar) view.findViewById(R.id.dialog_progress_pb_status);
-        tem = 0;
-        temfinish = 0;
-        firebase.child("Memory").addListenerForSingleValueEvent(new ValueEventListener() {
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(v.getContext());
+        LayoutInflater inflater =
+                (LayoutInflater) v.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        final View VIEW = inflater.inflate(R.layout.dialog_progress, null);
+        final ProgressBar PROGRESS =
+                (ProgressBar) VIEW.findViewById(R.id.dialog_progress_pb_status);
+        intTem = 0;
+        intTemFinish = 0;
+        aFirebase.child("Memory").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
-                    String tempory = passValue.getNameEvent().replace(" ", "&") + "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom();
+                    String tempory = passValue.getNameEvent().replace(" ", "&") +
+                            "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom();
                     if (data.getKey().toString().compareTo(tempory) == 0) {
                         for (DataSnapshot value : data.getChildren()) {
-                            final byte[] getimage = Base64.decode(value.getValue().toString(), Base64.DEFAULT);
-                            temfinish = 30;
-                            Bitmap bitmap = BitmapFactory.decodeByteArray(getimage, 0, getimage.length);
-                            listPic.add(bitmap);
+                            final byte[] GETIMAGE =
+                                    Base64.decode(value.getValue().toString(), Base64.DEFAULT);
+                            intTemFinish = 30;
+                            Bitmap aBitmap =
+                                    BitmapFactory.decodeByteArray(GETIMAGE, 0, GETIMAGE.length);
+                            listPic.add(aBitmap);
                         }
-                        newThread(progress);
+                        newThread(PROGRESS);
                         break;
                     } else {
-                        newThread(progress);
+                        newThread(PROGRESS);
                     }
                 }
-                SeenPic(v);
+                seenPic(v);
             }
 
             @Override
@@ -289,7 +348,7 @@ public class MemoryEventActivity extends AppCompatActivity {
 
             }
         });
-        builder.setView(view);
+        builder.setView(VIEW);
         dialogLoad = builder.create();
         dialogLoad.show();
     }
@@ -312,13 +371,13 @@ public class MemoryEventActivity extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                while (tem != temfinish) {
-                    tem += 5;
+                while (intTem != intTemFinish) {
+                    intTem += 5;
                     doFakeWork();
                     progress.post(new Runnable() {
                         @Override
                         public void run() {
-                            progress.setProgress(tem);
+                            progress.setProgress(intTem);
                         }
                     });
                 }

@@ -12,18 +12,19 @@ import com.example.lehoanghan.appcalendar.R;
 
 import java.util.ArrayList;
 
-
 public class MenuAdapter extends BaseAdapter {
 
     private final int itemTitle = 0;
-    private final int itemBody = 1;
-    private Context context;
-    private ArrayList<MenuItem> arrayMenuItem;
 
+    private final int itemBody = 1;
+
+    private Context adapterContext;
+
+    private ArrayList<MenuItem> arrayMenuItem;
 
     public MenuAdapter(ArrayList<MenuItem> array_menuitem, Context context) {
         this.arrayMenuItem = array_menuitem;
-        this.context = context;
+        this.adapterContext = context;
     }
 
     @Override
@@ -48,14 +49,17 @@ public class MenuAdapter extends BaseAdapter {
 
         if (type == itemTitle) {
             if (convertView == null) {
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                LayoutInflater inflater =
+                        (LayoutInflater) adapterContext.getSystemService(
+                                Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.menu_head, null);
                 TextView txtTile = (TextView) convertView.findViewById(R.id.menu_head_tv_title);
                 txtTile.setText(arrayMenuItem.get(position).getTitle());
             }
         } else if (type == itemBody) {
             if (convertView == null) {
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                LayoutInflater inflater = (LayoutInflater) adapterContext
+                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.menu_body, null);
                 TextView tvTile = (TextView) convertView.findViewById(R.id.menu_body_tv_body);
                 tvTile.setText(arrayMenuItem.get(position).getTitle());

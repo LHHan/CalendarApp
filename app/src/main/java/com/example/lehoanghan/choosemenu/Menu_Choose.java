@@ -358,7 +358,7 @@ public class Menu_Choose extends AppCompatActivity {
     public void Thoat() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
-        builder.setMessage("You want to exit?");
+        builder.setMessage("You want to aExit?");
         builder.setIcon(R.drawable.ic_warning);
 
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -367,7 +367,7 @@ public class Menu_Choose extends AppCompatActivity {
 //                dialog.cancel();
 //                dialog.dismiss();
 //                finish();
-//                  System.exit(0);
+//                  System.aExit(0);
 //                moveTaskToBack(true);
                 Intent intent = new Intent(Menu_Choose.this, LoginActivity.class);
                 startActivity(intent);
