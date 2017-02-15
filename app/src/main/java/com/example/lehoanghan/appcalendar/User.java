@@ -4,9 +4,12 @@ import com.firebase.client.Firebase;
 
 public class User {
     private String jName;
+
     private String jMail;
+
     private String jPass;
-    private String jID;
+
+    private String jId;
 
     public User() {
         super();
@@ -24,8 +27,8 @@ public class User {
         this.jMail = jMail;
     }
 
-    public void setjID(String jID) {
-        this.jID = jID;
+    public void setjId(String jID) {
+        this.jId = jID;
     }
 
     public String getjName() {
@@ -40,15 +43,15 @@ public class User {
         return jMail;
     }
 
-    public String getjID() {
-        return jID;
+    public String getjId() {
+        return jId;
     }
 
     public void setValueChild() {
         Firebase firebase = LibraryClass.getsFirebase();
         firebase = firebase.child("User").child(getjMail());
         setjPass(null);
-        setjID(null);
+        setjId(null);
         firebase.setValue(this);
     }
 

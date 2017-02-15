@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.lehoanghan.UserFriend;
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.list_myfriend.UserMyFriendRecyclerAdapter;
+import com.example.lehoanghan.list_myfriend.userMyFriendRecyclerAdapter;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -40,7 +40,7 @@ public class MyFriendActivity extends Fragment {
 
     private RecyclerView rcvListMyFriend;
 
-    private UserMyFriendRecyclerAdapter userMyFriendRecyclerAdapter;
+    private com.example.lehoanghan.list_myfriend.userMyFriendRecyclerAdapter userMyFriendRecyclerAdapter;
 
     private LinearLayoutManager linearLayoutManager;
 
@@ -83,7 +83,7 @@ public class MyFriendActivity extends Fragment {
                     listMyFriend.add(new UserFriend(listName.get(i), listMail.get(i)));
                 }
                 userMyFriendRecyclerAdapter =
-                        new UserMyFriendRecyclerAdapter(listMyFriend, getMail, getName);
+                        new userMyFriendRecyclerAdapter(listMyFriend, getMail, getName);
                 userMyFriendRecyclerAdapter.notifyDataSetChanged();
                 rcvListMyFriend.setAdapter(userMyFriendRecyclerAdapter);
             }

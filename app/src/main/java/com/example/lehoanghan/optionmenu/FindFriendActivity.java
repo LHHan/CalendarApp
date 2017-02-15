@@ -13,7 +13,7 @@ import android.widget.SearchView;
 
 import com.example.lehoanghan.UserFriend;
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.list_findfriend.UserFindFriendRecyclerAdapter;
+import com.example.lehoanghan.list_findfriend.userFindFriendRecyclerAdapter;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -38,7 +38,7 @@ public class FindFriendActivity extends Fragment {
 
     private LinearLayoutManager linearLayoutManager;
 
-    private UserFindFriendRecyclerAdapter userFindFriendRecyclerAdapter;
+    private com.example.lehoanghan.list_findfriend.userFindFriendRecyclerAdapter userFindFriendRecyclerAdapter;
 
     private List<UserFriend> listUserFriend;
 
@@ -134,7 +134,7 @@ public class FindFriendActivity extends Fragment {
                 }
 
                 userFindFriendRecyclerAdapter =
-                        new UserFindFriendRecyclerAdapter(listUserFriend, getMail, getName);
+                        new userFindFriendRecyclerAdapter(listUserFriend, getMail, getName);
                 userFindFriendRecyclerAdapter.notifyDataSetChanged();
                 rcvListFriend.setAdapter(userFindFriendRecyclerAdapter);
             }

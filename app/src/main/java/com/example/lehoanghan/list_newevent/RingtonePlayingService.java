@@ -13,7 +13,7 @@ import com.example.lehoanghan.appcalendar.R;
  */
 public class RingtonePlayingService extends Service {
 
-    MediaPlayer mediaPlayer;
+    private MediaPlayer mediaPlayer;
 
     @Nullable
     @Override

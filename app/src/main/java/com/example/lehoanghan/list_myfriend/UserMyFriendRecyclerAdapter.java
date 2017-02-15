@@ -10,27 +10,30 @@ import com.example.lehoanghan.appcalendar.R;
 
 import java.util.List;
 
+public class userMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFriendViewHolder> {
+    private View contentView;
 
-public class UserMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFriendViewHolder> {
-
-    private View view;
     private List<UserFriend> listMyFriend;
-    private String GetMail, GetName;
+
+    private String getMail;
+
+    private String getName;
+
     // private Firebase firebase;
 
-    public UserMyFriendRecyclerAdapter(List<UserFriend> listFriend, String Mail, String Name) {
+    public userMyFriendRecyclerAdapter(List<UserFriend> listFriend, String Mail, String Name) {
         listMyFriend = listFriend;
-        GetMail = Mail;
-        GetName = Name;
+        getMail = Mail;
+        getName = Name;
     }
-
 
     @Override
     public UserMyFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_my_friend, parent, false);
-        //Firebase.setAndroidContext(view.getContext());
+        contentView = LayoutInflater.from(parent.getContext()).inflate(
+                R.layout.cardview_recycler_my_friend, parent, false);
+        //Firebase.setAndroidContext(contentView.getContext());
         //firebase=new Firebase("https://appcalendar.firebaseio.com/");
-        return new UserMyFriendViewHolder(view);
+        return new UserMyFriendViewHolder(contentView);
     }
 
     @Override
@@ -44,6 +47,5 @@ public class UserMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFrie
     public int getItemCount() {
         return listMyFriend.size();
     }
-
 
 }

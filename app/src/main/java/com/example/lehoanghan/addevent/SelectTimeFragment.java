@@ -9,29 +9,31 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
+public class SelectTimeFragment extends DialogFragment
+        implements TimePickerDialog.OnTimeSetListener {
+    private TextView tvSelectTime;
 
-public class SelectTimeFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
+    public SelectTimeFragment(TextView a) {
+        tvSelectTime = a;
+    }
 
-
-    private TextView txt;
-    public SelectTimeFragment(TextView a) { txt=a;}
-    public SelectTimeFragment(){
+    public SelectTimeFragment() {
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final Calendar calendar = Calendar.getInstance();
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int minute = calendar.get(Calendar.MINUTE);
-        return new TimePickerDialog(getActivity(), this, hour,minute,true);
+        final Calendar CALENDAR = Calendar.getInstance();
+        int hour = CALENDAR.get(Calendar.HOUR_OF_DAY);
+        int minute = CALENDAR.get(Calendar.MINUTE);
+        return new TimePickerDialog(getActivity(), this, hour, minute, true);
     }
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         Calendar c = Calendar.getInstance();
         c.set(hourOfDay, minute);
-        StringBuilder Date = new StringBuilder().append(hourOfDay).append(":").append(minute);
+        StringBuilder sbDate = new StringBuilder().append(hourOfDay).append(":").append(minute);
         //TextView TxtSetDayTo=(TextView)getActivity().findViewById(link);
-        txt.setText(Date);
+        tvSelectTime.setText(sbDate);
     }
 }

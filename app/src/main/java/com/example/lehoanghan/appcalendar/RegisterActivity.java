@@ -11,7 +11,6 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,24 +27,37 @@ import java.util.Map;
  */
 public class RegisterActivity extends Activity {
 
-    private EditText etName, etPass, etMail, etConfPass;
-    private Button btnCreate, btnClear, btnMap;
-    private Firebase firebase;
-    private User user;
-    private AlertDialog.Builder alert;
+    private EditText etName;
 
+    private EditText etPass;
+
+    private EditText etMail;
+
+    private EditText etConfPass;
+
+    private Button btnCreate;
+
+    private Button btnClear;
+
+    private Button btnMap;
+
+    private Firebase aFirebase;
+
+    private User aUser;
+
+    private AlertDialog.Builder alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         Firebase.setAndroidContext(this);
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        Init();
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        aInit();
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CheckInform();
+                checkInform();
             }
         });
         btnClear.setOnClickListener(new View.OnClickListener() {
@@ -60,14 +72,14 @@ public class RegisterActivity extends Activity {
         btnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(RegisterActivity.this,MapsActivity.class);
+                Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
                 startActivity(myIntent);
             }
         });
 
     }
 
-    public void Init() {
+    public void aInit() {
         etName = (EditText) findViewById(R.id.activity_register_et_username);
         etMail = (EditText) findViewById(R.id.activity_register_et_gmail);
         etPass = (EditText) findViewById(R.id.activity_register_et_password);
@@ -77,80 +89,87 @@ public class RegisterActivity extends Activity {
         btnMap = (Button) findViewById(R.id.activity_register_btn_map);
     }
 
-    public void CheckPass() {
+    public void checkPass() {
         if (etConfPass.getText().toString().compareTo(etPass.getText().toString()) != 0) {
-            Toast.makeText(getApplicationContext(), "Enter Conpass error, Enter Conpass again, please", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),
+                    "Enter Conpass error, Enter Conpass again, please", Toast.LENGTH_SHORT).show();
             etPass.setText("");
             etConfPass.setText("");
         } else {
-            SaveDb();
+            saveDatabase();
         }
     }
 
-    public void CheckInform() {
-        if ((etName.getText().toString() == "") || (etMail.getText().toString() == "") || (etPass.getText().toString() == "") || (etConfPass.getText().toString() == "")) {
-            Toast.makeText(getApplicationContext(), "You need fill out all inform", Toast.LENGTH_SHORT).show();
+    public void checkInform() {
+        if ((etName.getText().toString() == "") || (etMail.getText().toString() == "") ||
+                (etPass.getText().toString() == "") || (etConfPass.getText().toString() == "")) {
+            {
+                Toast.makeText(getApplicationContext(),
+                        "You need fill out all inform", Toast.LENGTH_SHORT).show();
+            }
         } else {
-            CheckPass();
+            checkPass();
         }
     }
 
-    public void SaveUser() {
-        user = new User();
-        user.setjName(etName.getText().toString());
-        user.setjMail(etMail.getText().toString());
-        user.setjPass(etPass.getText().toString());
+    public void saveUser() {
+        aUser = new User();
+        aUser.setjName(etName.getText().toString());
+        aUser.setjMail(etMail.getText().toString());
+        aUser.setjPass(etPass.getText().toString());
     }
 
-    public byte[] ConvertImage() {
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.smile);
+    public byte[] convertImage() {
+        Bitmap aBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.smile);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+        aBitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
         byte[] array = outputStream.toByteArray();
         return array;
     }
 
-    public String CovertArraytoString() {
-        String PicFirebase = Base64.encodeToString(ConvertImage(), Base64.DEFAULT);
-        return PicFirebase;
+    public String covertArraytoString() {
+        String picFirebase = Base64.encodeToString(convertImage(), Base64.DEFAULT);
+        return picFirebase;
     }
 
+    public void saveDatabase() {
 
-    public void SaveDb() {
-
-        firebase.createUser(etMail.getText().toString(), etPass.getText().toString(), new Firebase.ValueResultHandler<Map<String, Object>>() {
-            @Override
-            public void onSuccess(Map<String, Object> stringObjectMap) {
-                //user.setjID(stringObjectMap.get("uid").toString());
-                String mail = etMail.getText().toString().replace(".", "&");
-                firebase.child("User").child(mail).setValue(etName.getText().toString());
-                firebase.child("Avata").child(mail).setValue(CovertArraytoString());
-                alert = new AlertDialog.Builder(RegisterActivity.this);
-                alert.setMessage("Congratulate, do you want to login?");
-                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        aFirebase.createUser(etMail.getText().toString(), etPass.getText().toString(),
+                new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                        intent.putExtra("MailUser", etMail.getText().toString());
-                        Log.e("EditGmail", etMail.getText().toString());
-                        intent.putExtra("Password", etPass.getText().toString());
-                        startActivity(intent);
+                    public void onSuccess(Map<String, Object> stringObjectMap) {
+                        //aUser.setjId(stringObjectMap.get("uid").toString());
+                        String mail = etMail.getText().toString().replace(".", "&");
+                        aFirebase.child("User").child(mail).setValue(etName.getText().toString());
+                        aFirebase.child("Avata").child(mail).setValue(covertArraytoString());
+                        alertDialog = new AlertDialog.Builder(RegisterActivity.this);
+                        alertDialog.setMessage("Congratulate, do you want to login?");
+                        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent =
+                                        new Intent(RegisterActivity.this, LoginActivity.class);
+                                intent.putExtra("MailUser", etMail.getText().toString());
+                                Log.e("EditGmail", etMail.getText().toString());
+                                intent.putExtra("Password", etPass.getText().toString());
+                                startActivity(intent);
+                            }
+                        });
+                        alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        }).show();
+                    }
+
+                    @Override
+                    public void onError(FirebaseError firebaseError) {
+                        Toast.makeText(getApplicationContext(),
+                                firebaseError.getMessage().toString(), Toast.LENGTH_LONG).show();
+                        etPass.setText("");
+                        etConfPass.setText("");
                     }
                 });
-                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                    }
-                }).show();
-            }
-
-            @Override
-            public void onError(FirebaseError firebaseError) {
-                Toast.makeText(getApplicationContext(), firebaseError.getMessage().toString(), Toast.LENGTH_LONG).show();
-                etPass.setText("");
-                etConfPass.setText("");
-            }
-        });
 
 
     }

@@ -11,43 +11,44 @@ import com.firebase.client.Firebase;
 
 import java.util.List;
 
+public class userFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFindFriendViewHolder> {
 
-public class UserFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFindFriendViewHolder> {
-
-
-    View view;
+    private View contentView;
 
     private List<UserFriend> listUser;
-    private Firebase firebase;
-    private String getMail, getName;
 
+    private Firebase aFirebase;
 
-    public UserFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
+    private String getMail;
+
+    private String getName;
+
+    public userFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
         this.listUser = listUser;
         getMail = mail;
         getName = name;
     }
 
-
     @Override
     public UserFindFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_find_friend, parent, false);
-        Firebase.setAndroidContext(view.getContext());
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        return new UserFindFriendViewHolder(view);
+        contentView = LayoutInflater.from(parent.getContext()).inflate(
+                R.layout.cardview_recycler_find_friend, parent, false);
+        Firebase.setAndroidContext(contentView.getContext());
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        return new UserFindFriendViewHolder(contentView);
     }
 
     @Override
     public void onBindViewHolder(final UserFindFriendViewHolder holder, int position) {
-        final UserFriend userFriend = listUser.get(position);
-        holder.tvName.setText(userFriend.getName());
-        holder.tvMail.setText(userFriend.getMail());
+        final UserFriend USERFRIEND = listUser.get(position);
+        holder.tvName.setText(USERFRIEND.getName());
+        holder.tvMail.setText(USERFRIEND.getMail());
         holder.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String changeMail = userFriend.getMail().replace(".", "&");
+                String changeMail = USERFRIEND.getMail().replace(".", "&");
                 getMail = getMail.replace(".", "&");
-                firebase.child("Add_friend").child(changeMail).child(getMail).setValue(getName);
+                aFirebase.child("Add_friend").child(changeMail).child(getMail).setValue(getName);
                 holder.btnAdd.setText("Wait for Accept");
             }
         });

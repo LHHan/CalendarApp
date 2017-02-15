@@ -14,16 +14,20 @@ import com.firebase.client.ValueEventListener;
 
 import java.util.List;
 
+public class UserAcceptFriendRecyclerAdapter extends
+        RecyclerView.Adapter<UserAcceptFriendViewHolder> {
 
-public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAcceptFriendViewHolder> {
-
-    View view;
+    private View contentView;
 
     private List<UserFriend> listUserAccept;
-    private Firebase firebase;
+
+    private Firebase aFirebase;
+
     private String getMail;
+
     private String getName;
-    private int Test = 0;
+
+    private int intTest = 0;
 
     public UserAcceptFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
         listUserAccept = listUser;
@@ -33,27 +37,28 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
 
     @Override
     public UserAcceptFriendViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_recycler_accept_friend, parent, false);
-        Firebase.setAndroidContext(view.getContext());
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        return new UserAcceptFriendViewHolder(view);
+        contentView = LayoutInflater.from(parent.getContext()).inflate(
+                R.layout.cardview_recycler_accept_friend, parent, false);
+        Firebase.setAndroidContext(contentView.getContext());
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        return new UserAcceptFriendViewHolder(contentView);
     }
 
     @Override
     public void onBindViewHolder(final UserAcceptFriendViewHolder holder, final int position) {
-        final UserFriend userFindFriend = listUserAccept.get(position);
-        holder.tvUserNameAcceptFriend.setText(userFindFriend.getName());
-        holder.tvUserMailAcceptFriend.setText(userFindFriend.getMail());
+        final UserFriend USERFINDFRIEND = listUserAccept.get(position);
+        holder.tvUserNameAcceptFriend.setText(USERFINDFRIEND.getName());
+        holder.tvUserMailAcceptFriend.setText(USERFINDFRIEND.getMail());
         holder.btnUserAcceptFriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String change = userFindFriend.getMail().replace(".", "&");
-                firebase.addListenerForSingleValueEvent(new ValueEventListener() {
+                final String CHANGE = USERFINDFRIEND.getMail().replace(".", "&");
+                aFirebase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        firebase.child("My_friend").child(getMail).child(change).setValue(userFindFriend.getName());
-                        firebase.child("My_friend").child(change).child(getMail).setValue(getName);
-                        // firebase.child("Add_friend").child(getMail).child(change).setValue(null);
+                        aFirebase.child("My_friend").child(getMail).child(CHANGE)
+                                .setValue(USERFINDFRIEND.getName());
+                        aFirebase.child("My_friend").child(CHANGE).child(getMail).setValue(getName);
                     }
 
                     @Override
@@ -61,30 +66,16 @@ public class UserAcceptFriendRecyclerAdapter extends RecyclerView.Adapter<UserAc
 
                     }
                 });
-               /* firebase.addValueEventListener(new ValueEventListener() {
-                   @Override
-                   public void onDataChange(DataSnapshot dataSnapshot) {
 
-                        firebase.child("My_friend").child(getMail).child(change).setValue(userFindFriend.getName());
-                        firebase.child("My_friend").child(change).child(getMail).setValue(getName);
-                        //firebase.child("Add_friend").child(getMail).child(change).setValue(null);
-                    }
-
-                   @Override
-                   public void onCancelled(FirebaseError firebaseError) {
-
-                   }
-                });*/
                 listUserAccept.remove(position);
                 notifyItemRemoved(position);
                 notifyItemRangeChanged(position, listUserAccept.size());
                 //notifyItemChanged(position);
-                // if(holder.btnUserAcceptFriend.getVisibility()==view.VISIBLE)
-                holder.btnUserAcceptFriend.setVisibility(view.INVISIBLE);
+                // if(holder.btnUserAcceptFriend.getVisibility()==contentView.VISIBLE)
+                holder.btnUserAcceptFriend.setVisibility(contentView.INVISIBLE);
 
             }
         });
-
 
     }
 

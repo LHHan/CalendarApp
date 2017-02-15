@@ -71,7 +71,7 @@
               android:layout_alignParentBottom="true"
               android:visibility="gone" />
 
-    <!-- The title is placed above the subtitle, if there is one. If there is no
+    <!-- The TITLE is placed above the subtitle, if there is one. If there is no
          subtitle, it fills the parent. -->
     <TextView android:id="@android:id/text1"
               style="?android:attr/dropDownItemStyle"
