@@ -37,7 +37,8 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:fontFamily="sans-serif-medium"
-            android:imeOptions="actionDone" />
+            android:imeOptions="actionDone"
+            android:text="han@gmail.com" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:fontFamily="sans-serif-medium"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:text="123456789" />
     </LinearLayout>
 
     <LinearLayout

@@ -29,7 +29,7 @@ import java.util.Map;
 public class RegisterActivity extends Activity {
 
     private EditText etName, etPass, etMail, etConfPass;
-    private Button btnCreate, btnClear;
+    private Button btnCreate, btnClear, btnMap;
     private Firebase firebase;
     private User user;
     private AlertDialog.Builder alert;
@@ -57,6 +57,13 @@ public class RegisterActivity extends Activity {
                 etConfPass.setText("");
             }
         });
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(RegisterActivity.this,MapsActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
     }
 
@@ -67,6 +74,7 @@ public class RegisterActivity extends Activity {
         etConfPass = (EditText) findViewById(R.id.activity_register_et_confirmpassword);
         btnCreate = (Button) findViewById(R.id.activity_register_btn_create);
         btnClear = (Button) findViewById(R.id.activity_register_btn_clear);
+        btnMap = (Button) findViewById(R.id.activity_register_btn_map);
     }
 
     public void CheckPass() {

@@ -23,7 +23,6 @@ public class AboutActivity extends Fragment {
     private String buildType = BuildConfig.BUILD_TYPE;
     private String flavor = BuildConfig.FLAVOR;
     private TextView tvVersionCode, tvVersionName, tvBuildType, tvFlavor;
-
     public AboutActivity() {
     }
 

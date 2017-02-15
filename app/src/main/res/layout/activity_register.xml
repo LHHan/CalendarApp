@@ -121,6 +121,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
             android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/activity_register_btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Map" />
     </LinearLayout>
+
 
 </LinearLayout>
