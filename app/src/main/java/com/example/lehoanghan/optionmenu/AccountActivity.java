@@ -30,38 +30,50 @@ import com.firebase.client.ValueEventListener;
  */
 public class AccountActivity extends Fragment {
 
-    Activity root;
+    private Activity activityRoot;
+
     private View contentView;
 
     public AccountActivity() {
     }
 
     private Bundle bundleGiveMailfromMenu;
-    private String getMail, getName;
-    private TextView tvName, tvMail;
+
+    private String getMail;
+
+    private String getName;
+
+    private TextView tvName;
+
+    private TextView tvMail;
+
     private ImageView ivAvatar;
+
     private Button btnChageInfo;
-    private Firebase firebase;
+
+    private Firebase fireBase;
+
     private Intent intentPassdata;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root = getActivity();
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        activityRoot = getActivity();
         contentView = inflater.inflate(R.layout.activity_account, container, false);
         setHasOptionsMenu(true);
-        GiveUserfromChoose();
-        Firebase.setAndroidContext(root);
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        Init();
+        giveUserfromChoose();
+        Firebase.setAndroidContext(activityRoot);
+        fireBase = new Firebase("https://appcalendar.firebaseio.com/");
+        init();
 
         tvName.setText(getName);
         tvMail.setText(getMail.replace("&", "."));
-        SetImage();
+        setImage();
         btnChageInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PassDatatoChangeAccount();
+                passDatatoChangeAccount();
                 startActivity(intentPassdata);
 
             }
@@ -70,16 +82,15 @@ public class AccountActivity extends Fragment {
         return contentView;
     }
 
-
-    public void Init() {
+    public void init() {
         tvName = (TextView) contentView.findViewById(R.id.activity_account_tv_name_value);
         tvMail = (TextView) contentView.findViewById(R.id.activity_account_tv_mail_value);
         ivAvatar = (ImageView) contentView.findViewById(R.id.activity_account_iv_avatar);
         btnChageInfo = (Button) contentView.findViewById(R.id.activity_account_btn_change);
     }
 
-    public void SetImage() {
-        firebase.child("Avata").child(getMail).addValueEventListener(new ValueEventListener() {
+    public void setImage() {
+        fireBase.child("Avata").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] getImage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
@@ -104,14 +115,13 @@ public class AccountActivity extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void PassDatatoChangeAccount() {
+    public void passDatatoChangeAccount() {
         intentPassdata = new Intent(getActivity(), ChangeAccountActivity.class);
         intentPassdata.putExtra("MailUser", getMail);
         intentPassdata.putExtra("NameUser", getName);
     }
 
-    public void GiveUserfromChoose() {
+    public void giveUserfromChoose() {
         bundleGiveMailfromMenu = this.getArguments();
         if (bundleGiveMailfromMenu != null) {
             getMail = bundleGiveMailfromMenu.getString("MailforFindFriend");
@@ -120,5 +130,4 @@ public class AccountActivity extends Fragment {
             getName = getName.toLowerCase();
         }
     }
-
 }

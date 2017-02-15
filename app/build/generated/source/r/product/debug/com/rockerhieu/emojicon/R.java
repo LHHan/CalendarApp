@@ -1693,19 +1693,19 @@ public final class R {
 		public static final int sym_keyboard_delete_holo_dark = 0x7f02081e;
 	}
 	public static final class id {
-		public static final int Emoji_GridView = 0x7f0f01cd;
+		public static final int Emoji_GridView = 0x7f0f01cc;
 		public static final int baseline = 0x7f0f0043;
 		public static final int bottom = 0x7f0f0032;
-		public static final int emojicon_icon = 0x7f0f01ce;
-		public static final int emojis_backspace = 0x7f0f01d6;
-		public static final int emojis_pager = 0x7f0f01d7;
-		public static final int emojis_tab = 0x7f0f01cf;
-		public static final int emojis_tab_0_recents = 0x7f0f01d0;
-		public static final int emojis_tab_1_people = 0x7f0f01d1;
-		public static final int emojis_tab_2_nature = 0x7f0f01d2;
-		public static final int emojis_tab_3_objects = 0x7f0f01d3;
-		public static final int emojis_tab_4_cars = 0x7f0f01d4;
-		public static final int emojis_tab_5_punctuation = 0x7f0f01d5;
+		public static final int emojicon_icon = 0x7f0f01cd;
+		public static final int emojis_backspace = 0x7f0f01d5;
+		public static final int emojis_pager = 0x7f0f01d6;
+		public static final int emojis_tab = 0x7f0f01ce;
+		public static final int emojis_tab_0_recents = 0x7f0f01cf;
+		public static final int emojis_tab_1_people = 0x7f0f01d0;
+		public static final int emojis_tab_2_nature = 0x7f0f01d1;
+		public static final int emojis_tab_3_objects = 0x7f0f01d2;
+		public static final int emojis_tab_4_cars = 0x7f0f01d3;
+		public static final int emojis_tab_5_punctuation = 0x7f0f01d4;
 	}
 	public static final class layout {
 		public static final int emojicon_grid = 0x7f04004c;

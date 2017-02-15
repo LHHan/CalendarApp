@@ -34,15 +34,46 @@ import java.util.Map;
 
 public class AddEventActivity extends AppCompatActivity {
 
+    private EditText etEventName;
 
-    private EditText etEventName, etDecription, etAlarm;
-    private TextView tvSetDayFrom, tvSetTimeFrom, tvSetDayTo, tvSetTimeTo;
-    private Button btnSetDayFrom, btnSetTimeFrom, btnSetDayTo, btnSetTimeTo, btnFind;
+    private EditText etDecription;
+
+    private EditText etAlarm;
+
+    private TextView tvSetDayFrom;
+
+    private TextView tvSetTimeFrom;
+
+    private TextView tvSetDayTo;
+
+    private TextView tvSetTimeTo;
+
+    private Button btnSetDayFrom;
+
+    private Button btnSetTimeFrom;
+
+    private Button btnSetDayTo;
+
+    private Button btnSetTimeTo;
+
+    private Button btnFind;
+
     private AutoCompleteTextView actvPlace;
+
     private MultiAutoCompleteTextView mactvAddfriend;
+
     private Spinner spnRepeat;
-    private String dateSeclect, mailUser, nameUser, toDay;
-    private Firebase firebasefriend;
+
+    private String dateSeclect;
+
+    private String mailUser;
+
+    private String nameUser;
+
+    private String toDay;
+
+    private Firebase firebaseFriend;
+
     private List<String> listFriendinFirebase;
 
     @Override
@@ -51,29 +82,21 @@ public class AddEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
         Firebase.setAndroidContext(this);
-        firebasefriend = new Firebase("https://appcalendar.firebaseio.com/");
-        Init();
+        firebaseFriend = new Firebase("https://appcalendar.firebaseio.com/");
+        init();
         tvSetDayFrom.setText(dateSeclect);
-
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
                 newFragment.show(getFragmentManager(), "DatePicker");
             }
         });
-
         btnSetDayTo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
                 newFragment.show(getFragmentManager(), "DatePicker");
-               /* Bundle bundle=getActivity().getIntent().getExtras();
-                if(bundle!=null)
-                {
-                    tvSetDayTo.setText(bundle.getBundle("Date").toString());
-                }*/
             }
         });
-
         btnSetTimeFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +104,6 @@ public class AddEventActivity extends AppCompatActivity {
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
-
         btnSetTimeTo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,16 +111,14 @@ public class AddEventActivity extends AppCompatActivity {
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
-
         setDataForPlace();
         setDataForRepeat();
         setDataForAddfriend();
         buttonAddFriend();
-
     }
 
     //init value for component
-    public void Init() {
+    public void init() {
         etEventName = (EditText) findViewById(R.id.activity_add_event_et_event_name);
         etDecription = (EditText) findViewById(R.id.activity_add_event_et_description);
         etAlarm = (EditText) findViewById(R.id.activity_add_event_et_alarm);
@@ -111,41 +131,47 @@ public class AddEventActivity extends AppCompatActivity {
         btnSetDayTo = (Button) findViewById(R.id.activity_add_event_btn_set_day_to);
         btnSetTimeTo = (Button) findViewById(R.id.activity_add_event_btn_set_time_to);
         actvPlace = (AutoCompleteTextView) findViewById(R.id.activity_add_event_actv_place);
-        mactvAddfriend = (MultiAutoCompleteTextView) findViewById(R.id.activity_add_event_mactv_add_friend);
+        mactvAddfriend = (MultiAutoCompleteTextView) findViewById(
+                R.id.activity_add_event_mactv_add_friend);
         spnRepeat = (Spinner) findViewById(R.id.activity_add_event_spn_repeat);
         btnFind = (Button) findViewById(R.id.activity_add_event_btn_find_friend);
     }
 
     public void setDataForPlace() {
         String[] place = getResources().getStringArray(R.array.District);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.adapter_place, place);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+                R.layout.adapter_place, place);
         actvPlace.setAdapter(arrayAdapter);
     }
 
     public void setDataForAddfriend() {
-        final List<String> listFriend = new ArrayList<String>();
-        firebasefriend.child("My_friend").child(mailUser).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot Snapshot : dataSnapshot.getChildren())
-                    listFriend.add(Snapshot.getKey().toString().replace("&", "."));
+        final List<String> LISTFRIEND = new ArrayList<String>();
+        firebaseFriend.child("My_friend").child(mailUser)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                            LISTFRIEND.add(snapShot.getKey().toString().replace("&", "."));
+                        }
+                        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+                                getApplicationContext(),
+                                android.R.layout.simple_spinner_item, LISTFRIEND);
+                        mactvAddfriend.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+                        mactvAddfriend.setThreshold(1);
+                        mactvAddfriend.setAdapter(arrayAdapter);
+                    }
 
-                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, listFriend);
-                mactvAddfriend.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
-                mactvAddfriend.setThreshold(1);
-                mactvAddfriend.setAdapter(arrayAdapter);
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-            }
-        });
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+                    }
+                });
 
     }
 
     public void setDataForRepeat() {
-        final String[] repeat = getResources().getStringArray(R.array.Repeat);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, repeat);
+        final String[] REPEAT = getResources().getStringArray(R.array.Repeat);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, REPEAT);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spnRepeat.setAdapter(arrayAdapter);
     }
@@ -158,12 +184,13 @@ public class AddEventActivity extends AppCompatActivity {
     }
 
     private MenuInflater menuInflater;
-    private Menu menu;
+
+    private Menu contentMenu;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menuInflater = getMenuInflater();
-        this.menu = menu;
+        this.contentMenu = menu;
         menuInflater.inflate(R.menu.menu_add_event, menu);
         setTitle("Add Event");
         return super.onCreateOptionsMenu(menu);
@@ -190,35 +217,41 @@ public class AddEventActivity extends AppCompatActivity {
         btnFind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                final Dialog dialog = new Dialog(AddEventActivity.this);
-                dialog.setContentView(R.layout.dialog_add_friend);
-                dialog.setTitle("My friend");
-                dialog.setCancelable(true);
-                final ListView listMyFriendDialog = (ListView) dialog.findViewById(R.id.dialog_add_friend_lv_main);
-                final List<String> listFriend = new ArrayList<String>();
-                firebasefriend.child("My_friend").child(mailUser).addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot Snapshot : dataSnapshot.getChildren())
-                            listFriend.add(Snapshot.getKey().toString().replace("&", "."));
-
-                        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.adapter_place, listFriend);
-                        listMyFriendDialog.setAdapter(arrayAdapter);
-                        dialog.show();
-                        listMyFriendDialog.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                final Dialog DIALOG = new Dialog(AddEventActivity.this);
+                DIALOG.setContentView(R.layout.dialog_add_friend);
+                DIALOG.setTitle("My friend");
+                DIALOG.setCancelable(true);
+                final ListView LISTMYFRIENDDIALOG =
+                        (ListView) DIALOG.findViewById(R.id.dialog_add_friend_lv_main);
+                final List<String> LISTFRIEND = new ArrayList<String>();
+                firebaseFriend.child("My_friend").child(mailUser)
+                        .addValueEventListener(new ValueEventListener() {
                             @Override
-                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                mactvAddfriend.setText(mactvAddfriend.getText() + listFriend.get(position) + "," + " ");
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                                    LISTFRIEND.add(snapShot.getKey().toString().replace("&", "."));
+                                }
+                                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+                                        getApplicationContext(),
+                                        R.layout.adapter_place, LISTFRIEND);
+                                LISTMYFRIENDDIALOG.setAdapter(arrayAdapter);
+                                DIALOG.show();
+                                LISTMYFRIENDDIALOG.setOnItemClickListener(
+                                        new AdapterView.OnItemClickListener() {
+                                            @Override
+                                            public void onItemClick(AdapterView<?> parent,
+                                                                    View view,
+                                                                    int position, long id) {
+                                                mactvAddfriend.setText(mactvAddfriend.getText()
+                                                        + LISTFRIEND.get(position) + "," + " ");
+                                            }
+                                        });
+                            }
+
+                            @Override
+                            public void onCancelled(FirebaseError firebaseError) {
                             }
                         });
-                    }
-
-                    @Override
-                    public void onCancelled(FirebaseError firebaseError) {
-
-                    }
-                });
 
             }
         });
@@ -232,17 +265,13 @@ public class AddEventActivity extends AppCompatActivity {
         for (int i = 0; i < listFriendInvite.length; i++) {
             listFriendinFirebase.add(listFriendInvite[i].trim().replace(".", "&"));
         }
-
         for (int i = 0; i < listFriendinFirebase.size(); i++) {
             if (i == (listFriendinFirebase.size() - 1)) {
                 listinvite += listFriendinFirebase.get(i);
-            } else
+            } else {
                 listinvite += listFriendinFirebase.get(i) + ",";
+            }
         }
-        /*EventValue eventValue=new EventValue(etEventName.getText().toString(),tvSetDayFrom.getText().toString(),
-                tvSetTimeFrom.getText().toString(),tvSetDayTo.getText().toString(),tvSetTimeTo.getText().toString(),
-                etDecription.getText().toString(), actvPlace.getText().toString(),mactvAddfriend.getText().toString(),
-                etAlarm.getText().toString(), spnRepeat.getSelectedItem().toString());*/
         Map<String, String> eventValue = new Hashtable<String, String>();
         eventValue.put("NameEvent", etEventName.getText().toString());
         eventValue.put("DateFrom", tvSetDayFrom.getText().toString());
@@ -255,62 +284,64 @@ public class AddEventActivity extends AppCompatActivity {
         eventValue.put("Alarm", etAlarm.getText().toString());
         eventValue.put("Repeat", spnRepeat.getSelectedItem().toString());
 
-        //Map<String,Map<String,String>> mapEvent=new Hashtable<String, Map<String, String>>();
-        //mapEvent.put(etEventName.getText().toString(),eventValue);
-//        Map<String,Object> mapEvent=new HashMap<String,Object>();
-//        mapEvent.put(etEventName.getText().toString() + ", " + tvSetDayFrom.getText().toString() + ", " + tvSetTimeFrom.getText().toString(),
-//                new EventValue(etEventName.getText().toString(), tvSetDayFrom.getText().toString(),
-//                        tvSetTimeFrom.getText().toString(), tvSetDayTo.getText().toString(), tvSetTimeTo.getText().toString(),
-//                        etDecription.getText().toString(), actvPlace.getText().toString(), mactvAddfriend.getText().toString(),
-//                        etAlarm.getText().toString(), spnRepeat.getSelectedItem().toString()));
-
         for (String mail : listFriendinFirebase) {
-            firebasefriend.child("Event").child(mail).child("New_Event").push().setValue(eventValue);
+            firebaseFriend.child("Event").child(mail)
+                    .child("New_Event").push().setValue(eventValue);
         }
-        //Entry();
+        //entry();
         Toast.makeText(getApplicationContext(), "Congratulation", Toast.LENGTH_LONG).show();
     }
 
     public void checkNgay() {
         String error = null;
-        if (toDay.replace("-", "a").compareTo(tvSetDayFrom.getText().toString().replace("-", "a")) <= 0) {
+        if (toDay.replace("-", "a").compareTo(tvSetDayFrom.getText()
+                .toString().replace("-", "a")) <= 0) {
             if (tvSetDayFrom.getText().toString().replace("-", "a").compareTo(
                     tvSetDayTo.getText().toString().replace("-", "a")) < 0) {
                 saveEventinFirebase();
-                Entry();
+                entry();
             } else if (tvSetDayFrom.getText().toString().replace("-", "a").compareTo(
                     tvSetDayTo.getText().toString().replace("-", "a")) == 0) {
-                if (tvSetTimeFrom.getText().toString().replace(":", "a").compareTo(tvSetTimeTo.getText().toString().replace(":", "a")) < 0) {
+                if (tvSetTimeFrom.getText().toString().replace(":", "a")
+                        .compareTo(tvSetTimeTo.getText().toString().replace(":", "a")) < 0) {
                     saveEventinFirebase();
-                    Entry();
-                } else
+                    entry();
+                } else {
                     error = "error ic_about time to ";
-            } else
+                }
+            } else {
                 error = "error ic_about date to";
+            }
 
         } else {
             error = "error ic_about date from";
         }
-        if (error != null)
+        if (error != null) {
             Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
+        }
     }
 
     public void checkEntry() {
         String error = "";
-        if ((etEventName.getText().toString().compareTo("") == 0) || (tvSetDayFrom.getText().toString().compareTo("") == 0) ||
-                (tvSetTimeFrom.getText().toString().compareTo("") == 0) || (tvSetDayTo.getText().toString().compareTo("") == 0) ||
-                (tvSetTimeTo.getText().toString().compareTo("") == 0) || (etDecription.getText().toString().compareTo("") == 0) ||
+        if ((etEventName.getText().toString().compareTo("") == 0) ||
+                (tvSetDayFrom.getText().toString().compareTo("") == 0) ||
+                (tvSetTimeFrom.getText().toString().compareTo("") == 0) ||
+                (tvSetDayTo.getText().toString().compareTo("") == 0) ||
+                (tvSetTimeTo.getText().toString().compareTo("") == 0) ||
+                (etDecription.getText().toString().compareTo("") == 0) ||
                 (actvPlace.getText().toString().compareTo("") == 0) ||
-                (etAlarm.getText().toString().compareTo("") == 0) || (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
+                (etAlarm.getText().toString().compareTo("") == 0) ||
+                (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
             error = "error entry data";
         } else {
             checkNgay();
         }
-        if (error.compareTo("") != 0)
+        if (error.compareTo("") != 0) {
             Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
+        }
     }
 
-    public void Entry() {
+    public void entry() {
         etEventName.setText("");
         tvSetDayFrom.setText("");
         tvSetTimeFrom.setText("");

@@ -17,50 +17,63 @@ import android.widget.TextView;
 
 import com.example.lehoanghan.appcalendar.R;
 
-
 public class AddNewEventActivity extends Fragment {
-    Activity root;
+    private Activity activityRoot;
 
     public AddNewEventActivity() {
 
     }
 
     private EditText etEventName;
-    private TextView tvSetDayFrom, tvSetTimeFrom, tvSetDayTo, tvSetTimeTo;
-    private Button btnSetDayFrom, btnSetTimeFrom, btnSetDayTo, btnSetTimeTo, btnFind;
-    private AutoCompleteTextView actvPlace, actvAddFriend;
-    private Spinner spnRepeat;
-    private View contentView;
-    private String dateSeclect;
 
+    private TextView tvSetDayFrom;
+
+    private TextView tvSetTimeFrom;
+
+    private TextView tvSetDayTo;
+
+    private TextView tvSetTimeTo;
+
+    private Button btnSetDayFrom;
+
+    private Button btnSetTimeFrom;
+
+    private Button btnSetDayTo;
+
+    private Button btnSetTimeTo;
+
+    private Button btnFind;
+
+    private AutoCompleteTextView actvPlace;
+
+    private AutoCompleteTextView actvAddFriend;
+
+    private Spinner spnRepeat;
+
+    private View contentView;
+
+    private String dateSeclect;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         getDateSelectFromMenuChoose();
         contentView = inflater.inflate(R.layout.activity_add_event, container, false);
-        Init();
+        init();
         tvSetDayFrom.setText(dateSeclect);
-
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
                 newFragment.show(getFragmentManager(), "DatePicker");
             }
         });
-
         btnSetDayTo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
                 newFragment.show(getFragmentManager(), "DatePicker");
-               /* Bundle bundle=getActivity().getIntent().getExtras();
-                if(bundle!=null)
-                {
-                    tvSetDayTo.setText(bundle.getBundle("Date").toString());
-                }*/
             }
         });
-
         btnSetTimeFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +81,6 @@ public class AddNewEventActivity extends Fragment {
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
-
         btnSetTimeTo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,38 +88,52 @@ public class AddNewEventActivity extends Fragment {
                 newFragment.show(getFragmentManager(), "TimePicker");
             }
         });
-
-        SetdataforAdress();
-        SetdataforRepeat();
-
+        setDataforAdress();
+        setDataforRepeat();
         return contentView;
     }
 
     //init value for component
-    public void Init() {
-        etEventName = (EditText) contentView.findViewById(R.id.activity_add_event_et_event_name);
-        tvSetDayFrom = (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_day_from);
-        tvSetTimeFrom = (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_time_from);
-        tvSetDayTo = (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_day_to);
-        tvSetTimeTo = (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_time_to);
-        btnSetDayFrom = (Button) contentView.findViewById(R.id.activity_add_event_btn_set_day_from);
-        btnSetTimeFrom = (Button) contentView.findViewById(R.id.activity_add_event_btn_set_time_from);
-        btnSetDayTo = (Button) contentView.findViewById(R.id.activity_add_event_btn_set_day_to);
-        btnSetTimeTo = (Button) contentView.findViewById(R.id.activity_add_event_btn_set_time_to);
-        actvPlace = (AutoCompleteTextView) contentView.findViewById(R.id.activity_add_event_actv_place);
-        actvAddFriend = (AutoCompleteTextView) contentView.findViewById(R.id.activity_add_event_mactv_add_friend);
-        spnRepeat = (Spinner) contentView.findViewById(R.id.activity_add_event_spn_repeat);
+    public void init() {
+        etEventName =
+                (EditText) contentView.findViewById(R.id.activity_add_event_et_event_name);
+        tvSetDayFrom =
+                (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_day_from);
+        tvSetTimeFrom =
+                (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_time_from);
+        tvSetDayTo =
+                (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_day_to);
+        tvSetTimeTo =
+                (TextView) contentView.findViewById(R.id.activity_add_event_tv_set_time_to);
+        btnSetDayFrom =
+                (Button) contentView.findViewById(R.id.activity_add_event_btn_set_day_from);
+        btnSetTimeFrom =
+                (Button) contentView.findViewById(R.id.activity_add_event_btn_set_time_from);
+        btnSetDayTo =
+                (Button) contentView.findViewById(R.id.activity_add_event_btn_set_day_to);
+        btnSetTimeTo =
+                (Button) contentView.findViewById(R.id.activity_add_event_btn_set_time_to);
+        actvPlace =
+                (AutoCompleteTextView) contentView.findViewById(R.id.activity_add_event_actv_place);
+        actvAddFriend =
+                (AutoCompleteTextView) contentView.findViewById(
+                        R.id.activity_add_event_mactv_add_friend);
+        spnRepeat =
+                (Spinner) contentView.findViewById(R.id.activity_add_event_spn_repeat);
     }
 
-    public void SetdataforAdress() {
+    public void setDataforAdress() {
         String[] address = contentView.getResources().getStringArray(R.array.District);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(), R.layout.adapter_place, address);
+        ArrayAdapter<String> arrayAdapter =
+                new ArrayAdapter<String>(getActivity(), R.layout.adapter_place, address);
         actvPlace.setAdapter(arrayAdapter);
     }
 
-    public void SetdataforRepeat() {
-        final String[] repeat = contentView.getResources().getStringArray(R.array.Repeat);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, repeat);
+    public void setDataforRepeat() {
+        final String[] REPEAT = contentView.getResources().getStringArray(R.array.Repeat);
+        ArrayAdapter<String> arrayAdapter =
+                new ArrayAdapter<String>(this.getActivity(),
+                        android.R.layout.simple_spinner_item, REPEAT);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spnRepeat.setAdapter(arrayAdapter);
     }

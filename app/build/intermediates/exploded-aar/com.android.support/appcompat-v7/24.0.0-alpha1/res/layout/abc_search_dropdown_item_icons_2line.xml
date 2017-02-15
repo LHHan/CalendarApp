@@ -57,7 +57,7 @@
                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2" />
 
 
-    <!-- The subtitle comes before the title, since the height of the title depends on whether the
+    <!-- The subtitle comes before the TITLE, since the height of the TITLE depends on whether the
          subtitle is visible or gone. -->
     <TextView android:id="@android:id/text2"
               style="?android:attr/dropDownItemStyle"
