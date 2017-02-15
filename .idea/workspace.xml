@@ -16,15 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="454eb250-8182-4f8b-9b87-68c8361d5d0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java" />
     </list>
     <ignored path="CalendarApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,8 +91,8 @@
       <file leaf-file-name="MemoryEventActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="333" column="96" selection-start-line="333" selection-start-column="96" selection-end-line="333" selection-end-column="96" />
+            <state relative-caret-position="191">
+              <caret line="311" column="5" selection-start-line="311" selection-start-column="5" selection-end-line="311" selection-end-column="5" />
               <folding>
                 <element signature="e#5967#7335#0" expanded="true" />
                 <element signature="e#7334#7335#0" expanded="true" />
@@ -115,18 +108,28 @@
       <file leaf-file-name="MenuAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+            <state relative-caret-position="387">
+              <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuItem.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MenuItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu_Choose.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="448" column="31" selection-start-line="448" selection-start-column="31" selection-end-line="448" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -155,26 +158,6 @@
                 <element signature="e#16518#19374#0" expanded="true" />
                 <element signature="e#19373#19374#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FriendAcceptActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/FriendAcceptActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalleryAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/GalleryAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -3306,7 +3289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menu_choose.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_myfriend.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_friendaccept.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_findfriend.xml" />
@@ -3314,7 +3296,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_home.xml" />
         <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/lehoanghan/appcalendar/R.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_add_event.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/PictureActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_account.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_about.xml" />
@@ -3357,6 +3338,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java" />
       </list>
     </option>
   </component>
@@ -3839,7 +3822,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487146808128</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fourth commit on Feb 15: CheckStyle with Rules: BSS_Style (3)">
+      <created>1487149095639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487149095639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3853,7 +3843,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5188889" sideWeight="0.5181406" order="0" side_tool="true" content_ui="tabs" />
@@ -3872,7 +3862,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -3940,7 +3930,8 @@
     <MESSAGE value="Third Commit on Feb 14: Fix code in some file such as:&#10;- CommentActivity&#10;- EventRecyclerAdapter&#10;- GalleryAdapter&#10;- MemoryEventActivity&#10;- EventValue&#10;- ImageAdapter&#10;- UserFriend" />
     <MESSAGE value="Second commit on Feb 15: CheckStyle with Rules: BSS_Style (1)" />
     <MESSAGE value="Third commit on Feb 15: CheckStyle with Rules: BSS_Style (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Third commit on Feb 15: CheckStyle with Rules: BSS_Style (2)" />
+    <MESSAGE value="Fourth commit on Feb 15: CheckStyle with Rules: BSS_Style (3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fourth commit on Feb 15: CheckStyle with Rules: BSS_Style (3)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3949,22 +3940,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4300,25 +4275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1551">
-          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="e#3126#3740#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/appcalendar/LibraryClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -4366,10 +4322,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/list_oldevent/MemoryEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="333" column="96" selection-start-line="333" selection-start-column="96" selection-end-line="333" selection-end-column="96" />
+        <state relative-caret-position="191">
+          <caret line="311" column="5" selection-start-line="311" selection-start-column="5" selection-end-line="311" selection-end-column="5" />
           <folding>
             <element signature="e#5967#7335#0" expanded="true" />
             <element signature="e#7334#7335#0" expanded="true" />
@@ -4381,18 +4353,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuAdapter.java">
+    <entry file="jar://C:/Users/Administrator/Android/sdk/platforms/android-23/android.jar!/android/app/Fragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/MenuItem.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/optionmenu/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="1551">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding>
+            <element signature="e#3126#3740#0" expanded="true" />
+            <element signature="e#3739#3740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/ImageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lehoanghan/choosemenu/Menu_Choose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="448" column="31" selection-start-line="448" selection-start-column="31" selection-end-line="448" selection-end-column="31" />
           <folding />
         </state>
       </provider>
