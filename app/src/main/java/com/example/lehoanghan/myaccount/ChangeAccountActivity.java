@@ -63,9 +63,9 @@ public class ChangeAccountActivity extends AppCompatActivity {
 
     private String mailUser;
 
-    private Firebase fireBase;
+    private Firebase aFirebase;
 
-    private Bitmap bitmap;
+    private Bitmap aBitmap;
 
     private Bitmap bitmapFirebase;
 
@@ -74,9 +74,9 @@ public class ChangeAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_account);
         Firebase.setAndroidContext(this);
-        fireBase = new Firebase("https://appcalendar.firebaseio.com/");
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         giveDataUser();
-        init();
+        aInit();
         setImage();
         btnChangeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,7 +103,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
         });
     }
 
-    public void init() {
+    public void aInit() {
         ivAvatar = (ImageView) findViewById(R.id.activity_change_account_iv_avatar);
         etName = (EditText) findViewById(R.id.activity_change_account_et_name);
         etName.setText(nameUser);
@@ -118,7 +118,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     }
 
     public void setImage() {
-        fireBase.child("Avata").child(mailUser).addValueEventListener(new ValueEventListener() {
+        aFirebase.child("Avata").child(mailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] image = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
@@ -174,8 +174,8 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 }
                 try {
                     BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
-                    bitmap = BitmapFactory.decodeFile(f.getAbsolutePath(), bitmapOptions);
-                    ivAvatar.setImageBitmap(bitmap);
+                    aBitmap = BitmapFactory.decodeFile(f.getAbsolutePath(), bitmapOptions);
+                    ivAvatar.setImageBitmap(aBitmap);
                     String path = android.os.Environment.getExternalStorageDirectory()
                             + File.separator + "Phoenix" + File.separator + "default";
                     f.delete();
@@ -183,7 +183,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
                     File file = new File(path, String.valueOf(System.currentTimeMillis()) + ".jpg");
                     try {
                         outFile = new FileOutputStream(file);
-                        bitmap.compress(Bitmap.CompressFormat.JPEG, 85, outFile);
+                        aBitmap.compress(Bitmap.CompressFormat.JPEG, 85, outFile);
                         outFile.flush();
                         outFile.close();
                     } catch (FileNotFoundException e) {
@@ -204,8 +204,8 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 int columnIndex = c.getColumnIndex(filePath[0]);
                 String picturePath = c.getString(columnIndex);
                 c.close();
-                bitmap = (BitmapFactory.decodeFile(picturePath));
-                ivAvatar.setImageBitmap(bitmap);
+                aBitmap = (BitmapFactory.decodeFile(picturePath));
+                ivAvatar.setImageBitmap(aBitmap);
             }
         }
     }
@@ -232,8 +232,8 @@ public class ChangeAccountActivity extends AppCompatActivity {
 
     public String covertBitmaptoString() {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        if (bitmap != null) {
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+        if (aBitmap != null) {
+            aBitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
         } else {
             bitmapFirebase.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
         }
@@ -248,7 +248,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 etPassChange.getText().toString().compareTo("") == 0 ||
                 etComPassChange.getText().toString().compareTo("") == 0) {
             Toast.makeText(getApplicationContext(),
-                    "entry data, You need to fill out full data", Toast.LENGTH_LONG);
+                    "entryActivity data, You need to fill out full data", Toast.LENGTH_LONG);
         } else {
             if (etPassChange.getText().toString()
                     .compareTo(etComPassChange.getText().toString()) != 0) {
@@ -256,7 +256,8 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 etPassChange.setText("");
                 etComPassChange.setText("");
             } else {
-                fireBase.changePassword(mailUser.replace("&", "."), etOldPass.getText().toString(),
+                aFirebase.changePassword(mailUser.replace("&", "."),
+                        etOldPass.getText().toString(),
                         etPassChange.getText().toString(),
                         new Firebase.ResultHandler() {
                             @Override
@@ -274,8 +275,8 @@ public class ChangeAccountActivity extends AppCompatActivity {
                             }
                         });
 
-                fireBase.child("User").child(mailUser).setValue(etName.getText().toString());
-                fireBase.child("Avata").child(mailUser).setValue(covertBitmaptoString());
+                aFirebase.child("User").child(mailUser).setValue(etName.getText().toString());
+                aFirebase.child("Avata").child(mailUser).setValue(covertBitmaptoString());
             }
         }
     }

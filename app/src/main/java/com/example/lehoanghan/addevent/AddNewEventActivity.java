@@ -20,10 +20,6 @@ import com.example.lehoanghan.appcalendar.R;
 public class AddNewEventActivity extends Fragment {
     private Activity activityRoot;
 
-    public AddNewEventActivity() {
-
-    }
-
     private EditText etEventName;
 
     private TextView tvSetDayFrom;
@@ -54,13 +50,16 @@ public class AddNewEventActivity extends Fragment {
 
     private String dateSeclect;
 
+    public AddNewEventActivity() {
+    }
+
     @Nullable
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         getDateSelectFromMenuChoose();
         contentView = inflater.inflate(R.layout.activity_add_event, container, false);
-        init();
+        aInit();
         tvSetDayFrom.setText(dateSeclect);
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -93,8 +92,8 @@ public class AddNewEventActivity extends Fragment {
         return contentView;
     }
 
-    //init value for component
-    public void init() {
+    //aInit value for component
+    public void aInit() {
         etEventName =
                 (EditText) contentView.findViewById(R.id.activity_add_event_et_event_name);
         tvSetDayFrom =

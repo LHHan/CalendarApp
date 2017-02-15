@@ -76,6 +76,10 @@ public class AddEventActivity extends AppCompatActivity {
 
     private List<String> listFriendinFirebase;
 
+    private MenuInflater menuInflater;
+
+    private Menu contentMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getDateSelectFromHome();
@@ -83,7 +87,7 @@ public class AddEventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_event);
         Firebase.setAndroidContext(this);
         firebaseFriend = new Firebase("https://appcalendar.firebaseio.com/");
-        init();
+        aInit();
         tvSetDayFrom.setText(dateSeclect);
         btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -117,8 +121,8 @@ public class AddEventActivity extends AppCompatActivity {
         buttonAddFriend();
     }
 
-    //init value for component
-    public void init() {
+    //aInit value for component
+    public void aInit() {
         etEventName = (EditText) findViewById(R.id.activity_add_event_et_event_name);
         etDecription = (EditText) findViewById(R.id.activity_add_event_et_description);
         etAlarm = (EditText) findViewById(R.id.activity_add_event_et_alarm);
@@ -182,10 +186,6 @@ public class AddEventActivity extends AppCompatActivity {
         nameUser = getIntent().getStringExtra("NameUser");
         toDay = getIntent().getStringExtra("ToDay");
     }
-
-    private MenuInflater menuInflater;
-
-    private Menu contentMenu;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -288,7 +288,7 @@ public class AddEventActivity extends AppCompatActivity {
             firebaseFriend.child("Event").child(mail)
                     .child("New_Event").push().setValue(eventValue);
         }
-        //entry();
+        //entryActivity();
         Toast.makeText(getApplicationContext(), "Congratulation", Toast.LENGTH_LONG).show();
     }
 
@@ -299,13 +299,13 @@ public class AddEventActivity extends AppCompatActivity {
             if (tvSetDayFrom.getText().toString().replace("-", "a").compareTo(
                     tvSetDayTo.getText().toString().replace("-", "a")) < 0) {
                 saveEventinFirebase();
-                entry();
+                entryActivity();
             } else if (tvSetDayFrom.getText().toString().replace("-", "a").compareTo(
                     tvSetDayTo.getText().toString().replace("-", "a")) == 0) {
                 if (tvSetTimeFrom.getText().toString().replace(":", "a")
                         .compareTo(tvSetTimeTo.getText().toString().replace(":", "a")) < 0) {
                     saveEventinFirebase();
-                    entry();
+                    entryActivity();
                 } else {
                     error = "error ic_about time to ";
                 }
@@ -332,7 +332,7 @@ public class AddEventActivity extends AppCompatActivity {
                 (actvPlace.getText().toString().compareTo("") == 0) ||
                 (etAlarm.getText().toString().compareTo("") == 0) ||
                 (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
-            error = "error entry data";
+            error = "error entryActivity data";
         } else {
             checkNgay();
         }
@@ -341,7 +341,7 @@ public class AddEventActivity extends AppCompatActivity {
         }
     }
 
-    public void entry() {
+    public void entryActivity() {
         etEventName.setText("");
         tvSetDayFrom.setText("");
         tvSetTimeFrom.setText("");

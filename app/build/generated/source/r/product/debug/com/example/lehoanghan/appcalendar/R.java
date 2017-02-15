@@ -7059,7 +7059,7 @@ containing a value of this type.
            <tr><td><code>{@link #ActionBar_progressBarStyle com.example.lehoanghan.appcalendar:progressBarStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_subtitle com.example.lehoanghan.appcalendar:subtitle}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.lehoanghan.appcalendar:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.example.lehoanghan.appcalendar:TITLE}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.example.lehoanghan.appcalendar:title}</code></td><td></td></tr>
            <tr><td><code>{@link #ActionBar_titleTextStyle com.example.lehoanghan.appcalendar:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
@@ -7475,7 +7475,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.lehoanghan.appcalendar:TITLE
+          @attr name com.example.lehoanghan.appcalendar:title
         */
         public static final int ActionBar_title = 1;
         /**
@@ -10517,7 +10517,7 @@ containing a value of this type.
            <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.example.lehoanghan.appcalendar:expandedTitleMarginTop}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.example.lehoanghan.appcalendar:expandedTitleTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.example.lehoanghan.appcalendar:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.lehoanghan.appcalendar:TITLE}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.lehoanghan.appcalendar:title}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.example.lehoanghan.appcalendar:titleEnabled}</code></td><td></td></tr>
            <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.example.lehoanghan.appcalendar:toolbarId}</code></td><td></td></tr>
            </table>
@@ -10733,7 +10733,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.lehoanghan.appcalendar:TITLE
+          @attr name com.example.lehoanghan.appcalendar:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
@@ -13055,7 +13055,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_orderInCategory android:orderInCategory}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_android_title android:TITLE}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_showAsAction com.example.lehoanghan.appcalendar:showAsAction}</code></td><td></td></tr>
@@ -13186,7 +13186,7 @@ containing a value of this type.
         /**
           <p>This symbol is the offset where the {@link android.R.attr#title}
           attribute's value can be found in the {@link #MenuItem} array.
-          @attr name android:TITLE
+          @attr name android:title
         */
         public static final int MenuItem_android_title = 7;
         /**
@@ -15045,7 +15045,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Toolbar_subtitle com.example.lehoanghan.appcalendar:subtitle}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.lehoanghan.appcalendar:subtitleTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.lehoanghan.appcalendar:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.example.lehoanghan.appcalendar:TITLE}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.example.lehoanghan.appcalendar:title}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleMargin com.example.lehoanghan.appcalendar:titleMargin}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.lehoanghan.appcalendar:titleMarginBottom}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.lehoanghan.appcalendar:titleMarginEnd}</code></td><td></td></tr>
@@ -15368,7 +15368,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.lehoanghan.appcalendar:TITLE
+          @attr name com.example.lehoanghan.appcalendar:title
         */
         public static final int Toolbar_title = 2;
         /**

@@ -2,18 +2,27 @@ package com.example.lehoanghan;
 
 import java.io.Serializable;
 
-
 public class EventValue implements Serializable {
     private String nameEvent;
+
     private String dateFrom;
+
     private String timeFrom;
+
     private String dateTo;
+
     private String timeTo;
+
     private String description;
+
     private String place;
+
     private String friendInvite;
+
     private String alarm;
+
     private String repeat;
+
     private int check;
 
     public EventValue() {
@@ -23,7 +32,8 @@ public class EventValue implements Serializable {
         dateFrom = DF;
     }
 
-    public EventValue(String N, String DF, String TF, String DT, String TT, String D, String P, String F, String A, String R) {
+    public EventValue(String N, String DF, String TF, String DT, String TT,
+                      String D, String P, String F, String A, String R) {
         nameEvent = N;
         dateFrom = DF;
         timeFrom = TF;
@@ -36,7 +46,8 @@ public class EventValue implements Serializable {
         repeat = R;
     }
 
-    public EventValue(String N, String DF, String TF, String DT, String TT, String D, String P, String F, String A, String R, int C) {
+    public EventValue(String N, String DF, String TF, String DT, String TT,
+                      String D, String P, String F, String A, String R, int C) {
         nameEvent = N;
         dateFrom = DF;
         timeFrom = TF;

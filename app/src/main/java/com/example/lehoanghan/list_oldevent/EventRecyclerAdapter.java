@@ -40,6 +40,10 @@ import java.util.Map;
  */
 public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdapter.ViewHolder> {
 
+    public static final int TITLE = 0;
+
+    public static final int data = 1;
+
     private ArrayList<EventValue> dataSet;
 
     private ArrayList<Integer> dataSetTypes;
@@ -47,10 +51,6 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     private String mailUser;
 
     private String nameUser;
-
-    public static final int TITLE = 0;
-
-    public static final int data = 1;
 
     private int intType;
 
@@ -281,7 +281,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             Intent mNotificationReceiverIntent;
                             PendingIntent mNotificationReceiverPendingIntent;
                             mAlarmManager =
-                                    (AlarmManager) adapterContext.getSystemService(Context.ALARM_SERVICE);
+                                    (AlarmManager) adapterContext
+                                            .getSystemService(Context.ALARM_SERVICE);
                             mNotificationReceiverIntent =
                                     new Intent(adapterContext.getApplicationContext(),
                                             AlarmNotificationReceiver.class);
@@ -319,13 +320,6 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                                         (long) timeAlarm,
                                         mNotificationReceiverPendingIntent);
                             }
-
-//                            mLoggerReceiverIntent = new Intent(adapterContext.getApplicationContext(),
-//                                    RingtonePlayingService.class);
-//
-//                            mLoggerReceiverPendingIntent = PendingIntent.getBroadcast(
-//                                    adapterContext.getApplicationContext(), 0, mLoggerReceiverIntent, 0);
-
 
                             Map<String, String> eventValue = new Hashtable<String, String>();
                             eventValue.put("NameEvent", dataSet.get(position).getNameEvent());

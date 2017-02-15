@@ -22,23 +22,29 @@ public class GalleryAdapter extends BaseAdapter {
 
 
     private int galleryItem;
-    private Context context;
-    EventValue eventValue;
-    private String nameUser, mailUser;
 
+    private Context adapterContext;
+
+    private EventValue eventValue;
+
+    private String nameUser;
+
+    private String mailUser;
 
     private ArrayList<Bitmap> imageArray = new ArrayList<>();
 
-    public GalleryAdapter(Context C, ArrayList<Bitmap> imageArray, EventValue eventValue, String Mail, String Name) {
-        context = C;
+    public GalleryAdapter(Context C, ArrayList<Bitmap> imageArray,
+                          EventValue eventValue, String Mail, String Name) {
+        adapterContext = C;
         this.eventValue = eventValue;
         nameUser = Name;
         mailUser = Mail;
         for (Bitmap b : imageArray) {
             this.imageArray.add(b);
         }
-        TypedArray attr = context.obtainStyledAttributes(R.styleable.GalleryActivity);
-        galleryItem = attr.getResourceId(R.styleable.GalleryActivity_android_galleryItemBackground, 0);
+        TypedArray attr = adapterContext.obtainStyledAttributes(R.styleable.GalleryActivity);
+        galleryItem = attr.getResourceId(
+                R.styleable.GalleryActivity_android_galleryItemBackground, 0);
         attr.recycle();
     }
 
@@ -63,7 +69,7 @@ public class GalleryAdapter extends BaseAdapter {
 
         // If convertView is not recycled set it up now
         if (null == imageView) {
-            imageView = new ImageView(context);
+            imageView = new ImageView(adapterContext);
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             imageView.setLayoutParams(new Gallery.LayoutParams(450, 450));
             imageView.setBackgroundResource(galleryItem);
@@ -74,13 +80,13 @@ public class GalleryAdapter extends BaseAdapter {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, PictureActivity.class);
+                Intent intent = new Intent(adapterContext, PictureActivity.class);
                 intent.putExtra("bitmapofposition", imageArray.get(position));
                 intent.putExtra("position", position + "");
                 intent.putExtra("EventValue", eventValue);
                 intent.putExtra("NameUser", nameUser);
                 intent.putExtra("MailUser", mailUser);
-                context.startActivity(intent);
+                adapterContext.startActivity(intent);
             }
         });
 

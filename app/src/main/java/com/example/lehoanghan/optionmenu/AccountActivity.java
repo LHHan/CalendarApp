@@ -29,13 +29,9 @@ import com.firebase.client.ValueEventListener;
  * Created by lehoanghan on 3/30/2016.
  */
 public class AccountActivity extends Fragment {
-
     private Activity activityRoot;
 
     private View contentView;
-
-    public AccountActivity() {
-    }
 
     private Bundle bundleGiveMailfromMenu;
 
@@ -51,21 +47,24 @@ public class AccountActivity extends Fragment {
 
     private Button btnChageInfo;
 
-    private Firebase fireBase;
+    private Firebase aFirebase;
 
     private Intent intentPassdata;
+
+    public AccountActivity() {
+    }
 
     @Nullable
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            LayoutInflater layoutInflater, ViewGroup container, Bundle savedInstanceState) {
         activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.activity_account, container, false);
+        contentView = layoutInflater.inflate(R.layout.activity_account, container, false);
         setHasOptionsMenu(true);
         giveUserfromChoose();
         Firebase.setAndroidContext(activityRoot);
-        fireBase = new Firebase("https://appcalendar.firebaseio.com/");
-        init();
+        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        aInit();
 
         tvName.setText(getName);
         tvMail.setText(getMail.replace("&", "."));
@@ -82,7 +81,7 @@ public class AccountActivity extends Fragment {
         return contentView;
     }
 
-    public void init() {
+    public void aInit() {
         tvName = (TextView) contentView.findViewById(R.id.activity_account_tv_name_value);
         tvMail = (TextView) contentView.findViewById(R.id.activity_account_tv_mail_value);
         ivAvatar = (ImageView) contentView.findViewById(R.id.activity_account_iv_avatar);
@@ -90,7 +89,7 @@ public class AccountActivity extends Fragment {
     }
 
     public void setImage() {
-        fireBase.child("Avata").child(getMail).addValueEventListener(new ValueEventListener() {
+        aFirebase.child("Avata").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 byte[] getImage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);

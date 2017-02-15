@@ -26,38 +26,54 @@ import java.util.List;
  * Created by lehoanghan on 3/30/2016.
  */
 public class FindFriendActivity extends Fragment {
+    private Activity activityRoot;
 
-    Activity root;
-    View contentView;
+    private View contentView;
+
+    private Firebase fireBase;
+
+    private SearchView srvFindFriend;
+
+    private RecyclerView rcvListFriend;
+
+    private LinearLayoutManager linearLayoutManager;
+
+    private UserFindFriendRecyclerAdapter userFindFriendRecyclerAdapter;
+
+    private List<UserFriend> listUserFriend;
+
+    private List<String> listNameUser;
+
+    private List<String> listNameUserFriend;//ab_search friend base on name.
+
+    private List<String> listMailUser;
+
+    private List<String> listMailUserFriend;//ab_search friend base on mail.
+
+    private String getName;
+
+    private String getMail;
+
+    private Bundle bundleGiveMailFromMenu;
 
     public FindFriendActivity() {
     }
 
-    private Firebase firebase;
-    private SearchView srvFindFriend;
-    private RecyclerView rcvListFriend;
-    private LinearLayoutManager linearLayoutManager;
-    private UserFindFriendRecyclerAdapter userFindFriendRecyclerAdapter;
-    private List<UserFriend> listUserFriend;
-    private List<String> listNameUser, listNameUserFriend;//ab_search friend base on name.
-    private List<String> listMailUser, listMailUserFriend;//ab_search friend base on mail.
-    private String getName;
-    private String getMail;
-    private Bundle bundleGiveMailFromMenu;
-
-
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root = getActivity();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        activityRoot = getActivity();
         contentView = inflater.inflate(R.layout.activity_find_friend, container, false);
         giveUserfromChoose();
 
-        Firebase.setAndroidContext(root);
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
+        Firebase.setAndroidContext(activityRoot);
+        fireBase = new Firebase("https://appcalendar.firebaseio.com/");
 
-        rcvListFriend = (RecyclerView) contentView.findViewById(R.id.activity_find_friend_rcv_list_find_friend);
-        srvFindFriend = (SearchView) contentView.findViewById(R.id.activity_find_friend_srv_search);
+        rcvListFriend = (RecyclerView) contentView.findViewById(
+                R.id.activity_find_friend_rcv_list_find_friend);
+        srvFindFriend = (SearchView) contentView.findViewById(
+                R.id.activity_find_friend_srv_search);
 
         listUserFriend = new ArrayList<UserFriend>();
         listNameUser = new ArrayList<String>();
@@ -78,34 +94,35 @@ public class FindFriendActivity extends Fragment {
 
     public void getDatafromFireBase() {
         //give data from My_friend table
-        firebase.child("My_friend").child(getMail.replace(".", "&")).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
-                    listMailUserFriend.add(snapShot.getKey());
-                    listNameUserFriend.add(snapShot.getValue().toString());
-                }
-            }
+        fireBase.child("My_friend").child(getMail.replace(".", "&"))
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                            listMailUserFriend.add(snapShot.getKey());
+                            listNameUserFriend.add(snapShot.getValue().toString());
+                        }
+                    }
 
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
 
-            }
-        });
-        firebase.child("User").addValueEventListener(new ValueEventListener() {
+                    }
+                });
+        fireBase.child("User").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // compare user in User with user in my_friend
                 for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
-                    int Check = 0;
+                    int check = 0;
                     if (snapShot.getKey().compareTo(getMail.replace(".", "&")) != 0) {
                         for (String mail : listMailUserFriend) {
                             if (snapShot.getKey().compareTo(mail) == 0) {
-                                Check = 1;
+                                check = 1;
                                 break;
                             }
                         }
-                        if (Check == 0) {
+                        if (check == 0) {
                             listMailUser.add(snapShot.getKey().toString().replace("&", "."));
                             listNameUser.add(snapShot.getValue().toString());
                         }
@@ -116,7 +133,8 @@ public class FindFriendActivity extends Fragment {
                     listUserFriend.add(new UserFriend(listNameUser.get(i), listMailUser.get(i)));
                 }
 
-                userFindFriendRecyclerAdapter = new UserFindFriendRecyclerAdapter(listUserFriend, getMail, getName);
+                userFindFriendRecyclerAdapter =
+                        new UserFindFriendRecyclerAdapter(listUserFriend, getMail, getName);
                 userFindFriendRecyclerAdapter.notifyDataSetChanged();
                 rcvListFriend.setAdapter(userFindFriendRecyclerAdapter);
             }
