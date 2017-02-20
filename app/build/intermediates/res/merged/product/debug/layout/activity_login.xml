@@ -1,97 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_login_tl_main"
-    style="@style/AppTheme"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightblue"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:id="@+id/activity_login_rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackground"
+    tools:context=".LoginActivity">
 
     <LinearLayout
-        android:id="@+id/activity_login_ll_gmail"
-        android:layout_width="wrap_content"
+        android:id="@+id/activity_login_ll_main"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/activity_login_tv_gmail"
-            android:layout_width="0px"
+            android:id="@+id/tv_activity_login_tv_login"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/mail"
-            android:textSize="50px"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textColor="@color/white_greyish"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/activity_login_et_gmail"
-            android:layout_width="0px"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:fontFamily="sans-serif-medium"
-            android:imeOptions="actionDone"
-            android:text="han@gmail.com" />
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
 
-    <LinearLayout
-        android:id="@+id/activity_login_ll_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/activity_login_tv_password"
-            android:layout_width="0px"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/password"
-            android:textSize="50px"
-            android:textStyle="bold" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
 
         <EditText
             android:id="@+id/activity_login_et_password"
-            android:layout_width="0px"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:fontFamily="sans-serif-medium"
-            android:inputType="numberPassword"
-            android:text="123456789" />
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
 
-    <LinearLayout
-        android:id="@+id/activity_login_ll_action"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp">
+
+            <CheckBox
+                android:id="@+id/activity_login_cb_show_hide_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/show_password"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/activity_login_tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="5dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/activity_login_btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/white_greyish"
+            android:gravity="center"
+            android:padding="3dp"
             android:text="@string/login"
-            android:textSize="50px"
+            android:textColor="@color/colorCyan"
+            android:textSize="18dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/activity_login_btn_register"
+        <TextView
+            android:id="@+id/activity_login_tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/create_an_account"
-            android:textSize="50px"
-            android:textStyle="bold" />
+            android:layout_below="@id/activity_login_ll_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/register_here"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
     </LinearLayout>
 
+    <!--<LinearLayout-->
+    <!--android:id="@+id/activity_login_ll_gmail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
 
-</TableLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/activity_login_tv_gmail"-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="2"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:text="@string/mail"-->
+    <!--android:textSize="50px"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<EditText-->
+    <!---->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="4"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:imeOptions="actionDone"-->
+    <!--android:text="han@gmail.com" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/activity_login_ll_password"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/activity_login_tv_password"-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="2"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:text="@string/password"-->
+    <!--android:textSize="50px"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/activity_login_et_password"-->
+    <!--android:layout_width="0px"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="4"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:inputType="numberPassword"-->
+    <!--android:text="123456789" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/activity_login_ll_action"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/activity_login_btn_login"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:text="@string/login"-->
+    <!--android:textSize="50px"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/activity_login_btn_register"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:text="@string/create_an_account"-->
+    <!--android:textSize="50px"-->
+    <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>
 

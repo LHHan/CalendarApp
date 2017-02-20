@@ -31,8 +31,8 @@ public class LoginActivity extends Activity {
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
 
-    @ViewById(R.id.activity_login_btn_register)
-    Button btnRegister;
+//    @ViewById(R.id.activity_login_btn_register)
+//    Button btnRegister;
 
     @ViewById(R.id.activity_login_btn_login)
     Button btnLogin;
@@ -54,10 +54,10 @@ public class LoginActivity extends Activity {
         doLogin();
     }
 
-    @Click(R.id.activity_login_btn_register)
-    public void btnRegister() {
-        doRegister();
-    }
+//    @Click(R.id.activity_login_btn_register)
+//    public void btnRegister() {
+//        doRegister();
+//    }
 
     //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {

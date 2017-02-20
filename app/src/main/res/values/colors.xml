@@ -19,4 +19,5 @@
     <color name="colorActionbar">#009688</color>
     <color name="colorActionbar2">#00897b</color>
     <color name="white_greyish">#eeeeee</color>
+    <color name="white">#ffffff</color>
 </resources>
