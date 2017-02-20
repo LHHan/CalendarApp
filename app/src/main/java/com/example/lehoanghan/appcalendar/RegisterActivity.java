@@ -19,27 +19,39 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
 import java.io.ByteArrayOutputStream;
 import java.util.Map;
 
 /**
  * Created by lehoanghan on 4/15/2016.
  */
+@EActivity(R.layout.activity_register)
 public class RegisterActivity extends Activity {
+    @ViewById(R.id.activity_register_et_username)
+    EditText etName;
 
-    private EditText etName;
+    @ViewById(R.id.activity_register_et_password)
+    EditText etPass;
 
-    private EditText etPass;
+    @ViewById(R.id.activity_register_et_gmail)
+    EditText etMail;
 
-    private EditText etMail;
+    @ViewById(R.id.activity_register_et_confirmpassword)
+    EditText etConfPass;
 
-    private EditText etConfPass;
+    @ViewById(R.id.activity_register_btn_create)
+    Button btnCreate;
 
-    private Button btnCreate;
+    @ViewById(R.id.activity_register_btn_clear)
+    Button btnClear;
 
-    private Button btnClear;
-
-    private Button btnMap;
+    @ViewById(R.id.activity_register_btn_map)
+    Button btnMap;
 
     private Firebase aFirebase;
 
@@ -47,47 +59,60 @@ public class RegisterActivity extends Activity {
 
     private AlertDialog.Builder alertDialog;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+    @Click(R.id.activity_register_btn_create)
+    public void btnCreate() {
+        checkInform();
+    }
+
+    @Click(R.id.activity_register_btn_clear)
+    public void btnClear() {
+        etName.setText("");
+        etMail.setText("");
+        etPass.setText("");
+        etConfPass.setText("");
+    }
+
+    @Click(R.id.activity_register_btn_map)
+    public void btnMap() {
+        Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
+        startActivity(myIntent);
+    }
+
+    @AfterViews
+    public void afterView() {
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
-        btnCreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkInform();
-            }
-        });
-        btnClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                etName.setText("");
-                etMail.setText("");
-                etPass.setText("");
-                etConfPass.setText("");
-            }
-        });
-        btnMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
-                startActivity(myIntent);
-            }
-        });
-
     }
 
-    public void aInit() {
-        etName = (EditText) findViewById(R.id.activity_register_et_username);
-        etMail = (EditText) findViewById(R.id.activity_register_et_gmail);
-        etPass = (EditText) findViewById(R.id.activity_register_et_password);
-        etConfPass = (EditText) findViewById(R.id.activity_register_et_confirmpassword);
-        btnCreate = (Button) findViewById(R.id.activity_register_btn_create);
-        btnClear = (Button) findViewById(R.id.activity_register_btn_clear);
-        btnMap = (Button) findViewById(R.id.activity_register_btn_map);
-    }
+    //@Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_register);
+//        Firebase.setAndroidContext(this);
+//        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+//        btnCreate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                checkInform();
+//            }
+//        });
+//        btnClear.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                etName.setText("");
+//                etMail.setText("");
+//                etPass.setText("");
+//                etConfPass.setText("");
+//            }
+//        });
+//        btnMap.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
+//                startActivity(myIntent);
+//            }
+//        });
+//}
 
     public void checkPass() {
         if (etConfPass.getText().toString().compareTo(etPass.getText().toString()) != 0) {
@@ -170,8 +195,6 @@ public class RegisterActivity extends Activity {
                         etConfPass.setText("");
                     }
                 });
-
-
     }
 
     @Override

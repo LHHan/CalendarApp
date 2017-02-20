@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 20 10:51:46 ICT 2017
+#Mon Feb 20 11:21:55 ICT 2017
 1863.set=ANDROID_RESOURCE
 1117.file=D\:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\resources-product-debug.ap_\\res\\drawable-nodpi-v4\\emoji_1f471_1f3fc.png
 1391.set=ANDROID_RESOURCE

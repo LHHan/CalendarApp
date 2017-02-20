@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.lehoanghan.appcalendar.RegisterActivity"
+            android:name="com.example.lehoanghan.appcalendar.RegisterActivity_"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.choosemenu.Menu_Choose"

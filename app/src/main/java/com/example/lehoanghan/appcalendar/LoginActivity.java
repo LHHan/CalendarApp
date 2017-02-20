@@ -27,26 +27,16 @@ import org.androidannotations.annotations.ViewById;
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends Activity {
     @ViewById(R.id.activity_login_et_gmail)
-    public EditText etMail;
+    EditText etMail;
 
     @ViewById(R.id.activity_login_et_password)
-    public EditText etPass;
+    EditText etPass;
 
     @ViewById(R.id.activity_login_btn_register)
-    protected Button btnRegister;
+    Button btnRegister;
 
     @ViewById(R.id.activity_login_btn_login)
-    protected Button btnLogin;
-
-    @Click(R.id.activity_login_btn_login)
-    public void btnLogin() {
-        doLogin();
-    }
-
-    @Click(R.id.activity_login_btn_register)
-    public void btnRegister() {
-        doRegister();
-    }
+    Button btnLogin;
 
     private Firebase aFirebase;
 
@@ -59,6 +49,16 @@ public class LoginActivity extends Activity {
     private String contentMail = "";
 
     private String contentPass = "";
+
+    @Click(R.id.activity_login_btn_login)
+    public void btnLogin() {
+        doLogin();
+    }
+
+    @Click(R.id.activity_login_btn_register)
+    public void btnRegister() {
+        doRegister();
+    }
 
     //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -222,15 +222,15 @@ public class LoginActivity extends Activity {
     }
 
     public void getNameUser() {
-        final String strMail = etMail.getText().toString().replace(".", "&");
-        aFirebase.child("User").child(strMail).addValueEventListener(new ValueEventListener() {
+        final String STRMAIL = etMail.getText().toString().replace(".", "&");
+        aFirebase.child("User").child(STRMAIL).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 strName = dataSnapshot.getValue(String.class);
                 strName = strName.toUpperCase();
                 myIntent = new Intent(LoginActivity.this, Menu_Choose.class);
                 myIntent.putExtra("NameUser", strName);
-                myIntent.putExtra("MailUser", strMail);
+                myIntent.putExtra("MailUser", STRMAIL);
                 startActivity(myIntent);
             }
 

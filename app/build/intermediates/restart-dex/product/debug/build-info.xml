@@ -5,33 +5,47 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="8311724381304"
+    timestamp="11127286734150"
     token="808597837908058687"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1144" />
+        duration="1509" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1135" />
+        duration="36" />
     <task
         name="verifier"
-        duration="105" />
+        duration="1" />
 
     <artifact
-        location="D:\Project_hh\CalendarApp\app\build\outputs\apk\app-product-debug.apk"
-        type="MAIN" />
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="8311724381304"
+        timestamp="10125970651153"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Project_hh\CalendarApp\app\build\outputs\apk\app-product-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="10665450359621"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\instant-run-resources\resources-product\debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="11127286734150"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
