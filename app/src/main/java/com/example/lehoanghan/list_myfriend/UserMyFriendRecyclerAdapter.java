@@ -10,7 +10,7 @@ import com.example.lehoanghan.appcalendar.R;
 
 import java.util.List;
 
-public class userMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFriendViewHolder> {
+public class UserMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFriendViewHolder> {
     private View contentView;
 
     private List<UserFriend> listMyFriend;
@@ -21,7 +21,7 @@ public class userMyFriendRecyclerAdapter extends RecyclerView.Adapter<UserMyFrie
 
     // private Firebase firebase;
 
-    public userMyFriendRecyclerAdapter(List<UserFriend> listFriend, String Mail, String Name) {
+    public UserMyFriendRecyclerAdapter(List<UserFriend> listFriend, String Mail, String Name) {
         listMyFriend = listFriend;
         getMail = Mail;
         getName = Name;

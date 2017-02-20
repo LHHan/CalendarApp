@@ -176,24 +176,24 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\10.0.1\\res\\drawable\\cast_expanded_controller_bg_gradient_light.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_info.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_info.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_info.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_info.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\list_item_normal.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\list_item_normal.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_find_friend.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_find_friend.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\common_google_signin_btn_text_light.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_find_friend.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable\\ic_find_friend.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\cast_ic_mini_controller_mute.xml",

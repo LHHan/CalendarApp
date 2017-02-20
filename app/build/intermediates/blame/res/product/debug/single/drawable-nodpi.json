@@ -4596,12 +4596,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f64e_1f3ff.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3c4.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c4.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44a_1f3fd.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44a_1f3fd.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3c4.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c4.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e6_1f1fa.png",
@@ -5680,12 +5680,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f331.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270b_1f3ff.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270b_1f3ff.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3d8.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3d8.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270b_1f3ff.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270b_1f3ff.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f356.png",

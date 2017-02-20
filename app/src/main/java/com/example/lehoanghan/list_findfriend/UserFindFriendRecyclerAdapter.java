@@ -11,7 +11,7 @@ import com.firebase.client.Firebase;
 
 import java.util.List;
 
-public class userFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFindFriendViewHolder> {
+public class UserFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFindFriendViewHolder> {
 
     private View contentView;
 
@@ -23,7 +23,7 @@ public class userFindFriendRecyclerAdapter extends RecyclerView.Adapter<UserFind
 
     private String getName;
 
-    public userFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
+    public UserFindFriendRecyclerAdapter(List<UserFriend> listUser, String mail, String name) {
         this.listUser = listUser;
         getMail = mail;
         getName = name;
