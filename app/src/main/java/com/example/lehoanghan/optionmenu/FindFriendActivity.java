@@ -45,11 +45,11 @@ public class FindFriendActivity extends Fragment {
 
     private List<String> listNameUser;
 
-    private List<String> listNameUserFriend;//ab_search friend base on name.
+    private List<String> listNameUserFriend;//search friend base on name.
 
     private List<String> listMailUser;
 
-    private List<String> listMailUserFriend;//ab_search friend base on mail.
+    private List<String> listMailUserFriend;//search friend base on mail.
 
     private String getName;
 
@@ -82,19 +82,18 @@ public class FindFriendActivity extends Fragment {
         listNameUserFriend = new ArrayList<String>();
         listMailUserFriend = new ArrayList<String>();
 
-        srvFindFriend.setVisibility(View.INVISIBLE);
+        srvFindFriend.setVisibility(View.VISIBLE);
 
         rcvListFriend.setHasFixedSize(true);
         linearLayoutManager = new LinearLayoutManager(contentView.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         rcvListFriend.setLayoutManager(linearLayoutManager);
         getDatafromFireBase();
-
         return contentView;
     }
 
     public void getDatafromFireBase() {
-        //give DATA from My_friend table
+        //give Data from My_friend table
         fireBase.child("My_friend").child(getMail.replace(".", "&"))
                 .addValueEventListener(new ValueEventListener() {
                     @Override

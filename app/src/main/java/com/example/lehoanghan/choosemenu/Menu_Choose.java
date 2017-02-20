@@ -167,35 +167,8 @@ public class Menu_Choose extends AppCompatActivity {
         sMenuInflater.inflate(R.menu.menu_main, this.sMenu);
         if (menu != null) {
             menu.clear();
-        }
-        switch (intFragment) {
-            case 0:
-                sMenuInflater.inflate(R.menu.menu_home, menu);
-                break;
-            case 1:
-                sMenuInflater.inflate(R.menu.menu_account, menu);
-                break;
-            case 3:
-                sMenuInflater.inflate(R.menu.menu_my_friend, menu);
-                break;
-            case 4:
-                sMenuInflater.inflate(R.menu.menu_friend_accept, menu);
-                break;
-            case 5:
-                sMenuInflater.inflate(R.menu.menu_find_friend, menu);
-                break;
-            case 7:
-                sMenuInflater.inflate(R.menu.menu_new_event, menu);
-                break;
-            case 8:
-                sMenuInflater.inflate(R.menu.menu_my_event, menu);
-                break;
-            case 9:
-                sMenuInflater.inflate(R.menu.menu_old_event, menu);
-                break;
-            case 10:
-                sMenuInflater.inflate(R.menu.menu_about, menu);
-                break;
+        } else if (intFragment == 0) {
+            sMenuInflater.inflate(R.menu.menu_home, menu);
         }
         return true;
     }
@@ -217,28 +190,7 @@ public class Menu_Choose extends AppCompatActivity {
             }
         }
 
-        switch (id) {
-            case (R.id.menu_about_back):
-                if (sMenu != null) {
-                    sMenu.clear();
-                }
-                setNameUser();
-                sFragment = new HomeActivity();
-                sFragment.setArguments(bundlesetNameforHome);
-                setTitleItem = "HomeActivity";
-                actionBar.setDisplayShowHomeEnabled(true);
-                actionBar.setDisplayHomeAsUpEnabled(true);
-                intFragment = fragmentHome;
-                break;
-            case R.id.menu_find_friend_ab_search:
-                srvFindFriend = (SearchView) findViewById(R.id.activity_find_friend_srv_search);
-                if (srvFindFriend.getVisibility() == View.INVISIBLE) {
-                    srvFindFriend.setVisibility(View.VISIBLE);
-                } else {
-                    srvFindFriend.setVisibility(View.INVISIBLE);
-                }
-                break;
-        }
+
         if (sFragment != null) {
             FragmentManager fManager = getFragmentManager();
             fManager.beginTransaction().replace(
@@ -275,10 +227,12 @@ public class Menu_Choose extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             doItemListener(position);
         }
+
     }
 
 
     //Change among Fragments
+
     public void doItemListener(int position) {
         if (sMenu != null) {
             sMenu.clear();

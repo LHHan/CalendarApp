@@ -39,10 +39,9 @@ import java.util.Map;
  * Created by lehoanghan on 5/22/2016.
  */
 public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdapter.ViewHolder> {
-
     public static final int TITLE = 0;
 
-    public static final int data = 1;
+    public static final int Data = 1;
 
     private ArrayList<EventValue> dataSet;
 
@@ -56,7 +55,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     private Context adapterContext;
 
-    private Firebase fireBase;
+    private Firebase aFirebase;
+
 
     public EventRecyclerAdapter(ArrayList<EventValue> DataSet,
                                 ArrayList<Integer> DataSetType,
@@ -129,9 +129,9 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         public eventData(View itemView) {
             super(itemView);
             tvTimeEvent = (TextView) itemView.findViewById(
-                    R.id.cardview_recycler_new_event_tv_time_event);
+                    R.id.cardview_recycler_old_event_tv_time_event_value);
             tvNameEventValue = (TextView) itemView.findViewById(
-                    R.id.cardview_recycler_new_event_tv_name_event_value);
+                    R.id.cardview_recycler_old_event_tv_name_event_value);
             if (intType != 3) {
                 tvDateStartValue = (TextView) itemView.findViewById(
                         R.id.cardview_recycler_new_event_tv_date_start_value);
@@ -174,9 +174,9 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.cardview_recycler_title, parent, false);
             Firebase.setAndroidContext(v.getContext());
-            fireBase = new Firebase("https://appcalendar.firebaseio.com/");
+            aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
             return new TitleAboutDate(v);
-        } else { //if(viewType == DATA)
+        } else { //if(viewType == Data)
             if (intType == 1) {
                 v = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.cardview_recycler_new_event, parent, false);
@@ -188,7 +188,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                         .inflate(R.layout.cardview_recycler_old_event, parent, false);
             }
             Firebase.setAndroidContext(v.getContext());
-            fireBase = new Firebase("https://appcalendar.firebaseio.com/");
+            aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
             return new eventData(v);
         }
 
@@ -220,7 +220,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
                 VIEWHOLDER.btnGallery.setVisibility(View.INVISIBLE);
                 for (int i = 0; i < FRIEND.length; i++) {
-                    fireBase.child("Avata").child(FRIEND[i])
+                    aFirebase.child("Avata").child(FRIEND[i])
                             .addValueEventListener(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -287,13 +287,13 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                                     new Intent(adapterContext.getApplicationContext(),
                                             AlarmNotificationReceiver.class);
                             mNotificationReceiverIntent.putExtra(
-                                    "Name", dataSet.get(position).getNameEvent());
+                                    "name", dataSet.get(position).getNameEvent());
                             mNotificationReceiverIntent.putExtra(
-                                    "Date", dataSet.get(position).getDateFrom());
+                                    "date", dataSet.get(position).getDateFrom());
                             mNotificationReceiverIntent.putExtra(
-                                    "Time", dataSet.get(position).getTimeFrom());
+                                    "time", dataSet.get(position).getTimeFrom());
                             mNotificationReceiverIntent.putExtra(
-                                    "Place", dataSet.get(position).getPlace());
+                                    "place", dataSet.get(position).getPlace());
                             mNotificationReceiverIntent.putExtra(
                                     "NameUser", nameUser);
                             mNotificationReceiverIntent.putExtra(
@@ -322,17 +322,17 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                             }
 
                             Map<String, String> eventValue = new Hashtable<String, String>();
-                            eventValue.put("NameEvent", dataSet.get(position).getNameEvent());
-                            eventValue.put("DateFrom", dataSet.get(position).getDateFrom());
-                            eventValue.put("TimeFrom", dataSet.get(position).getTimeFrom());
-                            eventValue.put("DateTo", dataSet.get(position).getDateTo());
-                            eventValue.put("TimeTo", dataSet.get(position).getTimeTo());
-                            eventValue.put("Description", dataSet.get(position).getDescription());
-                            eventValue.put("Place", dataSet.get(position).getPlace());
-                            eventValue.put("FriendInvite", dataSet.get(position).getFriendInvite());
-                            eventValue.put("Alarm", dataSet.get(position).getAlarm());
-                            eventValue.put("Repeat", dataSet.get(position).getRepeat());
-                            fireBase.child("Event").child(mailUser).child("Accept_Event").push()
+                            eventValue.put("nameEvent", dataSet.get(position).getNameEvent());
+                            eventValue.put("dateFrom", dataSet.get(position).getDateFrom());
+                            eventValue.put("timeFrom", dataSet.get(position).getTimeFrom());
+                            eventValue.put("dateTo", dataSet.get(position).getDateTo());
+                            eventValue.put("timeTo", dataSet.get(position).getTimeTo());
+                            eventValue.put("description", dataSet.get(position).getDescription());
+                            eventValue.put("place", dataSet.get(position).getPlace());
+                            eventValue.put("friendInvite", dataSet.get(position).getFriendInvite());
+                            eventValue.put("alarm", dataSet.get(position).getAlarm());
+                            eventValue.put("repeat", dataSet.get(position).getRepeat());
+                            aFirebase.child("event").child(mailUser).child("Accept_Event").push()
                                     .setValue(eventValue);
                             dataSet.remove(position);
                             notifyDataSetChanged();
@@ -365,17 +365,17 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                                 }
                             }
                             Map<String, String> eventValue = new Hashtable<String, String>();
-                            eventValue.put("NameEvent", dataSet.get(position).getNameEvent());
-                            eventValue.put("DateFrom", dataSet.get(position).getDateFrom());
-                            eventValue.put("TimeFrom", dataSet.get(position).getTimeFrom());
-                            eventValue.put("DateTo", dataSet.get(position).getDateTo());
-                            eventValue.put("TimeTo", dataSet.get(position).getTimeTo());
-                            eventValue.put("Description", dataSet.get(position).getDescription());
-                            eventValue.put("Place", dataSet.get(position).getPlace());
-                            eventValue.put("FriendInvite", friendInvite);
-                            eventValue.put("Alarm", dataSet.get(position).getAlarm());
-                            eventValue.put("Repeat", dataSet.get(position).getRepeat());
-                            fireBase.child("Event").child(mailUser).child("Refuse_Event").push()
+                            eventValue.put("nameEvent", dataSet.get(position).getNameEvent());
+                            eventValue.put("dateFrom", dataSet.get(position).getDateFrom());
+                            eventValue.put("timeFrom", dataSet.get(position).getTimeFrom());
+                            eventValue.put("dateTo", dataSet.get(position).getDateTo());
+                            eventValue.put("timeTo", dataSet.get(position).getTimeTo());
+                            eventValue.put("description", dataSet.get(position).getDescription());
+                            eventValue.put("place", dataSet.get(position).getPlace());
+                            eventValue.put("friendInvite", friendInvite);
+                            eventValue.put("alarm", dataSet.get(position).getAlarm());
+                            eventValue.put("repeat", dataSet.get(position).getRepeat());
+                            aFirebase.child("Event").child(mailUser).child("Refuse_Event").push()
                                     .setValue(eventValue);
                             dataSet.remove(position);
                             notifyDataSetChanged();

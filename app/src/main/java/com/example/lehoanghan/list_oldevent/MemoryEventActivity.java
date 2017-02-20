@@ -194,8 +194,8 @@ public class MemoryEventActivity extends AppCompatActivity {
                 intent.putExtra("KeyaddComment", passValue.getNameEvent().replace(" ", "&") +
                         "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom());
                 intent.putExtra("EventValue", passValue);
-                intent.putExtra("nameUser", nameUser);
-                intent.putExtra("mailUser", mailUser);
+                intent.putExtra("NameUser", nameUser);
+                intent.putExtra("MailUser", mailUser);
                 startActivity(intent);
             }
         });
@@ -306,7 +306,6 @@ public class MemoryEventActivity extends AppCompatActivity {
         Dialog dialog = builder.create();
         dialog.setTitle("Memory");
         dialog.show();
-
     }
 
     public void dialogLoad(final View v) {

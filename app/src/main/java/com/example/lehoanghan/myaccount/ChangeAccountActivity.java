@@ -248,7 +248,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
                 etPassChange.getText().toString().compareTo("") == 0 ||
                 etComPassChange.getText().toString().compareTo("") == 0) {
             Toast.makeText(getApplicationContext(),
-                    "entryActivity DATA, You need to fill out full DATA", Toast.LENGTH_LONG);
+                    "entryActivity Data, You need to fill out full Data", Toast.LENGTH_LONG);
         } else {
             if (etPassChange.getText().toString()
                     .compareTo(etComPassChange.getText().toString()) != 0) {

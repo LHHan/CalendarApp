@@ -59,7 +59,7 @@ public class CommentActivity extends AppCompatActivity
     public void setComment() {
         intVisible = 0;
         listComment = new ArrayList<String>();
-        fireBase.child("CommentActivity").addListenerForSingleValueEvent(new ValueEventListener() {
+        fireBase.child("Comment").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
@@ -70,7 +70,7 @@ public class CommentActivity extends AppCompatActivity
                             listComment.add(value.getValue().toString());
                         }
                         if (listComment.size() == 0) {
-                            listComment.add("No CommentActivity");
+                            listComment.add("No Comment");
                         }
                     }
                 }
@@ -103,11 +103,11 @@ public class CommentActivity extends AppCompatActivity
         btnSendComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                fireBase.child("CommentActivity").child(passValue.getNameEvent().replace(" ", "&")
+                fireBase.child("Comment").child(passValue.getNameEvent().replace(" ", "&")
                         + "*" + passValue.getDateFrom() + "*"
                         + passValue.getTimeFrom()).push().setValue(nameUser + ": "
                         + emojIconComment.getText().toString());
-                fireBase.child("CommentActivity")
+                fireBase.child("Comment")
                         .addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -144,25 +144,24 @@ public class CommentActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_back, menu);
-        setTitle("CommentActivity");
+        setTitle("Comment");
         return super.onCreateOptionsMenu(menu);
     }
-
-    @Override
+    //@Override
 //    public boolean onOptionsItemSelected(MenuItem item) {
 //        switch (item.getItemId()) {
 //            case R.id.backfromChangeAccount:
 //                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);
 //                intent.putExtra("EventValue", passValue);
-//                intent.putExtra("nameUser", nameUser);
-//                intent.putExtra("mailUser", mailUser);
+//                intent.putExtra("NameUser", nameUser);
+//                intent.putExtra("MailUser", mailUser);
 //                startActivity(intent);
 //                break;
 //        }
 //        return super.onOptionsItemSelected(item);
 //    }
 
-    // @Override
+    @Override
     public void onEmojiconBackspaceClicked(View v) {
         EmojiconsFragment.backspace(emojIconComment);
     }

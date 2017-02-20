@@ -273,16 +273,16 @@ public class AddEventActivity extends AppCompatActivity {
             }
         }
         Map<String, String> eventValue = new Hashtable<String, String>();
-        eventValue.put("NameEvent", etEventName.getText().toString());
-        eventValue.put("DateFrom", tvSetDayFrom.getText().toString());
-        eventValue.put("TimeFrom", tvSetTimeFrom.getText().toString());
-        eventValue.put("DateTo", tvSetDayTo.getText().toString());
-        eventValue.put("TimeTo", tvSetTimeTo.getText().toString());
-        eventValue.put("Description", etDecription.getText().toString());
-        eventValue.put("Place", actvPlace.getText().toString());
-        eventValue.put("FriendInvite", listinvite);
-        eventValue.put("Alarm", etAlarm.getText().toString());
-        eventValue.put("Repeat", spnRepeat.getSelectedItem().toString());
+        eventValue.put("nameEvent", etEventName.getText().toString());
+        eventValue.put("dateFrom", tvSetDayFrom.getText().toString());
+        eventValue.put("timeFrom", tvSetTimeFrom.getText().toString());
+        eventValue.put("dateTo", tvSetDayTo.getText().toString());
+        eventValue.put("timeTo", tvSetTimeTo.getText().toString());
+        eventValue.put("description", etDecription.getText().toString());
+        eventValue.put("place", actvPlace.getText().toString());
+        eventValue.put("friendInvite", listinvite);
+        eventValue.put("alarm", etAlarm.getText().toString());
+        eventValue.put("repeat", spnRepeat.getSelectedItem().toString());
 
         for (String mail : listFriendinFirebase) {
             firebaseFriend.child("Event").child(mail)
@@ -307,14 +307,14 @@ public class AddEventActivity extends AppCompatActivity {
                     saveEventinFirebase();
                     entryActivity();
                 } else {
-                    error = "error ic_about time to ";
+                    error = "error about time to ";
                 }
             } else {
-                error = "error ic_about date to";
+                error = "error about date to";
             }
 
         } else {
-            error = "error ic_about date from";
+            error = "error about date from";
         }
         if (error != null) {
             Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
@@ -332,7 +332,7 @@ public class AddEventActivity extends AppCompatActivity {
                 (actvPlace.getText().toString().compareTo("") == 0) ||
                 (etAlarm.getText().toString().compareTo("") == 0) ||
                 (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
-            error = "error entryActivity DATA";
+            error = "error entry data";
         } else {
             checkNgay();
         }

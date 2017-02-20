@@ -5936,7 +5936,7 @@ containing a value of this type.
         public static final int ad_label=0x7f0f01a1;
         public static final int adapter_comment_eitv_emojicon=0x7f0f015f;
         public static final int add=0x7f0f0029;
-        public static final int add_event=0x7f0f021d;
+        public static final int add_event=0x7f0f0215;
         public static final int adjust_height=0x7f0f0054;
         public static final int adjust_width=0x7f0f0055;
         public static final int alertTitle=0x7f0f00a3;
@@ -5949,7 +5949,7 @@ containing a value of this type.
         public static final int audio_empty_message=0x7f0f01bd;
         public static final int audio_list_view=0x7f0f01bb;
         public static final int auto=0x7f0f0077;
-        public static final int backfromChangeAccount=0x7f0f0216;
+        public static final int backfromChangeAccount=0x7f0f0213;
         public static final int background_image_view=0x7f0f019b;
         public static final int background_place_holder_image_view=0x7f0f019f;
         public static final int baseline=0x7f0f0043;
@@ -6147,26 +6147,12 @@ containing a value of this type.
         public static final int match_parent=0x7f0f0082;
         public static final int mcv_pager=0x7f0f0014;
         public static final int media_actions=0x7f0f0200;
-        public static final int menu_about_back=0x7f0f0211;
-        public static final int menu_account_ab_back=0x7f0f0213;
-        public static final int menu_account_ab_edit=0x7f0f0212;
-        public static final int menu_add_event_back=0x7f0f0214;
-        public static final int menu_add_event_done=0x7f0f0215;
+        public static final int menu_add_event_back=0x7f0f0211;
+        public static final int menu_add_event_done=0x7f0f0212;
         public static final int menu_body_iv_icon=0x7f0f01e1;
         public static final int menu_body_tv_body=0x7f0f01e2;
-        public static final int menu_find_friend_ab_back=0x7f0f0219;
-        public static final int menu_find_friend_ab_search=0x7f0f0217;
-        public static final int menu_find_friend_ab_update=0x7f0f0218;
-        public static final int menu_friend_accept_ab_back=0x7f0f021b;
-        public static final int menu_friend_accept_ab_update=0x7f0f021a;
         public static final int menu_head_tv_title=0x7f0f01e3;
-        public static final int menu_home_ab_add_event=0x7f0f021c;
-        public static final int menu_my_event_back=0x7f0f0220;
-        public static final int menu_my_friend_ab_back=0x7f0f0221;
-        public static final int menu_new_event_ab_back=0x7f0f0223;
-        public static final int menu_new_event_ab_update=0x7f0f0222;
-        public static final int menu_old_event_back=0x7f0f0225;
-        public static final int menu_old_event_update=0x7f0f0224;
+        public static final int menu_home_ab_add_event=0x7f0f0214;
         public static final int middle=0x7f0f0053;
         public static final int mini=0x7f0f0044;
         public static final int monday=0x7f0f005f;
@@ -6225,7 +6211,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0f0015;
         public static final int progress_horizontal=0x7f0f0016;
         public static final int radio=0x7f0f00ae;
-        public static final int rate=0x7f0f021e;
+        public static final int rate=0x7f0f0216;
         public static final int rfc822=0x7f0f006c;
         public static final int right=0x7f0f0039;
         public static final int sandbox=0x7f0f007d;
@@ -6302,7 +6288,6 @@ containing a value of this type.
         public static final int txtFriendInviteValue=0x7f0f0176;
         public static final int txtGallery=0x7f0f01c1;
         public static final int up=0x7f0f0018;
-        public static final int updateNewEvent=0x7f0f021f;
         public static final int url=0x7f0f006d;
         public static final int useLogo=0x7f0f0023;
         public static final int view_offset_helper=0x7f0f0019;
@@ -6437,18 +6422,10 @@ containing a value of this type.
         public static final int toolbar=0x7f040068;
     }
     public static final class menu {
-        public static final int menu_about=0x7f100000;
-        public static final int menu_account=0x7f100001;
-        public static final int menu_add_event=0x7f100002;
-        public static final int menu_back=0x7f100003;
-        public static final int menu_find_friend=0x7f100004;
-        public static final int menu_friend_accept=0x7f100005;
-        public static final int menu_home=0x7f100006;
-        public static final int menu_main=0x7f100007;
-        public static final int menu_my_event=0x7f100008;
-        public static final int menu_my_friend=0x7f100009;
-        public static final int menu_new_event=0x7f10000a;
-        public static final int menu_old_event=0x7f10000b;
+        public static final int menu_add_event=0x7f100000;
+        public static final int menu_back=0x7f100001;
+        public static final int menu_home=0x7f100002;
+        public static final int menu_main=0x7f100003;
     }
     public static final class mipmap {
         public static final int calendar=0x7f030000;

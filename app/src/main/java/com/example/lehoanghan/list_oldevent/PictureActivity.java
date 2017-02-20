@@ -117,7 +117,7 @@ public class PictureActivity extends AppCompatActivity
                             listComment.add(value.getValue().toString());
                         }
                         if (listComment.size() == 0) {
-                            listComment.add("No CommentActivity");
+                            listComment.add("No Comment");
                         }
                     }
                 }
@@ -203,7 +203,7 @@ public class PictureActivity extends AppCompatActivity
 
     public void giveValue() {
         aBitmap = (Bitmap) getIntent().getParcelableExtra("bitmapofposition");
-        aPosition = getIntent().getStringExtra("aPosition");
+        aPosition = getIntent().getStringExtra("position");
         eventValue = (EventValue) getIntent().getSerializableExtra("EventValue");
         mailUser = getIntent().getStringExtra("MailUser");
         nameUser = getIntent().getStringExtra("NameUser");
@@ -213,7 +213,7 @@ public class PictureActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_back, menu);
-        setTitle("CommentActivity");
+        setTitle("Comment");
         return super.onCreateOptionsMenu(menu);
     }
 
