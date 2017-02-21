@@ -57,14 +57,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:background="@android:color/transparent"
             android:drawablePadding="8dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="16dp" />
 

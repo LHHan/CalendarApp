@@ -296,6 +296,10 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\menu_head.xml"
     },
     {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\activity_forgot_password.xml",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\cardview_recycler_find_friend.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\cardview_recycler_find_friend.xml"
     },

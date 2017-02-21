@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:2:1-84:12
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:2:1-85:12
 	package
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml
@@ -48,7 +48,7 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:19:5-79
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:19:22-76
 application
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:21:5-82:19
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:21:5-83:19
 MERGED from [com.android.support:design:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.4.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.prolificinteractive:material-calendarview:1.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\AndroidManifest.xml:12:5-20
@@ -191,11 +191,15 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:75:9-77:55
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:76:13-58
 activity#com.example.lehoanghan.appcalendar.MapsActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:79:9-81:68
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:79:9-81:59
 	android:label
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:81:13-56
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:80:13-41
+activity#com.example.lehoanghan.appcalendar.ForgotPasswordActivity_
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:82:9-70
+	android:name
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:82:19-58
 uses-sdk
 INJECTED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\AndroidManifest.xml:20:5-43

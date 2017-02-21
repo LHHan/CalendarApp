@@ -121,7 +121,7 @@
         android:textColor="@color/colorCyan"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:background="@drawable/btnlogin_selector"/>
 
     <TextView

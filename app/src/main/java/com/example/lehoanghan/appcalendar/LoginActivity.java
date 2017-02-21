@@ -54,6 +54,9 @@ public class LoginActivity extends Activity {
     @ViewById(R.id.activity_login_tv_register)
     TextView tvRegister;
 
+    @ViewById(R.id.activity_login_tv_forgot_password)
+    TextView tvForgot;
+
     @ViewById(R.id.activity_login_btn_login)
     Button btnLogin;
 
@@ -80,6 +83,12 @@ public class LoginActivity extends Activity {
     @Click(R.id.activity_login_tv_register)
     void setTvRegister() {
         myIntent = new Intent(LoginActivity.this, RegisterActivity_.class);
+        startActivity(myIntent);
+    }
+
+    @Click(R.id.activity_login_tv_forgot_password)
+    void setTvForgot(){
+        myIntent = new Intent(LoginActivity.this, ForgotPasswordActivity_.class);
         startActivity(myIntent);
     }
 

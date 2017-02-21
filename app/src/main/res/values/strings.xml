@@ -33,4 +33,9 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="check_register">By clicking here, you agree all the Terms and Coditions</string>
     <string name="login_here">Already have Account? Login here</string>
+
+    <!--String related to forgot password-->
+    <string name="registered_email_id">Please enter your Registered Email ID</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
 </resources>
