@@ -113,98 +113,20 @@
             android:textSize="18dp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/activity_login_tv_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/activity_login_ll_main"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="@string/register_here"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+
     </LinearLayout>
 
-    <!--<LinearLayout-->
-    <!--android:id="@+id/activity_login_ll_gmail"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/activity_login_tv_gmail"-->
-    <!--android:layout_width="0px"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="2"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="@string/mail"-->
-    <!--android:textSize="50px"-->
-    <!--android:textStyle="bold" />-->
-
-    <!--<EditText-->
-    <!---->
-    <!--android:layout_width="0px"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="4"-->
-    <!--android:focusable="true"-->
-    <!--android:focusableInTouchMode="true"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:imeOptions="actionDone"-->
-    <!--android:text="han@gmail.com" />-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--android:id="@+id/activity_login_ll_password"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/activity_login_tv_password"-->
-    <!--android:layout_width="0px"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="2"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="@string/password"-->
-    <!--android:textSize="50px"-->
-    <!--android:textStyle="bold" />-->
-
-    <!--<EditText-->
-    <!--android:id="@+id/activity_login_et_password"-->
-    <!--android:layout_width="0px"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_weight="4"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:inputType="numberPassword"-->
-    <!--android:text="123456789" />-->
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--android:id="@+id/activity_login_ll_action"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="horizontal">-->
-
-    <!--<Button-->
-    <!--android:id="@+id/activity_login_btn_login"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="@string/login"-->
-    <!--android:textSize="50px"-->
-    <!--android:textStyle="bold" />-->
-
-    <!--<Button-->
-    <!--android:id="@+id/activity_login_btn_register"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="@string/create_an_account"-->
-    <!--android:textSize="50px"-->
-    <!--android:textStyle="bold" />-->
-    <!--</LinearLayout>-->
-
+    <TextView
+        android:id="@+id/activity_login_tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_login_ll_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/register_here"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
 
 </RelativeLayout>
 

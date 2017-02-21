@@ -19,12 +19,18 @@ public final class R {
         public static final int abc_slide_in_top=0x7f050007;
         public static final int abc_slide_out_bottom=0x7f050008;
         public static final int abc_slide_out_top=0x7f050009;
-        public static final int design_bottom_sheet_slide_in=0x7f05000a;
-        public static final int design_bottom_sheet_slide_out=0x7f05000b;
-        public static final int design_fab_in=0x7f05000c;
-        public static final int design_fab_out=0x7f05000d;
-        public static final int design_snackbar_in=0x7f05000e;
-        public static final int design_snackbar_out=0x7f05000f;
+        public static final int animation_cycle=0x7f05000a;
+        public static final int animation_left_enter=0x7f05000b;
+        public static final int animation_left_exit=0x7f05000c;
+        public static final int animation_right_enter=0x7f05000d;
+        public static final int animation_right_exit=0x7f05000e;
+        public static final int animation_shake=0x7f05000f;
+        public static final int design_bottom_sheet_slide_in=0x7f050010;
+        public static final int design_bottom_sheet_slide_out=0x7f050011;
+        public static final int design_fab_in=0x7f050012;
+        public static final int design_fab_out=0x7f050013;
+        public static final int design_snackbar_in=0x7f050014;
+        public static final int design_snackbar_out=0x7f050015;
     }
     public static final class array {
         public static final int District=0x7f0d0000;
@@ -6560,9 +6566,10 @@ containing a value of this type.
         public static final int gcm_defaultSenderId=0x7f080088;
         public static final int google_maps_key=0x7f080089;
         public static final int hello=0x7f08008a;
-        public static final int login=0x7f08008b;
-        public static final int login_here=0x7f08008c;
-        public static final int mail=0x7f08008d;
+        public static final int hide_password=0x7f08008b;
+        public static final int login=0x7f08008c;
+        public static final int login_here=0x7f08008d;
+        public static final int mail=0x7f08008e;
         public static final int mr_button_content_description=0x7f080053;
         public static final int mr_chooser_searching=0x7f080054;
         public static final int mr_chooser_title=0x7f080055;
@@ -6579,26 +6586,26 @@ containing a value of this type.
         public static final int mr_controller_stop=0x7f080060;
         public static final int mr_system_route_name=0x7f080061;
         public static final int mr_user_route_category_name=0x7f080062;
-        public static final int nameapp=0x7f08008e;
-        public static final int old_password=0x7f08008f;
-        public static final int password=0x7f080090;
+        public static final int nameapp=0x7f08008f;
+        public static final int old_password=0x7f080090;
+        public static final int password=0x7f080091;
         public static final int place_autocomplete_clear_button=0x7f080063;
         public static final int place_autocomplete_search_hint=0x7f080064;
-        public static final int register=0x7f080091;
-        public static final int register_here=0x7f080092;
-        public static final int save=0x7f080093;
-        public static final int show_password=0x7f080094;
+        public static final int register=0x7f080092;
+        public static final int register_here=0x7f080093;
+        public static final int save=0x7f080094;
+        public static final int show_password=0x7f080095;
         public static final int status_bar_notification_info_overflow=0x7f080065;
         public static final int store_picture_message=0x7f080066;
         public static final int store_picture_title=0x7f080067;
-        public static final int tagmanager_preview_dialog_button=0x7f080095;
-        public static final int tagmanager_preview_dialog_message=0x7f080096;
-        public static final int tagmanager_preview_dialog_title=0x7f080097;
-        public static final int title_activity_main=0x7f080098;
-        public static final int title_activity_maps=0x7f080099;
-        public static final int username=0x7f08009a;
-        public static final int version_code=0x7f08009b;
-        public static final int version_name=0x7f08009c;
+        public static final int tagmanager_preview_dialog_button=0x7f080096;
+        public static final int tagmanager_preview_dialog_message=0x7f080097;
+        public static final int tagmanager_preview_dialog_title=0x7f080098;
+        public static final int title_activity_main=0x7f080099;
+        public static final int title_activity_maps=0x7f08009a;
+        public static final int username=0x7f08009b;
+        public static final int version_code=0x7f08009c;
+        public static final int version_name=0x7f08009d;
         public static final int wallet_buy_button_place_holder=0x7f080068;
     }
     public static final class style {
@@ -6771,6 +6778,8 @@ containing a value of this type.
         public static final int CastIntroOverlay=0x7f0a00cc;
         public static final int CastMiniController=0x7f0a00cd;
         public static final int CustomCastTheme=0x7f0a00ce;
+        /**  colorControlActivated & colorControlHighlight use the colorAccent color by default 
+         */
         public static final int FirebaseEditTextTheme=0x7f0a00cf;
         public static final int Platform_AppCompat=0x7f0a001a;
         public static final int Platform_AppCompat_Light=0x7f0a001b;

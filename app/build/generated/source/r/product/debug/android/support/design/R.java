@@ -18,12 +18,12 @@ public final class R {
 		public static final int abc_slide_in_top = 0x7f050007;
 		public static final int abc_slide_out_bottom = 0x7f050008;
 		public static final int abc_slide_out_top = 0x7f050009;
-		public static final int design_bottom_sheet_slide_in = 0x7f05000a;
-		public static final int design_bottom_sheet_slide_out = 0x7f05000b;
-		public static final int design_fab_in = 0x7f05000c;
-		public static final int design_fab_out = 0x7f05000d;
-		public static final int design_snackbar_in = 0x7f05000e;
-		public static final int design_snackbar_out = 0x7f05000f;
+		public static final int design_bottom_sheet_slide_in = 0x7f050010;
+		public static final int design_bottom_sheet_slide_out = 0x7f050011;
+		public static final int design_fab_in = 0x7f050012;
+		public static final int design_fab_out = 0x7f050013;
+		public static final int design_snackbar_in = 0x7f050014;
+		public static final int design_snackbar_out = 0x7f050015;
 	}
 	public static final class attr {
 		public static final int actionBarDivider = 0x7f01005c;

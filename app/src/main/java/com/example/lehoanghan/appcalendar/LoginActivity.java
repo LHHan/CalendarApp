@@ -5,11 +5,21 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.InputType;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.lehoanghan.choosemenu.Menu_Choose;
 import com.firebase.client.AuthData;
@@ -19,23 +29,35 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
 import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends Activity {
+    private static Animation staticShakeAnimation;
+
+    @ViewById(R.id.activity_login_rl_main)
+    RelativeLayout rlLogin;
+
+    @ViewById(R.id.activity_login_ll_main)
+    LinearLayout llLoin;
+
     @ViewById(R.id.activity_login_et_gmail)
     EditText etMail;
 
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
 
-//    @ViewById(R.id.activity_login_btn_register)
-//    Button btnRegister;
+    @ViewById(R.id.activity_login_tv_register)
+    TextView tvRegister;
 
     @ViewById(R.id.activity_login_btn_login)
     Button btnLogin;
+
+    @ViewById(R.id.activity_login_cb_show_hide_password)
+    CheckBox cbShowPassword;
 
     private Firebase aFirebase;
 
@@ -50,30 +72,42 @@ public class LoginActivity extends Activity {
     private String contentPass = "";
 
     @Click(R.id.activity_login_btn_login)
-    public void btnLogin() {
+    void setBtnLogin() {
         doLogin();
     }
 
-//    @Click(R.id.activity_login_btn_register)
-//    public void btnRegister() {
-//        doRegister();
+    @Click(R.id.activity_login_tv_register)
+    void setTvRegister() {
+        myIntent = new Intent(LoginActivity.this, RegisterActivity_.class);
+        startActivity(myIntent);
+    }
+
+//    @Click(R.id.activity_login_tv_forgot_password)
+//    void setTvForgotPassword() {
+//
 //    }
 
-    //    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login);
-//        giveData();
-//        Firebase.setAndroidContext(this);
-//        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-//        aInit();
-//    }
+    @CheckedChange(R.id.activity_login_cb_show_hide_password)
+    void setCbShowPassword(CompoundButton button, boolean isChecked) {
+        if (isChecked) {
+            cbShowPassword.setText(R.string.hide_password); // Change checkbox text
+            etPass.setInputType(InputType.TYPE_CLASS_TEXT);
+            etPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());//showpass
+        } else {
+            cbShowPassword.setText(R.string.show_password); // change checkbox text
+            etPass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());//hide pass
+        }
+    }
+
+
     @AfterViews
     public void afterViews() {
         giveData();
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
+        initView();
+
     }
 
     private void displayKeyboard() {
@@ -84,7 +118,7 @@ public class LoginActivity extends Activity {
         }
     }
 
-    public void aInit() {
+    public void initView() {
         etMail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,31 +131,16 @@ public class LoginActivity extends Activity {
             etMail.setText(contentMail);
             etPass.setText(contentPass);
         }
-//        btnLogin.setOnClickListener(new MyEvent());
-//        btnRegister.setOnClickListener(new MyEvent());
+        //Load shake animation
+        staticShakeAnimation = AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
 
-//    private class MyEvent implements View.OnClickListener {
-//
-//        @Override
-//        public void onClick(View v) {
-//            switch (v.getId()) {
-//                case R.id.activity_login_btn_login:
-//                    doLogin();
-//                    break;
-//                case R.id.activity_login_btn_register:
-//                    doRegister();
-//                    break;
-//            }
-//        }
-//    }
 
     public void doLogin() {
         aFirebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(),
                 new Firebase.AuthResultHandler() {
                     @Override
                     public void onAuthenticated(AuthData authData) {
-                        //String message = authData.getUid();
                         getNameUser();
                         check = 1;
                     }
@@ -131,6 +150,10 @@ public class LoginActivity extends Activity {
                         final AlertDialog.Builder ALERT =
                                 new AlertDialog.Builder(LoginActivity.this);
                         ALERT.setIcon(R.drawable.ic_warning);
+                        if (etMail.equals("") || etMail.length() == 0
+                                || etPass.equals("") || etPass.length() == 0) {
+                            llLoin.startAnimation(staticShakeAnimation);
+                        }
                         if (firebaseError.getMessage().toString()
                                 .compareTo("The specified password is incorrect.") == 0) {
                             ALERT.setMessage(firebaseError.getMessage().toString());
@@ -188,17 +211,12 @@ public class LoginActivity extends Activity {
 
     }
 
-    public void doRegister() {
-        myIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-        startActivity(myIntent);
-    }
-
     @Override
     public void onBackPressed() {
-        aExit();
+        exitView();
     }
 
-    public void aExit() {
+    public void exitView() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
         builder.setMessage("Do you want to Exit?");
@@ -207,7 +225,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 //                finish();
-//                System.aExit(0);
+//                System.exitView(0);
                 moveTaskToBack(true);
             }
         });

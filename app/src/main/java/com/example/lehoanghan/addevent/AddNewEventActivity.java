@@ -92,7 +92,7 @@ public class AddNewEventActivity extends Fragment {
         return contentView;
     }
 
-    //aInit value for component
+    //initView value for component
     public void aInit() {
         etEventName =
                 (EditText) contentView.findViewById(R.id.activity_add_event_et_event_name);

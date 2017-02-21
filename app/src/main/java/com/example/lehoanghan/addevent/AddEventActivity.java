@@ -121,7 +121,7 @@ public class AddEventActivity extends AppCompatActivity {
         buttonAddFriend();
     }
 
-    //aInit value for component
+    //initView value for component
     public void aInit() {
         etEventName = (EditText) findViewById(R.id.activity_add_event_et_event_name);
         etDecription = (EditText) findViewById(R.id.activity_add_event_et_description);
