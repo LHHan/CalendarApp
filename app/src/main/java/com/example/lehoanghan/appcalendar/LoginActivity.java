@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lehoanghan.choosemenu.Menu_Choose;
 import com.firebase.client.AuthData;
@@ -36,7 +37,7 @@ import org.androidannotations.annotations.ViewById;
 
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends Activity {
-    private static Animation staticShakeAnimation;
+    private static Animation sShakeAnimation;
 
     @ViewById(R.id.activity_login_rl_main)
     RelativeLayout rlLogin;
@@ -100,7 +101,6 @@ public class LoginActivity extends Activity {
         }
     }
 
-
     @AfterViews
     public void afterViews() {
         giveData();
@@ -132,9 +132,9 @@ public class LoginActivity extends Activity {
             etPass.setText(contentPass);
         }
         //Load shake animation
-        staticShakeAnimation = AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
+        sShakeAnimation =
+                AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
-
 
     public void doLogin() {
         aFirebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(),
@@ -150,19 +150,19 @@ public class LoginActivity extends Activity {
                         final AlertDialog.Builder ALERT =
                                 new AlertDialog.Builder(LoginActivity.this);
                         ALERT.setIcon(R.drawable.ic_warning);
-                        if (etMail.equals("") || etMail.length() == 0
-                                || etPass.equals("") || etPass.length() == 0) {
-                            llLoin.startAnimation(staticShakeAnimation);
+                        if (etMail.equals("") || etPass.equals("")) {
+                            llLoin.startAnimation(sShakeAnimation);
+                            Toast.makeText(getApplicationContext(),
+                                    "Enter your email id and password, please",
+                                    Toast.LENGTH_SHORT).show();
                         }
                         if (firebaseError.getMessage().toString()
                                 .compareTo("The specified password is incorrect.") == 0) {
-                            ALERT.setMessage(firebaseError.getMessage().toString());
-                            ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    etPass.setText("");
-                                }
-                            }).show();
+                            Toast.makeText(getApplicationContext(),
+                                    "The specified password is incorrect.",
+                                    Toast.LENGTH_SHORT).show();
+                            etPass.setText("");
+                            llLoin.startAnimation(sShakeAnimation);
                         } else if ((firebaseError.getMessage().toString()
                                 .compareTo("Due to another authentication attempt," +
                                         "this authentication attempt was aborted " +
@@ -171,25 +171,19 @@ public class LoginActivity extends Activity {
                                         .compareTo("There was an exception while connecting to " +
                                                 "the authentication server:" +
                                                 " No peer certificate")) == 0) {
-                            ALERT.setMessage(firebaseError.getMessage().toString()
-                                    + "You need check about network");
-                            ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                }
-                            }).show();
+                            Toast.makeText(getApplicationContext(),
+                                    "You need check about network", Toast.LENGTH_SHORT).show();
+                            llLoin.startAnimation(sShakeAnimation);
                         } else if (firebaseError.getMessage().toString()
                                 .compareTo("The active or pending " +
                                         "auth credentials were superseded" +
                                         " by another call to auth") == 0) {
-                            ALERT.setMessage(firebaseError.getMessage().toString() +
-                                    "Wait for some minutes. Your network is loading");
-                            ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                }
-                            }).show();
-                        } else { //The specified email address is invalid
+                            Toast.makeText(getApplicationContext(),
+                                    "Wait for some minutes. Your network is loading",
+                                    Toast.LENGTH_SHORT).show();
+                            llLoin.startAnimation(sShakeAnimation);
+                        } else if (firebaseError.getMessage().toString()
+                                .compareTo("The specified email address is invalid") == 0) {
                             ALERT.setMessage(firebaseError.getMessage().toString() +
                                     " You need create an account?");
                             ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -205,6 +199,7 @@ public class LoginActivity extends Activity {
                                 public void onClick(DialogInterface dialog, int which) {
                                 }
                             }).show();
+                            llLoin.startAnimation(sShakeAnimation);
                         }
                     }
                 });

@@ -15,7 +15,7 @@ import java.util.ArrayList;
  * Created by lehoanghan on 6/24/2016.
  */
 public class CustomCommentAdapter extends BaseAdapter {
-    private static LayoutInflater staticLayoutInflater = null;
+    private static LayoutInflater sLayoutInflater = null;
 
     private ArrayList<String> listComment;
 
@@ -27,7 +27,7 @@ public class CustomCommentAdapter extends BaseAdapter {
             listComment.add(temp);
         }
         this.adapterContext = context;
-        staticLayoutInflater = (LayoutInflater) context.
+        sLayoutInflater = (LayoutInflater) context.
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
     }
@@ -50,7 +50,7 @@ public class CustomCommentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View rowView;
-        rowView = staticLayoutInflater.inflate(R.layout.adapter_comment, null);
+        rowView = sLayoutInflater.inflate(R.layout.adapter_comment, null);
         EmojiconTextView emojiconTextView =
                 (EmojiconTextView) rowView.findViewById(R.id.adapter_comment_eitv_emojicon);
         emojiconTextView.setText(listComment.get(position));

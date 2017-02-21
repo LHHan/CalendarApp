@@ -10,16 +10,25 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
 import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
 import java.io.ByteArrayOutputStream;
@@ -30,6 +39,11 @@ import java.util.Map;
  */
 @EActivity(R.layout.activity_register)
 public class RegisterActivity extends Activity {
+    private static Animation sShakeAnimation;
+
+    @ViewById(R.id.activity_regiter_ll_register)
+    LinearLayout llRegister;
+
     @ViewById(R.id.activity_register_et_username)
     EditText etName;
 
@@ -42,14 +56,20 @@ public class RegisterActivity extends Activity {
     @ViewById(R.id.activity_register_et_confirmpassword)
     EditText etConfPass;
 
-    @ViewById(R.id.activity_register_btn_create)
-    Button btnCreate;
+    @ViewById(R.id.activity_register_btn_register)
+    Button btnRegister;
 
-    @ViewById(R.id.activity_register_btn_clear)
-    Button btnClear;
+    @ViewById(R.id.activity_register_cb_agree_register)
+    CheckBox cbRegister;
 
-    @ViewById(R.id.activity_register_btn_map)
-    Button btnMap;
+    @ViewById(R.id.activity_register_tv_login_here)
+    TextView tvLogin;
+
+//    @ViewById(R.id.activity_register_btn_clear)
+//    Button btnClear;
+
+    //    @ViewById(R.id.activity_register_btn_map)
+//    Button btnMap;
 
     private Firebase aFirebase;
 
@@ -57,60 +77,51 @@ public class RegisterActivity extends Activity {
 
     private AlertDialog.Builder alertDialog;
 
-    @Click(R.id.activity_register_btn_create)
-    public void btnCreate() {
+    @CheckedChange(R.id.activity_register_cb_agree_register)
+    void setCbRegister(CompoundButton button, boolean isChecked) {
+        if (isChecked) {
+            btnRegister.setVisibility(View.VISIBLE);
+        } else {
+            btnRegister.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    @Touch(R.id.activity_register_btn_register)
+    void setTouchBtnRegister(){
+
+    }
+
+    @Click(R.id.activity_register_btn_register)
+    void setBtnRegister() {
         checkInform();
     }
 
-    @Click(R.id.activity_register_btn_clear)
-    public void btnClear() {
-        etName.setText("");
-        etMail.setText("");
-        etPass.setText("");
-        etConfPass.setText("");
-    }
-
-    @Click(R.id.activity_register_btn_map)
-    public void btnMap() {
-        Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
+    @Click(R.id.activity_register_tv_login_here)
+    void setTvLogin() {
+        Intent myIntent = new Intent(RegisterActivity.this, LoginActivity_.class);
         startActivity(myIntent);
     }
+//    @Click(R.id.activity_register_btn_clear)
+//    public void btnClear() {
+//        etName.setText("");
+//        etMail.setText("");
+//        etPass.setText("");
+//        etConfPass.setText("");
+//    }
+
+//    @Click(R.id.activity_register_btn_map)
+//    public void btnMap() {
+//        Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
+//        startActivity(myIntent);
+//    }
 
     @AfterViews
     public void afterView() {
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        sShakeAnimation =
+                AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
-
-    //@Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_register);
-//        Firebase.setAndroidContext(this);
-//        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-//        btnCreate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                checkInform();
-//            }
-//        });
-//        btnClear.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                etName.setText("");
-//                etMail.setText("");
-//                etPass.setText("");
-//                etConfPass.setText("");
-//            }
-//        });
-//        btnMap.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent myIntent = new Intent(RegisterActivity.this, MapsActivity.class);
-//                startActivity(myIntent);
-//            }
-//        });
-//}
 
     public void checkPass() {
         if (etConfPass.getText().toString().compareTo(etPass.getText().toString()) != 0) {
@@ -118,29 +129,27 @@ public class RegisterActivity extends Activity {
                     "Enter Conpass error, Enter Conpass again, please", Toast.LENGTH_SHORT).show();
             etPass.setText("");
             etConfPass.setText("");
+            llRegister.startAnimation(sShakeAnimation);
         } else {
             saveDatabase();
         }
     }
 
     public void checkInform() {
-        if ((etName.getText().toString() == "") || (etMail.getText().toString() == "") ||
-                (etPass.getText().toString() == "") || (etConfPass.getText().toString() == "")) {
-            {
-                Toast.makeText(getApplicationContext(),
-                        "You need fill out all inform", Toast.LENGTH_SHORT).show();
-            }
+        if ((etName.equals("") || etMail.equals("") || etPass.equals("") || etConfPass.equals(""))) {
+            Toast.makeText(getApplicationContext(),
+                    "You need fill out all inform", Toast.LENGTH_SHORT).show();
+            llRegister.startAnimation(sShakeAnimation);
         } else {
             checkPass();
         }
     }
-
-    public void saveUser() {
-        aUser = new User();
-        aUser.setjName(etName.getText().toString());
-        aUser.setjMail(etMail.getText().toString());
-        aUser.setjPass(etPass.getText().toString());
-    }
+//    public void saveUser() {
+//        aUser = new User();
+//        aUser.setjName(etName.getText().toString());
+//        aUser.setjMail(etMail.getText().toString());
+//        aUser.setjPass(etPass.getText().toString());
+//    }
 
     public byte[] convertImage() {
         Bitmap aBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.smile);
@@ -156,7 +165,6 @@ public class RegisterActivity extends Activity {
     }
 
     public void saveDatabase() {
-
         aFirebase.createUser(etMail.getText().toString(), etPass.getText().toString(),
                 new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override

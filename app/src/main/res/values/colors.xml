@@ -20,4 +20,6 @@
     <color name="colorActionbar2">#00897b</color>
     <color name="white_greyish">#eeeeee</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
 </resources>

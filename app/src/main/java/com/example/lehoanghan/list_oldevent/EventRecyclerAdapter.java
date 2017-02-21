@@ -57,7 +57,6 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     private Firebase aFirebase;
 
-
     public EventRecyclerAdapter(ArrayList<EventValue> DataSet,
                                 ArrayList<Integer> DataSetType,
                                 String Mail, int type) {

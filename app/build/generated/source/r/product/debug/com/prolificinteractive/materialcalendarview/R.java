@@ -22,12 +22,12 @@ public final class R {
 		public static final int mcv_weekDayTextAppearance = 0x7f01014a;
 	}
 	public static final class color {
-		public static final int mcv_text_date_dark = 0x7f0e0094;
-		public static final int mcv_text_date_light = 0x7f0e0095;
+		public static final int mcv_text_date_dark = 0x7f0e0096;
+		public static final int mcv_text_date_light = 0x7f0e0097;
 	}
 	public static final class drawable {
-		public static final int mcv_action_next = 0x7f0207bd;
-		public static final int mcv_action_previous = 0x7f0207be;
+		public static final int mcv_action_next = 0x7f0207be;
+		public static final int mcv_action_previous = 0x7f0207bf;
 	}
 	public static final class id {
 		public static final int all = 0x7f0f0059;

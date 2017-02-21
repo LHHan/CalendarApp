@@ -2,6 +2,6 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <translate xmlns:android="http://schemas.android.com/apk/res/android"
-        android:fromXDelta="0" android:toXDelta="20" android:duration="300"
+        android:fromXDelta="0" android:toXDelta="40" android:duration="20"
         android:interpolator="@anim/animation_cycle" />
 </set>

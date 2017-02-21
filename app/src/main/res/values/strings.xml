@@ -31,6 +31,6 @@
     <string name="register">REGISTER</string>
     <string name="username">Full Name</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="check_register">By clicking Register you agree all the Terms and Coditions</string>
+    <string name="check_register">By clicking here, you agree all the Terms and Coditions</string>
     <string name="login_here">Already have Account? Login here</string>
 </resources>

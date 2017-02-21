@@ -40,7 +40,7 @@ public class MyFriendActivity extends Fragment {
 
     private RecyclerView rcvListMyFriend;
 
-    private UserMyFriendRecyclerAdapter UserMyFriendRecyclerAdapter;
+    private UserMyFriendRecyclerAdapter userMyFriendRecyclerAdapter;
 
     private LinearLayoutManager linearLayoutManager;
 
@@ -82,10 +82,10 @@ public class MyFriendActivity extends Fragment {
                 for (int i = 0; i < listName.size(); i++) {
                     listMyFriend.add(new UserFriend(listName.get(i), listMail.get(i)));
                 }
-                UserMyFriendRecyclerAdapter =
+                userMyFriendRecyclerAdapter =
                         new UserMyFriendRecyclerAdapter(listMyFriend, getMail, getName);
-                UserMyFriendRecyclerAdapter.notifyDataSetChanged();
-                rcvListMyFriend.setAdapter(UserMyFriendRecyclerAdapter);
+                userMyFriendRecyclerAdapter.notifyDataSetChanged();
+                rcvListMyFriend.setAdapter(userMyFriendRecyclerAdapter);
             }
 
             @Override
