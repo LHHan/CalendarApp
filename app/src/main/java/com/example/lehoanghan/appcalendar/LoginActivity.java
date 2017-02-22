@@ -60,7 +60,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @ViewById(R.id.activity_login_et_gmail)
     EditText etMail;
 
-    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
+    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC, message = "Password must be alpha and number")
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
 
