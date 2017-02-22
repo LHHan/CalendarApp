@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.annotation.RequiresApi;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
@@ -23,6 +24,14 @@ import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.Checked;
+import com.mobsandgeeks.saripaar.annotation.ConfirmPassword;
+import com.mobsandgeeks.saripaar.annotation.Email;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+import com.mobsandgeeks.saripaar.annotation.Order;
+import com.mobsandgeeks.saripaar.annotation.Password;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.CheckedChange;
@@ -32,39 +41,48 @@ import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
 import java.io.ByteArrayOutputStream;
+import java.util.List;
 import java.util.Map;
 
 /**
  * Created by lehoanghan on 4/15/2016.
  */
 @EActivity(R.layout.activity_register)
-public class RegisterActivity extends Activity {
+public class RegisterActivity extends Activity implements Validator.ValidationListener {
     private static Animation sShakeAnimation;
 
     @ViewById(R.id.activity_regiter_ll_register)
     LinearLayout llRegister;
 
+    @NotEmpty
+    @Order(1)
     @ViewById(R.id.activity_register_et_username)
     EditText etName;
 
-    @ViewById(R.id.activity_register_et_password)
-    EditText etPass;
-
+    @NotEmpty
+    @Email(message = "Pleae enter a valid your Email ID ")
     @ViewById(R.id.activity_register_et_gmail)
     EditText etMail;
 
+    @NotEmpty
+    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
+    @ViewById(R.id.activity_register_et_password)
+    EditText etPass;
+
+    @ConfirmPassword
     @ViewById(R.id.activity_register_et_confirmpassword)
     EditText etConfPass;
 
     @ViewById(R.id.activity_register_btn_register)
     Button btnRegister;
 
+    @Checked
     @ViewById(R.id.activity_register_cb_agree_register)
     CheckBox cbRegister;
 
     @ViewById(R.id.activity_register_tv_login_here)
     TextView tvLogin;
-
+//    ------------------------------------------------
 //    @ViewById(R.id.activity_register_btn_clear)
 //    Button btnClear;
 
@@ -73,26 +91,15 @@ public class RegisterActivity extends Activity {
 
     private Firebase aFirebase;
 
+    public Validator validator;
+
     private User aUser;
 
     private AlertDialog.Builder alertDialog;
 
-    @CheckedChange(R.id.activity_register_cb_agree_register)
-    void setCbRegister(CompoundButton button, boolean isChecked) {
-        if (isChecked) {
-            btnRegister.setVisibility(View.VISIBLE);
-        } else {
-            btnRegister.setVisibility(View.INVISIBLE);
-        }
-    }
-
-    @Touch(R.id.activity_register_btn_register)
-    void setTouchBtnRegister(){
-
-    }
-
     @Click(R.id.activity_register_btn_register)
     void setBtnRegister() {
+        validator.validate();
         checkInform();
     }
 
@@ -119,6 +126,8 @@ public class RegisterActivity extends Activity {
     public void afterView() {
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        validator = new Validator(this);
+        validator.setValidationListener(this);
         sShakeAnimation =
                 AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
@@ -136,11 +145,12 @@ public class RegisterActivity extends Activity {
     }
 
     public void checkInform() {
-        if ((etName.equals("") || etMail.equals("") || etPass.equals("") || etConfPass.equals(""))) {
+        if ((etName.equals("")) || etMail.equals("") ||
+                etPass.equals("") || etConfPass.equals("")) {
             Toast.makeText(getApplicationContext(),
                     "You need fill out all inform", Toast.LENGTH_SHORT).show();
             llRegister.startAnimation(sShakeAnimation);
-        } else {
+        }else{
             checkPass();
         }
     }
@@ -206,8 +216,27 @@ public class RegisterActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu_about, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+        Toast.makeText(this, "Yay! we got it right", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error : errors) {
+            View view = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+
+            // Display error messages ;)
+            if (view instanceof EditText) {
+                ((EditText) view).setError(message);
+            } else {
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
 //    @Override

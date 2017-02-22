@@ -28,15 +28,25 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.Checked;
+import com.mobsandgeeks.saripaar.annotation.Email;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+import com.mobsandgeeks.saripaar.annotation.Order;
+import com.mobsandgeeks.saripaar.annotation.Password;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
+import java.util.List;
+
 @EActivity(R.layout.activity_login)
-public class LoginActivity extends Activity {
+public class LoginActivity extends Activity implements Validator.ValidationListener {
     private static Animation sShakeAnimation;
 
     @ViewById(R.id.activity_login_rl_main)
@@ -45,9 +55,12 @@ public class LoginActivity extends Activity {
     @ViewById(R.id.activity_login_ll_main)
     LinearLayout llLoin;
 
+    @NotEmpty
+    @Email
     @ViewById(R.id.activity_login_et_gmail)
     EditText etMail;
 
+    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
 
@@ -63,6 +76,13 @@ public class LoginActivity extends Activity {
     @ViewById(R.id.activity_login_cb_show_hide_password)
     CheckBox cbShowPassword;
 
+//    @NotEmpty
+//    @Email
+//    private EditText etMail;
+//
+//    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
+//    private EditText etPass;
+
     private Firebase aFirebase;
 
     private String strName;
@@ -75,8 +95,11 @@ public class LoginActivity extends Activity {
 
     private String contentPass = "";
 
+    private Validator validator;
+
     @Click(R.id.activity_login_btn_login)
     void setBtnLogin() {
+        validator.validate();
         doLogin();
     }
 
@@ -87,15 +110,10 @@ public class LoginActivity extends Activity {
     }
 
     @Click(R.id.activity_login_tv_forgot_password)
-    void setTvForgot(){
+    void setTvForgot() {
         myIntent = new Intent(LoginActivity.this, ForgotPasswordActivity_.class);
         startActivity(myIntent);
     }
-
-//    @Click(R.id.activity_login_tv_forgot_password)
-//    void setTvForgotPassword() {
-//
-//    }
 
     @CheckedChange(R.id.activity_login_cb_show_hide_password)
     void setCbShowPassword(CompoundButton button, boolean isChecked) {
@@ -115,25 +133,13 @@ public class LoginActivity extends Activity {
         giveData();
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        validator = new Validator(this);
+        validator.setValidationListener(this);
         initView();
 
     }
 
-    private void displayKeyboard() {
-        if (etMail.requestFocus()) {
-            InputMethodManager imm =
-                    (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.showSoftInput(etMail, InputMethodManager.SHOW_IMPLICIT);
-        }
-    }
-
     public void initView() {
-        etMail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                displayKeyboard();
-            }
-        });
         Log.e("Gmail", contentMail);
         Log.e("Pass", contentPass);
         if (contentMail.compareTo("") != 0 && contentPass.compareTo("") != 0) {
@@ -143,6 +149,26 @@ public class LoginActivity extends Activity {
         //Load shake animation
         sShakeAnimation =
                 AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
+    }
+
+    @Override
+    public void onValidationSucceeded() {
+        Toast.makeText(this, "Yay! we got it right!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error : errors) {
+            View contentView = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+
+            //Display error message
+            if (contentView instanceof EditText) {
+                ((EditText) contentView).setError(message);
+            } else {
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     public void doLogin() {
@@ -212,7 +238,6 @@ public class LoginActivity extends Activity {
                         }
                     }
                 });
-
     }
 
     @Override
@@ -270,5 +295,6 @@ public class LoginActivity extends Activity {
             contentPass = "";
         }
     }
+
 
 }

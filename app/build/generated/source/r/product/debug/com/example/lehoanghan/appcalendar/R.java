@@ -6782,6 +6782,8 @@ containing a value of this type.
         public static final int CastIntroOverlay=0x7f0a00cc;
         public static final int CastMiniController=0x7f0a00cd;
         public static final int CustomCastTheme=0x7f0a00ce;
+        /**  colorControlActivated & colorControlHighlight use the colorAccent color by default 
+         */
         public static final int FirebaseEditTextTheme=0x7f0a00cf;
         public static final int Platform_AppCompat=0x7f0a001a;
         public static final int Platform_AppCompat_Light=0x7f0a001b;

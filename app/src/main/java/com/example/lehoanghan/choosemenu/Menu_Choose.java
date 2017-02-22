@@ -19,6 +19,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 import com.example.lehoanghan.appcalendar.LoginActivity;
+import com.example.lehoanghan.appcalendar.LoginActivity_;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.AboutActivity;
 import com.example.lehoanghan.optionmenu.AccountActivity;
@@ -349,7 +350,7 @@ public class Menu_Choose extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Menu_Choose.this, LoginActivity.class);
+                Intent intent = new Intent(Menu_Choose.this, LoginActivity_.class);
                 startActivity(intent);
             }
         });

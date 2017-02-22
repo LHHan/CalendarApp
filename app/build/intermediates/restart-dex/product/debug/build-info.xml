@@ -5,43 +5,535 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="17196955931130"
+    timestamp="1651573135095"
     token="808597837908058687"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="715" />
+        duration="1960" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="32" />
+        duration="51" />
     <task
         name="verifier"
         duration="1" />
 
     <artifact
-        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_1\classes.dex"
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\instant-run-resources\resources-product\debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_9\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_4ddfecb53a1d42c5e1ad561ce814fb0ffd4a2e65\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_7\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_0f895b25cfa7e041029576e9a6600f1a597fc028\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_2\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_a9b5bc91764bd37537c5bbba806f8eece666fd23\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_3\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_6e490f8a20996ecc5ba0a53563491bcf412ef1bc\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_4\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run_a8534f27fc56f046e6fcdfdd979c980535d1e949\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_72901c6e468d21b3e4255edecffcdf387fb422be\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_0\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-android-2.3.1_eaf13c7ef882a4f3e3c23ad0e04e5a496af72aba\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_da60dc2bac10efdef0ecde21d5054f5eeb1f3d3f\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_99157296de92f7c29c66e8a2617ae764bb56ef67\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_1a3409bba8ce6a8cf5c4af1de870cbfb7f552b19\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0_f927dc934e7fa3a7bccff0597f8e13403cdf06c6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_8291cc42d65fc50d8b435601c52c30090d005caa\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.firebaseui-firebase-ui-0.3.1_bdece534ab3d86163deae069d4f8a46801ea0626\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_ac07c089e50cc9bd8637e65274049fd618903963\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_9fa5322295ab756aecdc647da575dbd4a4b3a617\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.2.0_bbba5bb0eb44963cd60a35ac3b3cdc276fc74f4b\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_c725bd7d3c7bd64c06577388ece4ee58df02decb\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-annotations-2.2.2_aaef349fb7fe03a2afb788f37e944b76833561bf\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run-bootstrap_c9c650a5712db51e44bc946f08bbc83202d0f880\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.rockerhieu.emojicon-library-1.3.3_88d7c00f952e49f795301dc565cd27f3e289773a\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_ff586bca41d13a9bdfae98d5158b1052752b78d4\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_b252ff88fc8102247539f3f72432ee384bfa6b1f\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_06203f0dc9409788e7b0ba8c307b8979b8aa8d3d\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_cfa986f12c4a51ea241b59b97ccddad9118c5a42\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\internal_impl-24.0.0_48f979602272151ca0ed3dbc93e3f980a1ea2259\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_f26fce2027ca1170c2b0c6ec9cf7a680af22a624\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_e2ed09c72cb236258a0ad465c169ee5af0bbdcba\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\tubesock-0.0.11_3fd6dc3cb295148c490c613c0485607aaac264ba\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_edad5ca1b1c17947931d0816bafd8c552d779bf3\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\support-annotations-24.0.0_dec20f4c35bf549f55fb3e0123382cbb1b72fd0f\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_0c4207d118f30fb2349ebc808223c2cb1cd5377e\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_95f8af0c849cfda27c937ec882764b0a2e3eddea\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_45abd993d7fd5362a94ec614e0230959e934dbb6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_df28a074f1d0f8a8529f80a6c5a99243c76b6de4\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_acf0aecf15282f4ab9a6f99a438b05aad24ac6b8\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-v4-24.0.0_74b580f0a79283b2c50fee63231695c68d651fac\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\android-saripaar-2.0.2_638c906913b0358af9f2f42a64efaaaa0db82a16\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_71d09fcc4b5a2357bed37933c748b2e6f44330c6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_72863b7139bcd0c40e7c4c77f8788b693c9bc3d6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_ea2b5465e4997187030e8836f22e0d95f739b499\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_6f8bdade24ed6639a61ff3e99fd921eb77f1e970\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_4c7200dab37302d0e7fc8c27e0269a289f107efd\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_af54cff180d2cdf75162ce8ebbc6dfe579ce91b4\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_f74e5df1e953f3e93d8cca0a2bc66c0d3d8559dc\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_5dd01c03b8b9ae2f6afc85b08dad49eb4e5125f6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_8fbffeccf714ff4c9d5ff8dfb3a446d19bbfd5cd\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_78e84a9a37b5da4e51b40a5300092d3d362af71f\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_84e51635bc292733982793c85280b7a6a8c2f084\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0_0328fec3e815d1d99eb8604e4047cc44c585627f\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_26a0f78a041fc77a33269e75d6088cdd098fd319\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-databind-2.2.2_39deb4c7784f5a98432f1981292db2a8590a1a8e\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_2f80e429fc00d35afa30a64e45160547b5f322d7\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_bc9b76552cbe20748d0467a5fc61f814c52cb4f6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_879717409dd35959f3552108a8c9acde4647e9bb\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_34dd047eadaa8fd39f043d57aa690026c7d4cbf4\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\androidannotations-api-4.0.0_e55dc29425da91ed99531f1b4718880590c5dfb1\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_70620315367811e6ff2b1d81435c6b9e5daf8545\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_5ed05146d30b2f5d636bfa6b05a3367b83df3bd9\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_b882af43ff016d537287fba85892679c28d0ec48\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_45616b2915a115eb811c448136da95070f75a088\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_43a952bece071b905f6afe6af89649c3a0ceb078\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_73fc1496d84c2b0e5f2992f8465645912630b931\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_249f710f356dce0436565f73ec2f3a27002c1b54\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_ee62eebe80666177b491ad24a4f89dbfb60585b6\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_17418c21a36288f845bce364cfea9f71dc03a005\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_169bfa516827e67e0ee792f8eb86d4ed9a55fc9c\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_35e35fc93a961b89ffa5701717446c7905ce2c3a\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-core-2.2.2_d6f443909436598824c7131b02ace3648a281ab2\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\internal_impl-24.0.0_d8f5effe1f79f7887dadd50fb07804c74c4ee22c\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_3de35a086a8f93338bfa0239c100280c5e563351\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_ba8485b5e162bdfd9514cbac1a4c1c5be7eecacb\classes.dex"
+        type="DEX" />
+    <artifact
+        location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_39877debb299b0c5cc648769d6dc033f3bf5c17f\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="16758363261436"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="1064755597405"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Project_hh\CalendarApp\app\build\outputs\apk\app-product-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="17092545874818"
+        timestamp="1651573135095"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Project_hh\CalendarApp\app\build\intermediates\instant-run-resources\resources-product\debug.ir.ap_"
             type="RESOURCES" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_4ddfecb53a1d42c5e1ad561ce814fb0ffd4a2e65\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_0f895b25cfa7e041029576e9a6600f1a597fc028\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_a9b5bc91764bd37537c5bbba806f8eece666fd23\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_6e490f8a20996ecc5ba0a53563491bcf412ef1bc\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run_a8534f27fc56f046e6fcdfdd979c980535d1e949\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_72901c6e468d21b3e4255edecffcdf387fb422be\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-android-2.3.1_eaf13c7ef882a4f3e3c23ad0e04e5a496af72aba\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_da60dc2bac10efdef0ecde21d5054f5eeb1f3d3f\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_99157296de92f7c29c66e8a2617ae764bb56ef67\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_1a3409bba8ce6a8cf5c4af1de870cbfb7f552b19\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0_f927dc934e7fa3a7bccff0597f8e13403cdf06c6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_8291cc42d65fc50d8b435601c52c30090d005caa\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.firebaseui-firebase-ui-0.3.1_bdece534ab3d86163deae069d4f8a46801ea0626\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_ac07c089e50cc9bd8637e65274049fd618903963\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_9fa5322295ab756aecdc647da575dbd4a4b3a617\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.prolificinteractive-material-calendarview-1.2.0_bbba5bb0eb44963cd60a35ac3b3cdc276fc74f4b\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_c725bd7d3c7bd64c06577388ece4ee58df02decb\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-annotations-2.2.2_aaef349fb7fe03a2afb788f37e944b76833561bf\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run-bootstrap_c9c650a5712db51e44bc946f08bbc83202d0f880\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.rockerhieu.emojicon-library-1.3.3_88d7c00f952e49f795301dc565cd27f3e289773a\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_ff586bca41d13a9bdfae98d5158b1052752b78d4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_b252ff88fc8102247539f3f72432ee384bfa6b1f\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_06203f0dc9409788e7b0ba8c307b8979b8aa8d3d\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_cfa986f12c4a51ea241b59b97ccddad9118c5a42\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\internal_impl-24.0.0_48f979602272151ca0ed3dbc93e3f980a1ea2259\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_f26fce2027ca1170c2b0c6ec9cf7a680af22a624\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_e2ed09c72cb236258a0ad465c169ee5af0bbdcba\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\tubesock-0.0.11_3fd6dc3cb295148c490c613c0485607aaac264ba\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_edad5ca1b1c17947931d0816bafd8c552d779bf3\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\support-annotations-24.0.0_dec20f4c35bf549f55fb3e0123382cbb1b72fd0f\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_0c4207d118f30fb2349ebc808223c2cb1cd5377e\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_95f8af0c849cfda27c937ec882764b0a2e3eddea\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_45abd993d7fd5362a94ec614e0230959e934dbb6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_df28a074f1d0f8a8529f80a6c5a99243c76b6de4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_acf0aecf15282f4ab9a6f99a438b05aad24ac6b8\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-v4-24.0.0_74b580f0a79283b2c50fee63231695c68d651fac\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\android-saripaar-2.0.2_638c906913b0358af9f2f42a64efaaaa0db82a16\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_71d09fcc4b5a2357bed37933c748b2e6f44330c6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_72863b7139bcd0c40e7c4c77f8788b693c9bc3d6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_ea2b5465e4997187030e8836f22e0d95f739b499\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_6f8bdade24ed6639a61ff3e99fd921eb77f1e970\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_4c7200dab37302d0e7fc8c27e0269a289f107efd\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_af54cff180d2cdf75162ce8ebbc6dfe579ce91b4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_f74e5df1e953f3e93d8cca0a2bc66c0d3d8559dc\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_5dd01c03b8b9ae2f6afc85b08dad49eb4e5125f6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_8fbffeccf714ff4c9d5ff8dfb3a446d19bbfd5cd\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_78e84a9a37b5da4e51b40a5300092d3d362af71f\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_84e51635bc292733982793c85280b7a6a8c2f084\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0_0328fec3e815d1d99eb8604e4047cc44c585627f\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_26a0f78a041fc77a33269e75d6088cdd098fd319\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-databind-2.2.2_39deb4c7784f5a98432f1981292db2a8590a1a8e\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_2f80e429fc00d35afa30a64e45160547b5f322d7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_bc9b76552cbe20748d0467a5fc61f814c52cb4f6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_879717409dd35959f3552108a8c9acde4647e9bb\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_34dd047eadaa8fd39f043d57aa690026c7d4cbf4\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\androidannotations-api-4.0.0_e55dc29425da91ed99531f1b4718880590c5dfb1\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_70620315367811e6ff2b1d81435c6b9e5daf8545\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_5ed05146d30b2f5d636bfa6b05a3367b83df3bd9\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_b882af43ff016d537287fba85892679c28d0ec48\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_45616b2915a115eb811c448136da95070f75a088\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_43a952bece071b905f6afe6af89649c3a0ceb078\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_73fc1496d84c2b0e5f2992f8465645912630b931\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_249f710f356dce0436565f73ec2f3a27002c1b54\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_ee62eebe80666177b491ad24a4f89dbfb60585b6\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_17418c21a36288f845bce364cfea9f71dc03a005\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_169bfa516827e67e0ee792f8eb86d4ed9a55fc9c\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_35e35fc93a961b89ffa5701717446c7905ce2c3a\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-core-2.2.2_d6f443909436598824c7131b02ace3648a281ab2\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\internal_impl-24.0.0_d8f5effe1f79f7887dadd50fb07804c74c4ee22c\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_3de35a086a8f93338bfa0239c100280c5e563351\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_ba8485b5e162bdfd9514cbac1a4c1c5be7eecacb\classes.dex"
+            type="DEX" />
+        <artifact
+            location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_39877debb299b0c5cc648769d6dc033f3bf5c17f\classes.dex"
+            type="DEX" />
     </build>
     <build
-        timestamp="17196955931130"
+        timestamp="12482791196287"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\5\slice_1\classes.dex"
