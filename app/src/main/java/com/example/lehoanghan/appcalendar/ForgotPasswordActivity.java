@@ -48,12 +48,6 @@ public class ForgotPasswordActivity extends AppCompatActivity implements Validat
     @Click(R.id.activity_forgot_password_tv_submit)
     void setTvSubmit() {
         validator.validate();
-        String getEmailId = etEmail.getText().toString();
-        try {
-            Toast.makeText(getApplicationContext(), "Get Forgot Password.",
-                    Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
-        }
     }
 
     @Click(R.id.activity_forgot_password_tv_back)
@@ -92,6 +86,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements Validat
                 ((EditText) contentView).setError(message);
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                llForgot.startAnimation(sShakeAnimation);
             }
         }
     }

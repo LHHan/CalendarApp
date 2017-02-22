@@ -51,6 +51,8 @@ import java.util.Map;
 public class RegisterActivity extends Activity implements Validator.ValidationListener {
     private static Animation sShakeAnimation;
 
+    private static int sCheck = 0;
+
     @ViewById(R.id.activity_regiter_ll_register)
     LinearLayout llRegister;
 
@@ -100,7 +102,6 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
     @Click(R.id.activity_register_btn_register)
     void setBtnRegister() {
         validator.validate();
-        checkInform();
     }
 
     @Click(R.id.activity_register_tv_login_here)
@@ -128,32 +129,11 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         validator = new Validator(this);
         validator.setValidationListener(this);
+        //load animation
         sShakeAnimation =
                 AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
 
-    public void checkPass() {
-        if (etConfPass.getText().toString().compareTo(etPass.getText().toString()) != 0) {
-            Toast.makeText(getApplicationContext(),
-                    "Enter Conpass error, Enter Conpass again, please", Toast.LENGTH_SHORT).show();
-            etPass.setText("");
-            etConfPass.setText("");
-            llRegister.startAnimation(sShakeAnimation);
-        } else {
-            saveDatabase();
-        }
-    }
-
-    public void checkInform() {
-        if ((etName.equals("")) || etMail.equals("") ||
-                etPass.equals("") || etConfPass.equals("")) {
-            Toast.makeText(getApplicationContext(),
-                    "You need fill out all inform", Toast.LENGTH_SHORT).show();
-            llRegister.startAnimation(sShakeAnimation);
-        }else{
-            checkPass();
-        }
-    }
 //    public void saveUser() {
 //        aUser = new User();
 //        aUser.setjName(etName.getText().toString());
@@ -174,7 +154,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
         return picFirebase;
     }
 
-    public void saveDatabase() {
+    private void saveDatabase() {
         aFirebase.createUser(etMail.getText().toString(), etPass.getText().toString(),
                 new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
@@ -222,6 +202,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
     @Override
     public void onValidationSucceeded() {
         Toast.makeText(this, "Yay! we got it right", Toast.LENGTH_LONG).show();
+        saveDatabase();
     }
 
     @Override
@@ -235,6 +216,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
                 ((EditText) view).setError(message);
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                llRegister.startAnimation(sShakeAnimation);
             }
         }
     }

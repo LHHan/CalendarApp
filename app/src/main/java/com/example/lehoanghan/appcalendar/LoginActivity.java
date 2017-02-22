@@ -76,13 +76,6 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @ViewById(R.id.activity_login_cb_show_hide_password)
     CheckBox cbShowPassword;
 
-//    @NotEmpty
-//    @Email
-//    private EditText etMail;
-//
-//    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
-//    private EditText etPass;
-
     private Firebase aFirebase;
 
     private String strName;
@@ -100,7 +93,6 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @Click(R.id.activity_login_btn_login)
     void setBtnLogin() {
         validator.validate();
-        doLogin();
     }
 
     @Click(R.id.activity_login_tv_register)
@@ -136,7 +128,16 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         validator = new Validator(this);
         validator.setValidationListener(this);
         initView();
+    }
 
+    public void giveData() {
+        if (getIntent().getExtras() != null) {
+            contentMail = getIntent().getStringExtra("MailUser");
+            contentPass = getIntent().getStringExtra("Password");
+        } else {
+            contentMail = "";
+            contentPass = "";
+        }
     }
 
     public void initView() {
@@ -154,6 +155,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @Override
     public void onValidationSucceeded() {
         Toast.makeText(this, "Yay! we got it right!", Toast.LENGTH_SHORT).show();
+        getNameUser();
     }
 
     @Override
@@ -167,77 +169,9 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
                 ((EditText) contentView).setError(message);
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                llLoin.startAnimation(sShakeAnimation);
             }
         }
-    }
-
-    public void doLogin() {
-        aFirebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(),
-                new Firebase.AuthResultHandler() {
-                    @Override
-                    public void onAuthenticated(AuthData authData) {
-                        getNameUser();
-                        check = 1;
-                    }
-
-                    @Override
-                    public void onAuthenticationError(FirebaseError firebaseError) {
-                        final AlertDialog.Builder ALERT =
-                                new AlertDialog.Builder(LoginActivity.this);
-                        ALERT.setIcon(R.drawable.ic_warning);
-                        if (etMail.equals("") || etPass.equals("")) {
-                            llLoin.startAnimation(sShakeAnimation);
-                            Toast.makeText(getApplicationContext(),
-                                    "Enter your email id and password, please",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                        if (firebaseError.getMessage().toString()
-                                .compareTo("The specified password is incorrect.") == 0) {
-                            Toast.makeText(getApplicationContext(),
-                                    "The specified password is incorrect.",
-                                    Toast.LENGTH_SHORT).show();
-                            etPass.setText("");
-                            llLoin.startAnimation(sShakeAnimation);
-                        } else if ((firebaseError.getMessage().toString()
-                                .compareTo("Due to another authentication attempt," +
-                                        "this authentication attempt was aborted " +
-                                        "before it could complete.") == 0) ||
-                                (firebaseError.getMessage().toString()
-                                        .compareTo("There was an exception while connecting to " +
-                                                "the authentication server:" +
-                                                " No peer certificate")) == 0) {
-                            Toast.makeText(getApplicationContext(),
-                                    "You need check about network", Toast.LENGTH_SHORT).show();
-                            llLoin.startAnimation(sShakeAnimation);
-                        } else if (firebaseError.getMessage().toString()
-                                .compareTo("The active or pending " +
-                                        "auth credentials were superseded" +
-                                        " by another call to auth") == 0) {
-                            Toast.makeText(getApplicationContext(),
-                                    "Wait for some minutes. Your network is loading",
-                                    Toast.LENGTH_SHORT).show();
-                            llLoin.startAnimation(sShakeAnimation);
-                        } else if (firebaseError.getMessage().toString()
-                                .compareTo("The specified email address is invalid") == 0) {
-                            ALERT.setMessage(firebaseError.getMessage().toString() +
-                                    " You need create an account?");
-                            ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    myIntent =
-                                            new Intent(LoginActivity.this, RegisterActivity.class);
-                                    startActivity(myIntent);
-                                }
-                            });
-                            ALERT.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                }
-                            }).show();
-                            llLoin.startAnimation(sShakeAnimation);
-                        }
-                    }
-                });
     }
 
     @Override
@@ -253,8 +187,6 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-//                finish();
-//                System.exitView(0);
                 moveTaskToBack(true);
             }
         });
@@ -285,16 +217,4 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
             }
         });
     }
-
-    public void giveData() {
-        if (getIntent().getExtras() != null) {
-            contentMail = getIntent().getStringExtra("MailUser");
-            contentPass = getIntent().getStringExtra("Password");
-        } else {
-            contentMail = "";
-            contentPass = "";
-        }
-    }
-
-
 }
