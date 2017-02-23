@@ -132,12 +132,12 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:37:9-39:47
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:39:13-44
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:38:13-46
-activity#com.example.lehoanghan.choosemenu.Menu_Choose
+activity#com.example.lehoanghan.choosemenu.NavigationActivity
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:40:9-42:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:42:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:41:13-73
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:41:13-80
 activity#com.example.lehoanghan.addevent.AddEventActivity
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:43:9-45:47
 	android:theme

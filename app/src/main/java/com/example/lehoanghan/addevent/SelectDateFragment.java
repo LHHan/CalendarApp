@@ -40,7 +40,7 @@ public class SelectDateFragment extends DialogFragment
         String strDate = sdf.format(c.getTime());
         //TextView TxtSetDayTo=(TextView)getActivity().findViewById(link);
         tvSelectDate.setText(strDate);
-        /*Intent intent = new Intent(getActivity().getBaseContext(), AddNewEventActivity.class);
+        /*Intent intent = new Intent(getActivity().getBaseContext(), AddNewEventFragment.class);
         intent.putExtra("Date", Date);
         startActivity(intent);*/
     }

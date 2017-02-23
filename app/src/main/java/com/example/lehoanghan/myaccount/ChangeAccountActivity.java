@@ -23,7 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.choosemenu.Menu_Choose;
+import com.example.lehoanghan.choosemenu.NavigationActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -214,7 +214,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_back, menu);
-        setTitle("Change AccountActivity");
+        setTitle("Change AccountFragment");
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -222,7 +222,7 @@ public class ChangeAccountActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.backfromChangeAccount:
-                Intent intent = new Intent(this, Menu_Choose.class);
+                Intent intent = new Intent(this, NavigationActivity.class);
                 intent.putExtra("NameUser", nameUser);
                 intent.putExtra("MailUser", mailUser);
                 startActivity(intent);

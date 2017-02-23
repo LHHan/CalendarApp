@@ -2,7 +2,6 @@ package com.example.lehoanghan.appcalendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.InputType;
@@ -12,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -22,25 +20,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.lehoanghan.choosemenu.Menu_Choose;
-import com.firebase.client.AuthData;
+import com.example.lehoanghan.choosemenu.NavigationActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
-import com.mobsandgeeks.saripaar.annotation.Checked;
 import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
-import com.mobsandgeeks.saripaar.annotation.Order;
 import com.mobsandgeeks.saripaar.annotation.Password;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
@@ -60,7 +54,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @ViewById(R.id.activity_login_et_gmail)
     EditText etMail;
 
-    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC, message = "Password must be alpha and number")
+    @Password(min = 6, scheme = Password.Scheme.ANY)
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
 
@@ -206,7 +200,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
             public void onDataChange(DataSnapshot dataSnapshot) {
                 strName = dataSnapshot.getValue(String.class);
                 strName = strName.toUpperCase();
-                myIntent = new Intent(LoginActivity.this, Menu_Choose.class);
+                myIntent = new Intent(LoginActivity.this, NavigationActivity.class);
                 myIntent.putExtra("NameUser", strName);
                 myIntent.putExtra("MailUser", STRMAIL);
                 startActivity(myIntent);

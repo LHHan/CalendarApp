@@ -21,7 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.choosemenu.Menu_Choose;
+import com.example.lehoanghan.choosemenu.NavigationActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -204,7 +204,7 @@ public class AddEventActivity extends AppCompatActivity {
                 checkEntry();
                 break;
             case R.id.menu_add_event_back:
-                Intent intent = new Intent(AddEventActivity.this, Menu_Choose.class);
+                Intent intent = new Intent(AddEventActivity.this, NavigationActivity.class);
                 intent.putExtra("NameUserfromAddEvent", nameUser);
                 intent.putExtra("NameUser", nameUser);
                 intent.putExtra("MailUser", mailUser);

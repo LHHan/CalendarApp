@@ -38,7 +38,7 @@
             android:name=".RegisterActivity_"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.choosemenu.Menu_Choose"
+            android:name="com.example.lehoanghan.choosemenu.NavigationActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.addevent.AddEventActivity"

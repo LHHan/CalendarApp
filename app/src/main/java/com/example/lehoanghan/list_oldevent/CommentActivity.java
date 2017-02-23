@@ -148,7 +148,7 @@ public class CommentActivity extends AppCompatActivity
         return super.onCreateOptionsMenu(menu);
     }
     //@Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
+//    public boolean onOptionsItemSelected(NavigationClass item) {
 //        switch (item.getItemId()) {
 //            case R.id.backfromChangeAccount:
 //                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);

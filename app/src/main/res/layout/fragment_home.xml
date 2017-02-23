@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:fontFamily="sans-serif-medium"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_home_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fragment_home_iv_avatar"
+            android:layout_width="450px"
+            android:layout_height="450px" />
+
+        <TextView
+            android:id="@+id/fragment_home_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="80px"
+            android:text="@string/hello"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="150px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_home_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:mcv_selectionColor="#00F"
+        app:mcv_showOtherDates="all" />
+</LinearLayout>

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.choosemenu.Menu_Choose;
+import com.example.lehoanghan.choosemenu.NavigationActivity;
 
 /**
  * Created by lehoanghan on 6/15/2016.
@@ -36,7 +36,7 @@ public class AlarmDialog extends Activity {
                 dialog.cancel();
                 INTENTSERVICE.putExtra("Type", strType);
                 getBaseContext().startService(INTENTSERVICE);
-                Intent intent = new Intent(AlarmDialog.this, Menu_Choose.class);
+                Intent intent = new Intent(AlarmDialog.this, NavigationActivity.class);
                 intent.putExtra("NameUser", getIntent().getStringExtra("NameUser").toString());
                 Log.e("name", getIntent().getStringExtra("NameUser"));
                 intent.putExtra("MailUser", getIntent().getStringExtra("MailUser").toString());

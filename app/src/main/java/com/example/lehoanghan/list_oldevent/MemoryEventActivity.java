@@ -31,7 +31,7 @@ import android.widget.Toast;
 import com.example.lehoanghan.EventValue;
 import com.example.lehoanghan.ImageAdapter;
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.choosemenu.Menu_Choose;
+import com.example.lehoanghan.choosemenu.NavigationActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -219,7 +219,7 @@ public class MemoryEventActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.backfromChangeAccount:
-                Intent intent = new Intent(this, Menu_Choose.class);
+                Intent intent = new Intent(this, NavigationActivity.class);
                 intent.putExtra("NameUser", nameUser);
                 intent.putExtra("MailUser", mailUser);
                 startActivity(intent);

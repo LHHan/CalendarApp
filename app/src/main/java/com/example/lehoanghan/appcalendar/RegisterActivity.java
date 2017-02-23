@@ -67,7 +67,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
     EditText etMail;
 
     @NotEmpty
-    @Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC, message = "Password must be alpha and number")
+    @Password(min = 6, scheme = Password.Scheme.ANY)
     @ViewById(R.id.activity_register_et_password)
     EditText etPass;
 
@@ -222,7 +222,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
     }
 
 //    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
+//    public boolean onOptionsItemSelected(NavigationClass item) {
 //        switch (item.getItemId()) {
 //            case R.id.activity_:
 //                Intent intent = new Intent(this, LoginActivity.class);
