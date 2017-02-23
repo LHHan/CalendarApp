@@ -1765,9 +1765,30 @@
                     "startLine": 257,
                     "startColumn": 4,
                     "startOffset": 18600,
-                    "endLine": 258,
+                    "endLine": 262,
+                    "endColumn": 12,
+                    "endOffset": 18909
+                },
+                "from": {
+                    "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.nispok\\snackbar\\2.11.0\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 163,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 263,
+                    "startColumn": 4,
+                    "startOffset": 18914,
+                    "endLine": 264,
                     "endColumn": 8,
-                    "endOffset": 18725
+                    "endOffset": 19039
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\10.0.1\\res\\values-v21\\values.xml",

@@ -12,10 +12,30 @@ import android.widget.TextView;
 import com.example.lehoanghan.appcalendar.BuildConfig;
 import com.example.lehoanghan.appcalendar.R;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.FragmentById;
+import org.androidannotations.annotations.ViewById;
+import org.w3c.dom.Text;
+
 /**
  * Created by lehoanghan on 3/30/2016.
  */
+@EFragment(R.layout.fragment_about)
 public class AboutFragment extends Fragment {
+    @ViewById(R.id.fragment_about_tv_version_name_value)
+    TextView getTvVersionName;
+
+    @ViewById(R.id.fragment_about_tv_version_code_value)
+    TextView getTvVersionCode;
+
+    @ViewById(R.id.fragment_about_tv_build_type)
+    TextView getTvBuildType;
+
+    @ViewById(R.id.fragment_about_tv_flavor_value)
+    TextView getTvFlavor;
+
     private Activity activityRoot;
 
     private int versionCode = BuildConfig.VERSION_CODE;
@@ -26,34 +46,14 @@ public class AboutFragment extends Fragment {
 
     private String strFlavor = BuildConfig.FLAVOR;
 
-    private TextView tvVersionCode;
-
-    private TextView tvVersionName;
-
-    private TextView tvBuildType;
-
-    private TextView tvFlavor;
-
     public AboutFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        activityRoot = getActivity();
-        View contentView = inflater
-                .inflate(R.layout.fragment_about, container, false);
-        tvVersionName = (TextView) contentView.findViewById(
-                R.id.fragment_about_tv_version_name_value);
-        tvVersionCode = (TextView) contentView.findViewById(
-                R.id.fragment_about_tv_version_code_value);
-        tvBuildType = (TextView) contentView.findViewById(R.id.fragment_about_tv_build_type);
-        tvFlavor = (TextView) contentView.findViewById(R.id.fragment_about_tv_flavor_value);
-        tvVersionName.setText(versionName);
-        tvVersionCode.setText(versionCode + "");
-        tvBuildType.setText(buildType);
-        tvFlavor.setText(strFlavor);
-        return contentView;
+    @AfterViews
+    public void afterView() {
+        getTvVersionName.setText(versionName);
+        getTvVersionCode.setText(versionCode + "");
+        getTvBuildType.setText(buildType);
+        getTvFlavor.setText(strFlavor);
     }
 }

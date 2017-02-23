@@ -74,5 +74,7 @@ dependencies {
     apt "org.androidannotations:androidannotations:4.0.0"
     compile "org.androidannotations:androidannotations-api:4.0.0"
     compile 'com.mobsandgeeks:android-saripaar:2.0.2'
+
+    compile 'com.nispok:snackbar:2.11.+'
     testCompile 'junit:junit:4.12'
 }

@@ -21,6 +21,7 @@ import android.widget.SearchView;
 import com.example.lehoanghan.appcalendar.LoginActivity_;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.AboutFragment;
+import com.example.lehoanghan.optionmenu.AboutFragment_;
 import com.example.lehoanghan.optionmenu.AccountFragment;
 import com.example.lehoanghan.optionmenu.FindFriendFragment;
 import com.example.lehoanghan.optionmenu.FriendAcceptFragment;
@@ -299,7 +300,7 @@ public class NavigationActivity extends AppCompatActivity {
             case 10:
                 intFragment = fragmentAbout;
                 //  sMenuInflater.inflate(R.sMenu.menu_about,sMenu);
-                sFragment = new AboutFragment();
+                sFragment = new AboutFragment_();
                 break;
             case 11:
                 aExit();

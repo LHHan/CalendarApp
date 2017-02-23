@@ -7,9 +7,28 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 7,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.nispok\\snackbar\\2.11.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 45,
+                        "endOffset": 203
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 101,
+                    "endLine": 8,
                     "endColumn": 12,
-                    "endOffset": 469
+                    "endOffset": 515
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -25,12 +44,12 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 474,
-                    "endLine": 13,
+                    "startOffset": 520,
+                    "endLine": 14,
                     "endColumn": 12,
-                    "endOffset": 894
+                    "endOffset": 940
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -46,12 +65,12 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 899,
-                    "endLine": 19,
+                    "startOffset": 945,
+                    "endLine": 20,
                     "endColumn": 12,
-                    "endOffset": 1322
+                    "endOffset": 1368
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -67,12 +86,12 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1327,
-                    "endLine": 25,
+                    "startOffset": 1373,
+                    "endLine": 26,
                     "endColumn": 12,
-                    "endOffset": 1748
+                    "endOffset": 1794
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -88,12 +107,12 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1753,
-                    "endLine": 31,
+                    "startOffset": 1799,
+                    "endLine": 32,
                     "endColumn": 12,
-                    "endOffset": 2175
+                    "endOffset": 2221
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -109,12 +128,12 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 2180,
-                    "endLine": 37,
+                    "startOffset": 2226,
+                    "endLine": 38,
                     "endColumn": 12,
-                    "endOffset": 2600
+                    "endOffset": 2646
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -130,11 +149,11 @@
             },
             {
                 "to": {
-                    "startLine": 38,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2605,
+                    "startOffset": 2651,
                     "endColumn": 88,
-                    "endOffset": 2689
+                    "endOffset": 2735
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -149,11 +168,11 @@
             },
             {
                 "to": {
-                    "startLine": 39,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2694,
+                    "startOffset": 2740,
                     "endColumn": 100,
-                    "endOffset": 2790
+                    "endOffset": 2836
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -168,11 +187,11 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2795,
+                    "startOffset": 2841,
                     "endColumn": 102,
-                    "endOffset": 2893
+                    "endOffset": 2939
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -187,12 +206,12 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2898,
-                    "endLine": 45,
+                    "startOffset": 2944,
+                    "endLine": 46,
                     "endColumn": 12,
-                    "endOffset": 3301
+                    "endOffset": 3347
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -208,12 +227,12 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3306,
-                    "endLine": 50,
+                    "startOffset": 3352,
+                    "endLine": 51,
                     "endColumn": 12,
-                    "endOffset": 3721
+                    "endOffset": 3767
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -229,12 +248,12 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 3726,
-                    "endLine": 55,
+                    "startOffset": 3772,
+                    "endLine": 56,
                     "endColumn": 12,
-                    "endOffset": 4143
+                    "endOffset": 4189
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -250,12 +269,12 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 4148,
-                    "endLine": 57,
+                    "startOffset": 4194,
+                    "endLine": 58,
                     "endColumn": 12,
-                    "endOffset": 4250
+                    "endOffset": 4296
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -271,12 +290,12 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 4255,
-                    "endLine": 59,
+                    "startOffset": 4301,
+                    "endLine": 60,
                     "endColumn": 12,
-                    "endOffset": 4379
+                    "endOffset": 4425
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -292,11 +311,11 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 4384,
+                    "startOffset": 4430,
                     "endColumn": 70,
-                    "endOffset": 4450
+                    "endOffset": 4496
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -311,11 +330,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 4455,
+                    "startOffset": 4501,
                     "endColumn": 82,
-                    "endOffset": 4533
+                    "endOffset": 4579
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -330,12 +349,12 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 4538,
-                    "endLine": 110,
+                    "startOffset": 4584,
+                    "endLine": 111,
                     "endColumn": 12,
-                    "endOffset": 8148
+                    "endOffset": 8194
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -351,12 +370,12 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 8153,
-                    "endLine": 160,
+                    "startOffset": 8199,
+                    "endLine": 161,
                     "endColumn": 12,
-                    "endOffset": 11903
+                    "endOffset": 11949
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -372,11 +391,11 @@
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 11908,
+                    "startOffset": 11954,
                     "endColumn": 90,
-                    "endOffset": 11994
+                    "endOffset": 12040
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v11\\values-v11.xml",
@@ -391,12 +410,12 @@
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 11999,
-                    "endLine": 163,
+                    "startOffset": 12045,
+                    "endLine": 164,
                     "endColumn": 8,
-                    "endOffset": 12120
+                    "endOffset": 12166
                 },
                 "from": {
                     "file": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-appinvite\\10.0.1\\res\\values-v11\\values.xml",
