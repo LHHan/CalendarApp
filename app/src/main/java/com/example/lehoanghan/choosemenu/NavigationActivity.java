@@ -23,6 +23,7 @@ import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.AboutFragment;
 import com.example.lehoanghan.optionmenu.AboutFragment_;
 import com.example.lehoanghan.optionmenu.AccountFragment;
+import com.example.lehoanghan.optionmenu.AccountFragment_;
 import com.example.lehoanghan.optionmenu.FindFriendFragment;
 import com.example.lehoanghan.optionmenu.FriendAcceptFragment;
 import com.example.lehoanghan.optionmenu.HomeFragment;
@@ -252,7 +253,7 @@ public class NavigationActivity extends AppCompatActivity {
                 intFragment = fragmentAccount;
                 passDatatoFindAcceptFriend();
                 // sMenuInflater.inflate(R.sMenu.menu_account,sMenu);
-                sFragment = new AccountFragment();
+                sFragment = new AccountFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 3:

@@ -13,7 +13,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/lightblue">
+            android:background="@color/white_greyish">
 
             <TextView
                 android:id="@+id/cardview_recycler_old_event_tv_time_event_value"
@@ -57,14 +57,5 @@
             </TableLayout>
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/item_press">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="2dp" />
-        </TableRow>
     </TableLayout>
 </RelativeLayout>

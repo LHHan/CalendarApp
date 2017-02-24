@@ -131,6 +131,7 @@
     <color name="colorCyan">#00bcd4</color>
     <color name="colorPrimary">#1d2bf2</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorbackground_alpha_30">#3326a69a</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -213,8 +214,6 @@
     <color name="wallet_bright_foreground_holo_light">#ff000000</color>
     <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
     <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
-    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
-    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
     <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
     <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
     <color name="wallet_hint_foreground_holo_dark">#808080</color>
@@ -402,6 +401,8 @@
 <enum name="rfc822" value="2"/>
 
 <enum name="url" value="3"/>
+
+<enum name="date" value="4"/>
 
 </attr><attr format="boolean" name="noIndex"/><attr format="integer" name="sectionWeight"/><attr format="boolean" name="indexPrefixes"/><attr format="string" name="subsectionSeparator"/><attr format="string" name="schemaOrgProperty"/></declare-styleable>
     <declare-styleable name="SectionFeature"><attr name="featureType">
@@ -765,7 +766,7 @@
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="cast_libraries_material_featurehighlight_pulse_base_alpha">138</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
-    <integer name="google_play_services_version">10084000</integer>
+    <integer name="google_play_services_version">10298000</integer>
     <integer name="mr_controller_volume_group_list_animation_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_in_duration_ms">400</integer>
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
@@ -890,6 +891,7 @@
         AIzaSyAOUrr_mNjbfnrZ5Y4wdE-hc6-9E403MVE
     </string>
     <string name="hello">Hello</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hide_password">Hide Password</string>
     <string name="login">LOGIN</string>
     <string name="login_here">Already have Account? Login here</string>

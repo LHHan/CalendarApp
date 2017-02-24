@@ -29,6 +29,8 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.EFragment;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -39,6 +41,7 @@ import java.io.OutputStream;
 /**
  * Created by lehoanghan on 5/15/2016.
  */
+
 public class ChangeAccountActivity extends AppCompatActivity {
 
     private ImageView ivAvatar;
@@ -78,13 +81,6 @@ public class ChangeAccountActivity extends AppCompatActivity {
         giveDataUser();
         aInit();
         setImage();
-        btnChangeAvatar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectImage();
-            }
-        });
-
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +100,6 @@ public class ChangeAccountActivity extends AppCompatActivity {
     }
 
     public void aInit() {
-        ivAvatar = (ImageView) findViewById(R.id.activity_change_account_iv_avatar);
         etName = (EditText) findViewById(R.id.activity_change_account_et_name);
         etName.setText(nameUser);
         tvMail = (TextView) findViewById(R.id.activity_change_account_tv_mail_value);
@@ -112,7 +107,6 @@ public class ChangeAccountActivity extends AppCompatActivity {
         etPassChange = (EditText) findViewById(R.id.activity_change_account_et_password);
         etComPassChange = (EditText) findViewById(R.id.activity_change_account_et_confirm_password);
         etOldPass = (EditText) findViewById(R.id.activity_change_account_et_old_password);
-        btnChangeAvatar = (Button) findViewById(R.id.activity_change_account_btn_change_avatar);
         btnSave = (Button) findViewById(R.id.activity_change_account_btn_save);
         btnClear = (Button) findViewById(R.id.activity_change_account_btn_clear);
     }

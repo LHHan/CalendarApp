@@ -3,12 +3,9 @@ package com.example.lehoanghan.optionmenu;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -149,9 +146,9 @@ public class HomeFragment extends Fragment {
         aFirebase.child("Avata").child(sMailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
-                Bitmap bmp = BitmapFactory.decodeByteArray(img, 0, img.length);
-                imgAvatarHome.setImageBitmap(bmp);
+//                byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
+//                Bitmap bmp = BitmapFactory.decodeByteArray(img, 0, img.length);
+                imgAvatarHome.setImageResource(R.drawable.avt_default);
             }
 
             @Override
