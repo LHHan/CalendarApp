@@ -57,11 +57,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements Validat
     }
 
     @AfterViews
-    public void afterView() {
-        initView();
-    }
-
-    private void initView() {
+    void afterView() {
         Firebase.setAndroidContext(this);
         firebase = new Firebase("https://appcalendar.firebaseio.com/");
         sShakeAnimation =

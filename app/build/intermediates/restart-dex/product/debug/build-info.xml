@@ -5,29 +5,29 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="15763362985492"
+    timestamp="33106983837547"
     token="808597837908058687"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1285" />
+        duration="3243" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="671" />
+        duration="724" />
     <task
         name="verifier"
-        duration="39" />
+        duration="921" />
 
     <artifact
         location="D:\Project_hh\CalendarApp\app\build\outputs\apk\app-product-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="15763362985492"
+        timestamp="33106983837547"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Project_hh\CalendarApp\app\build\outputs\apk\app-product-debug.apk"

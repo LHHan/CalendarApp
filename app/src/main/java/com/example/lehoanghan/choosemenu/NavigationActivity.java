@@ -21,7 +21,9 @@ import android.widget.SearchView;
 import com.example.lehoanghan.appcalendar.LoginActivity_;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.optionmenu.AboutFragment;
+import com.example.lehoanghan.optionmenu.AboutFragment;
 import com.example.lehoanghan.optionmenu.AboutFragment_;
+import com.example.lehoanghan.optionmenu.AccountFragment;
 import com.example.lehoanghan.optionmenu.AccountFragment;
 import com.example.lehoanghan.optionmenu.AccountFragment_;
 import com.example.lehoanghan.optionmenu.FindFriendFragment;
@@ -407,8 +409,8 @@ public class NavigationActivity extends AppCompatActivity {
         String nameUser = "", mailUser = "";
         String nameUserfromAddEvent = getIntent().getStringExtra("NameUserfromAddEvent");
         if (bundle != null) {
-            nameUser = bundle.getString("NameUser").toLowerCase();
-            mailUser = bundle.getString("MailUser").toLowerCase();
+//            nameUser = bundle.getString("NameUser").toLowerCase();
+//            mailUser = bundle.getString("MailUser").toLowerCase();
         }
         bundlesetNameforHome = new Bundle();
         bundlesetNameforHome.putString("MailforHome", mailUser);

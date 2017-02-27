@@ -87,8 +87,6 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <bool name="sb__is_phone">true</bool>
-    <bool name="sb__is_swipeable">false</bool>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -196,10 +194,6 @@
     <color name="primary_text_disabled_material_light">#39000000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
-    <color name="sb__action_bg_color">#1affffff</color>
-    <color name="sb__action_text_color">#ffffffff</color>
-    <color name="sb__background">#ff323232</color>
-    <color name="sb__text_color">#ffffffff</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8aac5555</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
@@ -724,15 +718,6 @@
     <dimen name="place_autocomplete_progress_horizontal_margin">16dp</dimen>
     <dimen name="place_autocomplete_progress_size">24dp</dimen>
     <dimen name="place_autocomplete_separator_start">72dp</dimen>
-    <dimen name="sb__bg_corner_radius">0dp</dimen>
-    <dimen name="sb__max_width">568dp</dimen>
-    <dimen name="sb__min_width">288dp</dimen>
-    <dimen name="sb__offset">0dp</dimen>
-    <dimen name="sb__text_padding_bottom">14dp</dimen>
-    <dimen name="sb__text_padding_left">24dp</dimen>
-    <dimen name="sb__text_padding_right">24dp</dimen>
-    <dimen name="sb__text_padding_top">14dp</dimen>
-    <dimen name="sb__text_size">14sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -851,7 +836,7 @@
     <string name="cast_tracks_chooser_dialog_subtitles">Subtitles</string>
     <string name="cast_unmute">Unmute</string>
     <string name="change_avatar">Change Avatar</string>
-    <string name="change_info">Chang Info</string>
+    <string name="change_info">Change Info</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="check_register">By clicking here, you agree all the Terms and Coditions</string>
     <string name="clear">Clear</string>
@@ -913,6 +898,7 @@
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
     <string name="nameapp">Name Project</string>
+    <string name="new_password">New Password</string>
     <string name="old_password">Old Password</string>
     <string name="password">Password</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
@@ -2178,20 +2164,6 @@
     <style name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
-    </style>
-    <style name="Snackbar"/>
-    <style name="Snackbar.Text">
-        <item name="android:paddingBottom">@dimen/sb__text_padding_bottom</item>
-        <item name="android:paddingLeft">@dimen/sb__text_padding_left</item>
-        <item name="android:paddingTop">@dimen/sb__text_padding_top</item>
-        <item name="android:paddingRight">@dimen/sb__text_padding_right</item>
-        <item name="android:textSize">@dimen/sb__text_size</item>
-        <item name="android:textColor">@color/sb__text_color</item>
-    </style>
-    <style name="Snackbar.Text.Action">
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">@color/sb__action_text_color</item>
-        <item name="android:background">@drawable/sb__btn_bg</item>
     </style>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>

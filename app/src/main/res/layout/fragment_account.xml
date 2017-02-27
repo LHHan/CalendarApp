@@ -20,15 +20,41 @@
                 android:layout_height="250dp"
                 android:background="#3326a69a" />
 
-            <ImageView
-                android:id="@+id/fragment_account_iv_avatar"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="150dp"
-                android:background="#5926a69a"
-                android:gravity="center" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/fragment_account_iv_avatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:background="#5926a69a"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_account_ll_change_avt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/fragment_account_iv_avatar"
+                    android:layout_marginBottom="7dp">
+
+                    <ImageView
+                        android:id="@+id/fragment_account_iv_change_avt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="17dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_camera_grey600_24dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
@@ -108,14 +134,23 @@
             <TableRow
                 android:id="@+id/fragment_account_tr_action"
                 android:layout_marginLeft="20px"
-                android:layout_marginTop="20px">
+                android:layout_marginTop="20px"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/fragment_account_btn_change"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/btn_other"
                     android:fontFamily="sans-serif-medium"
-                    android:text="@string/change_info" />
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/change_info"
+                    android:textColor="@color/colorCyan"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
             </TableRow>
 
         </TableLayout>

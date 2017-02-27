@@ -22,12 +22,12 @@ public final class R {
 		public static final int mcv_weekDayTextAppearance = 0x7f01014a;
 	}
 	public static final class color {
-		public static final int mcv_text_date_dark = 0x7f0e009a;
-		public static final int mcv_text_date_light = 0x7f0e009b;
+		public static final int mcv_text_date_dark = 0x7f0e0096;
+		public static final int mcv_text_date_light = 0x7f0e0097;
 	}
 	public static final class drawable {
-		public static final int mcv_action_next = 0x7f020858;
-		public static final int mcv_action_previous = 0x7f020859;
+		public static final int mcv_action_next = 0x7f020866;
+		public static final int mcv_action_previous = 0x7f020867;
 	}
 	public static final class id {
 		public static final int all = 0x7f0f0059;
@@ -46,9 +46,9 @@ public final class R {
 		public static final int wednesday = 0x7f0f0064;
 	}
 	public static final class style {
-		public static final int TextAppearance_MaterialCalendarWidget_Date = 0x7f0a010c;
-		public static final int TextAppearance_MaterialCalendarWidget_Header = 0x7f0a010d;
-		public static final int TextAppearance_MaterialCalendarWidget_WeekDay = 0x7f0a010e;
+		public static final int TextAppearance_MaterialCalendarWidget_Date = 0x7f0a0109;
+		public static final int TextAppearance_MaterialCalendarWidget_Header = 0x7f0a010a;
+		public static final int TextAppearance_MaterialCalendarWidget_WeekDay = 0x7f0a010b;
 	}
 	public static final class styleable {
 		public static final int[] MaterialCalendarView = { 0x7f010149, 0x7f01014a, 0x7f01014b, 0x7f01014c, 0x7f01014d, 0x7f01014e, 0x7f01014f, 0x7f010150, 0x7f010151, 0x7f010152, 0x7f010153, 0x7f010154 };
