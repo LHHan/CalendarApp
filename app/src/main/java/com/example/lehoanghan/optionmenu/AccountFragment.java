@@ -100,7 +100,7 @@ public class AccountFragment extends Fragment {
         aFirebase.child("Avata").child(getMail).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                getIvAvatar.setImageResource(R.drawable.avt_default);
+//                getIvAvatar.setImageResource(R.drawable.avt_default);
 //              byte[] getImage = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
 //                Bitmap bmp = BitmapFactory.decodeByteArray(getImage, 0, getImage.length);
 //                getIvAvatar.setImageBitmap(bmp);

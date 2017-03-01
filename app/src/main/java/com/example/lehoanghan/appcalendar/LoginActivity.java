@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lehoanghan.choosemenu.NavigationActivity;
+import com.firebase.client.AuthData;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
@@ -148,8 +149,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
 
     @Override
     public void onValidationSucceeded() {
-        Toast.makeText(this, "Yay! we got it right!", Toast.LENGTH_SHORT).show();
-        getNameUser();
+        checkFirebase();
     }
 
     @Override
@@ -166,6 +166,50 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
                 llLoin.startAnimation(sShakeAnimation);
             }
         }
+    }
+
+    public void checkFirebase() {
+        aFirebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(),
+                new Firebase.AuthResultHandler() {
+                    @Override
+                    public void onAuthenticated(AuthData authData) {
+                        Toast.makeText(getApplicationContext(),
+                                "Welcom to Calendar Application",
+                                Toast.LENGTH_SHORT).show();
+                        getNameUser();
+                    }
+
+                    @Override
+                    public void onAuthenticationError(FirebaseError firebaseError) {
+                        final AlertDialog.Builder ALERT =
+                                new AlertDialog.Builder(LoginActivity.this);
+                        ALERT.setIcon(R.drawable.ic_warning);
+
+                        if (firebaseError.getMessage().toString()
+                                .compareTo("The specified password is incorrect.") == 0) {
+                            Toast.makeText(getApplicationContext(),
+                                    firebaseError.getMessage().toString(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else if (firebaseError.getMessage().toString()
+                                .compareTo("The specified user does not exist.") == 0) {
+                            ALERT.setMessage(firebaseError.getMessage().toString() +
+                                    " Do you want create a new account");
+                            ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    myIntent =
+                                            new Intent(LoginActivity.this, RegisterActivity.class);
+                                    startActivity(myIntent);
+                                }
+                            });
+                            ALERT.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            }).show();
+                        }
+                    }
+                });
     }
 
     @Override
@@ -192,6 +236,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         });
         builder.create().show();
     }
+
 
     public void getNameUser() {
         final String STRMAIL = etMail.getText().toString().replace(".", "&");

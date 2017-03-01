@@ -1,14 +1,9 @@
 package com.example.lehoanghan.optionmenu;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.lehoanghan.EventValue;
 import com.example.lehoanghan.appcalendar.R;
@@ -18,6 +13,10 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -25,16 +24,14 @@ import java.util.HashMap;
 /**
  * Created by lehoanghan on 3/30/2016.
  */
+@EFragment(R.layout.fragment_new_event)
 public class NewEventFragment extends Fragment {
     public static final int TITLE = 0;
 
     public static final int DATA = 1;
 
-    private Activity activityRoot;
-
-    private View contentView;
-
-    private RecyclerView recyclerView;
+    @ViewById(R.id.fragment_new_event_rcv_list_new_event)
+    RecyclerView recyclerView;
 
     private EventRecyclerAdapter eventRecyclerAdapter;
 
@@ -57,36 +54,27 @@ public class NewEventFragment extends Fragment {
     public NewEventFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.fragment_new_event, container, false);
+    @AfterViews
+    void afterView() {
         passDataFromChoose();
-        Firebase.setAndroidContext(activityRoot);
+        Firebase.setAndroidContext(getActivity());
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
-        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
+        initView();
+        getNewEventFormFirebase();
+    }
+
+    public void initView() {
+        listNewEvent1 = new ArrayList<EventValue>();
+        dataType1 = new ArrayList<Integer>();
+        listDateFrom = new ArrayList<String>();
+        linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         //eventRecyclerAdapter = new CustomAdapter(mDataset, mDataSetTypes);
         // recyclerView.setAdapter(eventRecyclerAdapter);
-        getNewEventFormFirebase();
-
-        return contentView;
-    }
-
-    public void aInit() {
-        listNewEvent1 = new ArrayList<EventValue>();
-        dataType1 = new ArrayList<Integer>();
-        listDateFrom = new ArrayList<String>();
-        recyclerView = (RecyclerView) contentView.findViewById(
-                R.id.fragment_new_event_rcv_list_new_event);
     }
 
     public void getNewEventFormFirebase() {
-
         final ArrayList<EventValue> TEMREFUSE = new ArrayList<EventValue>();
         final ArrayList<EventValue> TEMAGREE = new ArrayList<EventValue>();
         final ArrayList<EventValue> LISTNEWEVENT = new ArrayList<EventValue>();
@@ -259,21 +247,17 @@ public class NewEventFragment extends Fragment {
                                 }
                             }
                         }
-
                         eventRecyclerAdapter =
                                 new EventRecyclerAdapter(
                                         listNewEvent1, dataType1, mailUser, nameUser, 1);
                         eventRecyclerAdapter.notifyDataSetChanged();
                         recyclerView.setAdapter(eventRecyclerAdapter);
-
                     }
 
                     @Override
                     public void onCancelled(FirebaseError firebaseError) {
-
                     }
                 });
-
     }
 
     public void passDataFromChoose() {

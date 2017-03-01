@@ -18,15 +18,20 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by lehoanghan on 3/30/2016.
  */
+@EFragment(R.layout.fragment_my_friend)
 public class MyFriendFragment extends Fragment {
-
-    private Activity activityRoot;
+    @ViewById(R.id.fragment_my_friend_rcv_list_my_friend)
+    RecyclerView rcvListMyFriend;
 
     private View contentView;
 
@@ -37,8 +42,6 @@ public class MyFriendFragment extends Fragment {
     private List<String> listMail;
 
     private List<String> listName;
-
-    private RecyclerView rcvListMyFriend;
 
     private UserMyFriendRecyclerAdapter userMyFriendRecyclerAdapter;
 
@@ -53,22 +56,17 @@ public class MyFriendFragment extends Fragment {
     public MyFriendFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.fragment_my_friend, container, false);
+    @AfterViews
+    void afterView() {
         giveUserfromChoose();
-        Firebase.setAndroidContext(contentView.getContext());
+        Firebase.setAndroidContext(getActivity());
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         aInit();
         rcvListMyFriend.setHasFixedSize(true);
-        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
+        linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         rcvListMyFriend.setLayoutManager(linearLayoutManager);
         getDatafromFirebase();
-        return contentView;
     }
 
     public void getDatafromFirebase() {
@@ -99,8 +97,6 @@ public class MyFriendFragment extends Fragment {
         listMyFriend = new ArrayList<UserFriend>();
         listMail = new ArrayList<String>();
         listName = new ArrayList<String>();
-        rcvListMyFriend = (RecyclerView) contentView.findViewById(
-                R.id.fragment_my_friend_rcv_list_my_friend);
     }
 
     public void giveUserfromChoose() {

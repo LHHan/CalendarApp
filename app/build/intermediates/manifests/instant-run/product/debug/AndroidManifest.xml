@@ -59,12 +59,13 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.choosemenu.NavigationActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.example.lehoanghan.addevent.AddEventActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.myaccount.ChangeAccountActivity"
+            android:name="com.example.lehoanghan.myaccount.ChangeAccountActivity_"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.list_oldevent.MemoryEventActivity"

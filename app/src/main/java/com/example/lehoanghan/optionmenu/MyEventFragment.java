@@ -18,6 +18,10 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -31,16 +35,17 @@ import java.util.Map;
 /**
  * Created by lehoanghan on 5/13/2016.
  */
+@EFragment(R.layout.fragment_my_event)
 public class MyEventFragment extends Fragment {
     public static final int TITLE = 0;
 
     public static final int DATA = 1;
 
-    private Activity activityRoot;
+    @ViewById(R.id.fragment_my_envent_rcv_list_my_event)
+    RecyclerView recyclerView;
+
 
     private View contentView;
-
-    private RecyclerView recyclerView;
 
     private EventRecyclerAdapter eventRecycleAdapter;
 
@@ -63,14 +68,10 @@ public class MyEventFragment extends Fragment {
     public MyEventFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.fragment_my_event, container, false);
+    @AfterViews
+    void afterView() {
         passDataFromChoose();
-        Firebase.setAndroidContext(activityRoot);
+        Firebase.setAndroidContext(getActivity());
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         aInit();
         linearLayoutManager = new LinearLayoutManager(contentView.getContext());
@@ -78,15 +79,12 @@ public class MyEventFragment extends Fragment {
         recyclerView.setLayoutManager(linearLayoutManager);
         getNewEventFormFirebase();
 
-        return contentView;
     }
 
     public void aInit() {
         listNewEvent1 = new ArrayList<EventValue>();
         dataType1 = new ArrayList<Integer>();
         listDateFrom = new ArrayList<String>();
-        recyclerView =
-                (RecyclerView) contentView.findViewById(R.id.fragment_my_envent_rcv_list_my_event);
     }
 
     public void getNewEventFormFirebase() {

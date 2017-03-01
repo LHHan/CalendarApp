@@ -1,6 +1,5 @@
 package com.example.lehoanghan.optionmenu;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,27 +17,29 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by lehoanghan on 3/30/2016.
  */
+@EFragment(R.layout.fragment_friend_accept)
 public class FriendAcceptFragment extends Fragment {
 
     private static String sGetName;
 
     private static String sGetMail;
 
-    private Activity activityRoot;
-
-    private View contentView;
+    @ViewById(R.id.fragment_friend_accept_rcv_listUserFriendAccept)
+    RecyclerView rcvListFriendAccept;
 
     private Bundle bundleGiveMailfromMenu;
 
-    private Firebase aFirebase;
-
-    private RecyclerView rcvListFriendAccept;
+    private Firebase gFirebase;
 
     private List<String> listMail;
 
@@ -57,28 +58,20 @@ public class FriendAcceptFragment extends Fragment {
     public FriendAcceptFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        giveUserfromChoose();
-        activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.fragment_friend_accept, container, false);
-        Firebase.setAndroidContext(activityRoot);
-        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
+    @AfterViews
+    void afterView() {
+        //using Google firebase
+        Firebase.setAndroidContext(getActivity());
+        gFirebase = new Firebase("https://appcalendar.firebaseio.com/");
 
-        rcvListFriendAccept.setHasFixedSize(true);
-        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        rcvListFriendAccept.setLayoutManager(linearLayoutManager);
+        giveUserfromChoose();
+        initView();
         //getDatafromFireBase();
         resetData();
-        return contentView;
     }
 
     public void resetData() {
-        aFirebase.child("My_friend").child(sGetMail)
+        gFirebase.child("My_friend").child(sGetMail)
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -93,7 +86,7 @@ public class FriendAcceptFragment extends Fragment {
                     public void onCancelled(FirebaseError firebaseError) {
                     }
                 });
-        aFirebase.child("Add_friend").child(sGetMail)
+        gFirebase.child("Add_friend").child(sGetMail)
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -128,14 +121,16 @@ public class FriendAcceptFragment extends Fragment {
                 });
     }
 
-    public void aInit() {
-        rcvListFriendAccept = (RecyclerView) contentView.findViewById(
-                R.id.fragment_friend_accept_rcv_listUserFriendAccept);
+    public void initView() {
         listUserAccept = new ArrayList<UserFriend>();
         listName = new ArrayList<String>();
         listMail = new ArrayList<String>();
         listNamePre = new ArrayList<String>();
         listMailPre = new ArrayList<String>();
+        rcvListFriendAccept.setHasFixedSize(true);
+        linearLayoutManager = new LinearLayoutManager(getActivity());
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        rcvListFriendAccept.setLayoutManager(linearLayoutManager);
     }
 
     public void giveUserfromChoose() {

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fragment_account_iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#3326a69a" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/fragment_account_iv_avatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:background="#5926a69a"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/fragment_account_ll_change_avt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/fragment_account_iv_avatar"
+                    android:layout_marginBottom="7dp">
+
+                    <ImageView
+                        android:id="@+id/fragment_account_iv_change_avt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="17dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_camera_grey600_24dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableRow
+                android:id="@+id/fragment_account_tr_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:background="#3326a69a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_span="1"
+                    android:drawableLeft="@drawable/ic_account_grey600_24dp"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/username"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/fragment_account_tv_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/button_selectorcolor"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/fragment_account_tr_mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:background="#3326a69a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_span="1"
+                    android:drawableLeft="@drawable/ic_email_outline_grey600_24dp"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/email_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/fragment_account_tv_mail_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/button_selectorcolor"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/fragment_account_tr_action"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/fragment_account_btn_change"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/btn_other"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/change_info"
+                    android:textColor="@color/colorCyan"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

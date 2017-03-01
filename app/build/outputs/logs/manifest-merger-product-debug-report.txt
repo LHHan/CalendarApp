@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:2:1-85:12
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:2:1-86:12
 	package
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml
@@ -48,7 +48,7 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:19:5-79
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:19:22-76
 application
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:21:5-83:19
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:21:5-84:19
 MERGED from [com.android.support:design:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:cardview-v7:23.4.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.prolificinteractive:material-calendarview:1.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\AndroidManifest.xml:12:5-20
@@ -97,7 +97,6 @@ MERGED from [com.google.android.gms:play-services-wearable:10.2.0] D:\Project_hh
 MERGED from [com.google.android.gms:play-services-base:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\AndroidManifest.xml:19:5-21:19
-MERGED from [com.nispok:snackbar:2.11.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.nispok\snackbar\2.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.android.support:support-v4:24.0.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:24:9-25
@@ -134,77 +133,80 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:37:9-39:47
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:38:13-46
 activity#com.example.lehoanghan.choosemenu.NavigationActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:40:9-42:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:40:9-43:43
+	android:windowSoftInputMode
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:42:13-67
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:42:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:43:9-40
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:41:13-80
 activity#com.example.lehoanghan.addevent.AddEventActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:43:9-45:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:44:9-46:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:45:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:46:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:44:13-76
-activity#com.example.lehoanghan.myaccount.ChangeAccountActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:46:9-48:47
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:45:13-76
+activity#com.example.lehoanghan.myaccount.ChangeAccountActivity_
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:47:9-49:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:48:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:49:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:47:13-82
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:48:13-83
 activity#com.example.lehoanghan.list_oldevent.MemoryEventActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:49:9-51:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:50:9-52:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:52:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:50:13-84
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:13-84
 activity#com.example.lehoanghan.list_oldevent.CommentActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:52:9-54:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:53:9-55:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:54:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:55:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:53:13-80
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:54:13-80
 activity#com.example.lehoanghan.list_oldevent.PictureActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:55:9-57:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:56:9-58:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:57:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:58:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:56:13-80
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:57:13-80
 activity#com.example.lehoanghan.list_newevent.AlarmDialog
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:58:9-60:47
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:59:9-61:47
 	android:theme
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:60:13-44
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:59:13-76
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:60:13-76
 receiver#com.example.lehoanghan.list_newevent.AlarmNotificationReceiver
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:62:9-99
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:63:9-99
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:62:19-96
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:63:19-96
 service#com.example.lehoanghan.list_newevent.RingtonePlayingService
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:64:9-66:38
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:65:9-67:38
 	android:enabled
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:66:13-35
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:67:13-35
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:65:13-87
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:66:13-87
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:75:9-77:55
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:76:9-78:55
 	android:value
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:77:13-52
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:78:13-52
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:76:13-58
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:77:13-58
 activity#com.example.lehoanghan.appcalendar.MapsActivity
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:79:9-81:59
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:80:9-82:59
 	android:label
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:81:13-56
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:82:13-56
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:80:13-41
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:81:13-41
 activity#com.example.lehoanghan.appcalendar.ForgotPasswordActivity_
-ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:82:9-70
+ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:83:9-70
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:82:19-58
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:83:19-58
 uses-sdk
 INJECTED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\AndroidManifest.xml:20:5-43
 MERGED from [com.firebaseui:firebase-ui:0.3.1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:cardview-v7:23.4.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.prolificinteractive:material-calendarview:1.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\AndroidManifest.xml:8:5-10:41
 MERGED from [com.rockerhieu.emojicon:library:1.3.3] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.rockerhieu.emojicon\library\1.3.3\AndroidManifest.xml:6:5-8:41
@@ -262,8 +264,6 @@ MERGED from [com.google.android.gms:play-services-wearable:10.2.0] D:\Project_hh
 MERGED from [com.google.android.gms:play-services-base:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:10.2.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\AndroidManifest.xml:17:5-43
-MERGED from [com.nispok:snackbar:2.11.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.nispok\snackbar\2.11.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:recyclerview-v7:24.0.0-alpha1] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:24.0.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.0.0] D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:23:9-75

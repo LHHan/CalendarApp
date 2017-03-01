@@ -14,6 +14,8 @@
     <color name="secondary_text_default_material_light">#8aac5555</color>
     <color name="dateSelection">#fd74a3</color>
 
+    <color name="test">#B32A6398</color>
+
     <color name="colorCyan">#00bcd4</color>
     <color name="colorBackground">#26a69a</color>
     <color name="colorbackground_alpha_30">#3326a69a</color>

@@ -3,9 +3,12 @@ package com.example.lehoanghan.optionmenu;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -25,30 +28,41 @@ import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Background;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by lehoanghan on 3/16/2016.
  */
+@EFragment(R.layout.fragment_home)
 public class HomeFragment extends Fragment {
 
     private static String sMailUser;
 
     private static String sNameUser;
 
-    private Activity activityRoot;
+//    @ViewById(R.id.fragment_home_tv_name)
+//    TextView tvNameUser;
+//
+//    @ViewById(R.id.fragment_home_iv_avatar)
+//    ImageView ivAvatarHome;
+
+    @ViewById(R.id.fragment_home_calendar)
+    MaterialCalendarView mcvCalendar;
+
+    @ViewById(R.id.fragment_home_iv_main)
+    ImageView ivCover;
 
     private Fragment aFragment = null;
-
-    private TextView tvNameUser;
-
-    private ImageView imgAvatarHome;
 
     private Bundle bundleSetDate;
 
     private Intent intentSetDate;
-
-    private MaterialCalendarView mcvCalendar;
 
     private View contentView;
 
@@ -56,7 +70,7 @@ public class HomeFragment extends Fragment {
 
     private StringBuilder toDay;
 
-    private Firebase aFirebase;
+    private Firebase gFirebase;
 
     private MenuInflater menuInflater;
 
@@ -65,31 +79,32 @@ public class HomeFragment extends Fragment {
     public HomeFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    @AfterViews
+    void afterView() {
+        //using google firebase
+        Firebase.setAndroidContext(getActivity());
+        gFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        initView();
+        setImage();
+        setImageCover();
+        setCalendar();
+    }
+
+    void initView() {
         Bundle bundle = this.getArguments();
         sNameUser = bundle.getString("NameforHome");
         sMailUser = bundle.getString("MailforHome");
-        contentView = inflater.inflate(R.layout.fragment_home, container, false);
-        activityRoot = getActivity();
-        Firebase.setAndroidContext(activityRoot);
-        aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         setHasOptionsMenu(true);
-        tvNameUser = (TextView) contentView.findViewById(R.id.fragment_home_tv_name);
-        imgAvatarHome = (ImageView) contentView.findViewById(R.id.fragment_home_iv_avatar);
-        tvNameUser.setText(tvNameUser.getText().toString() + " " + sNameUser);
-        tvNameUser.setTextColor(Color.parseColor("#FFFF50A4"));
-        setImage();
+//
+//        tvNameUser.setText(tvNameUser.getText().toString() + " " + sNameUser);
+//        tvNameUser.setTextColor(Color.parseColor("#FFFF50A4"));
+    }
 
-        mcvCalendar = (MaterialCalendarView) contentView.findViewById(R.id.fragment_home_calendar);
+    void setCalendar() {
         mcvCalendar.setSelectedDate(Calendar.getInstance());
-
         Calendar cal = Calendar.getInstance();
         toDay = txtDate = parseDate(Calendar.getInstance().getTime().getDate(),
                 mcvCalendar.getCurrentDate().getMonth(), mcvCalendar.getCurrentDate().getYear());
-
         mcvCalendar.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(MaterialCalendarView widget, CalendarDay date,
@@ -102,7 +117,19 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
-        return contentView;
+    }
+
+    void setImageCover() {
+        int month = mcvCalendar.getCurrentDate().getMonth();
+        if (month == 11 | month == 12 | month == 1) {
+            ivCover.setImageResource(R.drawable.bg_mountain_range_winter);
+        } else if (month == 2 | month == 3 | month == 4) {
+            ivCover.setImageResource(R.drawable.bg_countryside_dirt_road);
+        } else if (month == 5 | month == 6 | month == 7) {
+            ivCover.setImageResource(R.drawable.bg_misty_forest);
+        } else if (month == 8 | month == 9 | month == 10) {
+            ivCover.setImageResource(R.drawable.bg_autumn_forest_mountain);
+        }
     }
 
     public StringBuilder parseDate(int day, int month, int year) {
@@ -125,9 +152,10 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
+        getActivity().setTitle("Add Event");
         this.aMenu = menu;
         this.menuInflater = inflater;
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
@@ -143,12 +171,13 @@ public class HomeFragment extends Fragment {
     }
 
     public void setImage() {
-        aFirebase.child("Avata").child(sMailUser).addValueEventListener(new ValueEventListener() {
+        gFirebase.child("Avata").child(sMailUser).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 //                byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
 //                Bitmap bmp = BitmapFactory.decodeByteArray(img, 0, img.length);
-                imgAvatarHome.setImageResource(R.drawable.avt_default);
+//                ivAvatarHome.setImageBitmap(bmp);
+//                ivAvatarHome.setImageResource(R.drawable.avt_default);
             }
 
             @Override

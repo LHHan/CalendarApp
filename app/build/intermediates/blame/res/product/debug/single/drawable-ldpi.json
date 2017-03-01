@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\bg_misty_forest.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\bg_misty_forest.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\key_variant.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-ldpi\\key_variant.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\bg_mountain_range_winter.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\bg_mountain_range_winter.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\bg_autumn_forest_mountain.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\bg_autumn_forest_mountain.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\account.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-ldpi\\account.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\bg_forest.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\bg_forest.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\avt_default.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\avt_default.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\bg_countryside_dirt_road.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-ldpi\\bg_countryside_dirt_road.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi\\lock_plus.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-ldpi\\lock_plus.png"
+    }
+]

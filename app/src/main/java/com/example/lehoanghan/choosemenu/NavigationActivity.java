@@ -20,19 +20,19 @@ import android.widget.SearchView;
 
 import com.example.lehoanghan.appcalendar.LoginActivity_;
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.optionmenu.AboutFragment;
-import com.example.lehoanghan.optionmenu.AboutFragment;
 import com.example.lehoanghan.optionmenu.AboutFragment_;
-import com.example.lehoanghan.optionmenu.AccountFragment;
-import com.example.lehoanghan.optionmenu.AccountFragment;
 import com.example.lehoanghan.optionmenu.AccountFragment_;
-import com.example.lehoanghan.optionmenu.FindFriendFragment;
-import com.example.lehoanghan.optionmenu.FriendAcceptFragment;
-import com.example.lehoanghan.optionmenu.HomeFragment;
+import com.example.lehoanghan.optionmenu.FindFriendFragment_;
+import com.example.lehoanghan.optionmenu.FriendAcceptFragment_;
+import com.example.lehoanghan.optionmenu.HomeFragment_;
 import com.example.lehoanghan.optionmenu.MyEventFragment;
+import com.example.lehoanghan.optionmenu.MyEventFragment_;
 import com.example.lehoanghan.optionmenu.MyFriendFragment;
+import com.example.lehoanghan.optionmenu.MyFriendFragment_;
 import com.example.lehoanghan.optionmenu.NewEventFragment;
+import com.example.lehoanghan.optionmenu.NewEventFragment_;
 import com.example.lehoanghan.optionmenu.OldEventFragment;
+import com.example.lehoanghan.optionmenu.OldEventFragment_;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 import java.util.ArrayList;
@@ -107,13 +107,12 @@ public class NavigationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_choose);
+        setContentView(R.layout.activity_navigation);
         aInit();
         setNameUser();
         if (savedInstanceState == null) {
             doItemListener(0);
         }
-
     }
 
     private void aInit() {
@@ -248,7 +247,7 @@ public class NavigationActivity extends AppCompatActivity {
                     sMenuInflater.inflate(R.menu.menu_home, sMenu);
                 }
                 setNameUser();
-                sFragment = new HomeFragment();
+                sFragment = new HomeFragment_();
                 sFragment.setArguments(bundlesetNameforHome);
                 break;
             case 1:
@@ -262,42 +261,42 @@ public class NavigationActivity extends AppCompatActivity {
                 intFragment = fragmentMyFriend;
                 // sMenuInflater.inflate(R.sMenu.menu_my_friend,sMenu);
                 passDatatoFindAcceptFriend();
-                sFragment = new MyFriendFragment();
+                sFragment = new MyFriendFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 4:
                 intFragment = fragmentFriendAccept;
                 // sMenuInflater.inflate(R.sMenu.menu_friend_accept,sMenu);
                 passDatatoFindAcceptFriend();
-                sFragment = new FriendAcceptFragment();
+                sFragment = new FriendAcceptFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 5:
                 intFragment = fragmentFindFriend;
                 // sMenuInflater.inflate(R.sMenu.menu_find_friend,sMenu);
                 passDatatoFindAcceptFriend();
-                sFragment = new FindFriendFragment();
+                sFragment = new FindFriendFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 7:
                 intFragment = fragmentNewEvent;
                 passDatatoFindAcceptFriend();
                 //sMenuInflater.inflate(R.sMenu.menu_new_event,sMenu);
-                sFragment = new NewEventFragment();
+                sFragment = new NewEventFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 8:
                 intFragment = fragmentMyEvent;
                 passDatatoFindAcceptFriend();
                 // sMenuInflater.inflate(R.sMenu.menu_old_event,sMenu);
-                sFragment = new MyEventFragment();
+                sFragment = new MyEventFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 9:
                 intFragment = fragmentOldEvent;
                 passDatatoFindAcceptFriend();
                 // sMenuInflater.inflate(R.sMenu.menu_old_event,sMenu);
-                sFragment = new OldEventFragment();
+                sFragment = new OldEventFragment_();
                 sFragment.setArguments(bundlePassMailtoFindAccept);
                 break;
             case 10:

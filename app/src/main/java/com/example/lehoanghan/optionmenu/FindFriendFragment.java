@@ -19,22 +19,28 @@ import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.OptionsMenu;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by lehoanghan on 3/30/2016.
  */
+@EFragment(R.layout.fragment_find_friend)
 public class FindFriendFragment extends Fragment {
-    private Activity activityRoot;
+    @ViewById(R.id.fragment_find_friend_rcv_list_find_friend)
+    RecyclerView rcvListFriend;
+
+    @ViewById(R.id.fragment_find_friend_srv_search)
+    SearchView srvFindFriend;
 
     private View contentView;
 
     private Firebase fireBase;
-
-    private SearchView srvFindFriend;
-
-    private RecyclerView rcvListFriend;
 
     private LinearLayoutManager linearLayoutManager;
 
@@ -60,36 +66,27 @@ public class FindFriendFragment extends Fragment {
     public FindFriendFragment() {
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        activityRoot = getActivity();
-        contentView = inflater.inflate(R.layout.fragment_find_friend, container, false);
-        giveUserfromChoose();
-
-        Firebase.setAndroidContext(activityRoot);
+    @AfterViews()
+    void afterView() {
+        //using google firebase like database
+        Firebase.setAndroidContext(getActivity());
         fireBase = new Firebase("https://appcalendar.firebaseio.com/");
+        giveUserfromChoose();
+        initView();
+        //Give date from data base
+        getDatafromFireBase();
+    }
 
-        rcvListFriend = (RecyclerView) contentView.findViewById(
-                R.id.fragment_find_friend_rcv_list_find_friend);
-        srvFindFriend = (SearchView) contentView.findViewById(
-                R.id.fragment_find_friend_srv_search);
-
+    void initView() {
         listUserFriend = new ArrayList<UserFriend>();
         listNameUser = new ArrayList<String>();
         listMailUser = new ArrayList<String>();
         listNameUserFriend = new ArrayList<String>();
         listMailUserFriend = new ArrayList<String>();
-
-        srvFindFriend.setVisibility(View.VISIBLE);
-
         rcvListFriend.setHasFixedSize(true);
-        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
+        linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         rcvListFriend.setLayoutManager(linearLayoutManager);
-        getDatafromFireBase();
-        return contentView;
     }
 
     public void getDatafromFireBase() {
@@ -141,9 +138,7 @@ public class FindFriendFragment extends Fragment {
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-
             }
-
         });
         // return listUserFriend;
     }
