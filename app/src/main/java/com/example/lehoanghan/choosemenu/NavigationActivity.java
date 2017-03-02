@@ -172,7 +172,6 @@ public class NavigationActivity extends AppCompatActivity {
         return true;
     }
 
-
     //Option Item Select
     @Override
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
@@ -188,8 +187,6 @@ public class NavigationActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(lvMenu);
             }
         }
-
-
         if (sFragment != null) {
             FragmentManager fManager = getFragmentManager();
             fManager.beginTransaction().replace(
@@ -198,7 +195,6 @@ public class NavigationActivity extends AppCompatActivity {
         } else {
             Log.e("Main", "error");
         }
-
         switch (intFragment) {
             case 0:
                 if (sMenu != null) {
@@ -213,12 +209,8 @@ public class NavigationActivity extends AppCompatActivity {
                 sMenuInflater.inflate(R.menu.menu_add_event, sMenu);
                 break;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
-
-
     //Listen ic_new_event Button
     private class ItemListener implements ListView.OnItemClickListener {
 
@@ -229,9 +221,7 @@ public class NavigationActivity extends AppCompatActivity {
 
     }
 
-
     //Change among Fragments
-
     public void doItemListener(int position) {
         if (sMenu != null) {
             sMenu.clear();
@@ -301,7 +291,7 @@ public class NavigationActivity extends AppCompatActivity {
                 sFragment = new AboutFragment_();
                 break;
             case 11:
-                aExit();
+                exitView();
                 break;
             default:
                 break;
@@ -339,7 +329,7 @@ public class NavigationActivity extends AppCompatActivity {
 
     }
 
-    public void aExit() {
+    public void exitView() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Accept");
         builder.setMessage("Do You want to Exit?");
@@ -366,7 +356,7 @@ public class NavigationActivity extends AppCompatActivity {
     public void onBackPressed() {
         switch (intFragment) {
             case 0:
-                aExit();
+                exitView();
                 break;
             case 1:
                 doItemListener(0);
@@ -395,7 +385,6 @@ public class NavigationActivity extends AppCompatActivity {
             case 9:
                 doItemListener(0);
                 break;
-
         }
     }
 

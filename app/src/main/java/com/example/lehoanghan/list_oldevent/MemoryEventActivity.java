@@ -288,9 +288,7 @@ public class MemoryEventActivity extends AppCompatActivity {
                     Toast.makeText(getBaseContext(),
                             "Fail, You don't choose any pic", Toast.LENGTH_LONG).show();
                 }
-
             }
-
         }
     }
 

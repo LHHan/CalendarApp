@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.lehoanghan.addevent.AddEventActivity;
@@ -64,8 +65,6 @@ public class HomeFragment extends Fragment {
 
     private MenuInflater menuInflater;
 
-    private Menu aMenu;
-
     public HomeFragment() {
     }
 
@@ -75,7 +74,6 @@ public class HomeFragment extends Fragment {
         Firebase.setAndroidContext(getActivity());
         gFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         initView();
-        setImage();
         setImageCover();
         setCalendar();
 
@@ -86,6 +84,25 @@ public class HomeFragment extends Fragment {
         sNameUser = bundle.getString("NameforHome");
         sMailUser = bundle.getString("MailforHome");
         setHasOptionsMenu(true);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menuInflater = getActivity().getMenuInflater();
+        menuInflater.inflate(R.menu.menu_home, menu);
+        getActivity().setTitle("Home");
+        return super.getActivity().onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.menu_home_ab_add_event:
+                passDataDatetoAddEvent();
+                startActivity(intentSetDate);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     void setCalendar() {
@@ -143,42 +160,6 @@ public class HomeFragment extends Fragment {
         return textDate;
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        getActivity().setTitle("Add Event");
-        this.aMenu = menu;
-        this.menuInflater = inflater;
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.menu_home_ab_add_event:
-                passDataDatetoAddEvent();
-                startActivity(intentSetDate);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void setImage() {
-        gFirebase.child("Avata").child(sMailUser).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-//                byte[] img = Base64.decode(dataSnapshot.getValue().toString(), Base64.DEFAULT);
-//                Bitmap bmp = BitmapFactory.decodeByteArray(img, 0, img.length);
-//                ivAvatarHome.setImageBitmap(bmp);
-//                ivAvatarHome.setImageResource(R.drawable.avt_default);
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });
-    }
 
     public void passDataDatetoAddEvent() {
         intentSetDate = new Intent(getActivity(), AddEventActivity.class);

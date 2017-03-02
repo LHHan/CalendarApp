@@ -94,7 +94,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         }
     }
 
-    public class eventData extends ViewHolder {
+    public class EventData extends ViewHolder {
         private TextView tvTimeEvent;
 
         private TextView tvNameEventValue;
@@ -125,7 +125,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
         private Button btnDetail;
 
-        public eventData(View itemView) {
+        public EventData(View itemView) {
             super(itemView);
             tvTimeEvent = (TextView) itemView.findViewById(
                     R.id.cardview_recycler_old_event_tv_time_event_value);
@@ -188,7 +188,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             }
             Firebase.setAndroidContext(v.getContext());
             aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-            return new eventData(v);
+            return new EventData(v);
         }
 
     }
@@ -199,7 +199,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             TitleAboutDate viewholder = (TitleAboutDate) holder;
             viewholder.tvTitle.setText(dataSet.get(position).getDateFrom());
         } else {
-            final eventData VIEWHOLDER = (eventData) holder;
+            final EventData VIEWHOLDER = (EventData) holder;
             VIEWHOLDER.tvTimeEvent.setText(dataSet.get(position).getTimeFrom());
             VIEWHOLDER.tvNameEventValue.setText(dataSet.get(position).getNameEvent());
             if (intType != 3) {

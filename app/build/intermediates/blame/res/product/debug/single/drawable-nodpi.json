@@ -2556,12 +2556,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f496.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f68b.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f68b.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_23f3.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_23f3.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f68b.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f68b.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f481_1f3ff.png",

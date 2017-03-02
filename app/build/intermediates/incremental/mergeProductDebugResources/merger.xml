@@ -2290,7 +2290,7 @@
         <item name="colorPrimary">@color/colorActionbar</item>
         <item name="colorPrimaryDark">@color/colorActionbar2</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
         <item name="android:colorForeground">
             @color/cast_libraries_material_featurehighlight_text_body_color
         </item>
@@ -2301,6 +2301,10 @@
         <item name="colorPrimary">@color/colorActionbar</item>
         <item name="colorPrimaryDark">@color/colorActionbar2</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/common_google_signin_btn_text_dark_focused</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+        <item name="android:colorForeground">@android:color/background_dark</item>
     </style><style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/><style name="AppTheme.">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
@@ -2310,7 +2314,7 @@
         <item name="colorPrimaryDark">@color/colorActionbar2</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:navigationBarColor">@color/black</item>
-        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
         <item name="android:colorForeground">
             @color/cast_libraries_material_featurehighlight_text_body_color
         </item>
@@ -2325,6 +2329,16 @@
     </style><style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style><style name="AboutScreen" parent="@style/AppTheme.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorActionbar</item>
+        <item name="colorPrimaryDark">@color/colorActionbar2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/common_google_signin_btn_text_dark_focused</item>
+        <item name="android:textColorSecondary">@android:color/secondary_text_light</item>
+        <item name="android:colorForeground">@android:color/background_dark</item>
     </style></file><file path="D:\Project_hh\CalendarApp\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file></source><source path="D:\Project_hh\CalendarApp\app\build\generated\res\rs\product\debug"/><source path="D:\Project_hh\CalendarApp\app\build\generated\res\resValues\product\debug"/></dataSet><dataSet config="product" generated-set="product$Generated"><source path="D:\Project_hh\CalendarApp\app\src\product\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\Project_hh\CalendarApp\app\src\debug\res"><file path="D:\Project_hh\CalendarApp\app\src\debug\res\values\google_maps_api.xml" qualifiers=""><string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyAOUrr_mNjbfnrZ5Y4wdE-hc6-9E403MVE
     </string></file></source></dataSet><dataSet config="productDebug" generated-set="productDebug$Generated"><source path="D:\Project_hh\CalendarApp\app\src\productDebug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">

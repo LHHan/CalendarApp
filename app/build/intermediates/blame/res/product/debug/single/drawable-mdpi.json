@@ -576,12 +576,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_skype_black_48dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_skype_white_36dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_skype_white_36dp.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\bg_countryside_dirt_road.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\bg_countryside_dirt_road.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_skype_white_36dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_skype_white_36dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_emoji_nature_light_normal.png",
@@ -720,12 +720,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-mdpi\\orca_composer_tab_active.9.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_key_variant_white_24dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_key_variant_white_24dp.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_account_white_36dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_account_white_36dp.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\ic_key_variant_white_24dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-mdpi\\ic_key_variant_white_24dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-mdpi\\orca_attach_photo_pressed.png",

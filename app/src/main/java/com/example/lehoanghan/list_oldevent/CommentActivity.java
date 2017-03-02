@@ -1,9 +1,11 @@
 package com.example.lehoanghan.list_oldevent;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -167,19 +169,15 @@ public class CommentActivity extends AppCompatActivity
         setTitle("Comment");
         return super.onCreateOptionsMenu(menu);
     }
-    //@Override
-//    public boolean onOptionsItemSelected(NavigationClass item) {
-//        switch (item.getItemId()) {
-//            case R.id.backfromChangeAccount:
-//                Intent intent = new Intent(CommentActivity.this, MemoryEventActivity.class);
-//                intent.putExtra("EventValue", passValue);
-//                intent.putExtra("NameUser", nameUser);
-//                intent.putExtra("MailUser", mailUser);
-//                startActivity(intent);
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.backfromChangeAccount:
+                finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
     @Override
@@ -210,6 +208,7 @@ public class CommentActivity extends AppCompatActivity
         nameUser = getIntent().getStringExtra("NameUser");
         passValue = (EventValue) getIntent().getSerializableExtra("EventValue");
         keyComment = getIntent().getStringExtra("KeyaddComment");
+
     }
 
     @Override
