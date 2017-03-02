@@ -10,9 +10,12 @@ import android.util.Log;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.choosemenu.NavigationActivity;
 
+import org.androidannotations.annotations.EActivity;
+
 /**
  * Created by lehoanghan on 6/15/2016.
  */
+@EActivity
 public class AlarmDialog extends Activity {
     private String strType = "Type";
 
@@ -23,7 +26,7 @@ public class AlarmDialog extends Activity {
         final Intent INTENTSERVICE = new Intent(getBaseContext(), RingtonePlayingService.class);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Event");
-        builder.setMessage("Ban co 1 ic_new_event: \r\nname's Event: "
+        builder.setMessage("You have a new event: \r\nname's Event: "
                 + getIntent().getStringExtra("name")
                 + ".\r\nDate: " + getIntent().getStringExtra("Date") + ".\r\nTime: "
                 + getIntent().getStringExtra("Time")

@@ -140,42 +140,42 @@ ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:40:9-43:43
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:43:9-40
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:41:13-80
-activity#com.example.lehoanghan.addevent.AddEventActivity
+activity#com.example.lehoanghan.addevent.AddEventActivity_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:44:9-46:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:46:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:45:13-76
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:45:13-77
 activity#com.example.lehoanghan.myaccount.ChangeAccountActivity_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:47:9-49:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:49:13-44
 	android:name
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:48:13-83
-activity#com.example.lehoanghan.list_oldevent.MemoryEventActivity
+activity#com.example.lehoanghan.list_oldevent.MemoryEventActivity_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:50:9-52:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:52:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:13-84
-activity#com.example.lehoanghan.list_oldevent.CommentActivity
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:51:13-85
+activity#com.example.lehoanghan.list_oldevent.CommentActivity_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:53:9-55:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:55:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:54:13-80
-activity#com.example.lehoanghan.list_oldevent.PictureActivity
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:54:13-81
+activity#com.example.lehoanghan.list_oldevent.PictureActivity_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:56:9-58:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:58:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:57:13-80
-activity#com.example.lehoanghan.list_newevent.AlarmDialog
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:57:13-81
+activity#com.example.lehoanghan.list_newevent.AlarmDialog_
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:59:9-61:47
 	android:theme
 		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:60:13-76
+		ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:60:13-77
 receiver#com.example.lehoanghan.list_newevent.AlarmNotificationReceiver
 ADDED from D:\Project_hh\CalendarApp\app\src\main\AndroidManifest.xml:63:9-99
 	android:name

@@ -1,5 +1,8 @@
 package com.example.lehoanghan.choosemenu;
 
+import org.androidannotations.annotations.Bean;
+import org.androidannotations.annotations.EBean;
+import org.androidannotations.annotations.SystemService;
 public class NavigationClass {
 
     private final int itemTitle = 0;

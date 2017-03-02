@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi-v4\\sprite_check.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\drawable-ldpi-v4\\sprite_check.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-ldpi-v4\\ic_twitter.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-ldpi-v4\\ic_twitter.png"
     },

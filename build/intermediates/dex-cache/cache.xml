@@ -21,12 +21,102 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-common-10.2.0_ca34ad8ea733ac6e959fbe0fedad0661f49f149c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="444f9de23145e8caba7bf1c1772acad142ea6013">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.2.0_25ba483a6ba6a708cd8fd69caceab63689a28918\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.2.0_4c64c43f3fa43055a48db509ed9f1bbc138bbabb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f4483afd050f3be12db7838422309446a45daa1">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.2.0_0894c8ab35e03b422d700cfea4fc90ba8a4f424b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="db48dfabe8ecc46681ceca418d6bd61a5339f818">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.2.0_77050e2bd0bc9bcd7860d0f5303c28d1d12cb3fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.2.0_754139ac187aee187c60be4f84ccd16b46ca5228\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="a3f7595ca32e614b454ceb7b7e241bb037a28e86">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.2.0_854a81b3a9aff3d8b6418bdbd70b0d28cc4e4135\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\tubesock-0.0.11_3fd6dc3cb295148c490c613c0485607aaac264ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-v4-24.0.0_74b580f0a79283b2c50fee63231695c68d651fac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.2.0_8abdf51da242752796330f481d947812ddf43830\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa23e4589287adb431ef59d6c78af79ab8885682">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.2.0_0b5a37ba650e24acbd2109f70bced21494ae233a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -45,6 +135,33 @@
         revision="23.0.1"
         sha1="7d14fe9bd2283b2eb7fcab08458aa0357917e138">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.2.0_ebf2fac583aa3507a6667eb704c67afabb8c8502\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_72901c6e468d21b3e4255edecffcdf387fb422be\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.2.0_cb6e7d353db14421aee4bb8561067fbabc515ead\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-annotations-2.2.2_aaef349fb7fe03a2afb788f37e944b76833561bf\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,6 +192,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.2.0_686ba6eed55468335cd8412078bd920923778db8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-config-10.2.0_f8e51b54760fb21ed8f7293620e62f51e6e977cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_3de35a086a8f93338bfa0239c100280c5e563351\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cd688796dadc28f7f95db229cbfdaf91ebbb0d61">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_edad5ca1b1c17947931d0816bafd8c552d779bf3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -90,6 +243,24 @@
         revision="23.0.1"
         sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.2.0_58a6aea7eb2a59df35a47aed2f4abdd74a432a91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1f1c7067e22acf05bddbca9f94422050cd848a86">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_95f8af0c849cfda27c937ec882764b0a2e3eddea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-base-10.2.0_375905bd6a6fa91eb9f591ed15f3146392ae83a3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,11 +282,56 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8438c64f9eb581429dc592f7c9b3156a3d071653">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.2.0_385b512103e36a2c751ac104039858182b443a47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.2.0_423575860ac5747b6a115ba7ea733dd8a1d8c134\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_78e84a9a37b5da4e51b40a5300092d3d362af71f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.2.0_9b85d6c6724779a94e9691a1424271875a0b12ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\incremental-runtime-classes\product\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="c3f3870b2b2c01e35d8c705e84f9cbebb861828d">
+        sha1="1b4ccd5f3b5a05f829efb7c404aa891fb915bfce">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run_a8534f27fc56f046e6fcdfdd979c980535d1e949\classes.dex" />
     </item>
     <item
@@ -126,6 +342,15 @@
         revision="23.0.1"
         sha1="3aaf1e7b5fe9f4d3ff22c4edc0ead631f7389d30">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.2.0_00a57dd3185135bdebc5812d6d53511675da1810\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9493f008850469ed3fab9b28658919562882aed">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.2.0_c8d9f9bc03680f1c19f0da9ed1f75feeb64ec5ce\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -183,12 +408,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="90270132a5f1a33584f453c571257dd35e728201">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.2.0_094dc1b9c5abc2ab968293fe991f162f085ed81f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="0e301f24b283f14b564f660c9abe863af6be5896">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.2.0_2acc6bef7dfd3229ad385773ef3205e7d8d79267\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea03bbfaed89818f233ee9918fac493f2b63895a">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.2.0_9a9f52b8f8b6a0314aca7fc4ed696343aa0a8fb7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,336 +453,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\4.0.0\8ef59050fdc527130b8f1f5689164a1ec0ebc13c\androidannotations-api-4.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8ef59050fdc527130b8f1f5689164a1ec0ebc13c">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\androidannotations-api-4.0.0_e55dc29425da91ed99531f1b4718880590c5dfb1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.2.0_6a53c1a9e572ef7dccda35a6ef9694fd5572761f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ddb7fed808f4331174b59428ccfc46b3696c9812">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-games-10.2.0_6d7633e7b35e5eb50cdfcc54e5aaec62e11275b9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ca82d5800780b1d53f0f9ab43678d8634a34cddc">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.2.0_8e52fcfcb97a0e129d94f4b1007b37251c248f24\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8fd2e9eadc9d214966ee7f60d6c5a17a335d7533">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.2.0_b15faa4e413a74aea76beea34c3f9dc77380c4eb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-10.2.0_b28bb39bd72916d01e156781e6c1b5d8be62008c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-location-10.2.0_92d8db69ed21150ceb545dccf50ff09e383f4729\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ab0c7fe28f9506302eb39adf1ebf5858732e18ec">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.2.0_94bf350ed2a5c9e5a1efca076c1b3bcf11179dd2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="45e0953544711e0b5a2d227732e88cccb82793bc">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.2.0_9350c5806141157e152c741fc2fa8dea6086743d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-common-10.2.0_ca34ad8ea733ac6e959fbe0fedad0661f49f149c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="444f9de23145e8caba7bf1c1772acad142ea6013">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.2.0_25ba483a6ba6a708cd8fd69caceab63689a28918\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.2.0_4c64c43f3fa43055a48db509ed9f1bbc138bbabb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f4483afd050f3be12db7838422309446a45daa1">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.2.0_0894c8ab35e03b422d700cfea4fc90ba8a4f424b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="db48dfabe8ecc46681ceca418d6bd61a5339f818">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.2.0_77050e2bd0bc9bcd7860d0f5303c28d1d12cb3fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.2.0_754139ac187aee187c60be4f84ccd16b46ca5228\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\tubesock-0.0.11_3fd6dc3cb295148c490c613c0485607aaac264ba\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-support-v4-24.0.0_74b580f0a79283b2c50fee63231695c68d651fac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.2.0_8abdf51da242752796330f481d947812ddf43830\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa23e4589287adb431ef59d6c78af79ab8885682">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.2.0_0b5a37ba650e24acbd2109f70bced21494ae233a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_72901c6e468d21b3e4255edecffcdf387fb422be\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.2.0_cb6e7d353db14421aee4bb8561067fbabc515ead\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\jackson-annotations-2.2.2_aaef349fb7fe03a2afb788f37e944b76833561bf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.2.0_686ba6eed55468335cd8412078bd920923778db8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-config-10.2.0_f8e51b54760fb21ed8f7293620e62f51e6e977cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_3de35a086a8f93338bfa0239c100280c5e563351\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cd688796dadc28f7f95db229cbfdaf91ebbb0d61">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-design-24.0.0-alpha1_edad5ca1b1c17947931d0816bafd8c552d779bf3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0-alpha1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1f1c7067e22acf05bddbca9f94422050cd848a86">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-recyclerview-v7-24.0.0-alpha1_95f8af0c849cfda27c937ec882764b0a2e3eddea\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-base-10.2.0_375905bd6a6fa91eb9f591ed15f3146392ae83a3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8438c64f9eb581429dc592f7c9b3156a3d071653">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.2.0_385b512103e36a2c751ac104039858182b443a47\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.2.0_423575860ac5747b6a115ba7ea733dd8a1d8c134\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_78e84a9a37b5da4e51b40a5300092d3d362af71f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\firebase-client-jvm-2.3.1_07d0626aea83688eb9c4f7998ffe0b815b5f97ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="b831d3902674d096189451d46fce219e2c2904b7">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.2.0_9b85d6c6724779a94e9691a1424271875a0b12ae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9493f008850469ed3fab9b28658919562882aed">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.2.0_c8d9f9bc03680f1c19f0da9ed1f75feeb64ec5ce\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="90270132a5f1a33584f453c571257dd35e728201">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.2.0_094dc1b9c5abc2ab968293fe991f162f085ed81f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea03bbfaed89818f233ee9918fac493f2b63895a">
-        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.2.0_9a9f52b8f8b6a0314aca7fc4ed696343aa0a8fb7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="101393e975eaf36e3ff40b277ee9a019e077afef">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.2.0_1965bd846969a815c1a2fd65e2868af58d39889c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LTr\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\4.0.0\8ef59050fdc527130b8f1f5689164a1ec0ebc13c\androidannotations-api-4.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ef59050fdc527130b8f1f5689164a1ec0ebc13c">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\androidannotations-api-4.0.0_e55dc29425da91ed99531f1b4718880590c5dfb1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -588,6 +516,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.2.0_6a53c1a9e572ef7dccda35a6ef9694fd5572761f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.prolificinteractive\material-calendarview\1.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -597,11 +534,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ddb7fed808f4331174b59428ccfc46b3696c9812">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-games-10.2.0_6d7633e7b35e5eb50cdfcc54e5aaec62e11275b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\incremental-classes\product\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="822e8130cf3a9a0f286cd30090c065a5959de5f5">
+        sha1="abf6ada12cf593bd5b7010b3769882be45feeaa5">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\instant-run-bootstrap_c9c650a5712db51e44bc946f08bbc83202d0f880\classes.dex" />
     </item>
     <item
@@ -612,6 +558,15 @@
         revision="23.0.1"
         sha1="68485f21eeb5d6c9ed82c445d520b9fc81c87108">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.2.0_fa5f2d940dd80239a71f1757557c3b88e7a13c69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ca82d5800780b1d53f0f9ab43678d8634a34cddc">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.2.0_8e52fcfcb97a0e129d94f4b1007b37251c248f24\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -633,6 +588,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fd2e9eadc9d214966ee7f60d6c5a17a335d7533">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.2.0_b15faa4e413a74aea76beea34c3f9dc77380c4eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -642,12 +606,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-storage-10.2.0_b28bb39bd72916d01e156781e6c1b5d8be62008c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-location-10.2.0_92d8db69ed21150ceb545dccf50ff09e383f4729\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
         <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.firebase-firebase-crash-10.2.0_d28eb2efed19a4e710cab354018e3953ae941e8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ab0c7fe28f9506302eb39adf1ebf5858732e18ec">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.2.0_94bf350ed2a5c9e5a1efca076c1b3bcf11179dd2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project_hh\CalendarApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45e0953544711e0b5a2d227732e88cccb82793bc">
+        <dex dex="D:\Project_hh\CalendarApp\app\build\intermediates\transforms\dex\product\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.2.0_9350c5806141157e152c741fc2fa8dea6086743d\classes.dex" />
     </item>
     <item
         is-multidex="true"

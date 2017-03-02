@@ -28,20 +28,20 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_skype_white_18dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_skype_grey600_24dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_skype_grey600_24dp.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_key_variant_black_24dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_key_variant_black_24dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_card_details_white_18dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_card_details_white_18dp.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_skype_grey600_24dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_skype_grey600_24dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_map_marker_grey600_24dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_map_marker_grey600_24dp.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_card_details_white_18dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_card_details_white_18dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_lock_grey600_18dp.png",
@@ -152,12 +152,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_card_details_white_48dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\account.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-xxhdpi\\account.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_star_circle_white_24dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_star_circle_white_24dp.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\account.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-xxhdpi\\account.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_card_details_black_24dp.png",

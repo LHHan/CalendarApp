@@ -25,13 +25,9 @@ import com.example.lehoanghan.optionmenu.AccountFragment_;
 import com.example.lehoanghan.optionmenu.FindFriendFragment_;
 import com.example.lehoanghan.optionmenu.FriendAcceptFragment_;
 import com.example.lehoanghan.optionmenu.HomeFragment_;
-import com.example.lehoanghan.optionmenu.MyEventFragment;
 import com.example.lehoanghan.optionmenu.MyEventFragment_;
-import com.example.lehoanghan.optionmenu.MyFriendFragment;
 import com.example.lehoanghan.optionmenu.MyFriendFragment_;
-import com.example.lehoanghan.optionmenu.NewEventFragment;
 import com.example.lehoanghan.optionmenu.NewEventFragment_;
-import com.example.lehoanghan.optionmenu.OldEventFragment;
 import com.example.lehoanghan.optionmenu.OldEventFragment_;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 

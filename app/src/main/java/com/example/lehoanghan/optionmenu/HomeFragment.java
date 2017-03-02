@@ -46,12 +46,6 @@ public class HomeFragment extends Fragment {
 
     private static String sNameUser;
 
-//    @ViewById(R.id.fragment_home_tv_name)
-//    TextView tvNameUser;
-//
-//    @ViewById(R.id.fragment_home_iv_avatar)
-//    ImageView ivAvatarHome;
-
     @ViewById(R.id.fragment_home_calendar)
     MaterialCalendarView mcvCalendar;
 
@@ -60,11 +54,7 @@ public class HomeFragment extends Fragment {
 
     private Fragment aFragment = null;
 
-    private Bundle bundleSetDate;
-
     private Intent intentSetDate;
-
-    private View contentView;
 
     private StringBuilder txtDate;
 
@@ -88,6 +78,7 @@ public class HomeFragment extends Fragment {
         setImage();
         setImageCover();
         setCalendar();
+
     }
 
     void initView() {
@@ -95,9 +86,6 @@ public class HomeFragment extends Fragment {
         sNameUser = bundle.getString("NameforHome");
         sMailUser = bundle.getString("MailforHome");
         setHasOptionsMenu(true);
-//
-//        tvNameUser.setText(tvNameUser.getText().toString() + " " + sNameUser);
-//        tvNameUser.setTextColor(Color.parseColor("#FFFF50A4"));
     }
 
     void setCalendar() {
@@ -121,13 +109,18 @@ public class HomeFragment extends Fragment {
 
     void setImageCover() {
         int month = mcvCalendar.getCurrentDate().getMonth();
-        if (month == 11 | month == 12 | month == 1) {
+        // month in system have value from 0 to 11
+        if (month == 10 | month == 11 | month == 0) {
+            // ivCover will set mountain winter image if month is Nov, Dec, Jan
             ivCover.setImageResource(R.drawable.bg_mountain_range_winter);
-        } else if (month == 2 | month == 3 | month == 4) {
+        } else if (month == 1 | month == 2 | month == 3) {
+            //ivCover will set dirt_road if month is Feb, Mar, Apr
             ivCover.setImageResource(R.drawable.bg_countryside_dirt_road);
-        } else if (month == 5 | month == 6 | month == 7) {
+        } else if (month == 4 | month == 5 | month == 6) {
+            //ivCover will set misty forest image if month is May, June, July
             ivCover.setImageResource(R.drawable.bg_misty_forest);
-        } else if (month == 8 | month == 9 | month == 10) {
+        } else if (month == 7 | month == 8 | month == 9) {
+            // ivCover will set autumn forest mountain if month is Aug, Sep, Oct
             ivCover.setImageResource(R.drawable.bg_autumn_forest_mountain);
         }
     }

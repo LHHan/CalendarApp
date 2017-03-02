@@ -6,8 +6,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.lehoanghan.EventValue;
 import com.example.lehoanghan.appcalendar.R;
@@ -15,19 +17,45 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.rockerhieu.emojicon.EmojiconEditText;
 import com.rockerhieu.emojicon.EmojiconGridFragment;
 import com.rockerhieu.emojicon.EmojiconsFragment;
 import com.rockerhieu.emojicon.emoji.Emojicon;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by lehoanghan on 6/25/2016.
  */
+@EActivity(R.layout.activity_comment)
 public class CommentActivity extends AppCompatActivity
         implements EmojiconGridFragment.OnEmojiconClickedListener,
-        EmojiconsFragment.OnEmojiconBackspaceClickedListener {
+        EmojiconsFragment.OnEmojiconBackspaceClickedListener, Validator.ValidationListener {
+    @ViewById(R.id.activity_comment_lv_list_comment)
+    ListView lvComment;
+
+    @ViewById(R.id.activity_comment_btn_send)
+    Button btnSendComment;
+
+    @ViewById(R.id.activity_comment_btn_emojicon)
+    Button btnEmoji;
+
+    @NotEmpty(message = "You can't send empty message")
+    @ViewById(R.id.activity_comment_eiet_my_comment)
+    EmojiconEditText emojIconComment;
+
+    @ViewById(R.id.activity_comment_fl_emojicon)
+    FrameLayout frameLayout;
+
     private String nameUser;
 
     private String mailUser;
@@ -42,18 +70,32 @@ public class CommentActivity extends AppCompatActivity
 
     private int intVisible;
 
-    private EmojiconEditText emojIconComment;
+    private Validator validator;
 
-    private FrameLayout frameLayout;
+    @Click(R.id.activity_comment_btn_send)
+    void setBtnSendComment() {
+        validator.validate();
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comment);
+    @Click(R.id.activity_comment_btn_emojicon)
+    void setBtnEmoji() {
+        if (intVisible == 0) {
+            intVisible = 1;
+            setEmojiconFragment(false, intVisible);
+        } else {
+            intVisible = 0;
+            setEmojiconFragment(false, intVisible);
+        }
+    }
+
+    @AfterViews
+    void afterViews() {
         giveDataUser();
         Firebase.setAndroidContext(this);
         fireBase = new Firebase("https://appcalendar.firebaseio.com/");
         setComment();
+        validator = new Validator(this);
+        validator.setValidationListener(this);
     }
 
     public void setComment() {
@@ -74,7 +116,6 @@ public class CommentActivity extends AppCompatActivity
                         }
                     }
                 }
-                ListView lvComment = (ListView) findViewById(R.id.activity_comment_lv_list_comment);
                 CustomCommentAdapter arrayAdapter =
                         new CustomCommentAdapter(getApplication().getBaseContext(), listComment);
                 lvComment.setAdapter(arrayAdapter);
@@ -84,60 +125,39 @@ public class CommentActivity extends AppCompatActivity
             public void onCancelled(FirebaseError firebaseError) {
             }
         });
-        Button btnSendComment = (Button) findViewById(R.id.activity_comment_btn_send);
-        Button btnEmoji = (Button) findViewById(R.id.activity_comment_btn_emojicon);
-        emojIconComment = (EmojiconEditText) findViewById(R.id.activity_comment_eiet_my_comment);
-        frameLayout = (FrameLayout) findViewById(R.id.activity_comment_fl_emojicon);
-        btnEmoji.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (intVisible == 0) {
-                    intVisible = 1;
-                    setEmojiconFragment(false, intVisible);
-                } else {
-                    intVisible = 0;
-                    setEmojiconFragment(false, intVisible);
-                }
-            }
-        });
-        btnSendComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                fireBase.child("Comment").child(passValue.getNameEvent().replace(" ", "&")
-                        + "*" + passValue.getDateFrom() + "*"
-                        + passValue.getTimeFrom()).push().setValue(nameUser + ": "
-                        + emojIconComment.getText().toString());
-                fireBase.child("Comment")
-                        .addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                for (DataSnapshot data : dataSnapshot.getChildren()) {
-                                    if (data.getKey().toString().compareTo(
-                                            passValue.getNameEvent().replace(" ", "&")
-                                                    + "*" + passValue.getDateFrom()
-                                                    + "*" + passValue.getTimeFrom()) == 0) {
-                                        listComment.clear();
-                                        for (DataSnapshot value : data.getChildren()) {
-                                            listComment.add(value.getValue().toString());
-                                        }
-                                    }
+    }
+
+    void loadComment() {
+        fireBase.child("Comment").child(passValue.getNameEvent().replace(" ", "&")
+                + "*" + passValue.getDateFrom() + "*"
+                + passValue.getTimeFrom()).push().setValue(nameUser + ": "
+                + emojIconComment.getText().toString());
+        fireBase.child("Comment")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot data : dataSnapshot.getChildren()) {
+                            if (data.getKey().toString().compareTo(
+                                    passValue.getNameEvent().replace(" ", "&")
+                                            + "*" + passValue.getDateFrom()
+                                            + "*" + passValue.getTimeFrom()) == 0) {
+                                listComment.clear();
+                                for (DataSnapshot value : data.getChildren()) {
+                                    listComment.add(value.getValue().toString());
                                 }
-                                ListView lvComment =
-                                        (ListView) findViewById(
-                                                R.id.activity_comment_lv_list_comment);
-                                CustomCommentAdapter arrayAdapter =
-                                        new CustomCommentAdapter(v.getContext(), listComment);
-                                lvComment.setAdapter(arrayAdapter);
                             }
+                        }
+                        CustomCommentAdapter arrayAdapter =
+                                new CustomCommentAdapter(getApplicationContext(), listComment);
+                        lvComment.setAdapter(arrayAdapter);
+                    }
 
-                            @Override
-                            public void onCancelled(FirebaseError firebaseError) {
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
 
-                            }
-                        });
-                emojIconComment.setText("");
-            }
-        });
+                    }
+                });
+        emojIconComment.setText("");
     }
 
     @Override
@@ -160,6 +180,7 @@ public class CommentActivity extends AppCompatActivity
 //        }
 //        return super.onOptionsItemSelected(item);
 //    }
+
 
     @Override
     public void onEmojiconBackspaceClicked(View v) {
@@ -189,6 +210,25 @@ public class CommentActivity extends AppCompatActivity
         nameUser = getIntent().getStringExtra("NameUser");
         passValue = (EventValue) getIntent().getSerializableExtra("EventValue");
         keyComment = getIntent().getStringExtra("KeyaddComment");
+    }
 
+    @Override
+    public void onValidationSucceeded() {
+        loadComment();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error : errors) {
+            View contentView = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+
+            //Display error message
+            if (contentView instanceof EditText) {
+                ((EditText) contentView).setError(message);
+            } else {
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            }
+        }
     }
 }

@@ -62,22 +62,22 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.example.lehoanghan.addevent.AddEventActivity"
+            android:name="com.example.lehoanghan.addevent.AddEventActivity_"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.myaccount.ChangeAccountActivity_"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.MemoryEventActivity"
+            android:name="com.example.lehoanghan.list_oldevent.MemoryEventActivity_"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.CommentActivity"
+            android:name="com.example.lehoanghan.list_oldevent.CommentActivity_"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.list_oldevent.PictureActivity"
+            android:name="com.example.lehoanghan.list_oldevent.PictureActivity_"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.example.lehoanghan.list_newevent.AlarmDialog"
+            android:name="com.example.lehoanghan.list_newevent.AlarmDialog_"
             android:theme="@style/AppTheme" />
 
         <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver" />

@@ -3175,7 +3175,7 @@ int id ad_in_progress_label 0x7f0f016a
 int id ad_label 0x7f0f0169
 int id adapter_comment_eitv_emojicon 0x7f0f0127
 int id add 0x7f0f0029
-int id add_event 0x7f0f01fd
+int id add_event 0x7f0f01fe
 int id adjust_height 0x7f0f0054
 int id adjust_width 0x7f0f0055
 int id alertTitle 0x7f0f00a4
@@ -3420,7 +3420,8 @@ int id menu_add_event_done 0x7f0f01fa
 int id menu_body_iv_icon 0x7f0f01c9
 int id menu_body_tv_body 0x7f0f01ca
 int id menu_head_tv_title 0x7f0f01cb
-int id menu_home_ab_add_event 0x7f0f01fc
+int id menu_home_ab_add_event 0x7f0f01fd
+int id menu_home_ab_login 0x7f0f01fc
 int id middle 0x7f0f0053
 int id mini 0x7f0f0044
 int id monday 0x7f0f005f
@@ -3479,7 +3480,7 @@ int id progressBar 0x7f0f0180
 int id progress_circular 0x7f0f0015
 int id progress_horizontal 0x7f0f0016
 int id radio 0x7f0f00af
-int id rate 0x7f0f01fe
+int id rate 0x7f0f01ff
 int id rfc822 0x7f0f006d
 int id right 0x7f0f0039
 int id sandbox 0x7f0f007e

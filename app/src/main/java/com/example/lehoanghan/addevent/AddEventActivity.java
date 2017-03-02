@@ -2,8 +2,6 @@ package com.example.lehoanghan.addevent;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,48 +19,83 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lehoanghan.appcalendar.R;
-import com.example.lehoanghan.choosemenu.NavigationActivity;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
+import com.mobsandgeeks.saripaar.ValidationError;
+import com.mobsandgeeks.saripaar.Validator;
+import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
-public class AddEventActivity extends AppCompatActivity {
+@EActivity(R.layout.activity_add_event)
+public class AddEventActivity extends AppCompatActivity implements Validator.ValidationListener {
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_et_event_name)
+    EditText etEventName;
 
-    private EditText etEventName;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_et_description)
+    EditText etDescription;
 
-    private EditText etDecription;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_et_alarm)
+    EditText etAlarm;
 
-    private EditText etAlarm;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_tv_set_day_from)
+    TextView tvSetDayFrom;
 
-    private TextView tvSetDayFrom;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_tv_set_time_from)
+    TextView tvSetTimeFrom;
 
-    private TextView tvSetTimeFrom;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_tv_set_day_to)
+    TextView tvSetDayTo;
 
-    private TextView tvSetDayTo;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_tv_set_time_to)
+    TextView tvSetTimeTo;
 
-    private TextView tvSetTimeTo;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_btn_set_day_from)
+    Button btnSetDayFrom;
 
-    private Button btnSetDayFrom;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_btn_set_time_from)
+    Button btnSetTimeFrom;
 
-    private Button btnSetTimeFrom;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_btn_set_day_to)
+    Button btnSetDayTo;
 
-    private Button btnSetDayTo;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_btn_set_time_to)
+    Button btnSetTimeTo;
 
-    private Button btnSetTimeTo;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_actv_place)
+    AutoCompleteTextView actvPlace;
 
-    private Button btnFind;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_mactv_add_friend)
+    MultiAutoCompleteTextView mactvAddfriend;
 
-    private AutoCompleteTextView actvPlace;
+    @NotEmpty
+    @ViewById(R.id.activity_add_event_spn_repeat)
+    Spinner spnRepeat;
 
-    private MultiAutoCompleteTextView mactvAddfriend;
-
-    private Spinner spnRepeat;
+    @ViewById(R.id.activity_add_event_btn_find_friend)
+    Button btnFind;
 
     private String dateSeclect;
 
@@ -80,65 +113,83 @@ public class AddEventActivity extends AppCompatActivity {
 
     private Menu contentMenu;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    private Validator validator;
+
+    @Click(R.id.activity_add_event_btn_set_day_from)
+    void setBtnSetDayFrom() {
+        DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
+        newFragment.show(getFragmentManager(), "DatePicker");
+    }
+
+    @Click(R.id.activity_add_event_btn_set_time_from)
+    void setBtnSetTimeFrom() {
+        DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
+        newFragment.show(getFragmentManager(), "DatePicker");
+    }
+
+    @Click(R.id.activity_add_event_btn_set_day_to)
+    void setBtnSetDayTo() {
+        DialogFragment newFragment = new SelectTimeFragment(tvSetTimeFrom);
+        newFragment.show(getFragmentManager(), "TimePicker");
+    }
+
+    @Click(R.id.activity_add_event_btn_set_time_to)
+    void setBtnSetTimeTo() {
+        DialogFragment newFragment = new SelectTimeFragment(tvSetTimeTo);
+        newFragment.show(getFragmentManager(), "TimePicker");
+    }
+
+    @Click(R.id.activity_add_event_btn_find_friend)
+    void setBtnFind() {
+        final Dialog DIALOG = new Dialog(AddEventActivity.this);
+        DIALOG.setContentView(R.layout.dialog_add_friend);
+        DIALOG.setTitle("My friend");
+        DIALOG.setCancelable(true);
+        final ListView LISTMYFRIENDDIALOG =
+                (ListView) DIALOG.findViewById(R.id.dialog_add_friend_lv_main);
+        final List<String> LISTFRIEND = new ArrayList<String>();
+        firebaseFriend.child("My_friend").child(mailUser)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                            LISTFRIEND.add(snapShot.getKey().toString().replace("&", "."));
+                        }
+                        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+                                getApplicationContext(),
+                                R.layout.adapter_place, LISTFRIEND);
+                        LISTMYFRIENDDIALOG.setAdapter(arrayAdapter);
+                        DIALOG.show();
+                        LISTMYFRIENDDIALOG.setOnItemClickListener(
+                                new AdapterView.OnItemClickListener() {
+                                    @Override
+                                    public void onItemClick(AdapterView<?> parent,
+                                                            View view,
+                                                            int position, long id) {
+                                        mactvAddfriend.setText(mactvAddfriend.getText()
+                                                + LISTFRIEND.get(position) + "," + " ");
+                                    }
+                                });
+                    }
+
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+                    }
+                });
+
+    }
+
+    @AfterViews
+    void afterViews() {
         getDateSelectFromHome();
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_event);
         Firebase.setAndroidContext(this);
         firebaseFriend = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
         tvSetDayFrom.setText(dateSeclect);
-        btnSetDayFrom.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                DialogFragment newFragment = new SelectDateFragment(tvSetDayFrom);
-                newFragment.show(getFragmentManager(), "DatePicker");
-            }
-        });
-        btnSetDayTo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                DialogFragment newFragment = new SelectDateFragment(tvSetDayTo);
-                newFragment.show(getFragmentManager(), "DatePicker");
-            }
-        });
-        btnSetTimeFrom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeFrom);
-                newFragment.show(getFragmentManager(), "TimePicker");
-            }
-        });
-        btnSetTimeTo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFragment newFragment = new SelectTimeFragment(tvSetTimeTo);
-                newFragment.show(getFragmentManager(), "TimePicker");
-            }
-        });
         setDataForPlace();
         setDataForRepeat();
         setDataForAddfriend();
-        buttonAddFriend();
-    }
-
-    //initView value for component
-    public void aInit() {
-        etEventName = (EditText) findViewById(R.id.activity_add_event_et_event_name);
-        etDecription = (EditText) findViewById(R.id.activity_add_event_et_description);
-        etAlarm = (EditText) findViewById(R.id.activity_add_event_et_alarm);
-        tvSetDayFrom = (TextView) findViewById(R.id.activity_add_event_tv_set_day_from);
-        tvSetTimeFrom = (TextView) findViewById(R.id.activity_add_event_tv_set_time_from);
-        tvSetDayTo = (TextView) findViewById(R.id.activity_add_event_tv_set_day_to);
-        tvSetTimeTo = (TextView) findViewById(R.id.activity_add_event_tv_set_time_to);
-        btnSetDayFrom = (Button) findViewById(R.id.activity_add_event_btn_set_day_from);
-        btnSetTimeFrom = (Button) findViewById(R.id.activity_add_event_btn_set_time_from);
-        btnSetDayTo = (Button) findViewById(R.id.activity_add_event_btn_set_day_to);
-        btnSetTimeTo = (Button) findViewById(R.id.activity_add_event_btn_set_time_to);
-        actvPlace = (AutoCompleteTextView) findViewById(R.id.activity_add_event_actv_place);
-        mactvAddfriend = (MultiAutoCompleteTextView) findViewById(
-                R.id.activity_add_event_mactv_add_friend);
-        spnRepeat = (Spinner) findViewById(R.id.activity_add_event_spn_repeat);
-        btnFind = (Button) findViewById(R.id.activity_add_event_btn_find_friend);
+        validator = new Validator(this);
+        validator.setValidationListener(this);
     }
 
     public void setDataForPlace() {
@@ -169,7 +220,6 @@ public class AddEventActivity extends AppCompatActivity {
                     public void onCancelled(FirebaseError firebaseError) {
                     }
                 });
-
     }
 
     public void setDataForRepeat() {
@@ -201,60 +251,17 @@ public class AddEventActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_add_event_done:
                 //saveEventinFirebase();
-                checkEntry();
+                validator.validate();
                 break;
             case R.id.menu_add_event_back:
-                Intent intent = new Intent(AddEventActivity.this, NavigationActivity.class);
-                intent.putExtra("NameUserfromAddEvent", nameUser);
-                intent.putExtra("NameUser", nameUser);
-                intent.putExtra("MailUser", mailUser);
-                startActivity(intent);
+//                Intent intent = new Intent(AddEventActivity.this, NavigationActivity.class);
+//                intent.putExtra("NameUserfromAddEvent", nameUser);
+//                intent.putExtra("NameUser", nameUser);
+//                intent.putExtra("MailUser", mailUser);
+//                startActivity(intent);
+                finish();
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void buttonAddFriend() {
-        btnFind.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Dialog DIALOG = new Dialog(AddEventActivity.this);
-                DIALOG.setContentView(R.layout.dialog_add_friend);
-                DIALOG.setTitle("My friend");
-                DIALOG.setCancelable(true);
-                final ListView LISTMYFRIENDDIALOG =
-                        (ListView) DIALOG.findViewById(R.id.dialog_add_friend_lv_main);
-                final List<String> LISTFRIEND = new ArrayList<String>();
-                firebaseFriend.child("My_friend").child(mailUser)
-                        .addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                for (DataSnapshot snapShot : dataSnapshot.getChildren()) {
-                                    LISTFRIEND.add(snapShot.getKey().toString().replace("&", "."));
-                                }
-                                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
-                                        getApplicationContext(),
-                                        R.layout.adapter_place, LISTFRIEND);
-                                LISTMYFRIENDDIALOG.setAdapter(arrayAdapter);
-                                DIALOG.show();
-                                LISTMYFRIENDDIALOG.setOnItemClickListener(
-                                        new AdapterView.OnItemClickListener() {
-                                            @Override
-                                            public void onItemClick(AdapterView<?> parent,
-                                                                    View view,
-                                                                    int position, long id) {
-                                                mactvAddfriend.setText(mactvAddfriend.getText()
-                                                        + LISTFRIEND.get(position) + "," + " ");
-                                            }
-                                        });
-                            }
-
-                            @Override
-                            public void onCancelled(FirebaseError firebaseError) {
-                            }
-                        });
-
-            }
-        });
     }
 
     public void saveEventinFirebase() {
@@ -278,7 +285,7 @@ public class AddEventActivity extends AppCompatActivity {
         eventValue.put("timeFrom", tvSetTimeFrom.getText().toString());
         eventValue.put("dateTo", tvSetDayTo.getText().toString());
         eventValue.put("timeTo", tvSetTimeTo.getText().toString());
-        eventValue.put("description", etDecription.getText().toString());
+        eventValue.put("description", etDescription.getText().toString());
         eventValue.put("place", actvPlace.getText().toString());
         eventValue.put("friendInvite", listinvite);
         eventValue.put("alarm", etAlarm.getText().toString());
@@ -292,7 +299,7 @@ public class AddEventActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Congratulation", Toast.LENGTH_LONG).show();
     }
 
-    public void checkNgay() {
+    public void checkDay() {
         String error = null;
         if (toDay.replace("-", "a").compareTo(tvSetDayFrom.getText()
                 .toString().replace("-", "a")) <= 0) {
@@ -312,31 +319,10 @@ public class AddEventActivity extends AppCompatActivity {
             } else {
                 error = "error about date to";
             }
-
         } else {
             error = "error about date from";
         }
         if (error != null) {
-            Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void checkEntry() {
-        String error = "";
-        if ((etEventName.getText().toString().compareTo("") == 0) ||
-                (tvSetDayFrom.getText().toString().compareTo("") == 0) ||
-                (tvSetTimeFrom.getText().toString().compareTo("") == 0) ||
-                (tvSetDayTo.getText().toString().compareTo("") == 0) ||
-                (tvSetTimeTo.getText().toString().compareTo("") == 0) ||
-                (etDecription.getText().toString().compareTo("") == 0) ||
-                (actvPlace.getText().toString().compareTo("") == 0) ||
-                (etAlarm.getText().toString().compareTo("") == 0) ||
-                (spnRepeat.getSelectedItem().toString().compareTo("") == 0)) {
-            error = "error entry data";
-        } else {
-            checkNgay();
-        }
-        if (error.compareTo("") != 0) {
             Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
         }
     }
@@ -347,13 +333,32 @@ public class AddEventActivity extends AppCompatActivity {
         tvSetTimeFrom.setText("");
         tvSetDayTo.setText("");
         tvSetTimeTo.setText("");
-        etDecription.setText("");
+        etDescription.setText("");
         actvPlace.setText("");
         mactvAddfriend.setText("");
         etAlarm.setText("");
         spnRepeat.setSelection(0);
     }
 
+    @Override
+    public void onValidationSucceeded() {
+        checkDay();
+    }
+
+    @Override
+    public void onValidationFailed(List<ValidationError> errors) {
+        for (ValidationError error : errors) {
+            View contentView = error.getView();
+            String message = error.getCollatedErrorMessage(this);
+
+            //Display error message
+            if (contentView instanceof EditText) {
+                ((EditText) contentView).setError(message);
+            } else {
+                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            }
+        }
+    }
 }
 
 

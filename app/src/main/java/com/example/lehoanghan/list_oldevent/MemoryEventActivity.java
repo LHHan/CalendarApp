@@ -38,13 +38,60 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.rockerhieu.emojicon.EmojiconEditText;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+import org.w3c.dom.Text;
+
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 /**
  * Created by lehoanghan on 5/22/2016.
  */
+@EActivity(R.layout.activity_memory_event)
 public class MemoryEventActivity extends AppCompatActivity {
+    final ArrayList<Bitmap> IMAGEARRAY = new ArrayList<>();
+
+    @ViewById(R.id.activity_memory_event_tv_name_event_value)
+    TextView tvNameEventValue;
+
+    @ViewById(R.id.activity_memory_event_tv_date_start_value)
+    TextView tvDateStartValue;
+
+    @ViewById(R.id.activity_memory_event_tv_time_start_value)
+    TextView tvTimeStartValue;
+
+    @ViewById(R.id.activity_memory_event_tv_date_end_value)
+    TextView tvDateEndValue;
+
+    @ViewById(R.id.activity_memory_event_tv_time_end_value)
+    TextView tvTimeEndValue;
+
+    @ViewById(R.id.activity_memory_event_tv_decription_value)
+    TextView tvDecriptionValue;
+
+    @ViewById(R.id.activity_memory_event_tv_place_value)
+    TextView tvPlaceValue;
+
+    @ViewById(R.id.activity_memory_event_tv_friend_invite_value)
+    TextView tvFriendEventValue;
+
+    @ViewById(R.id.activity_memory_event_tv_alarm_value)
+    TextView tvAlarmValue;
+
+    @ViewById(R.id.activity_memory_event_tv_repeat_value)
+    TextView tvRepeatValue;
+
+    @ViewById(R.id.activity_memory_event_btn_gallery)
+    Button btnGallery;
+
+    @ViewById(R.id.activity_memory_event_btn_commnet)
+    Button btnComment;
+
+    @ViewById(R.id.activity_memory_event_btn_picture)
+    Button btnAddPic;
 
     private Firebase aFirebase;
 
@@ -53,32 +100,6 @@ public class MemoryEventActivity extends AppCompatActivity {
     private String mailUser;
 
     private EventValue passValue;
-
-    private TextView tvNameEventValue;
-
-    private TextView tvDateStartValue;
-
-    private TextView tvTimeStartValue;
-
-    private TextView tvDateEndValue;
-
-    private TextView tvTimeEndValue;
-
-    private TextView tvDecriptionValue;
-
-    private TextView tvPlaceValue;
-
-    private TextView tvFriendEventValue;
-
-    private TextView tvAlarmValue;
-
-    private TextView tvRepeatValue;
-
-    private Button btnGallery;
-
-    private Button btnComment;
-
-    private Button btnAddPic;
 
     private ArrayList<String> listComment;
 
@@ -96,35 +117,36 @@ public class MemoryEventActivity extends AppCompatActivity {
 
     private FrameLayout frameLayout;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_memory_event);
+    @Click(R.id.activity_memory_event_btn_gallery)
+    void setBtnGallery() {
+
+    }
+
+    @Click(R.id.activity_memory_event_btn_commnet)
+    void setBtnComment() {
+        Intent intent = new Intent(MemoryEventActivity.this, CommentActivity_.class);
+        intent.putExtra("KeyaddComment", passValue.getNameEvent().replace(" ", "&") +
+                "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom());
+        intent.putExtra("EventValue", passValue);
+        intent.putExtra("NameUser", nameUser);
+        intent.putExtra("MailUser", mailUser);
+        startActivity(intent);
+    }
+
+    @Click(R.id.activity_memory_event_btn_picture)
+    void setBtnAddPic() {
+
+    }
+
+    @AfterViews
+    void afterViews() {
         giveDataUser();
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
-        aInit();
-        setValue();
+        initView();
     }
 
-    public void aInit() {
-        tvNameEventValue = (TextView) findViewById(R.id.activity_memory_event_tv_name_event_value);
-        tvDateStartValue = (TextView) findViewById(R.id.activity_memory_event_tv_date_start_value);
-        tvTimeStartValue = (TextView) findViewById(R.id.activity_memory_event_tv_time_start_value);
-        tvDateEndValue = (TextView) findViewById(R.id.activity_memory_event_tv_date_end_value);
-        tvTimeEndValue = (TextView) findViewById(R.id.activity_memory_event_tv_time_end_value);
-        tvDecriptionValue = (TextView) findViewById(R.id.activity_memory_event_tv_decription_value);
-        tvPlaceValue = (TextView) findViewById(R.id.activity_memory_event_tv_place_value);
-        tvFriendEventValue =
-                (TextView) findViewById(R.id.activity_memory_event_tv_friend_invite_value);
-        btnGallery = (Button) findViewById(R.id.activity_memory_event_btn_gallery);
-        tvAlarmValue = (TextView) findViewById(R.id.activity_memory_event_tv_alarm_value);
-        tvRepeatValue = (TextView) findViewById(R.id.activity_memory_event_tv_repeat_value);
-        btnComment = (Button) findViewById(R.id.activity_memory_event_btn_commnet);
-        btnAddPic = (Button) findViewById(R.id.activity_memory_event_btn_picture);
-    }
-
-    public void setValue() {
+    public void initView() {
         tvNameEventValue.setText(passValue.getNameEvent());
         tvDateStartValue.setText(passValue.getDateFrom());
         tvTimeStartValue.setText(passValue.getTimeFrom());
@@ -136,7 +158,6 @@ public class MemoryEventActivity extends AppCompatActivity {
         tvFriendEventValue.setText(passValue.getFriendInvite().replace("&", "."));
         tvAlarmValue.setText(passValue.getAlarm());
         tvRepeatValue.setText(passValue.getRepeat());
-        final ArrayList<Bitmap> IMAGEARRAY = new ArrayList<>();
         final String[] FRIEND = passValue.getFriendInvite().toString().split(",");
         btnGallery.setVisibility(View.INVISIBLE);
         for (int i = 0; i < FRIEND.length; i++) {
@@ -185,18 +206,6 @@ public class MemoryEventActivity extends AppCompatActivity {
                 dialog.setTitle("Friend Invite");
                 dialog.show();
 
-            }
-        });
-        btnComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                Intent intent = new Intent(MemoryEventActivity.this, CommentActivity.class);
-                intent.putExtra("KeyaddComment", passValue.getNameEvent().replace(" ", "&") +
-                        "*" + passValue.getDateFrom() + "*" + passValue.getTimeFrom());
-                intent.putExtra("EventValue", passValue);
-                intent.putExtra("NameUser", nameUser);
-                intent.putExtra("MailUser", mailUser);
-                startActivity(intent);
             }
         });
         btnAddPic.setOnClickListener(new View.OnClickListener() {

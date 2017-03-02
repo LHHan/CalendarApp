@@ -201,7 +201,6 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
 
     @Override
     public void onValidationSucceeded() {
-        Toast.makeText(this, "Yay! we got it right", Toast.LENGTH_LONG).show();
         saveDatabase();
     }
 

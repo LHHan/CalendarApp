@@ -87,10 +87,9 @@ public class AccountFragment extends Fragment {
 
     @AfterViews
     public void afterView() {
-        activityRoot = getActivity();
         setHasOptionsMenu(true);
         giveUserfromChoose();
-        Firebase.setAndroidContext(activityRoot);
+        Firebase.setAndroidContext(getActivity());
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
 
         setImageDefault();

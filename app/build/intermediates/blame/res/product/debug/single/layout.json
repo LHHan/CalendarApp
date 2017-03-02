@@ -8,10 +8,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\number_indicator_spinner.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\layout\\number_indicator_spinner.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\toolbar.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
@@ -70,14 +66,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\design_layout_tab_text.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\dialog.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\layout\\dialog.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\progress_dialog.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\layout\\progress_dialog.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\activity_add_event.xml",
@@ -288,10 +276,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\snackbar.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\layout\\snackbar.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\design_navigation_item.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_navigation_item.xml"
     },
@@ -392,10 +376,6 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\dialog_add_friend.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\color_selector.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.github.navasmdc\\MaterialDesign\\1.5\\res\\layout\\color_selector.xml"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\fragment_friend_accept.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\layout\\fragment_friend_accept.xml"
     },
@@ -422,10 +402,6 @@
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\sb__template.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.nispok\\snackbar\\2.11.0\\res\\layout\\sb__template.xml"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\activity_picture.xml",

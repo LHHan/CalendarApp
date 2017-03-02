@@ -3,7 +3,6 @@ package com.example.lehoanghan.list_oldevent;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -28,14 +27,42 @@ import com.rockerhieu.emojicon.EmojiconGridFragment;
 import com.rockerhieu.emojicon.EmojiconsFragment;
 import com.rockerhieu.emojicon.emoji.Emojicon;
 
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Extra;
+import org.androidannotations.annotations.ViewById;
+
 import java.util.ArrayList;
 
 /**
  * Created by lehoanghan on 6/28/2016.
  */
+@EActivity(R.layout.activity_picture)
 public class PictureActivity extends AppCompatActivity
         implements EmojiconGridFragment.OnEmojiconClickedListener,
         EmojiconsFragment.OnEmojiconBackspaceClickedListener {
+    @ViewById(R.id.activity_picture_iv_picture)
+    ImageView ivPicture;
+
+    @ViewById(R.id.activity_picture_btn_send)
+    Button btnSendComment;
+
+    @ViewById(R.id.activity_picture_btn_emojicon)
+    Button btnEmoji;
+
+    @ViewById(R.id.activity_picture_eiet_my_comment)
+    EmojiconEditText emojiconComment;
+
+    @ViewById(R.id.activity_picture_fl_emojicon)
+    FrameLayout frameLayout;
+
+    @ViewById(R.id.activity_picture_lv_list_comment)
+    ListView lvComment;
+
+    @Extra
+    ArrayList<String> listComment;
+
     private Bitmap aBitmap;
 
     private EventValue eventValue;
@@ -50,37 +77,69 @@ public class PictureActivity extends AppCompatActivity
 
     private Firebase aFirebase;
 
-    private ArrayList<String> listComment;
-
     private int intVisible;
-
-    private EmojiconEditText emojIconComment;
-
-    private FrameLayout frameLayout;
-
-    private ImageView ivPicture;
-
-    private Button btnSendComment;
-
-    private Button btnEmoji;
-
-    private ListView lvComment;
 
     private Uri uriImage;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_picture);
+    @Click(R.id.activity_picture_btn_send)
+    void setBtnSendComment() {
+        aFirebase.child("CommentPicture").child(eventValue.getNameEvent().replace(" ", "&")
+                + "*" + eventValue.getDateFrom() +
+                "*" + eventValue.getTimeFrom() +
+                "*" + aPosition).push().setValue(nameUser + ": " +
+                emojiconComment.getText().toString());
+        aFirebase.child("CommentPicture")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot data : dataSnapshot.getChildren()) {
+                            if (data.getKey().toString().compareTo(
+                                    eventValue.getNameEvent().replace(" ", "&") +
+                                            "*" + eventValue.getDateFrom() +
+                                            "*" + eventValue.getTimeFrom() + "*"
+                                            + aPosition) == 0) {
+                                listComment.clear();
+                                for (DataSnapshot value : data.getChildren()) {
+                                    listComment.add(value.getValue().toString());
+                                }
+                            }
+                        }
+                        //ArrayAdapter arrayAdapter = new ArrayAdapter(v.getContext(),
+                        // android.R.layout.simple_expandable_list_item_1, listComment);
+                        CustomCommentAdapter arrayAdapter =
+                                new CustomCommentAdapter(getApplicationContext(), listComment);
+                        lvComment.setAdapter(arrayAdapter);
+                    }
+
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+
+                    }
+                });
+        emojiconComment.setText("");
+    }
+
+    @Click(R.id.activity_picture_btn_emojicon)
+    void setBtnEmoji() {
+        if (intVisible == 0) {
+            intVisible = 1;
+            setEmojiconFragment(false, intVisible);
+        } else {
+            intVisible = 0;
+            setEmojiconFragment(false, intVisible);
+        }
+    }
+
+    @AfterViews
+    void afterViews() {
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         giveValue();
-        aInit();
+        initView();
         setComment();
     }
 
-    public void aInit() {
-        ivPicture = (ImageView) findViewById(R.id.activity_picture_iv_picture);
+    public void initView() {
         ivPicture.setImageBitmap(aBitmap);
         ivPicture.setLayoutParams(new LinearLayout.LayoutParams(1000, 1000));
         ivPicture.setOnLongClickListener(new View.OnLongClickListener() {
@@ -93,12 +152,6 @@ public class PictureActivity extends AppCompatActivity
                 return false;
             }
         });
-        btnSendComment = (Button) findViewById(R.id.activity_picture_btn_send);
-        btnEmoji = (Button) findViewById(R.id.activity_picture_btn_emojicon);
-        emojIconComment = (EmojiconEditText) findViewById(R.id.activity_picture_eiet_my_comment);
-        frameLayout = (FrameLayout) findViewById(R.id.activity_picture_fl_emojicon);
-        lvComment = (ListView) findViewById(R.id.activity_picture_lv_list_comment);
-
     }
 
     public void setComment() {
@@ -121,7 +174,6 @@ public class PictureActivity extends AppCompatActivity
                         }
                     }
                 }
-                ListView lvComment = (ListView) findViewById(R.id.activity_picture_lv_list_comment);
                 CustomCommentAdapter arrayAdapter =
                         new CustomCommentAdapter(getApplication().getBaseContext(), listComment);
                 lvComment.setAdapter(arrayAdapter);
@@ -130,60 +182,6 @@ public class PictureActivity extends AppCompatActivity
             @Override
             public void onCancelled(FirebaseError firebaseError) {
 
-            }
-        });
-
-        btnEmoji.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (intVisible == 0) {
-                    intVisible = 1;
-                    setEmojiconFragment(false, intVisible);
-                } else {
-                    intVisible = 0;
-                    setEmojiconFragment(false, intVisible);
-                }
-            }
-        });
-        btnSendComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                aFirebase.child("CommentPicture").child(eventValue.getNameEvent().replace(" ", "&")
-                        + "*" + eventValue.getDateFrom() +
-                        "*" + eventValue.getTimeFrom() +
-                        "*" + aPosition).push().setValue(nameUser + ": " +
-                        emojIconComment.getText().toString());
-                aFirebase.child("CommentPicture")
-                        .addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(DataSnapshot dataSnapshot) {
-                                for (DataSnapshot data : dataSnapshot.getChildren()) {
-                                    if (data.getKey().toString().compareTo(
-                                            eventValue.getNameEvent().replace(" ", "&") +
-                                                    "*" + eventValue.getDateFrom() +
-                                                    "*" + eventValue.getTimeFrom() + "*"
-                                                    + aPosition) == 0) {
-                                        listComment.clear();
-                                        for (DataSnapshot value : data.getChildren()) {
-                                            listComment.add(value.getValue().toString());
-                                        }
-                                    }
-                                }
-                                ListView lvComment = (ListView) findViewById(
-                                        R.id.activity_picture_lv_list_comment);
-                                //ArrayAdapter arrayAdapter = new ArrayAdapter(v.getContext(),
-                                // android.R.layout.simple_expandable_list_item_1, listComment);
-                                CustomCommentAdapter arrayAdapter =
-                                        new CustomCommentAdapter(v.getContext(), listComment);
-                                lvComment.setAdapter(arrayAdapter);
-                            }
-
-                            @Override
-                            public void onCancelled(FirebaseError firebaseError) {
-
-                            }
-                        });
-                emojIconComment.setText("");
             }
         });
     }
@@ -233,11 +231,11 @@ public class PictureActivity extends AppCompatActivity
 
     @Override
     public void onEmojiconBackspaceClicked(View v) {
-        EmojiconsFragment.backspace(emojIconComment);
+        EmojiconsFragment.backspace(emojiconComment);
     }
 
     @Override
     public void onEmojiconClicked(Emojicon emojicon) {
-        EmojiconsFragment.input(emojIconComment, emojicon);
+        EmojiconsFragment.input(emojiconComment, emojicon);
     }
 }

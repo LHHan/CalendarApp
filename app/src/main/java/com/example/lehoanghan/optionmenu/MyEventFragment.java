@@ -43,10 +43,7 @@ public class MyEventFragment extends Fragment {
 
     @ViewById(R.id.fragment_my_envent_rcv_list_my_event)
     RecyclerView recyclerView;
-
-
-    private View contentView;
-
+    
     private EventRecyclerAdapter eventRecycleAdapter;
 
     private LinearLayoutManager linearLayoutManager;
@@ -74,7 +71,7 @@ public class MyEventFragment extends Fragment {
         Firebase.setAndroidContext(getActivity());
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
         aInit();
-        linearLayoutManager = new LinearLayoutManager(contentView.getContext());
+        linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         getNewEventFormFirebase();

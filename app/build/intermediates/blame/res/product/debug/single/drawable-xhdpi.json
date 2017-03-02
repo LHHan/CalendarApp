@@ -44,28 +44,28 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_grey600_48dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_map_marker_black_36dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_map_marker_black_36dp.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_lock_black_36dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_lock_black_36dp.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_map_marker_black_36dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_map_marker_black_36dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_cellphone_android_grey600_36dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_cellphone_android_grey600_36dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_account_card_details_white_48dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_card_details_white_48dp.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_cellphone_android_white_24dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_cellphone_android_white_24dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_key_variant_white_18dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_key_variant_white_18dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_cellphone_android_white_24dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_cellphone_android_white_24dp.png"
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_account_card_details_white_48dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_card_details_white_48dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\avt_default.png",
@@ -300,12 +300,12 @@
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_skype_white_18dp.png"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_map_marker_white_24dp.png",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_map_marker_white_24dp.png"
-    },
-    {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_file_document_white_36dp.png",
         "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_file_document_white_36dp.png"
+    },
+    {
+        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_map_marker_white_24dp.png",
+        "source": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_map_marker_white_24dp.png"
     },
     {
         "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xhdpi\\ic_emoji_nature_light_normal.png",

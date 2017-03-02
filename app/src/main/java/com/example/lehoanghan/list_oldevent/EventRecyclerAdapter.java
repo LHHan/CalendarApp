@@ -388,7 +388,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                 VIEWHOLDER.btnDetail.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(v.getContext(), MemoryEventActivity.class);
+                        Intent intent = new Intent(v.getContext(), MemoryEventActivity_.class);
                         intent.putExtra("EventValue", dataSet.get(position));
                         intent.putExtra("NameUser", nameUser);
                         intent.putExtra("MailUser", mailUser);

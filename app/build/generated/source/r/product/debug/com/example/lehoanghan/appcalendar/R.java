@@ -6063,7 +6063,7 @@ containing a value of this type.
         public static final int ad_label=0x7f0f0169;
         public static final int adapter_comment_eitv_emojicon=0x7f0f0127;
         public static final int add=0x7f0f0029;
-        public static final int add_event=0x7f0f01fd;
+        public static final int add_event=0x7f0f01fe;
         public static final int adjust_height=0x7f0f0054;
         public static final int adjust_width=0x7f0f0055;
         public static final int alertTitle=0x7f0f00a4;
@@ -6308,7 +6308,8 @@ containing a value of this type.
         public static final int menu_body_iv_icon=0x7f0f01c9;
         public static final int menu_body_tv_body=0x7f0f01ca;
         public static final int menu_head_tv_title=0x7f0f01cb;
-        public static final int menu_home_ab_add_event=0x7f0f01fc;
+        public static final int menu_home_ab_add_event=0x7f0f01fd;
+        public static final int menu_home_ab_login=0x7f0f01fc;
         public static final int middle=0x7f0f0053;
         public static final int mini=0x7f0f0044;
         public static final int monday=0x7f0f005f;
@@ -6367,7 +6368,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0f0015;
         public static final int progress_horizontal=0x7f0f0016;
         public static final int radio=0x7f0f00af;
-        public static final int rate=0x7f0f01fe;
+        public static final int rate=0x7f0f01ff;
         public static final int rfc822=0x7f0f006d;
         public static final int right=0x7f0f0039;
         public static final int sandbox=0x7f0f007e;
