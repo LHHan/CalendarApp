@@ -11,7 +11,8 @@
         android:id="@+id/fragment_home_iv_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="3" />
+        android:layout_weight="3"
+        android:scaleType="centerCrop"/>
 
     <!--&lt;!&ndash;android:background="@drawable/bg_countryside_dirt_road" />&ndash;&gt;-->
 

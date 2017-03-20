@@ -1,26 +1,26 @@
 [
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_google.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_google.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_facebook.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_facebook.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_facebook.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_facebook.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\account.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\account.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\account.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\account.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_google.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_google.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\key_variant.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\key_variant.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\key_variant.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\key_variant.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_twitter.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_twitter.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\lock_plus.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\lock_plus.xml"
     },
     {
-        "merged": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\lock_plus.xml",
-        "source": "D:\\Project_hh\\CalendarApp\\app\\build\\generated\\res\\pngs\\product\\debug\\drawable-anydpi-v21\\lock_plus.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-anydpi-v21\\ic_twitter.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable-anydpi-v21\\ic_twitter.xml"
     }
 ]

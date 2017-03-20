@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
+import org.androidannotations.annotations.EFragment;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+
 
 public class SelectDateFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {

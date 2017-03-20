@@ -1,7 +1,4 @@
-#Thu Mar 02 17:19:11 ICT 2017
-base.0=D\:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\10\\instant-run_a8534f27fc56f046e6fcdfdd979c980535d1e949
-renamed.1=classes2.dex
+#Tue Mar 21 00:59:58 ICT 2017
+base.0=E\:\\AndroidProject\\Calendar\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=D\:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\10\\instant-run-bootstrap_c9c650a5712db51e44bc946f08bbc83202d0f880\\classes.dex
-base.1=D\:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\10\\instant-run-bootstrap_c9c650a5712db51e44bc946f08bbc83202d0f880
-file.0=D\:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\10\\instant-run_a8534f27fc56f046e6fcdfdd979c980535d1e949\\classes.dex
+file.0=E\:\\AndroidProject\\Calendar\\app\\build\\intermediates\\transforms\\dex\\product\\debug\\folders\\1000\\1f\\main\\classes.dex

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Project_hh\\CalendarApp\\app\\build\\intermediates\\incremental\\mergeProductDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\incremental\\mergeProductDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "D:\\Project_hh\\CalendarApp\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

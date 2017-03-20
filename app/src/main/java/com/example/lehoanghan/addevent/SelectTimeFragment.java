@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import org.androidannotations.annotations.EFragment;
+
 import java.util.Calendar;
+
 
 public class SelectTimeFragment extends DialogFragment
         implements TimePickerDialog.OnTimeSetListener {
