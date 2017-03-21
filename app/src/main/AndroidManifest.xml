@@ -39,8 +39,8 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.lehoanghan.choosemenu.NavigationActivity"
-            android:windowSoftInputMode="stateHidden|adjustResize"
-        android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.example.lehoanghan.addevent.AddEventActivity_"
             android:theme="@style/AppTheme" />
@@ -63,7 +63,7 @@
         <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver" />
 
         <service
-            android:name="com.example.lehoanghan.list_newevent.RingtonePlayingService"
+            android:name="com.example.lehoanghan.list_newevent.RingtonePlayingService_"
             android:enabled="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

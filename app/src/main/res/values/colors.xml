@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="lightblue">#7fc5ff</color>
 
+    <color name="gray_background">#FFCCCCCC</color>
+
     <color name="transparen">#00000000</color>
     <color name="menu_item_head">#FFFFFF</color>
     <color name="item_nomal">#303030</color>

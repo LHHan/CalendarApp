@@ -8,9 +8,12 @@ import android.support.annotation.Nullable;
 
 import com.example.lehoanghan.appcalendar.R;
 
+import org.androidannotations.annotations.EService;
+
 /**
  * Created by lehoanghan on 6/12/2016.
  */
+@EService
 public class RingtonePlayingService extends Service {
 
     private MediaPlayer mediaPlayer;
