@@ -1,19 +1,19 @@
 [
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\activity_gallery_friend_invite.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\layout\\activity_gallery_friend_invite.xml"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\activity_gallery_friend_invite.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\layout\\activity_gallery_friend_invite.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0-alpha1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\layout\\abc_dialog_title_material.xml",
