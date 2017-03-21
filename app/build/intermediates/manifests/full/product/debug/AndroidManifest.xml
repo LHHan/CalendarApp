@@ -76,7 +76,7 @@
         <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver" />
 
         <service
-            android:name="com.example.lehoanghan.list_newevent.RingtonePlayingService"
+            android:name="com.example.lehoanghan.list_newevent.RingtonePlayingService_"
             android:enabled="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

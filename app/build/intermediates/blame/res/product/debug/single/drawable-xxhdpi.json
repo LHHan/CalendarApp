@@ -16,12 +16,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_cellphone_android_white_18dp.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_black_18dp.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_black_18dp.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_rocket_black_24dp.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_rocket_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_black_18dp.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_account_black_18dp.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_account_grey600_36dp.png",
@@ -36,12 +36,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_lock_plus_black_48dp.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_rocket_white_48dp.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_rocket_white_48dp.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_skype_black_36dp.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_skype_black_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_rocket_white_48dp.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable-xxhdpi\\ic_rocket_white_48dp.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-xxhdpi\\ic_star_circle_grey600_48dp.png",

@@ -32,12 +32,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2604.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4fb.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4fb.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6f0.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6f0.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4fb.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4fb.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f360.png",
@@ -48,24 +48,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f432.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3ae.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3ae.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f33a.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f33a.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3ae.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3ae.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1fb_1f1ee.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1fb_1f1ee.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26f3.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26f3.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6b5_1f3fe.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6b5_1f3fe.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26f3.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26f3.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270d_1f3fb.png",
@@ -180,24 +180,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ee_1f1f1.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f8_1f1f1.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f8_1f1f1.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270b_1f3ff.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270b_1f3ff.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f8_1f1f1.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f8_1f1f1.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f3_1f1ec.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f3_1f1ec.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_264a.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_264a.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f498.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f498.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_264a.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_264a.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f483_1f3fb.png",
@@ -208,12 +208,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2708.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f58b.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f58b.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6bb.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6bb.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f58b.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f58b.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26be.png",
@@ -244,16 +244,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f476_1f3fd.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f238.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f238.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f385.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f385.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f699.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f699.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f385.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f385.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f238.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f238.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3e3.png",
@@ -272,12 +272,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3a9.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_002a_20e3.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_002a_20e3.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26f9_1f3fe.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26f9_1f3fe.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_002a_20e3.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_002a_20e3.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f468_1f3ff.png",
@@ -348,28 +348,28 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f473.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f608.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f608.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f469_200d_2764_fe0f_200d_1f48b_200d_1f469.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f469_200d_2764_fe0f_200d_1f48b_200d_1f469.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4e0.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4e0.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f608.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f608.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f482.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f482.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1fe_1f1f9.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1fe_1f1f9.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4e0.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4e0.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ec_1f1e6.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ec_1f1e6.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1fe_1f1f9.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1fe_1f1f9.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5f3.png",
@@ -380,12 +380,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4ab.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ed_1f1f3.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ed_1f1f3.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f504.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f504.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ed_1f1f3.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ed_1f1f3.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f513.png",
@@ -412,12 +412,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f646_1f3fc.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f47c_1f3fc.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f47c_1f3fc.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f983.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f983.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f47c_1f3fc.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f47c_1f3fc.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2194.png",
@@ -440,12 +440,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f5_1f1fe.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3cb_1f3ff.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3cb_1f3ff.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44b_1f3ff.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44b_1f3ff.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3cb_1f3ff.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3cb_1f3ff.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2620.png",
@@ -480,12 +480,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ea_1f1ea.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f626.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f626.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44e_1f3fe.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44e_1f3fe.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f626.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f626.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f5_1f1fc.png",
@@ -500,12 +500,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44c_1f3fd.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f481_1f3ff.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f481_1f3ff.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f491.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f491.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f481_1f3ff.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f481_1f3ff.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_21a9.png",
@@ -544,16 +544,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f317.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3a2.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3a2.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e9_1f1f0.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e9_1f1f0.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44d_1f3fb.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44d_1f3fb.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e9_1f1f0.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e9_1f1f0.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3a2.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3a2.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f468_200d_1f469_200d_1f466_200d_1f466.png",
@@ -608,24 +608,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6a3_1f3fc.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f2_1f1f8.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f2_1f1f8.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f45c.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f45c.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f56f.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f56f.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f2_1f1f8.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f2_1f1f8.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3c7.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c7.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f466_1f3fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f466_1f3fc.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3c7.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c7.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f56f.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f56f.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f470_1f3fb.png",
@@ -676,12 +676,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f554.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f45a.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f45a.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e8_1f1f2.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e8_1f1f2.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f45a.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f45a.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f64f_1f3fc.png",
@@ -744,12 +744,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f40c.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f448.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f448.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ec_1f1fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ec_1f1fc.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f448.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f448.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f442_1f3fd.png",
@@ -784,12 +784,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f47a.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f482_1f3fd.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f482_1f3fd.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ed_1f1fa.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ed_1f1fa.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f482_1f3fd.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f482_1f3fd.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6b6.png",
@@ -808,12 +808,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_23fa.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3fe.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3fe.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_25fb.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_25fb.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3fe.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3fe.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e7_1f1ea.png",
@@ -824,24 +824,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f6_1f1e6.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2663.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2663.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f466.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f466.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f58d.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f58d.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f466.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f466.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f649.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f649.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2663.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2663.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ff_1f1fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ff_1f1fc.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f649.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f649.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_231a.png",
@@ -892,12 +892,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2934.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2049.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2049.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4ad.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4ad.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2049.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2049.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5fa.png",
@@ -908,12 +908,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4a4.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f362.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f362.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270d_1f3fd.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270d_1f3fd.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f362.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f362.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_269c.png",
@@ -940,20 +940,20 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2618.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4aa_1f3fe.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4aa_1f3fe.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f590_1f3fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f590_1f3fc.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f333.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f333.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4aa_1f3fe.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4aa_1f3fe.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f21a.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f21a.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f333.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f333.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f596_1f3fe.png",
@@ -964,12 +964,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3d6.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_261d.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_261d.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f509.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f509.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_261d.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_261d.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2697.png",
@@ -1012,20 +1012,20 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4f4.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2693.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2693.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6c3.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6c3.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4fd.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4fd.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2693.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2693.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f47c_1f3fe.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f47c_1f3fe.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4fd.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4fd.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26f1.png",
@@ -1056,12 +1056,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f17f.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ef_1f1f4.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ef_1f1f4.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f518.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f518.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ef_1f1f4.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ef_1f1f4.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f502.png",
@@ -1100,16 +1100,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f55b.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270c_1f3fb.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270c_1f3fb.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f48c.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f48c.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2611.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2611.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f48c.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f48c.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270c_1f3fb.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270c_1f3fb.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f482_1f3ff.png",
@@ -1120,20 +1120,20 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f8_1f1e9.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f63f.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f63f.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f0_1f1ff.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f0_1f1ff.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ee_1f1f6.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ee_1f1f6.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f63f.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f63f.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f399.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f399.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ee_1f1f6.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ee_1f1f6.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f319.png",
@@ -1144,12 +1144,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f918_1f3fd.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f640.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f640.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f42a.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f42a.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f640.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f640.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f50e.png",
@@ -1168,16 +1168,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f64f_1f3fe.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44a_1f3ff.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44a_1f3ff.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f538.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f538.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2638.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2638.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f538.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f538.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f44a_1f3ff.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f44a_1f3ff.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f466_1f3fe.png",
@@ -1204,12 +1204,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f522.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6b4_1f3fb.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6b4_1f3fb.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f917.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f917.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6b4_1f3fb.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6b4_1f3fb.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_270b_1f3fd.png",
@@ -1268,24 +1268,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4a8.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f467_1f3fc.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f467_1f3fc.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f312.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f312.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f467_1f3fc.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f467_1f3fc.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f40a.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f40a.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f365.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f365.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f487_1f3fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f487_1f3fc.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f365.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f365.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4a1.png",
@@ -1368,12 +1368,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f493.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f64c.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f64c.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f9_1f1f4.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f9_1f1f4.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f64c.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f64c.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f346.png",
@@ -1456,24 +1456,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_270f.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f52e.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f52e.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f515.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f515.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f52e.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f52e.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f595_1f3fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f595_1f3fc.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1eb_1f1ef.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1eb_1f1ef.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f0_1f1fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f0_1f1fc.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1eb_1f1ef.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1eb_1f1ef.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6a3_1f3ff.png",
@@ -1516,24 +1516,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f33f.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26aa.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26aa.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ff_1f1f2.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ff_1f1f2.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26aa.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26aa.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5b2.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f5b2.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f473_1f3fc.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f473_1f3fc.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26a1.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_26a1.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f473_1f3fc.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f473_1f3fc.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6e3.png",
@@ -1680,12 +1680,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_23f0.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ec_1f1ed.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ec_1f1ed.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3c3_1f3ff.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c3_1f3ff.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1ec_1f1ed.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1ec_1f1ed.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f633.png",
@@ -1796,12 +1796,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f494.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f69b.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f69b.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_3030.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_3030.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f69b.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f69b.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_26f9_1f3fb.png",
@@ -1812,12 +1812,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f51b.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f478_1f3fc.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f478_1f3fc.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f62e.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f62e.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f478_1f3fc.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f478_1f3fc.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f485_1f3fb.png",
@@ -1836,12 +1836,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f474_1f3fd.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f461.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f461.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e6_1f1f2.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e6_1f1f2.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f461.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f461.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5fc.png",
@@ -1976,16 +1976,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e8_1f1fa.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e6_1f1ff.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e6_1f1ff.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f595_1f3fb.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f595_1f3fb.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f355.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f355.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f595_1f3fb.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f595_1f3fb.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1e6_1f1ff.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e6_1f1ff.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2755.png",
@@ -2140,12 +2140,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f478_1f3fb.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f315.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f315.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2665.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2665.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f315.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f315.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f468_1f3fb.png",
@@ -2264,24 +2264,24 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e8_1f1fb.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f235.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f235.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f396.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f396.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f443.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f443.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f396.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f396.png"
-    },
-    {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f647_1f3fd.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f647_1f3fd.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f235.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f235.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6cd.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6cd.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f647_1f3fd.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f647_1f3fd.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f43a.png",
@@ -2392,12 +2392,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f35c.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f403.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f403.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f476_1f3ff.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f476_1f3ff.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f403.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f403.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f918_1f3fb.png",
@@ -2432,12 +2432,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6aa.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2615.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2615.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4aa_1f3fd.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4aa_1f3fd.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2615.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2615.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5a8.png",
@@ -2452,16 +2452,16 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1e8_1f1ed.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_274c.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_274c.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f388.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f388.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f451.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f451.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f388.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f388.png"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_274c.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_274c.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f42c.png",
@@ -2484,12 +2484,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f0_1f1f7.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f378.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f378.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6e4.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f6e4.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f378.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f378.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f6cf.png",
@@ -2720,12 +2720,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f499.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3f7.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3f7.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f4b2.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f4b2.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f3f7.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3f7.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f5e3.png",
@@ -2756,12 +2756,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f618.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f442_1f3ff.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f442_1f3ff.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_2b05.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_2b05.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f442_1f3ff.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f442_1f3ff.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f8_1f1e8.png",
@@ -2800,12 +2800,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f602.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f308.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f308.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f447_1f3fc.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f447_1f3fc.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f308.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f308.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f60b.png",
@@ -2820,12 +2820,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f449_1f3fb.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f469_200d_1f469_200d_1f467_200d_1f467.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f469_200d_1f469_200d_1f467_200d_1f467.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f68e.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f68e.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f469_200d_1f469_200d_1f467_200d_1f467.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f469_200d_1f469_200d_1f467_200d_1f467.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f41f.png",
@@ -2888,12 +2888,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f3c1.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f645.png",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f645.png"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f1f5_1f1ea.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f1f5_1f1ea.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f645.png",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable-nodpi\\emoji_1f645.png"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable-nodpi\\emoji_1f447_1f3ff.png",

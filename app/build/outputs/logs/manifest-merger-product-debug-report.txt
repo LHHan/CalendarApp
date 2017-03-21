@@ -84,11 +84,11 @@ ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:37:9-39:4
 	android:name
 		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:38:13-46
 activity#com.example.lehoanghan.choosemenu.NavigationActivity
-ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:40:9-43:43
+ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:40:9-43:70
 	android:windowSoftInputMode
-		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:42:13-67
+		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:43:13-67
 	android:theme
-		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:43:9-40
+		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:42:13-44
 	android:name
 		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:41:13-80
 activity#com.example.lehoanghan.addevent.AddEventActivity_
@@ -131,12 +131,12 @@ receiver#com.example.lehoanghan.list_newevent.AlarmNotificationReceiver
 ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:63:9-99
 	android:name
 		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:63:19-96
-service#com.example.lehoanghan.list_newevent.RingtonePlayingService
+service#com.example.lehoanghan.list_newevent.RingtonePlayingService_
 ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:65:9-67:38
 	android:enabled
 		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:67:13-35
 	android:name
-		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:66:13-87
+		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:66:13-88
 meta-data#com.google.android.geo.API_KEY
 ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:76:9-78:55
 	android:value
@@ -155,6 +155,7 @@ ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:83:9-70
 		ADDED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml:83:19-58
 uses-sdk
 INJECTED from E:\AndroidProject\Calendar\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] E:\AndroidProject\Calendar\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [com.android.support:design:24.0.0-alpha1] E:\AndroidProject\Calendar\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0-alpha1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:24.0.0-alpha1] E:\AndroidProject\Calendar\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha1\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:24.0.0-alpha1] E:\AndroidProject\Calendar\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha1\AndroidManifest.xml:20:5-44

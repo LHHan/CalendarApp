@@ -20,20 +20,20 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable\\facebook_button.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\list_item_press.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\list_item_press.xml"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\list_item_press.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\list_item_press.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_old_event.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\ic_old_event.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_alarm.png",
@@ -76,12 +76,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\ab_search.png"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_emoji_symbols_light.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable\\ic_emoji_symbols_light.xml"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ab_back.png",
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\ab_back.png"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\ic_emoji_symbols_light.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.rockerhieu.emojicon\\library\\1.3.3\\res\\drawable\\ic_emoji_symbols_light.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -124,12 +124,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.2.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -160,12 +160,12 @@
         "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_selectall_material.xml"
     },
     {
-        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\google_button.xml",
-        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable\\google_button.xml"
-    },
-    {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\btnlogin_selector.xml",
         "source": "E:\\AndroidProject\\Calendar\\app\\src\\main\\res\\drawable\\btnlogin_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\google_button.xml",
+        "source": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\exploded-aar\\com.firebaseui\\firebase-ui\\0.3.1\\res\\drawable\\google_button.xml"
     },
     {
         "merged": "E:\\AndroidProject\\Calendar\\app\\build\\intermediates\\res\\merged\\product\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
