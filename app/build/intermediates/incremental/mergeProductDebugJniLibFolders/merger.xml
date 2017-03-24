@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\AndroidProject\Calendar\app\src\main\jniLibs"/></dataSet><dataSet config="product"><source path="E:\AndroidProject\Calendar\app\src\product\jniLibs"/></dataSet><dataSet config="debug"><source path="E:\AndroidProject\Calendar\app\src\debug\jniLibs"/></dataSet><dataSet config="productDebug"><source path="E:\AndroidProject\Calendar\app\src\productDebug\jniLibs"/></dataSet></merger>
