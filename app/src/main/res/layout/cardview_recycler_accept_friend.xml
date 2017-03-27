@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@drawable/list_item_press"/>
     <TextView
+        android:id="@+id/cardview_recycler_accept_friend_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cardview_recycler_accept_friend_tv_name"
-        android:text="Name"
         android:fontFamily="sans-serif-medium"
-        android:textSize="60px"/>
+        android:text="Name"
+        android:textSize="16sp" />
     <Button
+        android:id="@+id/cardview_recycler_accept_friend_btn_accept"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:id="@+id/cardview_recycler_accept_friend_btn_accept"
         android:layout_marginLeft="250dp"
         android:text="Accept"
-        android:textSize="14dp"/>
+        android:textSize="14sp" />
     <TextView
+        android:id="@+id/cardview_recycler_accept_friend_tv_mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cardview_recycler_accept_friend_tv_mail"
         android:layout_below="@+id/cardview_recycler_accept_friend_tv_name"
-        android:text="Mail"
         android:fontFamily="sans-serif-medium"
-        android:textSize="60px"/>
+        android:text="Mail"
+        android:textSize="16dp" />
 
 </RelativeLayout>

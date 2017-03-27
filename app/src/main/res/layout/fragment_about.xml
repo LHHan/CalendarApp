@@ -7,11 +7,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:scrollbarAlwaysDrawVerticalTrack="false">
 
@@ -30,9 +31,9 @@
                     android:drawablePadding="8dp"
                     android:padding="5dp"
                     android:singleLine="true"
-                    android:text="Author Information"
+                    android:text="@string/author_information"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -50,9 +51,9 @@
                         android:drawablePadding="8dp"
                         android:padding="5dp"
                         android:singleLine="true"
-                        android:text="Full Name"
+                        android:text="@string/username"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -65,15 +66,10 @@
                         android:gravity="end"
                         android:padding="5dp"
                         android:singleLine="true"
-                        android:text="Le Hoang Han"
+                        android:text="@string/le_hoang_han"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.1dp"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -93,7 +89,7 @@
                         android:singleLine="true"
                         android:text="Phone Number"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -108,14 +104,8 @@
                         android:singleLine="true"
                         android:text="0939296324"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.1dp"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -136,7 +126,7 @@
                         android:singleLine="true"
                         android:text="Email"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -151,14 +141,8 @@
                         android:singleLine="true"
                         android:text="hoanghan.le.95@gmail.com"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.01dp"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -179,7 +163,7 @@
                         android:singleLine="true"
                         android:text="Skye"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -194,14 +178,8 @@
                         android:singleLine="true"
                         android:text="hoanghan.le.95@gmail.com"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.01dp"-->
-                <!--android:background="@color/black" />-->
 
             </LinearLayout>
 
@@ -223,7 +201,7 @@
                     android:singleLine="true"
                     android:text="Project"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -243,7 +221,7 @@
                         android:singleLine="true"
                         android:text="Project Name"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="fill_parent"
@@ -258,14 +236,8 @@
                         android:singleLine="true"
                         android:text="Calendar App"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.1dp"-->
-                <!--android:background="@color/black" />-->
 
                 <TextView
                     android:id="@+id/textView"
@@ -282,11 +254,6 @@
                     android:textColor="@android:color/black"
                     android:textSize="16dp" />
 
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.1dp"-->
-                <!--android:background="@color/black" />-->
-
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="fill_parent"
@@ -300,12 +267,7 @@
                     android:singleLine="true"
                     android:text="Technology"
                     android:textColor="@android:color/black"
-                    android:textSize="16dp" />
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.01dp"-->
-                <!--android:background="@color/black" />-->
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -327,7 +289,7 @@
                     android:singleLine="true"
                     android:text="Assigment 1"
                     android:textColor="@android:color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -347,7 +309,7 @@
                         android:singleLine="true"
                         android:text="@string/version_name"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/fragment_about_tv_version_name_value"
@@ -362,14 +324,8 @@
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="1px"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -389,7 +345,7 @@
                         android:singleLine="true"
                         android:text="@string/version_code"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/fragment_about_tv_version_code_value"
@@ -404,13 +360,8 @@
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="1px"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -430,7 +381,7 @@
                         android:singleLine="true"
                         android:text="@string/buildtypes"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/fragment_about_tv_build_type"
@@ -445,13 +396,8 @@
                         android:padding="5dp"
                         android:singleLine="true"
                         android:textColor="@color/button_selectorcolor"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="1px"-->
-                <!--android:background="@color/black" />-->
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -471,7 +417,7 @@
                         android:singleLine="true"
                         android:text="@string/falvor"
                         android:textColor="@android:color/black"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/fragment_about_tv_flavor_value"
@@ -488,11 +434,6 @@
                         android:textColor="@color/button_selectorcolor"
                         android:textSize="16dp" />
                 </LinearLayout>
-
-                <!--<View-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="0.01dp"-->
-                <!--android:background="@color/black" />-->
 
             </LinearLayout>
 
@@ -515,13 +456,13 @@
                     android:singleLine="true"
                     android:text="View Map Here"
                     android:textColor="@android:color/black"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
-
 
 </FrameLayout>
 

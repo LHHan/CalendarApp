@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="Name"
-        android:textSize="60px" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/cardview_recycler_my_friend_tv_mail"
@@ -24,7 +24,7 @@
         android:layout_below="@+id/cardview_recycler_my_friend_tv_name"
         android:fontFamily="sans-serif-medium"
         android:text="@string/mail"
-        android:textSize="60px" />
+        android:textSize="16dp" />
 
     <TextView
         android:layout_width="match_parent"

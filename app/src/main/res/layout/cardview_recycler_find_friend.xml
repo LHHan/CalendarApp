@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="Name"
-        android:textSize="60px" />
+        android:textSize="16dp" />
 
     <Button
         android:id="@+id/cardview_recycler_find_friend_btn_add"
@@ -32,6 +32,6 @@
         android:layout_below="@+id/cardview_recycler_find_friend_tv_name"
         android:fontFamily="sans-serif-medium"
         android:text="Mail"
-        android:textSize="60px" />
+        android:textSize="16dp" />
 
 </RelativeLayout>

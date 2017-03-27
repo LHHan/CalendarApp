@@ -35,11 +35,6 @@ public class FindFriendFragment extends Fragment {
     @ViewById(R.id.fragment_find_friend_rcv_list_find_friend)
     RecyclerView rcvListFriend;
 
-    @ViewById(R.id.fragment_find_friend_srv_search)
-    SearchView srvFindFriend;
-
-    private View contentView;
-
     private Firebase fireBase;
 
     private LinearLayoutManager linearLayoutManager;
