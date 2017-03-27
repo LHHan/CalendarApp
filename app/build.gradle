@@ -23,12 +23,12 @@ android {
             storePassword 'com.example.lehoanghan.appcalendar'
         }
     }
-    compileSdkVersion 23
-    buildToolsVersion '23.0.1'
+    compileSdkVersion 24
+    buildToolsVersion '24.0.2'
     defaultConfig {
         applicationId "com.example.lehoanghan.appcalendar"
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 2
         versionCode 1
         versionName "1.0"
     }
@@ -60,20 +60,21 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
     compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
-    compile 'com.android.support:design:24.0.0-alpha1'
-    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
     compile 'com.firebase:firebase-client-android:2.3.1'
     compile 'com.firebaseui:firebase-ui:0.3.1'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.android.support:cardview-v7:23.4.0'
-    compile 'com.prolificinteractive:material-calendarview:1.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
     compile 'com.rockerhieu.emojicon:library:1.3.3'
     compile 'com.google.android.gms:play-services-maps:10.2.0'
     compile 'org.androidannotations:androidannotations-api:4.0.0'
     compile 'com.mobsandgeeks:android-saripaar:2.0.2'
     testCompile 'junit:junit:4.12'
     apt 'org.androidannotations:androidannotations:4.0.0'
+    compile 'net.danlew:android.joda:2.9.3'
+    compile 'com.github.clans:fab:1.6.4'
 }

@@ -20,7 +20,9 @@
 
     <color name="colorCyan">#00bcd4</color>
     <color name="colorBackground">#26a69a</color>
-    <color name="colorbackground_alpha_30">#3326a69a</color>
+    <color name="colorbackground_alpha_20">#3326a69a</color>
+    <color name="colorbackground_alpha_5">#0D26a69a</color>
+
     <color name="colorActionbar">#009688</color>
     <color name="colorActionbar2">#00897b</color>
     <color name="white_greyish">#eeeeee</color>

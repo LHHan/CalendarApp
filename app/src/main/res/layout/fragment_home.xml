@@ -3,30 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorActionbar"
     android:fontFamily="sans-serif-medium"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/fragment_home_iv_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:scaleType="centerCrop"/>
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:scaleType="centerCrop" />
 
     <!--&lt;!&ndash;android:background="@drawable/bg_countryside_dirt_road" />&ndash;&gt;-->
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/fragment_home_calendar"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center_vertical"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:padding="5dp"
+        android:layout_weight="0.65"
+        app:mcv_calendarMode="month"
         app:mcv_firstDayOfWeek="monday"
-        app:mcv_monthLabels="@color/colorCyan"
         app:mcv_selectionColor="@color/colorCyan"
-        app:mcv_showOtherDates="defaults" />
+        app:mcv_showOtherDates="defaults"
+        app:mcv_tileHeight="match_parent"
+        app:mcv_tileWidth="match_parent" />
 
 </LinearLayout>

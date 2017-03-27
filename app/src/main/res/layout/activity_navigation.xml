@@ -3,12 +3,13 @@
     android:id="@+id/drawerlayout_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorbackground_alpha_5"
     android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/activity_menu_choose_fl_navigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent" />
 
     <ListView
         android:id="@+id/activity_menu_choose_lv_navigation"
@@ -19,7 +20,7 @@
         android:choiceMode="singleChoice"
         android:divider="@color/list_divider"
         android:dividerHeight="1dp"
-        android:listSelector="@android:drawable/list_selector_background"></ListView>
+        android:listSelector="@android:drawable/list_selector_background" />
 
 
 </android.support.v4.widget.DrawerLayout>

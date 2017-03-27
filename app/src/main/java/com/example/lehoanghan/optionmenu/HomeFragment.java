@@ -1,41 +1,28 @@
 package com.example.lehoanghan.optionmenu;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.Base64;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.example.lehoanghan.addevent.AddEventActivity;
 import com.example.lehoanghan.appcalendar.R;
-import com.firebase.client.DataSnapshot;
+import com.example.lehoanghan.widgets.DayViewDecoratorDotSpan;
 import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
+import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.List;
 
 /**
  * Created by lehoanghan on 3/16/2016.
@@ -57,13 +44,13 @@ public class HomeFragment extends Fragment {
 
     private Intent intentSetDate;
 
-    private StringBuilder txtDate;
-
     private StringBuilder toDay;
 
     private Firebase gFirebase;
 
     private MenuInflater menuInflater;
+    private Menu menu;
+    private StringBuilder txtDate;
 
     public HomeFragment() {
     }
@@ -86,26 +73,40 @@ public class HomeFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menuInflater = getActivity().getMenuInflater();
         menuInflater.inflate(R.menu.menu_home, menu);
         getActivity().setTitle("Home");
-        return super.getActivity().onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.menu_home_ab_add_event:
-                passDataDatetoAddEvent();
-                startActivity(intentSetDate);
+//            case R.id.menu_home_ab_add_event:
+//                passDataDatetoAddEvent();
+//                break;
+            case R.id.menu_home_ab_today:
+                btnTodayClick();
                 break;
+
         }
         return super.onOptionsItemSelected(item);
     }
 
+    public void btnTodayClick() {
+        mcvCalendar.setSelectedDate(Calendar.getInstance());
+        mcvCalendar.setFocusable(false);
+
+        mcvCalendar.setCurrentDate(CalendarDay.today());
+    }
+
     void setCalendar() {
+        List<CalendarDay> dates = new ArrayList<>();
+        dates.add(CalendarDay.today());
+        mcvCalendar.addDecorator(new DayViewDecoratorDotSpan(Color.RED, dates));
+
         mcvCalendar.setSelectedDate(Calendar.getInstance());
         Calendar cal = Calendar.getInstance();
         toDay = txtDate = parseDate(Calendar.getInstance().getTime().getDate(),
@@ -162,11 +163,13 @@ public class HomeFragment extends Fragment {
 
 
     public void passDataDatetoAddEvent() {
-        intentSetDate = new Intent(getActivity(), AddEventActivity.class);
+        /*intentSetDate = new Intent(getActivity(), AddEventActivity.class);
         intentSetDate.putExtra("ChangeDate", txtDate.toString());
         intentSetDate.putExtra("ToDay", toDay.toString());
         intentSetDate.putExtra("MailUser", sMailUser);
         intentSetDate.putExtra("NameUser", sNameUser);
+        startActivity(intentSetDate);*/
+
     }
 
 }

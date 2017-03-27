@@ -26,39 +26,40 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity_"
-            android:theme="@style/AppTheme"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".RegisterActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.choosemenu.NavigationActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name="com.example.lehoanghan.addevent.AddEventActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.myaccount.ChangeAccountActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.list_oldevent.MemoryEventActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.list_oldevent.CommentActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.list_oldevent.PictureActivity_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.example.lehoanghan.list_newevent.AlarmDialog_"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <receiver android:name="com.example.lehoanghan.list_newevent.AlarmNotificationReceiver" />
 
@@ -80,7 +81,11 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".ForgotPasswordActivity_"></activity>
+        <activity
+            android:name=".ForgotPasswordActivity_"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

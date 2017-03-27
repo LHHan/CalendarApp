@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">TODAY</string>
+    <string name="add_event">Add Event</string>
+</resources>

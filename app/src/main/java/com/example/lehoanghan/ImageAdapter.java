@@ -65,16 +65,10 @@ public class ImageAdapter extends BaseAdapter {
         return position;
     }
 
-    public class ViewHolder {
-        private TextView tvGallery;
-
-        private ImageView ivGallery;
-    }
-
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        final ViewHolder HOLDER;
+        final ViewHolder viewHolder;
         View vi = convertView;
 //            if (parent != null)
 //                parent.removeView(convertView);
@@ -82,19 +76,25 @@ public class ImageAdapter extends BaseAdapter {
         if (vi == null) {
             vi = layoutInflater.inflate(R.layout.custom_gallery_friendinvite, parent, false);
             vi.setLayoutParams(new Gallery.LayoutParams(500, 700));
-            HOLDER = new ViewHolder();
-            HOLDER.ivGallery = (ImageView) vi.findViewById(R.id.imgGallery);
-            HOLDER.tvGallery = (TextView) vi.findViewById(R.id.txtGallery);
-            vi.setTag(HOLDER);
+            viewHolder = new ViewHolder();
+            viewHolder.ivGallery = (ImageView) vi.findViewById(R.id.imgGallery);
+            viewHolder.tvGallery = (TextView) vi.findViewById(R.id.txtGallery);
+            vi.setTag(viewHolder);
         } else {
-            HOLDER = (ViewHolder) vi.getTag();
+            viewHolder = (ViewHolder) vi.getTag();
         }
-        HOLDER.ivGallery.setImageBitmap(imageArray.get(position));
-        HOLDER.ivGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
-        HOLDER.ivGallery.setBackgroundResource(galleryItem);
-        HOLDER.tvGallery.setText(strFriend[position].trim().replace("&", "."));
-        HOLDER.tvGallery.setTag(strFriend[position].trim().replace("&", "."));
-        HOLDER.tvGallery.setGravity(Gravity.CENTER);
+        viewHolder.ivGallery.setImageBitmap(imageArray.get(position));
+        viewHolder.ivGallery.setLayoutParams(new LinearLayout.LayoutParams(500, 500));
+        viewHolder.ivGallery.setBackgroundResource(galleryItem);
+        viewHolder.tvGallery.setText(strFriend[position].trim().replace("&", "."));
+        viewHolder.tvGallery.setTag(strFriend[position].trim().replace("&", "."));
+        viewHolder.tvGallery.setGravity(Gravity.CENTER);
         return vi;
+    }
+
+    public class ViewHolder {
+        private TextView tvGallery;
+
+        private ImageView ivGallery;
     }
 }
