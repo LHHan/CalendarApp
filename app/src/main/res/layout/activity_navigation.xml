@@ -16,9 +16,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/item_nomal"
+        android:scrollbars="none"
+        android:background="@color/colorBackground"
         android:choiceMode="singleChoice"
-        android:divider="@color/list_divider"
+        android:divider="@color/white"
         android:dividerHeight="1dp"
         android:listSelector="@android:drawable/list_selector_background" />
 
