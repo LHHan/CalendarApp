@@ -77,4 +77,10 @@ dependencies {
     apt 'org.androidannotations:androidannotations:4.0.0'
     compile 'net.danlew:android.joda:2.9.3'
     compile 'com.github.clans:fab:1.6.4'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'net.danlew:android.joda:2.9.9'
+
+    compile "com.google.dagger:dagger:2.9"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.9"
+    provided 'javax.annotation:jsr250-api:1.0'
 }
