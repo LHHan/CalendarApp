@@ -20,3 +20,11 @@ play_service_basement_10_2_0.xml
 play_service_maps_10_2_0.xml
 play_service_tasks_10_2_0.xml
 workspace.xml
+/.idea
+/*.iml
+/local.properties
+/APPCALENDAR.iml
+/app/app.iml
+/app/src/release/res/values/google_maps_api.xml
+/app/src/debug/res/values/google_maps_api.xml
+/app/src/androidTest/java/com/example/lehoanghan/appcalendar/ApplicationTest.java
