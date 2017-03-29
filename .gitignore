@@ -10,6 +10,13 @@ captures
 .gradle
 .DS_Store
 local.properties
-/build
-/app/build
-/.gradle
+app.iml
+Calendar.iml
+firebase_ui_0_3_1.xml
+library_1_3_3.xml
+local.properties.xml
+multidex_1_0_1.xml
+play_service_basement_10_2_0.xml
+play_service_maps_10_2_0.xml
+play_service_tasks_10_2_0.xml
+workspace.xml

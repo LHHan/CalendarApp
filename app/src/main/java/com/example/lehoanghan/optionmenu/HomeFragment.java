@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.example.lehoanghan.addevent.AddEventActivity;
+import com.example.lehoanghan.addevent.AddEventActivity_;
 import com.example.lehoanghan.appcalendar.R;
 import com.example.lehoanghan.widgets.DayViewDecoratorDotSpan;
 import com.firebase.client.Firebase;
@@ -17,6 +19,7 @@ import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 
 import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
@@ -31,19 +34,17 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     private static String sMailUser;
-
     private static String sNameUser;
+    public static  final int REQUEST_CODE_ADD_EVENT_CLICK = 1234;
 
     @ViewById(R.id.fragment_home_calendar)
     MaterialCalendarView mcvCalendar;
-
     @ViewById(R.id.fragment_home_iv_main)
     ImageView ivCover;
 
+
     private Fragment aFragment = null;
-
     private Intent intentSetDate;
-
     private StringBuilder toDay;
 
     private Firebase gFirebase;
@@ -51,9 +52,6 @@ public class HomeFragment extends Fragment {
     private MenuInflater menuInflater;
     private Menu menu;
     private StringBuilder txtDate;
-
-    public HomeFragment() {
-    }
 
     @AfterViews
     void afterView() {
@@ -65,6 +63,17 @@ public class HomeFragment extends Fragment {
         setCalendar();
 
     }
+
+    @Click(R.id.fragment_home_iv_add)
+    void ivAddClick() {
+        intentSetDate = new Intent(getActivity(), AddEventActivity_.class);
+        intentSetDate.putExtra("ChangeDate", txtDate.toString());
+        intentSetDate.putExtra("ToDay", toDay.toString());
+        intentSetDate.putExtra("MailUser", sMailUser);
+        intentSetDate.putExtra("NameUser", sNameUser);
+        startActivity(intentSetDate);
+    }
+
 
     void initView() {
         Bundle bundle = this.getArguments();
@@ -159,17 +168,6 @@ public class HomeFragment extends Fragment {
                     .append(month + 1).append("-").append(year);
         }
         return textDate;
-    }
-
-
-    public void passDataDatetoAddEvent() {
-        /*intentSetDate = new Intent(getActivity(), AddEventActivity.class);
-        intentSetDate.putExtra("ChangeDate", txtDate.toString());
-        intentSetDate.putExtra("ToDay", toDay.toString());
-        intentSetDate.putExtra("MailUser", sMailUser);
-        intentSetDate.putExtra("NameUser", sNameUser);
-        startActivity(intentSetDate);*/
-
     }
 
 }

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fontFamily="sans-serif-medium"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:ignore="contentDescription">
 
     <ImageView
         android:id="@+id/fragment_home_iv_main"
@@ -13,19 +15,34 @@
         android:layout_weight="0.35"
         android:scaleType="centerCrop" />
 
-    <!--&lt;!&ndash;android:background="@drawable/bg_countryside_dirt_road" />&ndash;&gt;-->
-
-    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-        android:id="@+id/fragment_home_calendar"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="0.65"
-        app:mcv_calendarMode="month"
-        app:mcv_firstDayOfWeek="monday"
-        app:mcv_selectionColor="@color/colorCyan"
-        app:mcv_showOtherDates="defaults"
-        app:mcv_tileHeight="match_parent"
-        app:mcv_tileWidth="match_parent" />
+        android:layout_weight="0.65">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/fragment_home_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:mcv_calendarMode="month"
+            app:mcv_firstDayOfWeek="monday"
+            app:mcv_selectionColor="@color/colorCyan"
+            app:mcv_showOtherDates="defaults"
+            app:mcv_tileHeight="match_parent"
+            app:mcv_tileWidth="match_parent" />
+
+        <ImageView
+            android:id="@+id/fragment_home_iv_add"
+            android:scaleType="centerCrop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparen"
+            android:src="@drawable/ic_add" />
+
+    </FrameLayout>
 
 </LinearLayout>

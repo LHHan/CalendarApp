@@ -3,7 +3,6 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -20,8 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Event's Name"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/activity_add_event_et_event_name"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="sans-serif-medium"
-            android:textSize="55px" />
+            android:textSize="16dp" />
     </TableRow>
 
     <TableRow
@@ -38,20 +38,24 @@
 
         <TextView
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Set Time"
-            android:textSize="70px"
+            android:textSize="16dp"
             android:textStyle="italic|bold" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="From"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/activity_add_event_tv_set_day_from"
@@ -59,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="sans-serif-medium"
-            android:textSize="60px" />
+            android:singleLine="true"
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/activity_add_event_btn_set_day_from"
@@ -74,7 +79,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="sans-serif-medium"
-            android:textSize="60px" />
+            android:singleLine="true"
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/activity_add_event_btn_set_time_from"
@@ -92,8 +98,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="To"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/activity_add_event_tv_set_day_to"
@@ -101,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="sans-serif-medium"
-            android:textSize="55px" />
+            android:textSize="15dp" />
 
         <Button
             android:id="@+id/activity_add_event_btn_set_day_to"
@@ -117,7 +124,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="sans-serif-medium"
-            android:textSize="60px" />
+            android:singleLine="true"
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/activity_add_event_btn_set_time_to"
@@ -135,8 +143,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Detail"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/activity_add_event_et_description"
@@ -145,7 +154,7 @@
             android:layout_weight="4"
             android:fontFamily="sans-serif-medium"
             android:lineSpacingMultiplier="5"
-            android:textSize="55px" />
+            android:textSize="15dp" />
 
     </TableRow>
 
@@ -157,8 +166,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Place"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <AutoCompleteTextView
             android:id="@+id/activity_add_event_actv_place"
@@ -166,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:fontFamily="sans-serif-medium"
-            android:textSize="55px" />
+            android:textSize="16dp" />
 
     </TableRow>
 
@@ -178,8 +188,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Add Friend"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <MultiAutoCompleteTextView
             android:id="@+id/activity_add_event_mactv_add_friend"
@@ -188,7 +199,7 @@
             android:layout_weight="4"
             android:fontFamily="sans-serif-medium"
             android:inputType="textMultiLine|textEmailAddress"
-            android:textSize="55px" />
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/activity_add_event_btn_find_friend"
@@ -206,8 +217,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="Alarm"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/activity_add_event_et_alarm"
@@ -216,7 +228,8 @@
             android:layout_weight="4"
             android:fontFamily="sans-serif-medium"
             android:hint="0"
-            android:textSize="55px" />
+            android:singleLine="true"
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/activity_add_event_tv_minute"
@@ -224,25 +237,28 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
             android:text="minute"
-            android:textSize="60px" />
+            android:textSize="16dp" />
     </TableRow>
 
     <TableRow>
 
         <TextView
+            android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:singleLine="true"
             android:text="Repeat"
-            android:textSize="60px" />
+            android:textSize="16dp" />
 
         <Spinner
             android:id="@+id/activity_add_event_spn_repeat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textSize="55px" />
+            android:textSize="16dp" />
 
     </TableRow>
 </TableLayout>
