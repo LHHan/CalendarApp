@@ -1,9 +1,7 @@
 package com.example.lehoanghan;
 
 import android.support.multidex.MultiDexApplication;
-
 import com.example.lehoanghan.appcalendar.R;
-
 import net.danlew.android.joda.JodaTimeAndroid;
 
 import org.androidannotations.annotations.EApplication;
@@ -11,7 +9,7 @@ import org.androidannotations.annotations.EApplication;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
- * Created by LeHoangHan on 3/29/2017.
+ * ->  Created by LeHoangHan on 3/29/2017.
  */
 @EApplication
 public class MainApplication extends MultiDexApplication {
@@ -23,7 +21,7 @@ public class MainApplication extends MultiDexApplication {
         JodaTimeAndroid.init(this);
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Roboto-RobotoRegular.ttf")
+                .setDefaultFontPath("fonts/Roboto-Regular.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
