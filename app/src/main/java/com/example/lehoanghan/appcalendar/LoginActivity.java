@@ -4,19 +4,27 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.example.lehoanghan.base.BaseActivity;
 import com.example.lehoanghan.choosemenu.NavigationActivity;
+import com.example.lehoanghan.utils.AppUtil;
 import com.firebase.client.AuthData;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -29,19 +37,25 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
 
 import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.App;
 import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.FocusChange;
+import org.androidannotations.annotations.TextChange;
+import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
 
 @EActivity(R.layout.activity_login)
-public class LoginActivity extends Activity implements Validator.ValidationListener {
+public class LoginActivity extends BaseActivity implements Validator.ValidationListener {
     private static Animation sShakeAnimation;
 
     @ViewById(R.id.activity_login_ll_main)
     LinearLayout llLogin;
+    @ViewById(R.id.activity_login_rl_login)
+    RelativeLayout rlLogin;
 
     @NotEmpty
     @Email
@@ -50,28 +64,36 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
 
     @Password(scheme = Password.Scheme.ANY)
     @ViewById(R.id.activity_login_et_password)
-    EditText etPass;
+    EditText etPassword;
 
     @ViewById(R.id.activity_login_cb_show_hide_password)
     CheckBox cbShowPassword;
 
+    @ViewById(R.id.activity_login_v_mail_underline)
+    View vMailUnderline;
+    @ViewById(R.id.activity_login_v_password_underline)
+    View vPasswordUnderline;
+
+
     private Firebase aFirebase;
-
     private String strName;
-
     private Intent myIntent;
-
     private String contentMail = "";
-
     private String contentPass = "";
-
     private Validator validator;
+    private boolean isValidateSuccess;
+
 
     @AfterViews
     public void afterViews() {
-        giveData();
+        /*Set Status bar color*/
+        AppUtil.changeStatusBarColor(this);
+        //using Google Firebase
         Firebase.setAndroidContext(this);
         aFirebase = new Firebase("https://appcalendar.firebaseio.com/");
+        //Set data
+        getData();
+        //Set validator saripar
         validator = new Validator(this);
         validator.setValidationListener(this);
         initView();
@@ -80,6 +102,10 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
     @Click(R.id.activity_login_rl_login)
     void rlLoginClick() {
         validator.validate();
+        if (isValidateSuccess) {
+            showProgressLoading();
+            checkFirebase();
+        }
     }
 
     @Click(R.id.activity_login_rl_register)
@@ -89,23 +115,38 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
 
     @Click(R.id.activity_login_rl_forgot_password)
     void rlForgotPasswordClick() {
-       ForgotPasswordActivity_.intent(this).start();
+        ForgotPasswordActivity_.intent(this).start();
+    }
+
+    @Touch(R.id.activity_login_ll_root)
+    void llRootTouch() {
+        AppUtil.hideSoftKeyboard(this);
     }
 
     @CheckedChange(R.id.activity_login_cb_show_hide_password)
     void setCbShowPassword(boolean isChecked) {
         if (isChecked) {
             cbShowPassword.setText(R.string.hide_password); // Change checkbox text
-            etPass.setInputType(InputType.TYPE_CLASS_TEXT);
-            etPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());//showpass
+            etPassword.setInputType(InputType.TYPE_CLASS_TEXT);
+            etPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());//showpass
         } else {
             cbShowPassword.setText(R.string.show_password); // change checkbox text
-            etPass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-            etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());//hide pass
+            etPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            etPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());//hide pass
         }
     }
 
-    public void giveData() {
+    @TextChange(R.id.activity_login_et_gmail)
+    void etGmailChange() {
+        validator.validate();
+    }
+
+    @TextChange(R.id.activity_login_et_password)
+    void etPasswordChange() {
+        validator.validate();
+    }
+
+    public void getData() {
         if (getIntent().getExtras() != null) {
             contentMail = getIntent().getStringExtra("MailUser");
             contentPass = getIntent().getStringExtra("Password");
@@ -115,12 +156,22 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         }
     }
 
+    @Override
+    public void showProgressLoading() {
+        super.showProgressLoading();
+    }
+
+    @Override
+    public void hideProgressLoading() {
+        super.hideProgressLoading();
+    }
+
     public void initView() {
         Log.e("Gmail", contentMail);
         Log.e("Pass", contentPass);
         if (contentMail.compareTo("") != 0 && contentPass.compareTo("") != 0) {
             etMail.setText(contentMail);
-            etPass.setText(contentPass);
+            etPassword.setText(contentPass);
         }
         //Load shake animation
         sShakeAnimation =
@@ -129,30 +180,51 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
 
     @Override
     public void onValidationSucceeded() {
-        checkFirebase();
+        vMailUnderline.setBackgroundColor(Color.CYAN);
+        vPasswordUnderline.setBackgroundColor(Color.CYAN);
+
+        rlLogin.setEnabled(true);
+        isValidateSuccess = true;
     }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
+        vMailUnderline.setBackgroundColor(Color.WHITE);
+        vPasswordUnderline.setBackgroundColor(Color.WHITE);
         for (ValidationError error : errors) {
             View contentView = error.getView();
             String message = error.getCollatedErrorMessage(this);
 
+            rlLogin.setEnabled(false);
+
             //Display error message
             if (contentView instanceof EditText) {
-                ((EditText) contentView).setError(message);
-            } else {
-                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-                llLogin.startAnimation(sShakeAnimation);
+                if (contentView.equals(etMail)) {
+                    if (!((EditText) contentView).getText().toString().equals("")) {
+                        vMailUnderline.setBackgroundColor(Color.RED);
+                    }
+                } else {
+                    vMailUnderline.setBackgroundColor(Color.CYAN);
+                }
+
+                if (contentView.equals(etPassword)) {
+                    if (!((EditText) contentView).getText().toString().equals("")) {
+                        vPasswordUnderline.setBackgroundColor(Color.RED);
+                    }
+                } else {
+                    vPasswordUnderline.setBackgroundColor(Color.CYAN);
+                }
             }
         }
+        isValidateSuccess = false;
     }
 
     public void checkFirebase() {
-        aFirebase.authWithPassword(etMail.getText().toString(), etPass.getText().toString(),
+        aFirebase.authWithPassword(etMail.getText().toString(), etPassword.getText().toString(),
                 new Firebase.AuthResultHandler() {
                     @Override
                     public void onAuthenticated(AuthData authData) {
+                        hideProgressLoading();
                         Toast.makeText(getApplicationContext(),
                                 "Welcom to Calendar Application",
                                 Toast.LENGTH_SHORT).show();
@@ -164,7 +236,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
                         final AlertDialog.Builder ALERT =
                                 new AlertDialog.Builder(LoginActivity.this);
                         ALERT.setIcon(R.drawable.ic_warning);
-
+                        hideProgressLoading();
                         if (firebaseError.getMessage()
                                 .compareTo("The specified password is incorrect.") == 0) {
                             Toast.makeText(getApplicationContext(),
@@ -216,7 +288,6 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         });
         builder.create().show();
     }
-
 
     public void getNameUser() {
         final String STRMAIL = etMail.getText().toString().replace(".", "&");

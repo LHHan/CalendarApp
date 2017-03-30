@@ -94,7 +94,7 @@
                     android:drawablePadding="8dp"
                     android:padding="5dp"
                     android:singleLine="true"
-                    android:textColor="@color/button_selectorcolor"
+                    android:textColor="@color/btn_selector_color"
                     android:textSize="18dp" />
             </TableRow>
 
@@ -128,7 +128,7 @@
                     android:drawablePadding="8dp"
                     android:padding="5dp"
                     android:singleLine="true"
-                    android:textColor="@color/button_selectorcolor"
+                    android:textColor="@color/btn_selector_color"
                     android:textSize="18dp" />
             </TableRow>
 

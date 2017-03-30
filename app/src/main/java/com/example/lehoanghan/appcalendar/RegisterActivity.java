@@ -113,7 +113,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
 //    public void btnClear() {
 //        etName.setText("");
 //        etMail.setText("");
-//        etPass.setText("");
+//        etPassword.setText("");
 //        etConfPass.setText("");
 //    }
 
@@ -138,7 +138,7 @@ public class RegisterActivity extends Activity implements Validator.ValidationLi
 //        aUser = new User();
 //        aUser.setjName(etName.getText().toString());
 //        aUser.setjMail(etMail.getText().toString());
-//        aUser.setjPass(etPass.getText().toString());
+//        aUser.setjPass(etPassword.getText().toString());
 //    }
 
     public byte[] convertImage() {
