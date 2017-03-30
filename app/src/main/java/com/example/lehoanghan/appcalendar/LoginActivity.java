@@ -11,13 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lehoanghan.choosemenu.NavigationActivity;
@@ -44,29 +40,17 @@ import java.util.List;
 public class LoginActivity extends Activity implements Validator.ValidationListener {
     private static Animation sShakeAnimation;
 
-    @ViewById(R.id.activity_login_rl_main)
-    RelativeLayout rlLogin;
-
     @ViewById(R.id.activity_login_ll_main)
-    LinearLayout llLoin;
+    LinearLayout llLogin;
 
     @NotEmpty
     @Email
     @ViewById(R.id.activity_login_et_gmail)
     EditText etMail;
 
-    @Password(min = 6, scheme = Password.Scheme.ANY)
+    @Password(scheme = Password.Scheme.ANY)
     @ViewById(R.id.activity_login_et_password)
     EditText etPass;
-
-    @ViewById(R.id.activity_login_tv_register)
-    TextView tvRegister;
-
-    @ViewById(R.id.activity_login_tv_forgot_password)
-    TextView tvForgot;
-
-    @ViewById(R.id.activity_login_btn_login)
-    Button btnLogin;
 
     @ViewById(R.id.activity_login_cb_show_hide_password)
     CheckBox cbShowPassword;
@@ -77,43 +61,11 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
 
     private Intent myIntent;
 
-    private int check = 0;
-
     private String contentMail = "";
 
     private String contentPass = "";
 
     private Validator validator;
-
-    @Click(R.id.activity_login_btn_login)
-    void setBtnLogin() {
-        validator.validate();
-    }
-
-    @Click(R.id.activity_login_tv_register)
-    void setTvRegister() {
-        myIntent = new Intent(LoginActivity.this, RegisterActivity_.class);
-        startActivity(myIntent);
-    }
-
-    @Click(R.id.activity_login_tv_forgot_password)
-    void setTvForgot() {
-        myIntent = new Intent(LoginActivity.this, ForgotPasswordActivity_.class);
-        startActivity(myIntent);
-    }
-
-    @CheckedChange(R.id.activity_login_cb_show_hide_password)
-    void setCbShowPassword(CompoundButton button, boolean isChecked) {
-        if (isChecked) {
-            cbShowPassword.setText(R.string.hide_password); // Change checkbox text
-            etPass.setInputType(InputType.TYPE_CLASS_TEXT);
-            etPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());//showpass
-        } else {
-            cbShowPassword.setText(R.string.show_password); // change checkbox text
-            etPass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-            etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());//hide pass
-        }
-    }
 
     @AfterViews
     public void afterViews() {
@@ -123,6 +75,34 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
         validator = new Validator(this);
         validator.setValidationListener(this);
         initView();
+    }
+
+    @Click(R.id.activity_login_rl_login)
+    void rlLoginClick() {
+        validator.validate();
+    }
+
+    @Click(R.id.activity_login_rl_register)
+    void rlRegisterClick() {
+        RegisterActivity_.intent(this).start();
+    }
+
+    @Click(R.id.activity_login_rl_forgot_password)
+    void rlForgotPasswordClick() {
+       ForgotPasswordActivity_.intent(this).start();
+    }
+
+    @CheckedChange(R.id.activity_login_cb_show_hide_password)
+    void setCbShowPassword(boolean isChecked) {
+        if (isChecked) {
+            cbShowPassword.setText(R.string.hide_password); // Change checkbox text
+            etPass.setInputType(InputType.TYPE_CLASS_TEXT);
+            etPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());//showpass
+        } else {
+            cbShowPassword.setText(R.string.show_password); // change checkbox text
+            etPass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());//hide pass
+        }
     }
 
     public void giveData() {
@@ -163,7 +143,7 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
                 ((EditText) contentView).setError(message);
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-                llLoin.startAnimation(sShakeAnimation);
+                llLogin.startAnimation(sShakeAnimation);
             }
         }
     }
@@ -185,14 +165,14 @@ public class LoginActivity extends Activity implements Validator.ValidationListe
                                 new AlertDialog.Builder(LoginActivity.this);
                         ALERT.setIcon(R.drawable.ic_warning);
 
-                        if (firebaseError.getMessage().toString()
+                        if (firebaseError.getMessage()
                                 .compareTo("The specified password is incorrect.") == 0) {
                             Toast.makeText(getApplicationContext(),
-                                    firebaseError.getMessage().toString(),
+                                    firebaseError.getMessage(),
                                     Toast.LENGTH_SHORT).show();
-                        } else if (firebaseError.getMessage().toString()
+                        } else if (firebaseError.getMessage()
                                 .compareTo("The specified user does not exist.") == 0) {
-                            ALERT.setMessage(firebaseError.getMessage().toString() +
+                            ALERT.setMessage(firebaseError.getMessage() +
                                     " Do you want create a new account");
                             ALERT.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
