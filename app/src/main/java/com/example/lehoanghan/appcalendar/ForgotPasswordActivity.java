@@ -1,15 +1,15 @@
 package com.example.lehoanghan.appcalendar;
 
-import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.example.lehoanghan.base.BaseActivity;
+import com.example.lehoanghan.utils.AppUtil;
 import com.firebase.client.Firebase;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
@@ -19,72 +19,107 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.TextChange;
+import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
 
 @EActivity(R.layout.activity_forgot_password)
-public class ForgotPasswordActivity extends AppCompatActivity implements Validator.ValidationListener {
-    private static Animation sShakeAnimation;
-
+public class ForgotPasswordActivity extends BaseActivity implements Validator.ValidationListener {
     @NotEmpty
     @Email
     @ViewById(R.id.activity_forgot_password_et_email)
     EditText etEmail;
 
-    @ViewById(R.id.activity_forgot_password_tv_back)
-    TextView tvBack;
+    @ViewById(R.id.activity_forgot_password_rl_back)
+    RelativeLayout rlBack;
 
-    @ViewById(R.id.activity_forgot_password_tv_submit)
-    TextView tvSubmit;
+    @ViewById(R.id.activity_forgot_password_rl_submit)
+    RelativeLayout rlSubmit;
 
-    @ViewById(R.id.activity_forgot_password_ll_forgot)
-    LinearLayout llForgot;
+    @ViewById(R.id.activity_forgot_password_ll_root)
+    LinearLayout llRoot;
 
-    private Firebase firebase;
+    @ViewById(R.id.activity_forgot_password_v_mail_underline)
+    View vMailUnderline;
 
     private Validator validator;
-
-    @Click(R.id.activity_forgot_password_tv_submit)
-    void setTvSubmit() {
-        validator.validate();
-    }
-
-    @Click(R.id.activity_forgot_password_tv_back)
-    void setTvBack() {
-        Intent myintent = new Intent(ForgotPasswordActivity.this, LoginActivity_.class);
-        startActivity(myintent);
-    }
+    private boolean isValidateSuccess;
 
     @AfterViews
-    void afterView() {
+    void init() {
+         /*Set Status bar color*/
+        AppUtil.changeStatusBarColor(this);
+        //using google firebase
         Firebase.setAndroidContext(this);
-        firebase = new Firebase("https://appcalendar.firebaseio.com/");
-        sShakeAnimation =
-                AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
+        Firebase firebase = new Firebase("https://appcalendar.firebaseio.com/");
+        //using validator saripaar
         validator = new Validator(this);
         validator.setValidationListener(this);
     }
 
+    @Click(R.id.activity_forgot_password_rl_submit)
+    void rlSubmitClick() {
+        showProgressLoading();
+        if (isValidateSuccess) {
+            Toast.makeText(this, "Yay, we got it right", Toast.LENGTH_SHORT).show();
+        }
+        hideProgressLoading();
+    }
+
+    @Click(R.id.activity_forgot_password_rl_back)
+    void rlBackClick() {
+        LoginActivity_.intent(this).start();
+        overridePendingTransition(R.anim.animation_right_enter, R.anim.animation_left_exit);
+    }
+
+    @TextChange(R.id.activity_forgot_password_et_email)
+    void etEmailChange() {
+        validator.validate();
+    }
+
+    //Hide soft keyboard when you touch outside
+    @Touch(R.id.activity_forgot_password_ll_root)
+    void llRootTouch() {
+        AppUtil.hideSoftKeyboard(this);
+    }
+
+
+    @Override
+    public void showProgressLoading() {
+        super.showProgressLoading();
+    }
+
+    @Override
+    public void hideProgressLoading() {
+        super.hideProgressLoading();
+    }
+
+
     @Override
     public void onValidationSucceeded() {
-        Toast.makeText(this, "Yay, we got it right", Toast.LENGTH_SHORT).show();
+        vMailUnderline.setBackgroundColor(Color.CYAN);
+        rlSubmit.setEnabled(true);
+        isValidateSuccess = true;
     }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
+        vMailUnderline.setBackgroundColor(Color.WHITE);
         for (ValidationError error : errors) {
             View contentView = error.getView();
-            String message = error.getCollatedErrorMessage(this);
 
-            //Display error message
+            rlSubmit.setEnabled(false);
+
             if (contentView instanceof EditText) {
-                ((EditText) contentView).setError(message);
-            } else {
-                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-                llForgot.startAnimation(sShakeAnimation);
+                if (contentView.equals(etEmail)) {
+                    if (!((EditText) contentView).getText().toString().equals("")) {
+                        vMailUnderline.setBackgroundColor(Color.RED);
+                    }
+                }
             }
         }
+        isValidateSuccess = false;
     }
 }
-
