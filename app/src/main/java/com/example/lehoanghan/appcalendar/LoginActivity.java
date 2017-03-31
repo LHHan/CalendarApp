@@ -1,21 +1,16 @@
 package com.example.lehoanghan.appcalendar;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Build;
 import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -37,11 +32,9 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.App;
 import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.FocusChange;
 import org.androidannotations.annotations.TextChange;
 import org.androidannotations.annotations.Touch;
 import org.androidannotations.annotations.ViewById;
@@ -50,7 +43,6 @@ import java.util.List;
 
 @EActivity(R.layout.activity_login)
 public class LoginActivity extends BaseActivity implements Validator.ValidationListener {
-    private static Animation sShakeAnimation;
 
     @ViewById(R.id.activity_login_ll_main)
     LinearLayout llLogin;
@@ -83,9 +75,8 @@ public class LoginActivity extends BaseActivity implements Validator.ValidationL
     private Validator validator;
     private boolean isValidateSuccess;
 
-
     @AfterViews
-    public void afterViews() {
+    public void init() {
         /*Set Status bar color*/
         AppUtil.changeStatusBarColor(this);
         //using Google Firebase
@@ -111,13 +102,16 @@ public class LoginActivity extends BaseActivity implements Validator.ValidationL
     @Click(R.id.activity_login_rl_register)
     void rlRegisterClick() {
         RegisterActivity_.intent(this).start();
+        overridePendingTransition(R.anim.animation_right_enter, R.anim.animation_left_exit);
     }
 
     @Click(R.id.activity_login_rl_forgot_password)
     void rlForgotPasswordClick() {
         ForgotPasswordActivity_.intent(this).start();
+        overridePendingTransition(R.anim.animation_left_enter, R.anim.animation_right_exit);
     }
 
+    //Hide soft keyboard when you touch outside
     @Touch(R.id.activity_login_ll_root)
     void llRootTouch() {
         AppUtil.hideSoftKeyboard(this);
@@ -173,9 +167,6 @@ public class LoginActivity extends BaseActivity implements Validator.ValidationL
             etMail.setText(contentMail);
             etPassword.setText(contentPass);
         }
-        //Load shake animation
-        sShakeAnimation =
-                AnimationUtils.loadAnimation(getApplication(), R.anim.animation_shake);
     }
 
     @Override
@@ -193,26 +184,20 @@ public class LoginActivity extends BaseActivity implements Validator.ValidationL
         vPasswordUnderline.setBackgroundColor(Color.WHITE);
         for (ValidationError error : errors) {
             View contentView = error.getView();
-            String message = error.getCollatedErrorMessage(this);
 
             rlLogin.setEnabled(false);
 
-            //Display error message
             if (contentView instanceof EditText) {
-                if (contentView.equals(etMail)) {
-                    if (!((EditText) contentView).getText().toString().equals("")) {
-                        vMailUnderline.setBackgroundColor(Color.RED);
-                    }
-                } else {
-                    vMailUnderline.setBackgroundColor(Color.CYAN);
-                }
-
                 if (contentView.equals(etPassword)) {
                     if (!((EditText) contentView).getText().toString().equals("")) {
                         vPasswordUnderline.setBackgroundColor(Color.RED);
                     }
-                } else {
-                    vPasswordUnderline.setBackgroundColor(Color.CYAN);
+                }
+
+                if (contentView.equals(etMail)) {
+                    if (!((EditText) contentView).getText().toString().equals("")) {
+                        vMailUnderline.setBackgroundColor(Color.RED);
+                    }
                 }
             }
         }
@@ -262,11 +247,6 @@ public class LoginActivity extends BaseActivity implements Validator.ValidationL
                         }
                     }
                 });
-    }
-
-    @Override
-    public void onBackPressed() {
-        exitView();
     }
 
     public void exitView() {

@@ -35,7 +35,6 @@ public class BaseActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         finish();
-        overridePendingTransition(R.anim.animation_fade_in, R.anim.animation_fade_out);
     }
 
     public void showProgressLoading() {

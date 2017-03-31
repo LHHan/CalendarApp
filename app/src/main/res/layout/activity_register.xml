@@ -1,157 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_regiter_ll_register"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:scrollbars="none"
+    tools:ignore="contentDescription,MissingPrefix">
 
-    <TextView
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:id="@+id/activity_regiter_ll_root"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="@string/register"
-        android:textColor="@color/white_greyish"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/activity_register_et_username"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/ic_account_white_24dp"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/username"
-        android:inputType="textCapWords"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="16dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_app" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/register"
+            android:textColor="@color/white_greyish"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:fontPath="fonts/Roboto_Bold.ttf" />
 
-    <EditText
-        android:id="@+id/activity_register_et_gmail"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/ic_email_outline_white_24dp"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/email_id"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="16dp" />
+        <EditText
+            android:id="@+id/activity_register_et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_account_white_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
+        <View
+            android:id="@+id/activity_register_v_username_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white_greyish" />
 
-    <EditText
-        android:id="@+id/activity_register_et_password"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/ic_lock_white_24dp"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="16sp" />
+        <EditText
+            android:id="@+id/activity_register_et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_email_outline_white_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
+        <View
+            android:id="@+id/activity_register_v_email_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white_greyish" />
 
-    <EditText
-        android:id="@+id/activity_register_et_confirmpassword"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/ic_lock_plus_white_24dp"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/confirm_password"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="16sp" />
+        <EditText
+            android:id="@+id/activity_register_et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@color/white_greyish" />
+        <View
+            android:id="@+id/activity_register_v_password_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white_greyish" />
 
+        <EditText
+            android:id="@+id/activity_register_et_confirmpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_lock_plus_white_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <CheckBox
-        android:id="@+id/activity_register_cb_agree_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:text="@string/check_register"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <View
+            android:id="@+id/activity_register_v_confirmpassword_underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/white_greyish" />
 
-    <Button
-        android:id="@+id/activity_register_btn_register"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/btnlogin_selector"
-        android:padding="3dp"
-        android:text="@string/register"
-        android:textColor="@color/colorCyan"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
+        <CheckBox
+            android:id="@+id/activity_register_cb_agree_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/check_register"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <TextView
-        android:id="@+id/activity_register_tv_login_here"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="@string/login_here"
-        android:textColor="@color/white_greyish"
-        android:textSize="15sp" />
+        <RelativeLayout
+            android:id="@+id/activity_register_rl_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnlogin_selector"
+            android:gravity="center"
+            android:padding="10dp">
 
-    <!--<Button-->
-    <!--android:id="@+id/activity_register_btn_clear"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="@string/clear" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/register"
+                android:textColor="@color/colorCyan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontPath="fonts/Roboto_Medium.ttf" />
 
-    <!--<Button-->
-    <!--android:id="@+id/activity_register_btn_map"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:fontFamily="sans-serif-medium"-->
-    <!--android:text="Map" />-->
+        </RelativeLayout>
 
-</LinearLayout>
+        <RelativeLayout
+            android:id="@+id/activity_register_rl_login_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_here"
+                android:textColor="@color/bg_text_color_1"
+                android:textSize="15sp"
+                app:fontPath="fonts/Roboto_Medium.ttf" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
