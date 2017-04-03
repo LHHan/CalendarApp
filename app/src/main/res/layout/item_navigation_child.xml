@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_navigation_item"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix,contentDescription">
+
+    <ImageView
+        android:id="@+id/item_navigation_child_iv_content"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+
+    <TextView
+        android:id="@+id/item_navigation_child_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="48dp"
+        android:textColor="@color/bg_text_color_navigation"
+        android:text="HOME"
+        android:textSize="23dp" />
+
+</LinearLayout>

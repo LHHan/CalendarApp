@@ -13,15 +13,13 @@
 
     <ListView
         android:id="@+id/activity_menu_choose_lv_navigation"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:scrollbars="none"
-        android:background="@color/colorBackground"
+        android:background="@color/white"
         android:choiceMode="singleChoice"
         android:divider="@color/white"
-        android:dividerHeight="1dp"
-        android:listSelector="@android:drawable/list_selector_background" />
-
-
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+    
 </android.support.v4.widget.DrawerLayout>

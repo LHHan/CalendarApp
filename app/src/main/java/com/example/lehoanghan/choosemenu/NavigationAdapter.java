@@ -1,6 +1,7 @@
 package com.example.lehoanghan.choosemenu;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,18 +53,18 @@ public class NavigationAdapter extends BaseAdapter {
                 LayoutInflater inflater =
                         (LayoutInflater) adapterContext.getSystemService(
                                 Context.LAYOUT_INFLATER_SERVICE);
-                convertView = inflater.inflate(R.layout.menu_head, null);
-                TextView txtTile = (TextView) convertView.findViewById(R.id.menu_head_tv_title);
+                convertView = inflater.inflate(R.layout.item_navigation_header, null);
+                TextView txtTile = (TextView) convertView.findViewById(R.id.item_navigation_header_tv_content);
                 txtTile.setText(arrayMenuItem.get(position).getTitle());
             }
         } else if (type == itemBody) {
             if (convertView == null) {
                 LayoutInflater inflater = (LayoutInflater) adapterContext
                         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView = inflater.inflate(R.layout.menu_body, null);
-                TextView tvTile = (TextView) convertView.findViewById(R.id.menu_body_tv_body);
+                convertView = inflater.inflate(R.layout.item_navigation_child, null);
+                TextView tvTile = (TextView) convertView.findViewById(R.id.item_navigation_child_tv_content);
                 tvTile.setText(arrayMenuItem.get(position).getTitle());
-                ImageView ivBody = (ImageView) convertView.findViewById(R.id.menu_body_iv_icon);
+                ImageView ivBody = (ImageView) convertView.findViewById(R.id.item_navigation_child_iv_content);
                 ivBody.setImageResource(arrayMenuItem.get(position).getIcon());
             }
         }
